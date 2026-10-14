@@ -1,0 +1,74 @@
+/* Alsama brand styles. Stage 1: colours, fonts and the placeholder page.
+   Stage 2 will grow this into the full app styles. */
+
+:root {
+  --magenta: #B7155A;
+  --burgundy: #4F0927;
+  --pink: #F5A9CA;
+  --muted: #906060;
+  --white: #FFFFFF;
+  --cream: #FFF9F5;
+  --text: #2A1620;
+
+  --font-ar: 'Noto Naskh Arabic', serif;
+  --font-en: 'Nunito', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font: 17px/1.6 var(--font-en);
+}
+
+[lang="ar"] { font-family: var(--font-ar); }
+
+a { color: var(--magenta); }
+
+:focus-visible { outline: 3px solid var(--magenta); outline-offset: 3px; }
+
+.placeholder {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.placeholder .logo {
+  width: 220px;
+  max-width: 70%;
+  height: auto;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
+.placeholder h1 {
+  margin: 24px 0 4px;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--magenta);
+}
+
+.placeholder .lead { margin: 0 0 24px; font-size: 20px; font-weight: 700; color: var(--burgundy); }
+
+.placeholder .ar-line { font-size: 26px; margin: 0; color: var(--burgundy); }
+
+.placeholder .muted { color: var(--muted); }
+
+.button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  border-radius: 16px;
+  background: var(--magenta);
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 0 var(--burgundy);
+}
+
+.button:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--burgundy); }
