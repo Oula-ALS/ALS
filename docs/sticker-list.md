@@ -1,29 +1,29 @@
-# Alsama sticker list
+# Alsama photos and stickers
 
-Stickers are **real Alsama Project photos** — please upload them. Until then the app
-shows labelled grey placeholders. Nothing here will be replaced with stock images
-or invented characters.
+All photos are **real Alsama Project photos** supplied by Alsama Language School.
+Nothing here is a stock image or an invented character. The app adds a white sticker
+edge and a soft shadow; the photo itself is not changed (only cropped to its outline).
 
-The app adds a white sticker border and a soft shadow; the photo itself is not changed.
+## In the app now
 
-## Photos needed
+| File | Photo | Where it appears |
+|---|---|---|
+| `assets/stickers/graduates-celebrate.png` | Two graduates with a certificate | Replaces the old owl 🦉: home screen hero, welcome photo corner, **برافووووو!** celebration, lesson complete |
+| `assets/stickers/teacher-cheering.png` | Teacher and student cheering | "Games" card, About page, streak / correct-answer sticker |
+| `assets/stickers/teacher-helping-student.png` | Teacher helping a student with her work | Student details page, "Lessons" card, try-again sticker |
+| `assets/images/students-library.jpg` | Students together in the library | Welcome page main photo |
+| `assets/images/teacher-fist-bump.jpg` | Teacher fist-bump with a student | "Explore the alphabet" card |
 
-| # | Event | When it appears | What kind of photo works | File name |
-|---|---|---|---|---|
-| 1 | `welcome` | First visit / welcome screen | Warm group or classroom photo, smiling | `welcome-family.jpg` |
-| 2 | `correct` | First-try correct on a hard letter | A person smiling / thumbs up | `correct-thumbs-up.jpg` |
-| 3 | `correct` (alternate) | Same, so it doesn't repeat | Another happy moment | `correct-smile.jpg` |
-| 4 | `streak` | 3 correct answers in a row | Celebration / high-five / cheering | `streak-celebrate.jpg` |
-| 5 | `lessonComplete` | End of a lesson | Big celebration, group, certificate moment | `lesson-complete.jpg` |
-| 6 | `tryAgain` | After a wrong answer (gentle, optional) | Encouraging, friendly teacher | `try-again-encourage.jpg` |
+Which sticker appears for which event is set in `assets/stickers/stickers.json`. Change a
+file name there to swap a sticker; no code changes needed.
 
-**Tips:** square or portrait photos work best; at least 600 × 600 pixels; JPG or PNG.
-Only use photos you have permission to share (especially photos of students).
+## Still helpful
 
-The event → sticker mapping will live in `assets/stickers/stickers.json` (Stage 5),
-so stickers can be swapped without touching code.
+- **A sharper official logo** (PNG with transparent background, or SVG). The current one,
+  taken from the old app, is 400 × 200 and slightly blurry on phones.
+- `teacher-fist-bump.jpg` is small (299 × 168). A larger copy would look sharper.
+- More photos for later stages (alphabet, writing, games), e.g. students writing Arabic,
+  a classroom, a teacher pointing at the board.
 
-## Also helpful
-
-- A **higher-resolution official logo** (ideally PNG with transparent background, or SVG).
-  The one extracted from the old app is 400 × 200 and greyish.
+**Permission:** please make sure everyone shown has agreed to their photo being used
+in the app, especially any students under 18.

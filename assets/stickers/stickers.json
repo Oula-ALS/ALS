@@ -1,0 +1,72 @@
+{
+  "_comment": "Which real Alsama photo appears for each event. Swap a file name here to change a sticker; no code changes needed. 'sound' is an Arabic key from assets/audio/manifest.json (optional). 'messagesMale'/'messagesFemale' and 'titleFemale' are used only when the student chose شاطر or شاطرة.",
+  "events": {
+    "welcome": {
+      "stickers": [
+        "stickers/graduates-celebrate.png"
+      ],
+      "title": "برافووووو!",
+      "messages": [
+        "أهلاً وسهلاً في عيلة مدرسة السما للغات!"
+      ],
+      "english": "Welcome to the Alsama Language School family!",
+      "sound": "برافو"
+    },
+    "correct": {
+      "stickers": [
+        "stickers/graduates-celebrate.png",
+        "stickers/teacher-cheering.png"
+      ],
+      "title": "برافووووو!",
+      "messages": [
+        "ممتاز!",
+        "أحسنت!",
+        "برافو عليك!"
+      ],
+      "sound": "برافو",
+      "messagesMale": [
+        "شاطر!"
+      ],
+      "messagesFemale": [
+        "شاطرة!"
+      ]
+    },
+    "streak": {
+      "stickers": [
+        "stickers/teacher-cheering.png"
+      ],
+      "title": "برافووووو!",
+      "messages": [
+        "برافو عليك!",
+        "ممتاز!"
+      ],
+      "sound": "برافو",
+      "messagesMale": [
+        "شاطر!"
+      ],
+      "messagesFemale": [
+        "شاطرة!"
+      ]
+    },
+    "lessonComplete": {
+      "stickers": [
+        "stickers/graduates-celebrate.png"
+      ],
+      "title": "برافووووو!",
+      "messages": [
+        "أهلاً وسهلاً في عيلة مدرسة السما للغات!"
+      ],
+      "sound": "برافو"
+    },
+    "tryAgain": {
+      "stickers": [
+        "stickers/teacher-helping-student.png"
+      ],
+      "title": "يلا، جرّب مرة تانية!",
+      "messages": [
+        "كل محاولة بتعلّمك شي جديد!"
+      ],
+      "titleFemale": "يلا، جرّبي مرة تانية!"
+    }
+  }
+}

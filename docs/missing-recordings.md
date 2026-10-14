@@ -50,7 +50,16 @@ For each letter below, record the letter with a fatha (e.g. تَ "ta"). Hard let
 One example word per letter. The word list will be chosen in **Stage 3** and added
 here, so you can record them in one session.
 
-### 3. Encouragement messages (priority: optional)
+### 3. Celebration sound "برافووووو!" (priority: high)
+
+A short (1–3 second) recording of you saying **برافووووو!** in the way you want students
+to hear it. Save as `assets/audio/phrases/bravo.mp3` and add to the manifest:
+`"برافو": "audio/phrases/bravo.mp3",` — the celebration screen will play it automatically.
+
+The 28-second WhatsApp voice note received on 14 Oct 2026 is **not** used in the app yet:
+it could not be listened to here, and it is too long for a celebration sound.
+
+### 4. Encouragement messages (priority: optional)
 
 برافو! · ممتاز! · برافو عليك! · شاطر! · شاطرة! · يلا، جرّب مرة تانية! · كل محاولة بتعلّمك شي جديد! · أهلاً وسهلاً في عيلة مدرسة السما للغات!
 

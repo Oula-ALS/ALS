@@ -30,11 +30,12 @@ Non-connecting letters: ا د ذ ر ز و.
 
 ## Stages
 
-0 Inspect ✅ · 1 Setup ✅ · 2 Core shell · 3 Alphabet explorer · 4 Lessons + tracing ·
+0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 3 Alphabet explorer · 4 Lessons + tracing ·
 5 Stickers · 6 Games · 7 Progress · 8 Teacher email reports · 9 Full QA
 
 ## Assets
 
 - Audio: `assets/audio/manifest.json` maps Arabic text → file. Regenerate legacy clips with
   `node scripts/extract-assets.js`.
-- Stickers: `docs/sticker-list.md`. Logo: `assets/logo/alsama-language-school.png`.
+- Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
+  `assets/stickers/stickers.json` (see `docs/sticker-list.md`). Graduates sticker replaces the old owl. Logo: `assets/logo/alsama-language-school.png`.
