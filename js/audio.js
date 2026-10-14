@@ -32,10 +32,14 @@ function setState(button, state) {
   button.setAttribute('aria-busy', state === 'loading' ? 'true' : 'false');
 }
 
+// Tells music.js to fade the background music down / back up.
+const voice = state => window.dispatchEvent(new CustomEvent('alsama:voice', { detail: state }));
+
 export function stopAudio() {
   if (current) {
     current.pause();
     current = null;
+    voice('end');
   }
   setState(currentButton, 'idle');
   currentButton = null;
@@ -43,8 +47,10 @@ export function stopAudio() {
 
 // Plays the recording for `key` (the Arabic text). `button` is optional and
 // gets a visual loading / playing / error state.
+// options.quiet: no message if the browser blocks it (used for automatic playback)
+// options.onEnded: called when the recording finishes playing
 // Returns 'played', 'missing', 'muted' or 'error'.
-export async function playAudio(key, button) {
+export async function playAudio(key, button, { quiet = false, onEnded } = {}) {
   stopAudio();
   if (getSettings().muted) {
     showAudioMessage('Sound is off. Tap 🔇 at the top to turn it on.');
@@ -62,10 +68,12 @@ export async function playAudio(key, button) {
   current = audio;
   currentButton = button || null;
   setState(button, 'loading');
+  voice('start');
 
   audio.addEventListener('playing', () => setState(button, 'playing'));
   audio.addEventListener('ended', () => {
     if (current === audio) stopAudio();
+    if (onEnded) onEnded();
   });
 
   try {
@@ -76,7 +84,9 @@ export async function playAudio(key, button) {
     console.error('Audio failed', key, e);
     setState(button, 'error');
     current = null;
-    showAudioMessage("Sorry, this sound didn't play. Check your volume and try again.");
+    voice('end');
+    if (quiet) setState(button, 'idle');
+    else showAudioMessage("Sorry, this sound didn't play. Check your volume and try again.");
     return 'error';
   }
 }
