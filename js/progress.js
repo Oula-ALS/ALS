@@ -1,18 +1,28 @@
-// Student profiles and settings, saved in this browser only (localStorage).
+// Student profiles, learning progress and settings, saved in this browser (localStorage).
 // Each student has their own record, so several students can share one device.
-// The shape is ready to move to a Supabase "students" table later.
+// Registration details are ALSO sent to Alsama by js/register.js; learning
+// progress stays separate and is not sent.
 
 const KEY = 'alsama.v1';
 
 function blank() {
-  return { students: [], currentStudentId: null, settings: { muted: false } };
+  return {
+    students: [],
+    currentStudentId: null,
+    settings: { muted: false, musicOn: true, musicVolume: 0.5 },
+    progress: {},   // per student id: learning progress (kept apart from registration details)
+  };
 }
 
 function load() {
   try {
     const data = JSON.parse(localStorage.getItem(KEY));
     if (data && Array.isArray(data.students)) {
-      return { ...blank(), ...data, settings: { ...blank().settings, ...data.settings } };
+      return {
+        ...blank(), ...data,
+        settings: { ...blank().settings, ...data.settings },
+        progress: data.progress || {},
+      };
     }
   } catch (e) { /* storage unavailable or corrupted: start fresh */ }
   return blank();
@@ -54,7 +64,8 @@ export function setCurrentStudent(id) {
   save();
 }
 
-// fields: { firstName, nickname, birthday: {day, month} | null, favouriteWord, address: 'm' | 'f' | 'n' }
+// fields: { firstName, nickname, birthday: {day, month} | null, favouriteWord, address: 'm' | 'f' | 'n',
+//           registration: { ageGroup, country, nativeLanguage, level, email, parentConsent } }
 export function saveStudent(fields, id) {
   const clean = {
     firstName: String(fields.firstName || '').trim().slice(0, 40),
@@ -63,6 +74,7 @@ export function saveStudent(fields, id) {
     favouriteWord: String(fields.favouriteWord || '').trim().slice(0, 40),
     address: ['m', 'f'].includes(fields.address) ? fields.address : 'n',
   };
+  if (fields.registration) clean.registration = fields.registration;
   if (!clean.firstName) throw new Error('First name is required');
 
   let student = id && getStudent(id);
@@ -77,8 +89,17 @@ export function saveStudent(fields, id) {
   return student;
 }
 
+// After the server confirms registration: { id, deleteToken, status: 'sent' | 'pending' }
+export function setRemote(studentId, remote) {
+  const s = getStudent(studentId);
+  if (!s) return;
+  s.remote = { ...s.remote, ...remote };
+  save();
+}
+
 export function deleteStudent(id) {
   state.students = state.students.filter(s => s.id !== id);
+  delete state.progress[id];
   if (state.currentStudentId === id) state.currentStudentId = null;
   save();
 }
@@ -94,6 +115,19 @@ export function isBirthdayToday(student) {
   return student.birthday.day === now.getDate() && student.birthday.month === now.getMonth() + 1;
 }
 
+// ---- Learning progress (separate from personal details) -------------------
+
+export function getProgress(studentId) {
+  const p = state.progress[studentId] || {};
+  return { lettersHeard: p.lettersHeard || [], lastLetter: p.lastLetter || 1, alphabetDone: Boolean(p.alphabetDone) };
+}
+
+export function updateProgress(studentId, changes) {
+  if (!getStudent(studentId)) return;
+  state.progress[studentId] = { ...getProgress(studentId), ...changes, updatedAt: new Date().toISOString() };
+  save();
+}
+
 // ---- Settings -----------------------------------------------------------
 
 export function getSettings() {
@@ -102,5 +136,11 @@ export function getSettings() {
 
 export function setMuted(muted) {
   state.settings.muted = Boolean(muted);
+  save();
+}
+
+export function setMusic({ on, volume }) {
+  if (on !== undefined) state.settings.musicOn = Boolean(on);
+  if (volume !== undefined) state.settings.musicVolume = Math.min(1, Math.max(0, Number(volume) || 0));
   save();
 }

@@ -21,7 +21,15 @@
     <nav class="header-actions" aria-label="Main">
       <a class="header-student" id="header-student" href="#/who" hidden title="Switch learner"></a>
       <a class="header-link" href="#/about">About</a>
+      <button class="icon-button" id="music-menu" type="button" aria-expanded="false"
+              aria-controls="music-panel" aria-label="Music settings">🎵</button>
       <button class="icon-button" id="mute" type="button" aria-pressed="false" aria-label="Sound is on. Turn sound off">🔊</button>
+      <div class="music-panel" id="music-panel" hidden>
+        <button class="music-toggle" id="music-toggle" type="button" aria-pressed="true">🎵 Music on</button>
+        <label for="music-volume">Music volume</label>
+        <input id="music-volume" type="range" min="0" max="100" step="5" value="50">
+        <p>The voice is always louder than the music.</p>
+      </div>
     </nav>
   </header>
   <main id="app" tabindex="-1">

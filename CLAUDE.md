@@ -13,8 +13,9 @@ completed · files changed · how to test · what remains · single next action.
 4. No secrets in browser code. Secrets live only in Vercel environment variables.
 5. Never invent Alsama images. Use labelled placeholders until real photos are uploaded.
 6. Test before saying "done". A visible button is not a working feature.
-7. Student progress is shared with the teacher **transparently** (a visible line on the profile
-   screen and About page). Never collect or send data covertly.
+7. Registration details are sent to Alsama **transparently**: the form explains why, only name
+   and age group are required, under-13s need parent/guardian consent, learners can delete their
+   data. Learning progress stays on the device. Never collect or send data covertly.
 
 ## Brand
 
@@ -30,7 +31,8 @@ Non-connecting letters: ا د ذ ر ز و.
 
 ## Stages
 
-0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 3 Alphabet explorer · 4 Lessons + tracing ·
+0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 2b Registration, letter Back/Next/Home, music ✅ ·
+3 Alphabet explorer (letter pages exist at #/letters/N; add tips, forms, example words) · 4 Lessons + tracing ·
 5 Stickers · 6 Games · 7 Progress · 8 Teacher email reports · 9 Full QA
 
 ## Assets
@@ -39,3 +41,11 @@ Non-connecting letters: ا د ذ ر ز و.
   `node scripts/extract-assets.js`.
 - Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
   `assets/stickers/stickers.json` (see `docs/sticker-list.md`). Graduates sticker replaces the old owl. Logo: `assets/logo/alsama-language-school.png`.
+
+## Backend
+
+- `api/register.js`, `api/delete-registration.js`: Vercel functions → Supabase table `registrations`
+  (`supabase/schema.sql`, RLS on, no policies; only the service-role key in Vercel can access it).
+- Optional email via Resend. Setup steps for the owner: `docs/setup-registrations.md`.
+- Music and sound effects are generated in `js/music.js` (Web Audio, no files). Recordings duck the
+  music via the `alsama:voice` event from `js/audio.js`.

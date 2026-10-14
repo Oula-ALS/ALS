@@ -4,6 +4,7 @@
 
 import { playAudio, hasRecording } from './audio.js';
 import { getSettings } from './progress.js';
+import { sfx } from './music.js';
 
 let config = null;
 let lastSmallAt = 0;
@@ -45,7 +46,10 @@ export async function celebrate(event, { student } = {}) {
     english: e.english,
   });
 
-  // Celebration sound plays only if Alsama's own recording exists.
+  // A gentle chime for every celebration except "try again" (never a 'wrong' sound).
+  if (event !== 'tryAgain') sfx(small ? 'correct' : 'celebrate');
+
+  // Celebration voice plays only if Alsama's own recording exists.
   if (e.sound && !getSettings().muted && await hasRecording(e.sound)) playAudio(e.sound);
 }
 
