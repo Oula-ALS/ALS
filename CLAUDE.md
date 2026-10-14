@@ -27,12 +27,13 @@ Warm, inclusive, polished; for teens and adults, not preschool.
 
 Teach 28 letters with MSA spelling and Levantine (Shami) pronunciation. Label MSA vs Shami
 where they differ. Honest descriptions of ع ح خ غ ق ص ض ط ظ (no fake English equivalents).
-Non-connecting letters: ا د ذ ر ز و.
+Non-connecting letters: ا د ذ ر ز و. Letter content lives in `js/data/letters.js`; every shape
+example must contain the letter once, in the labelled position (verified by script in Stage 3).
 
 ## Stages
 
 0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 2b Registration, letter Back/Next/Home, music ✅ ·
-3 Alphabet explorer (letter pages exist at #/letters/N; add tips, forms, example words) · 4 Lessons + tracing ·
+3 Alphabet explorer ✅ (tips, Shami notes, example words, shapes in words, find-the-letter) · 4 Lessons + tracing ·
 5 Stickers · 6 Games · 7 Progress · 8 Teacher email reports · 9 Full QA
 
 ## Assets

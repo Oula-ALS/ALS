@@ -47,8 +47,35 @@ For each letter below, record the letter with a fatha (e.g. تَ "ta"). Hard let
 
 ### 2. Example words (priority: high)
 
-One example word per letter. The word list will be chosen in **Stage 3** and added
-here, so you can record them in one session.
+Each letter page shows one everyday example word. Six already have your recordings
+(بيت، دار، سمك، موز، نور، ورد). Please record these, said the way you say them in Shami:
+
+| Letter | Word | Say it | Meaning | Suggested file name |
+|---|---|---|---|---|
+| ا | أرنب | arnab | rabbit | `words/arnab.mp3` |
+| ت | تفاحة | tiffāḥa | apple | `words/tiffaha.mp3` |
+| ث | ثلج | talj | snow | `words/talj.mp3` |
+| ج | جبنة | jibne | cheese | `words/jibne.mp3` |
+| ح | حليب | ḥalīb | milk | `words/halib.mp3` |
+| خ | خبز | khebez | bread | `words/khebez.mp3` |
+| ذ | ذهب | dahab | gold | `words/dahab.mp3` |
+| ر | رز | rizz | rice | `words/rizz.mp3` |
+| ز | زيتون | zeitūn | olives | `words/zeitun.mp3` |
+| ش | شمس | shams | sun | `words/shams.mp3` |
+| ص | صابون | ṣābūn | soap | `words/sabun.mp3` |
+| ض | ضفدع | ḍifdaʿ | frog | `words/difda.mp3` |
+| ط | طاولة | ṭāwle | table | `words/tawle.mp3` |
+| ظ | ظرف | ẓarf | envelope | `words/zarf.mp3` |
+| ع | عنب | ʿinab | grapes | `words/inab.mp3` |
+| غ | غيمة | ghēme | cloud | `words/gheme.mp3` |
+| ف | فلافل | falāfel | falafel | `words/falafel.mp3` |
+| ق | قهوة | ʾahwe | coffee | `words/ahwe.mp3` |
+| ك | كتاب | ktāb | book | `words/ktab.mp3` |
+| ل | ليمون | laymūn | lemon | `words/laymun.mp3` |
+| ه | هوا | hawa | air, wind | `words/hawa.mp3` |
+| ي | ياسمين | yasmīn | jasmine | `words/yasmin.mp3` |
+
+Manifest line example: `"تفاحة": "audio/words/tiffaha.mp3",` (the key is the word exactly as written above, without vowel marks).
 
 ### 3. Celebration sound "برافووووو!" (priority: high)
 

@@ -119,7 +119,12 @@ export function isBirthdayToday(student) {
 
 export function getProgress(studentId) {
   const p = state.progress[studentId] || {};
-  return { lettersHeard: p.lettersHeard || [], lastLetter: p.lastLetter || 1, alphabetDone: Boolean(p.alphabetDone) };
+  return {
+    lettersHeard: p.lettersHeard || [],
+    lastLetter: p.lastLetter || 1,
+    alphabetDone: Boolean(p.alphabetDone),
+    practice: p.practice || {},   // per letter: { ok, miss, last } — used later for review suggestions
+  };
 }
 
 export function updateProgress(studentId, changes) {

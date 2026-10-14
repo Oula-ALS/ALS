@@ -7,7 +7,7 @@ import { stopAudio, playAudio, showAudioMessage } from './audio.js';
 import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
 import { sendRegistration, sendPendingRegistrations, deleteRegistration } from './register.js';
-import { LETTERS } from './data/letters.js';
+import { LETTERS, LOOKALIKES } from './data/letters.js';
 
 const app = document.getElementById('app');
 
@@ -243,9 +243,11 @@ function letterScreen(n) {
           🔊 Listen
         </button>
         <p class="heard ${heard ? 'is-heard' : ''}" id="heard">${heard ? '✓ Heard' : 'Tap to listen'}</p>
-        ${L.joins === false ? '<p class="letter-note">🔗 This letter never joins the letter after it.</p>' : ''}
         ${L.hard ? '<p class="letter-note">👂 A special Arabic sound — listen carefully and repeat it out loud.</p>' : ''}
       </div>
+
+      ${letterDetails(L)}
+      ${findActivity(i)}
 
       ${stepNav(i > 1 ? `letters/${i - 1}` : null, i < LETTERS.length ? `letters/${i + 1}` : 'letters/done')}
 
@@ -254,6 +256,125 @@ function letterScreen(n) {
            ${j + 1 === i ? 'aria-current="page"' : ''} aria-label="Letter ${j + 1}, ${x.latin}">${x.char}</a>`).join('')}
       </nav>
     </section>`;
+}
+
+const POS_LABEL = { alone: 'Alone', start: 'Start', middle: 'Middle', end: 'End' };
+const TATWEEL = 'ـ';
+const glyph = (c, pos) => ({ alone: c, start: c + TATWEEL, middle: TATWEEL + c + TATWEEL, end: TATWEEL + c }[pos]);
+
+// How to say it · example word · shapes
+function letterDetails(L) {
+  const w = L.word;
+  return `
+    <section class="card letter-section">
+      <h2>How to say it</h2>
+      <div class="sound-row">
+        ${L.sound
+          ? `<button class="speaker-pill" type="button" data-say="${L.sound}">🔊 Sound <span lang="ar" dir="rtl">${L.sound}</span></button>`
+          : '<span class="soon-pill">🎙️ Letter sound: recording coming soon</span>'}
+      </div>
+      <p>${L.tip}</p>
+      ${L.shami ? `<p class="note shami"><b>In Shami:</b> ${L.shami}</p>` : ''}
+    </section>
+
+    <section class="card letter-section">
+      <h2>Example word</h2>
+      <div class="word-card">
+        <span class="word-emoji" aria-hidden="true">${w.emoji}</span>
+        <div>
+          <p class="word-ar" lang="ar" dir="rtl">${w.ar}</p>
+          <p class="word-en"><b>${w.latin}</b> · ${w.en}</p>
+          ${w.msa ? `<p class="word-msa"><span class="tag">MSA</span> ${w.msa} &nbsp; <span class="tag shami-tag">Shami</span> ${w.latin}</p>` : ''}
+        </div>
+        <button class="icon-button word-play" type="button" data-say="${w.ar}" aria-label="Listen to ${w.latin}">🔊</button>
+      </div>
+    </section>
+
+    <section class="card letter-section">
+      <h2>Letter shapes</h2>
+      <p class="hint">${L.joins === false
+        ? '🔗 This letter <b>never joins the letter after it</b>, so it only has two shapes. The next letter starts fresh.'
+        : 'Arabic letters change shape depending on where they are in a word.'}</p>
+      <div class="forms-grid">
+        ${L.forms.map(f => `
+          <div class="form-box">
+            <span class="form-glyph" lang="ar">${glyph(L.char, f.pos)}</span>
+            <small class="form-label">${POS_LABEL[f.pos]}</small>
+            ${f.word ? `<span class="form-word" lang="ar" dir="rtl">${f.word}</span>
+              <small>${f.latin}${f.en ? ' · ' + f.en : ''}</small>` : '<small>(rare in everyday words)</small>'}
+          </div>`).join('')}
+      </div>
+    </section>`;
+}
+
+// Fisher–Yates shuffle: every order is equally likely.
+function shuffle(list) {
+  const a = [...list];
+  for (let k = a.length - 1; k > 0; k--) {
+    const r = Math.floor(Math.random() * (k + 1));
+    [a[k], a[r]] = [a[r], a[k]];
+  }
+  return a;
+}
+
+// "Find the letter": the target plus look-alike letters, in random positions.
+function findActivity(i) {
+  const L = LETTERS[i - 1];
+  const similar = LOOKALIKES.filter(g => g.includes(L.char)).flat().filter(c => c !== L.char);
+  const others = shuffle(LETTERS.map(x => x.char).filter(c => c !== L.char && !similar.includes(c)));
+  const options = shuffle([L.char, ...shuffle([...new Set(similar)]).slice(0, 3), ...others].slice(0, 4));
+  return `
+    <section class="card letter-section activity" id="activity" data-target="${L.char}" data-tries="0">
+      <h2>Quick practice</h2>
+      <p>Find <span class="target" lang="ar">${L.char}</span> <b>${L.latin}</b></p>
+      <div class="find-options">
+        ${options.map(c => `<button class="find-option" type="button" lang="ar" data-find="${c}"
+            aria-label="${LETTERS.find(x => x.char === c).latin}">${c}</button>`).join('')}
+      </div>
+      <p class="find-feedback" id="find-feedback" role="status"></p>
+    </section>`;
+}
+
+function answerFind(button) {
+  const box = document.getElementById('activity');
+  const target = box.dataset.target;
+  const chosen = button.dataset.find;
+  const fb = document.getElementById('find-feedback');
+  const s = store.getCurrentStudent();
+  const L = LETTERS.find(x => x.char === target);
+  const tries = Number(box.dataset.tries) + 1;
+  box.dataset.tries = tries;
+  const practice = store.getProgress(s.id).practice;
+  const rec = practice[target] || { ok: 0, miss: 0 };
+
+  if (chosen === target) {
+    button.classList.add('ok');
+    box.querySelectorAll('.find-option').forEach(b => { b.disabled = true; });
+    rec.ok += 1;
+    fb.className = 'find-feedback ok';
+    fb.innerHTML = `✓ <span lang="ar" dir="rtl">${s.address === 'f' ? 'شاطرة!' : s.address === 'm' ? 'شاطر!' : 'برافو!'}</span>
+      That's <span lang="ar">${target}</span> (${L.latin}).
+      <button class="link-button" type="button" data-again>Practise again</button>`;
+    sfx('correct');
+    // A sticker only for a first-try win on a hard letter (meaningful, not every click).
+    if (tries === 1 && L.hard) celebrate('correct', { student: s });
+  } else {
+    const wrong = LETTERS.find(x => x.char === chosen);
+    button.classList.add('bad');
+    button.disabled = true;
+    rec.miss += 1;
+    fb.className = 'find-feedback try';
+    fb.innerHTML = `That one is <span lang="ar">${chosen}</span> (${wrong.latin}). Look closely at the
+      ${similarHint(target, chosen)} — <span lang="ar" dir="rtl">${s.address === 'f' ? 'جرّبي' : 'جرّب'} مرة تانية!</span>`;
+    if (tries >= 2) celebrate('tryAgain', { student: s });
+  }
+  rec.last = new Date().toISOString();
+  store.updateProgress(s.id, { practice: { ...practice, [target]: rec } });
+}
+
+function similarHint(a, b) {
+  const sameGroup = LOOKALIKES.some(g => g.includes(a) && g.includes(b));
+  return sameGroup ? 'dots (how many, above or below?)' : 'shape';
 }
 
 function lettersDoneScreen() {
@@ -440,7 +561,7 @@ function playLetter(i, button, quiet = false) {
 // ---- Actions --------------------------------------------------------------
 
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-go],[data-pick],[data-edit],[data-delete],[data-letter-say],#mute,#music-toggle,#music-menu');
+  const t = e.target.closest('[data-go],[data-pick],[data-edit],[data-delete],[data-letter-say],[data-find],[data-again],#mute,#music-toggle,#music-menu');
   if (!t) return;
 
   if (t.id === 'mute') {
@@ -456,6 +577,12 @@ document.addEventListener('click', e => {
     store.setMusic({ on: !store.getSettings().musicOn });
     applyMusicSettings();
     updateHeader();
+  } else if (t.dataset.find) {
+    answerFind(t);
+  } else if (t.hasAttribute('data-again')) {
+    const i = Number(location.hash.split('/')[2]);
+    document.getElementById('activity').outerHTML = findActivity(i);
+    document.querySelector('#activity .find-option').focus();
   } else if (t.dataset.letterSay) {
     playLetter(Number(t.dataset.letterSay), t.closest('.letter-card').querySelector('.speaker-pill'));
   } else if (t.dataset.go === 'start') {

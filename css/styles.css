@@ -101,7 +101,7 @@ main:focus { outline: none; }
 [data-audio-state="error"], [data-audio-state="missing"] { border-style: dashed; }
 
 #audio-message {
-  position: fixed; left: 50%; bottom: 24px; z-index: 40;
+  position: fixed; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); z-index: 40;
   transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
   background: var(--burgundy); color: var(--white); padding: 10px 18px; border-radius: 14px;
   font-weight: 700; transition: opacity .2s, transform .2s; max-width: calc(100% - 32px); text-align: center;
@@ -344,4 +344,59 @@ button[disabled] { cursor: not-allowed; }
   .letter-big { width: 150px; height: 150px; font-size: 92px; }
   .step { font-size: 16px; padding: 10px 12px; }
   .music-panel { right: -8px; }
+}
+
+/* ---- Letter page details (Stage 3) -------------------------------------- */
+
+.letter-section { margin-top: 14px; }
+.letter-section h2 { margin: 0 0 10px; font-size: 20px; }
+.letter-section p { margin: 8px 0 0; }
+.sound-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.sound-row .speaker-pill { margin-top: 0; }
+.soon-pill { display: inline-block; padding: 8px 14px; border-radius: 999px; border: 2px dashed var(--line); color: var(--text-soft); font-size: 15px; }
+.note.shami { padding: 10px 12px; border-radius: 12px; background: var(--blush); color: var(--burgundy); }
+
+.word-card { display: flex; align-items: center; gap: 14px; }
+.word-emoji { font-size: 52px; line-height: 1; flex: none; }
+.word-card > div { flex: 1; }
+.word-ar { font-family: var(--font-ar); font-size: 40px; line-height: 1.4; color: var(--magenta); margin: 0 !important; }
+.word-en { margin: 0 !important; }
+.word-msa { font-size: 14px; color: var(--text-soft); }
+.tag { display: inline-block; font-size: 12px; font-weight: 800; padding: 1px 8px; border-radius: 999px; background: var(--line); color: var(--burgundy); }
+.shami-tag { background: var(--pink); }
+.word-play { width: 52px; height: 52px; font-size: 24px; }
+
+.forms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-top: 12px; }
+.form-box { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 10px 6px; border-radius: 16px; background: var(--cream); border: 2px solid var(--line); }
+.form-glyph { font-family: var(--font-ar); font-size: 48px; line-height: 1.5; color: var(--magenta); }
+.form-label { font-weight: 800; color: var(--burgundy); text-transform: uppercase; letter-spacing: .04em; font-size: 12px; }
+.form-word { font-family: var(--font-ar); font-size: 26px; line-height: 1.6; margin-top: 4px; }
+.form-box small { color: var(--text-soft); }
+
+.activity .target { font-family: var(--font-ar); font-size: 34px; color: var(--magenta); vertical-align: middle; }
+.find-options { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; direction: rtl; }
+.find-option {
+  min-height: 72px; border: 2px solid var(--line); border-radius: 18px; background: var(--white);
+  font: 700 40px/1 var(--font-ar); color: var(--text); cursor: pointer;
+}
+.find-option:hover:not([disabled]) { border-color: var(--magenta); }
+.find-option.ok { background: #1B7A47; border-color: #1B7A47; color: var(--white); }
+.find-option.bad { background: #F7E3E8; border-color: var(--danger); color: var(--danger); animation: shake .3s; }
+.find-feedback { min-height: 1.6em; font-weight: 700; }
+.find-feedback.ok { color: #1B7A47; }
+.find-feedback.try { color: var(--burgundy); }
+.find-feedback [lang="ar"] { font-size: 22px; }
+.link-button { border: 0; background: none; color: var(--magenta); font: inherit; font-weight: 800; text-decoration: underline; cursor: pointer; padding: 4px; }
+@keyframes shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+
+/* Back / Home / Next stays reachable at the bottom of long letter pages */
+.letter-screen .step-nav {
+  position: sticky; bottom: 0; z-index: 5; margin: 18px -16px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: rgba(255, 249, 245, .95); backdrop-filter: blur(6px); border-top: 1px solid var(--line);
+}
+
+@media (max-width: 480px) {
+  .word-ar { font-size: 34px; }
+  .word-emoji { font-size: 42px; }
+  .find-option { min-height: 64px; font-size: 34px; }
 }
