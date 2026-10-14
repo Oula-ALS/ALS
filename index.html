@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Alsama Arabic · Levantine Arabic for Beginners</title>
+  <meta name="description" content="Learn Levantine (Shami) Arabic with Alsama Language School.">
+  <link rel="icon" href="assets/logo/alsama-language-school.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
 </head>
 <body>
-  <!-- Stage 1 placeholder. Stage 2 replaces this with the real welcome screen. -->
-  <main class="placeholder">
-    <img class="logo" src="assets/logo/alsama-language-school.png" alt="Alsama Language School">
-    <h1 lang="ar" dir="rtl">أهلاً وسهلاً!</h1>
-    <p class="lead">Welcome to the Alsama Language School family!</p>
-    <p class="ar-line" lang="ar" dir="rtl">يلا نتعلّم عربي شامي سوا!</p>
-    <p class="muted">Our new Levantine Arabic app is being built. In the meantime, you can use the current alphabet app.</p>
-    <a class="button" href="legacy/arabic-alphabet-app.html">Open the alphabet app</a>
+  <a class="skip-link" href="#app">Skip to content</a>
+  <header class="site-header">
+    <a class="header-logo" href="#/home" aria-label="Alsama Language School home">
+      <img src="assets/logo/alsama-language-school.png" alt="">
+    </a>
+    <nav class="header-actions" aria-label="Main">
+      <a class="header-student" id="header-student" href="#/who" hidden title="Switch learner"></a>
+      <a class="header-link" href="#/about">About</a>
+      <button class="icon-button" id="mute" type="button" aria-pressed="false" aria-label="Sound is on. Turn sound off">🔊</button>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1">
+    <noscript>Please turn on JavaScript to use the Alsama Arabic app.</noscript>
   </main>
 </body>
 </html>
