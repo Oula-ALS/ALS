@@ -29,14 +29,14 @@ const go = route => { location.hash = '#/' + route; };
 function welcomeScreen() {
   return `
     <section class="welcome">
-      <img class="welcome-logo" src="assets/logo/alsama-language-school.png" alt="Alsama Language School">
+      <img class="welcome-hero" src="assets/images/welcome-yalla-netaallam.jpg"
+           alt="An Alsama teacher smiling with open hands, under the words يلا نتعلم عربي — let's learn Arabic">
       <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً!</h1>
       <p class="lead">Welcome to the Alsama Language School family!</p>
 
       <figure class="photo-frame">
         <img src="assets/images/students-library.jpg"
              alt="Alsama students smiling together in the library">
-        <img class="sticker sticker-corner" src="assets/stickers/graduates-celebrate.png" alt="">
       </figure>
 
       <p class="ar-line" lang="ar" dir="rtl">يلا نتعلّم عربي لبناني سوا!</p>

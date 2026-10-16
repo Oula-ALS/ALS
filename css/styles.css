@@ -583,3 +583,6 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
   .learn-forms { grid-template-columns: repeat(2, 1fr); }
 }
 .button[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; transform: none; }
+
+/* Welcome page photo (replaces the big logo and the graduates sticker) */
+.welcome-hero { display: block; width: 280px; max-width: 75%; margin: 0 auto; border-radius: 26px; box-shadow: var(--shadow); background: var(--white); }
