@@ -99,12 +99,12 @@ because each one still needs to be matched to the word or sound it contains.
 
 | File | Length after cleaning | What does it say? |
 |---|---|---|
-| clip-1.mp3 (sent 10:54:04) | 1.6 s | ? (name had 4 letters — maybe شاطر) |
-| clip-2.mp3 (sent 10:54:08) | 2.0 s | ? (name had 5 letters — maybe شاطرة or ممتاز) |
+| clip-1.mp3 (sent 10:54:04) | 1.6 s | ✅ شاطر → `phrases/shater.mp3` |
+| clip-2.mp3 (sent 10:54:08) | 2.0 s | ✅ شاطرة → `phrases/shatra.mp3` |
 | clip-3.mp3 (sent 10:54:39) | 3.1 s | ✅ برافوو → now `phrases/bravo.mp3`, used in celebrations |
 | clip-4.mp3 (sent 10:54:50) | 4.3 s | ? |
 | clip-5.mp3 (sent 10:54:57) | 5.6 s | ? |
-| clip-6.mp3 (sent later, Arabic file name lost: 18 characters) | 2.4 s | ? (maybe يلا جرّب مرة تانية — waiting for confirmation) |
+| clip-6.mp3 (sent later) | 2.4 s | ✅ يلا جرّب مرة تانية → `phrases/yalla-jarreb.mp3` (masculine; a feminine جرّبي version would be welcome) |
 
 ## Audio cleaning
 

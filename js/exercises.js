@@ -278,7 +278,9 @@ function answerChoose(btn) {
     btn.disabled = true;
     feedback(`<span lang="ar" dir="rtl">${tryAgain(store.getCurrentStudent())}</span>
       ${o.why ? esc(o.why) : ex.hint ? esc(ex.hint) : ''}`, 'try');
-    if (ex.audio) playAudio(ex.audio, document.querySelector('[data-ex-play]'), { quiet: true });
+    // After a second wrong try: a gentle "try again" sticker (at most every 30 s).
+    if (ex.tries === 2) celebrate('tryAgain', { student: store.getCurrentStudent() });
+    else if (ex.audio) playAudio(ex.audio, document.querySelector('[data-ex-play]'), { quiet: true });
   }
 }
 

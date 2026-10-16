@@ -1,5 +1,5 @@
 {
-  "_comment": "Which real Alsama photo appears for each event. Swap a file name here to change a sticker; no code changes needed. 'sound' is an Arabic key from assets/audio/manifest.json (optional). 'messagesMale'/'messagesFemale' and 'titleFemale' are used only when the student chose شاطر or شاطرة.",
+  "_comment": "Which real Alsama photo and recorded voice appear for each event. Swap a file name here to change a sticker; no code changes needed. 'sounds' are Arabic keys from assets/audio/manifest.json (one is picked at random); 'soundsMale'/'soundsFemale' replace them when the student chose شاطر or شاطرة (an empty list means no voice). 'messagesMale'/'messagesFemale' and 'titleFemale' work the same way.",
   "events": {
     "welcome": {
       "stickers": [
@@ -10,7 +10,17 @@
         "أهلاً وسهلاً في عيلة مدرسة السما للغات!"
       ],
       "english": "Welcome to the Alsama Language School family!",
-      "sound": "برافو"
+      "sounds": [
+        "برافو"
+      ],
+      "soundsMale": [
+        "برافو",
+        "شاطر"
+      ],
+      "soundsFemale": [
+        "برافو",
+        "شاطرة"
+      ]
     },
     "correct": {
       "stickers": [
@@ -23,12 +33,22 @@
         "أحسنت!",
         "برافو عليك!"
       ],
-      "sound": "برافو",
       "messagesMale": [
         "شاطر!"
       ],
       "messagesFemale": [
         "شاطرة!"
+      ],
+      "sounds": [
+        "برافو"
+      ],
+      "soundsMale": [
+        "برافو",
+        "شاطر"
+      ],
+      "soundsFemale": [
+        "برافو",
+        "شاطرة"
       ]
     },
     "streak": {
@@ -40,12 +60,22 @@
         "برافو عليك!",
         "ممتاز!"
       ],
-      "sound": "برافو",
       "messagesMale": [
         "شاطر!"
       ],
       "messagesFemale": [
         "شاطرة!"
+      ],
+      "sounds": [
+        "برافو"
+      ],
+      "soundsMale": [
+        "برافو",
+        "شاطر"
+      ],
+      "soundsFemale": [
+        "برافو",
+        "شاطرة"
       ]
     },
     "lessonComplete": {
@@ -56,7 +86,17 @@
       "messages": [
         "أهلاً وسهلاً في عيلة مدرسة السما للغات!"
       ],
-      "sound": "برافو"
+      "sounds": [
+        "برافو"
+      ],
+      "soundsMale": [
+        "برافو",
+        "شاطر"
+      ],
+      "soundsFemale": [
+        "برافو",
+        "شاطرة"
+      ]
     },
     "tryAgain": {
       "stickers": [
@@ -66,7 +106,11 @@
       "messages": [
         "كل محاولة بتعلّمك شي جديد!"
       ],
-      "titleFemale": "يلا، جرّبي مرة تانية!"
+      "titleFemale": "يلا، جرّبي مرة تانية!",
+      "sounds": [
+        "يلا جرب مرة تانية"
+      ],
+      "soundsFemale": []
     }
   }
 }

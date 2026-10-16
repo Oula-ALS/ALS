@@ -49,7 +49,12 @@ export async function celebrate(event, { student } = {}) {
   // Alsama's own recorded voice (e.g. "برافوو") when it exists; otherwise a gentle chime.
   // Never both, so sounds don't overlap. "Try again" never plays a 'wrong' sound.
   if (getSettings().muted) return;
-  if (e.sound && await hasRecording(e.sound)) playAudio(e.sound, null, { quiet: true });
+  let sounds = e.sounds || [];
+  if (address === 'm' && e.soundsMale) sounds = e.soundsMale;
+  if (address === 'f' && e.soundsFemale) sounds = e.soundsFemale;
+  const available = [];
+  for (const key of sounds) if (await hasRecording(key)) available.push(key);
+  if (available.length) playAudio(pick(available), null, { quiet: true });
   else if (event !== 'tryAgain') sfx(small ? 'correct' : 'celebrate');
 }
 
