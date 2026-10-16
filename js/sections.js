@@ -397,6 +397,150 @@ function reviewItems() {
   return out.filter(ex => !seen.has(ex.id) && seen.add(ex.id));
 }
 
+
+// ---- Letter shapes, joining and tracing ---------------------------------------
+
+const TATWEEL = 'ـ';
+const glyph = (c, pos) => ({ alone: c, start: c + TATWEEL, middle: TATWEEL + c + TATWEEL, end: TATWEEL + c }[pos]);
+const POS = { alone: 'Alone', start: 'Start', middle: 'Middle', end: 'End' };
+const NON_JOINING = LETTERS.filter(l => l.joins === false).map(l => l.char);
+
+function whichShape() {
+  const L = pick(LETTERS.filter(l => l.joins !== false));
+  const f = pick(L.forms.filter(x => x.word));
+  return {
+    type: 'choose', kind: 'letter', item: L.char, id: 'shape:' + L.char + f.pos,
+    display: glyph(L.char, f.pos), displaySub: `The letter ${L.latin}`,
+    prompt: 'Which shape of the letter is this?', promptAr: 'أيّا شكل للحرف هيدا؟',
+    options: L.forms.map(x => ({ label: POS[x.pos], value: x.pos })), answer: f.pos,
+    hint: 'A line on the left means it joins the next letter; a line on the right means it joins the letter before.',
+    explain: `${POS[f.pos]} — like in ${f.word} (${f.latin}).`,
+  };
+}
+
+function joinsNext() {
+  const L = pick(Math.random() < 0.4 ? LETTERS.filter(l => l.joins === false) : LETTERS);
+  const never = L.joins === false;
+  return {
+    type: 'choose', kind: 'letter', item: L.char, id: 'joins:' + L.char,
+    display: esc(L.char), displaySub: L.latin,
+    prompt: 'Does this letter join the letter after it?', promptAr: 'هالحرف بيلزق بالحرف اللي بعدو؟',
+    options: [{ label: 'Yes, it joins', value: 'yes' }, { label: 'No, never', value: 'no' }],
+    answer: never ? 'no' : 'yes',
+    explain: never ? `${L.char} is one of the 6 letters (${NON_JOINING.join(' ')}) that never join the next letter.`
+      : `${L.char} joins on both sides.`,
+  };
+}
+
+function neverJoins() {
+  const nj = pick(NON_JOINING);
+  const others = shuffle(LETTERS.filter(l => l.joins !== false)).slice(0, 3).map(l => l.char);
+  return {
+    type: 'choose', kind: 'letter', item: nj, id: 'never-joins:' + nj,
+    prompt: 'Which letter never joins the letter after it?', promptAr: 'أيّا حرف ما بيلزق بالحرف اللي بعدو؟',
+    options: shuffle([nj, ...others]).map(c => ({ label: c, ar: true, value: c })), answer: nj,
+    explain: `Only ${NON_JOINING.join(' ')} never join the next letter.`,
+  };
+}
+
+function traceLetter(c, pos = 'alone') {
+  const L = c ? letterBy(c) : pick(LETTERS);
+  return {
+    type: 'trace', kind: 'write', item: L.char, id: 'trace:' + L.char + pos, glyph: glyph(L.char, pos),
+    prompt: `Trace the letter ${L.latin}${pos !== 'alone' ? ` (${POS[pos].toLowerCase()} shape)` : ''}.`,
+    promptAr: 'ارسم الحرف فوق الخط الخفيف.',
+  };
+}
+
+function traceGroup() {
+  const group = pick(LOOKALIKES.filter(g => g.length >= 2));
+  return group.map(c => ({ ...traceLetter(c), id: 'trace-group:' + group.join('') + c,
+    prompt: `Trace ${letterBy(c).latin}. Watch the dots: ${group.join(' ')} only differ by dots or a small detail.` }));
+}
+
+// ---- Lessons: short explanation cards + practice -------------------------------
+
+const say = (key, label = key) => `<button class="speaker-pill" type="button" data-say="${key}" lang="ar">🔊 ${label}</button>`;
+const learn = (id, title, html) => ({ type: 'learn', id: 'learn:' + id, prompt: title, html });
+
+const LESSON_DEFS = {
+  'lesson-1': {
+    title: 'Lesson 1 · Meet the alphabet', titleAr: 'الدرس ١ · تعرّف عالأحرف', about: 'Right to left, 28 letters, and why dots matter.',
+    build: () => [
+      learn('1a', 'Arabic goes right to left', `
+        <p>Arabic is written and read from <b>right to left</b>. Books open from the other side too!</p>
+        <p class="learn-big" lang="ar" dir="rtl">مَرْحَبًا ← ${say('مَرْحَبًا', 'marḥaba')}</p>`),
+      learn('1b', '28 letters', `
+        <p>There are <b>28 letters</b>. Most are consonants; ا و ي also make long vowels.</p>
+        <p>Tap some letters to hear their names:</p>
+        <div class="learn-row">${LETTERS.slice(0, 6).map(L => say(L.name, L.char)).join('')}</div>`),
+      learn('1c', 'Dots matter!', `
+        <p>Many letters share the same body — only the <b>dots</b> change:</p>
+        <div class="learn-row">${['ب', 'ت', 'ث'].map(c => say(letterBy(c).name, c)).join('')}</div>
+        <p>ب has one dot below, ت two above, ث three above.</p>`),
+      hearLetter('ب'), hearLetter(), similarLetters(), similarLetters(), letterInWord(),
+    ],
+  },
+  'lesson-2': {
+    title: 'Lesson 2 · Letter shapes', titleAr: 'الدرس ٢ · أشكال الأحرف', about: 'Alone, start, middle and end shapes.',
+    build: () => {
+      const b = letterBy('ب');
+      return [
+        learn('2a', 'One letter, four shapes', `
+          <p>Arabic letters join together, so they change shape depending on where they are in a word:</p>
+          <div class="learn-forms">${b.forms.map(f => `<div><span lang="ar">${glyph('ب', f.pos)}</span>
+            <small>${POS[f.pos]}</small><span lang="ar" class="w">${f.word}</span><small>${f.latin}</small></div>`).join('')}</div>`),
+        learn('2b', 'How to spot the shape', `
+          <p>The little tail tells you: a line on the <b>left</b> joins the next letter; a line on the <b>right</b> joins the letter before.</p>
+          <p class="learn-big" lang="ar">بـ &nbsp; ـبـ &nbsp; ـب</p>`),
+        whichShape(), whichShape(), whichShape(), whichShape(), traceLetter('ب', 'start'),
+      ];
+    },
+  },
+  'lesson-3': {
+    title: 'Lesson 3 · Joining letters', titleAr: 'الدرس ٣ · الأحرف اللي بتلزق', about: 'The 6 letters that never join the next one.',
+    build: () => [
+      learn('3a', 'Six letters never join forward', `
+        <p>Most letters join on both sides. But these <b>6</b> letters never join the letter <b>after</b> them:</p>
+        <p class="learn-big" lang="ar" dir="rtl">${NON_JOINING.join(' &nbsp; ')}</p>
+        <p>So the word breaks after them — look at ${say('ورد', 'ورد ward')} and ${say('دار', 'دار dār')}.</p>`),
+      joinsNext(), joinsNext(), neverJoins(), neverJoins(), joinsNext(),
+    ],
+  },
+  'lesson-4': {
+    title: 'Lesson 4 · Long vowels', titleAr: 'الدرس ٤ · المدّ', about: 'How ا، و، ي make a vowel long.',
+    build: () => [
+      learn('4a', 'Short + letter = long', `
+        <p>A long vowel is the same sound held <b>about twice as long</b>. The letters ا، و، ي after a consonant make it long:</p>
+        ${VOWELS.map(v => `<div class="learn-row">${say('ب' + v.mark, 'ب' + v.mark)} → ${say('ب' + v.mark + v.longLetter, 'ب' + v.mark + v.longLetter)}
+          <small>"${v.short}" → "${v.long}"</small></div>`).join('')}
+        <p class="note">In Lebanese, و and ي are often said "ō" and "ē": موز = mōz, بيت = bēt.</p>`),
+      shortOrLong(), shortOrLong(), compareLong(), whichLong(), longInWord(),
+    ],
+  },
+  'lesson-5': {
+    title: 'Lesson 5 · Short vowels', titleAr: 'الدرس ٥ · الحركات', about: 'Fatḥa, kasra and ḍamma.',
+    build: () => [
+      learn('5a', 'Three small marks', `
+        ${VOWELS.map(v => `<div class="learn-vowel"><b>${v.name}</b> <span lang="ar">${v.ar}</span> — ${v.where}
+          <div class="learn-row">${['ب', 'م', 'ل'].map(c => say(c + v.mark)).join('')}</div>
+          <small>${v.lebanese}</small></div>`).join('')}`),
+      whichVowel(), whichVowel(), compareShort(), hearSyllable('short'),
+      (() => { const x = pick(shortSyl()); return repeatSound(x.text, x.latin, 'short'); })(),
+    ],
+  },
+  'lesson-6': {
+    title: 'Lesson 6 · Read, write & speak', titleAr: 'الدرس ٦ · إقرا، اكتب، وحكي', about: 'Put letters together into real Lebanese words.',
+    build: () => [
+      learn('6a', 'From letters to words', `
+        <p>Letters join to make words. Listen and look:</p>
+        <div class="learn-row">${WORDS.slice(0, 4).map(w => say(w.ar, `${w.ar} ${w.emoji}`)).join('')}</div>
+        <p>Now you'll build a word, write one, and say it out loud.</p>`),
+      buildWord(), traceLetter('س'), typeWord(null, true), writeSentence(1),
+    ],
+  },
+};
+
 // ---- Sets ------------------------------------------------------------------------
 
 export const SETS = {
@@ -432,6 +576,8 @@ export const SETS = {
   'w-arrange': { title: 'Arrange the sentence', titleAr: 'رتّب الجملة', about: 'Put words in the right order.', build: () => many(5, () => arrangeSentence(4)) },
   'w-copy': { title: 'Copy & say', titleAr: 'انسخ وقول', about: 'Write a word, then practise saying it.', build: () => many(5, copySay) },
   'w-lws': { title: 'Listen, write, speak', titleAr: 'إسمع، اكتب، قول', about: 'All three skills together.', build: () => many(5, () => typeWord(null, true)) },
+  'w-trace': { title: 'Trace letters', titleAr: 'ارسم الأحرف', about: 'Trace letters with your finger, mouse or stylus.', build: () => many(5, () => traceLetter()) },
+  'w-trace-similar': { title: 'Trace look-alike letters', titleAr: 'ارسم الأحرف المتشابهة', about: 'Trace letters that differ only by dots.', build: traceGroup },
   'w-fix': { title: 'Fix the spelling', titleAr: 'صلّح الغلط', about: 'One letter is wrong — write it correctly.', build: () => many(5, fixSpelling) },
 
   // Listening & speaking: listen → identify → answer → speak → record → compare
@@ -458,19 +604,25 @@ export const SETS = {
   'g-mixed': { game: true, title: 'Mixed Practice', titleAr: 'تمارين منوّعة', about: 'Letters, short and long sounds, writing and listening.', build: () => many(10, [...allGens(), lsShortLong]) },
 };
 
+for (const [id, def] of Object.entries(LESSON_DEFS)) SETS[id] = { ...def, lesson: true };
+
 export const SECTIONS = [
   { id: 'alphabet', title: 'ABC Alphabet', ar: 'الأحرف', icon: 'أ ب', img: 'images/students-classroom.jpg',
     about: 'Meet all 28 letters, hear them, and spot look-alikes.',
+    lessons: ['lesson-1', 'lesson-2', 'lesson-3'],
     sets: ['a-hear', 'a-match', 'a-similar', 'a-words', 'a-quiz'] },
   { id: 'short', title: 'Short Sounds', ar: 'الحركات', icon: 'بَ بِ بُ', img: 'images/girl-laughing-sports.jpg',
     about: 'Fatḥa, kasra and ḍamma — the small vowel marks.',
+    lessons: ['lesson-5'],
     sets: ['s-vowel', 's-letter', 's-match', 's-compare', 's-complete', 's-repeat'] },
   { id: 'long', title: 'Long Sounds', ar: 'المدّ', icon: 'با بو بي', img: 'images/girl-trophy.jpg',
     about: 'How ا، و، ي stretch a vowel — and hearing short vs long.',
+    lessons: ['lesson-4'],
     sets: ['l-shortlong', 'l-which', 'l-compare', 'l-match', 'l-words', 'l-repeat', 'l-review'] },
   { id: 'writing', title: 'Writing & Speaking', ar: 'كتابة وحكي', icon: '✍️', img: 'stickers/teacher-helping-student.png', sticker: true,
     about: 'Type letters, words and sentences — then say them.',
-    sets: ['w-letter', 'w-missing', 'w-listen', 'w-copy', 'w-lws', 'w-fix', 'w-arrange', 'w-sentence'] },
+    lessons: ['lesson-6'],
+    sets: ['w-trace', 'w-trace-similar', 'w-letter', 'w-missing', 'w-listen', 'w-copy', 'w-lws', 'w-fix', 'w-arrange', 'w-sentence'] },
   { id: 'listening', title: 'Listening & Speaking', ar: 'سمع وحكي', icon: '🎧', img: 'stickers/teacher-shrug.png', sticker: true,
     about: 'Listen, identify, answer — then say it and record yourself.',
     sets: ['ls-shortlong', 'ls-vowel', 'ls-letter', 'ls-word'] },
@@ -482,5 +634,5 @@ export const SECTIONS = [
 
 // Fill in back-links and section titles for each set.
 for (const sec of SECTIONS) {
-  for (const id of sec.sets) Object.assign(SETS[id], { id, back: 's/' + sec.id, sectionTitle: sec.title });
+  for (const id of [...(sec.lessons || []), ...sec.sets]) Object.assign(SETS[id], { id, back: 's/' + sec.id, sectionTitle: sec.title });
 }

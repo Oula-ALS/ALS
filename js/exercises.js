@@ -6,6 +6,8 @@
 //   build   – arrange tiles (letters, syllables or words) in the right order
 //   type    – write the answer in Arabic (device keyboard or on-screen keyboard)
 //   speak   – listen, say it, record yourself, compare (no automatic scoring)
+//   learn   – a short explanation card inside a lesson (not scored, not logged)
+//   trace   – trace a letter on the tracing pad (never graded)
 // Any choose/type exercise can add `speakAfter: { audio, text, latin }` for the Speak step.
 //
 // Every finished exercise is logged with its kind, so progress shows only real activity.
@@ -16,6 +18,7 @@ import { sfx } from './music.js';
 import { celebrate } from './celebrate.js';
 import { keyboardHTML } from './keyboard.js';
 import { canRecord, startRecording, stopRecording, isRecording } from './recorder.js';
+import { tracingHTML, initTracing } from './tracing.js';
 
 export const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -94,12 +97,12 @@ export function sessionHTML() {
         <h1 class="ex-title" tabindex="-1">${esc(set.title)}</h1>
         <div class="ex-prompt">
           ${ex.promptAr ? `<p class="ex-ar" lang="ar" dir="rtl">${esc(ex.promptAr)}</p>` : ''}
-          <p>${esc(ex.prompt)}</p>
+          ${ex.prompt ? `<p>${esc(ex.prompt)}</p>` : ''}
         </div>
         ${RENDER[ex.type](ex)}
         <div class="ex-feedback" id="ex-feedback" role="status" aria-live="polite"></div>
         <div id="speak-slot"></div>
-        <div class="ex-next" id="ex-next" hidden>
+        <div class="ex-next" id="ex-next" ${ex.type === 'learn' ? '' : 'hidden'}>
           <button class="button" type="button" data-ex-next>${i + 1 < items.length ? 'Next ›' : 'Finish'}</button>
         </div>
       </div>
@@ -110,6 +113,7 @@ export function sessionHTML() {
 export function afterRender() {
   if (!session || session.empty || session.i >= session.items.length) return;
   const ex = session.items[session.i];
+  initTracing(root());
   if (ex.audio && ex.autoplay !== false) playAudio(ex.audio, document.querySelector('[data-ex-play]'), { quiet: true });
   document.querySelector('.ex-title')?.focus({ preventScroll: true });
 }
@@ -126,6 +130,7 @@ function endHTML() {
   const s = store.getCurrentStudent();
   const total = store.stats(s.id).today.exercises;
   if (set.daily) store.markDailyChallenge(s.id);
+  if (set.lesson) store.completeLesson(s.id, set.id, results.length ? (right === results.length ? 3 : right >= results.length * 0.6 ? 2 : 1) : 1);
   if (set.game && !session.loggedGame) {
     session.loggedGame = true; // one finished game = one entry
     store.logActivity(s.id, { kind: 'game', item: null, ok: true, ex: set.id });
@@ -209,6 +214,12 @@ const RENDER = {
     </form>`,
 
   speak: ex => `${display(ex)}${speakPanel(ex.speak || ex)}`,
+
+  learn: ex => `<div class="learn">${ex.html}</div>`,
+
+  trace: ex => `
+    ${display(ex)}${tracingHTML(ex.glyph, 'trace-pad')}
+    <button class="button" type="button" data-trace-done disabled>I traced it ✓</button>`,
 };
 
 const buildText = ex => ex.placed.map(k => ex.tiles[k]).join(ex.joiner);
@@ -438,7 +449,7 @@ function speakDone() {
 
 document.addEventListener('click', e => {
   if (!session || !root()) return;
-  const t = e.target.closest('[data-ex-play],[data-opt],[data-ml],[data-mr],[data-tile],[data-build-undo],[data-build-check],[data-rec],[data-rec-play],[data-speak-done],[data-ex-next],[data-ex-replay]');
+  const t = e.target.closest('[data-trace-done],[data-ex-play],[data-opt],[data-ml],[data-mr],[data-tile],[data-build-undo],[data-build-check],[data-rec],[data-rec-play],[data-speak-done],[data-ex-next],[data-ex-replay]');
   if (!t || !root().contains(t)) return;
   const ex = session.items[session.i];
   if (t.hasAttribute('data-ex-play')) playAudio(ex.audio, t);
@@ -448,6 +459,11 @@ document.addEventListener('click', e => {
   else if (t.hasAttribute('data-rec')) toggleRecord(t);
   else if (t.hasAttribute('data-rec-play')) { stopAudio(); if (ex.myVoice) new Audio(ex.myVoice).play().catch(() => {}); }
   else if (t.hasAttribute('data-speak-done')) speakDone();
+  else if (t.hasAttribute('data-trace-done')) {
+    t.disabled = true;
+    feedback(`<b lang="ar" dir="rtl">${cheer()}</b><span class="ex-explain" dir="ltr">Compare your letter with the example. Clear and trace again any time!</span>`, 'ok');
+    finishExercise(ex, true);
+  }
   else if (t.hasAttribute('data-ex-next')) {
     if (isRecording()) stopRecording();
     session.i += 1;
@@ -471,3 +487,9 @@ export function leaveSession() {
 
 // Test hook for automated browser tests only (active when the address contains ?test).
 if (location.search.includes('test')) window.__alsamaSession = () => session;
+
+// Enable "I traced it" once the learner has actually drawn something.
+document.addEventListener('traced', e => {
+  const done = document.querySelector('[data-trace-done]');
+  if (done && !session?.items[session.i]?.finished) done.disabled = Number(e.target.dataset.drawn || 0) < 5;
+});

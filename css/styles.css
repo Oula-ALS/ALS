@@ -547,3 +547,39 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
 }
 .ex-explain { display: block; font-weight: 400; color: var(--text); margin-top: 2px; }
 .ex-feedback > b[lang="ar"] { display: block; }
+
+/* ---- Stage 4: lessons and tracing ------------------------------------------ */
+
+.lesson-card { border-left: 6px solid var(--magenta); }
+.lesson-stars { font-size: 20px; white-space: nowrap; }
+.learn { text-align: left; margin-top: 8px; }
+.learn p { margin: 8px 0; }
+.learn-big { font-family: var(--font-ar); font-size: 40px; text-align: center; color: var(--burgundy); }
+.learn-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+.learn-row .speaker-pill { margin-top: 0; font-family: var(--font-ar); font-size: 20px; }
+.learn-vowel { padding: 10px 12px; margin: 8px 0; border-radius: 14px; background: var(--cream); border: 1px solid var(--line); }
+.learn-vowel small { color: var(--text-soft); }
+.learn-forms { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; direction: ltr; }
+.learn-forms div { display: flex; flex-direction: column; align-items: center; padding: 8px 4px; border-radius: 14px; background: var(--cream); border: 2px solid var(--line); }
+.learn-forms span[lang] { font-family: var(--font-ar); font-size: 40px; line-height: 1.5; color: var(--magenta); }
+.learn-forms .w { font-size: 24px; color: var(--burgundy); }
+.learn-forms small { color: var(--text-soft); }
+
+.trace-box { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; margin-top: 8px; }
+.trace-example { display: flex; flex-direction: column; align-items: center; padding: 8px 12px; border-radius: 14px; background: var(--blush); }
+.trace-example span { font: 700 64px/1.4 var(--font-ar); color: var(--burgundy); }
+.trace-example small { color: var(--text-soft); }
+.trace-pad {
+  width: 100%; max-width: 360px; aspect-ratio: 1; touch-action: none; cursor: crosshair;
+  border: 2px dashed var(--magenta); border-radius: 18px; background: var(--white); justify-self: center;
+}
+.trace-buttons { grid-column: 1 / -1; display: flex; justify-content: center; }
+.trace-box .hint { grid-column: 1 / -1; text-align: center; }
+[data-trace-done] { margin-top: 10px; }
+@media (max-width: 480px) {
+  .trace-box { grid-template-columns: 1fr; }
+  .trace-example { flex-direction: row; gap: 10px; justify-content: center; }
+  .trace-example span { font-size: 44px; }
+  .learn-forms { grid-template-columns: repeat(2, 1fr); }
+}
+.button[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; transform: none; }

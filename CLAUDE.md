@@ -33,7 +33,7 @@ example must contain the letter once, in the labelled position (verified by scri
 ## Stages
 
 0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 2b Registration, letter Back/Next/Home, music ✅ ·
-3 Alphabet explorer ✅ (tips, Shami notes, example words, shapes in words, find-the-letter) · 4 Lessons + tracing ·
+3 Alphabet explorer ✅ (tips, Shami notes, example words, shapes in words, find-the-letter) · 4 Lessons + tracing ✅ (6 lessons inside the sections; `js/tracing.js`, never graded) ·
 5 Stickers · 6 Games · 7 Progress · 8 Teacher email reports · 9 Full QA
 **16 Oct 2026 brief ✅:** Welcome → Student info → Dashboard with six sections (ABC Alphabet, Short
 Sounds, Long Sounds, Writing & Speaking, Listening & Speaking, Practice & Games). No pop-up after

@@ -11,6 +11,7 @@ import { LETTERS, LOOKALIKES } from './data/letters.js';
 import { VOWELS } from './data/content.js';
 import { SECTIONS, SETS } from './sections.js';
 import { startSession, afterRender, leaveSession, wordsAr, exercisesAr, soundsAr } from './exercises.js';
+import { tracingHTML, initTracing } from './tracing.js';
 
 const app = document.getElementById('app');
 
@@ -307,6 +308,11 @@ function letterDetails(L) {
               <small>${f.latin}${f.en ? ' · ' + f.en : ''}</small>` : '<small>(rare in everyday words)</small>'}
           </div>`).join('')}
       </div>
+    </section>
+
+    <section class="card letter-section">
+      <h2>Trace it</h2>
+      ${tracingHTML(L.char, 'letter-trace')}
     </section>`;
 }
 
@@ -582,6 +588,23 @@ function sectionScreen(id) {
         </div>
       </div>
       ${sectionIntro(id, s)}
+      ${sec.lessons ? `
+        <h2>Lessons <span lang="ar" dir="rtl">الدروس</span></h2>
+        <div class="activity-list">
+          ${sec.lessons.map(lid => {
+            const set = SETS[lid];
+            const stars = store.getProgress(s.id).lessons[lid];
+            return `
+            <a class="activity-card lesson-card" href="#/play/${lid}">
+              <div>
+                <h3>${set.title}</h3>
+                <p class="core-ar" lang="ar" dir="rtl">${set.titleAr}</p>
+                <p>${set.about}</p>
+              </div>
+              ${stars ? `<span class="lesson-stars" aria-label="${stars} of 3 stars">${'⭐'.repeat(stars)}</span>` : '<span class="badge live">Start ›</span>'}
+            </a>`;
+          }).join('')}
+        </div>` : ''}
       <h2>Activities</h2>
       <div class="activity-list">
         ${sec.sets.map(setId => {
@@ -696,6 +719,7 @@ function render() {
   window.scrollTo(0, 0);
   app.querySelector('h1')?.focus({ preventScroll: true });
   if (screen === 'play') afterRender();
+  initTracing(app);
   if (autoplayLetter && screen === 'letters' && param !== 'done') {
     playLetter(Number(param), app.querySelector('.letter-card .speaker-pill'), true);
   }
