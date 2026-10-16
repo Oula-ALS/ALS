@@ -77,7 +77,7 @@ Each letter page shows one everyday example word. Six already have your recordin
 
 Manifest line example: `"تفاحة": "audio/words/tiffaha.mp3",` (the key is the word exactly as written above, without vowel marks).
 
-### 3. Celebration sound "برافووووو!" (priority: high)
+### 3. Celebration sound "برافووووو!" ✅ received (clip-3, 16 Oct 2026)
 
 A short (1–3 second) recording of you saying **برافووووو!** in the way you want students
 to hear it. Save as `assets/audio/phrases/bravo.mp3` and add to the manifest:
@@ -101,7 +101,7 @@ because each one still needs to be matched to the word or sound it contains.
 |---|---|---|
 | clip-1.mp3 (sent 10:54:04) | 1.6 s | ? |
 | clip-2.mp3 (sent 10:54:08) | 2.0 s | ? |
-| clip-3.mp3 (sent 10:54:39) | 3.1 s | ? |
+| clip-3.mp3 (sent 10:54:39) | 3.1 s | ✅ برافوو → now `phrases/bravo.mp3`, used in celebrations |
 | clip-4.mp3 (sent 10:54:50) | 4.3 s | ? |
 | clip-5.mp3 (sent 10:54:57) | 5.6 s | ? |
 
