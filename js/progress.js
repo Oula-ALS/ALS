@@ -127,6 +127,7 @@ export function getProgress(studentId) {
     log: p.log || [],             // every finished exercise: { d, k, item, ok, ex }
     writing: p.writing || {},     // per date: { ids: [exercise ids counted], words: n }
     daily: p.daily || {},         // per date: true when the Daily Challenge was finished
+    lessons: p.lessons || {},     // per lesson id: best stars (1–3)
   };
 }
 
@@ -162,6 +163,11 @@ export function countWrittenWords(studentId, exerciseId, wordCount) {
   const next = { ids: [...entry.ids, exerciseId], words: entry.words + wordCount };
   updateProgress(studentId, { writing: { ...p.writing, [day]: next } });
   return { counted: true, total: next.words };
+}
+
+export function completeLesson(studentId, lessonId, stars) {
+  const p = getProgress(studentId);
+  updateProgress(studentId, { lessons: { ...p.lessons, [lessonId]: Math.max(p.lessons[lessonId] || 0, stars) } });
 }
 
 export function markDailyChallenge(studentId) {
