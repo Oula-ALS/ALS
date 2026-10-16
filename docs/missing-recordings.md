@@ -16,6 +16,25 @@ If a clip on this list is missing, the app shows **"Recording coming soon"**.
 
 ## Needed
 
+### 0. Letter names in Lebanese (priority: highest — requested 18 Oct 2026)
+
+The 28 letter-name recordings came from the old app and say the names the formal way
+(بَاء "bāʾ", تَاء "tāʾ" …). To hear them the Lebanese way, they need to be re-recorded.
+Suggested Lebanese names (please correct any you say differently):
+
+| Letter | Say | Letter | Say | Letter | Say | Letter | Say |
+|---|---|---|---|---|---|---|---|
+| ا | alef | د | dāl | ض | ḍād | ك | kāf |
+| ب | be | ذ | zāl | ط | ṭa | ل | lām |
+| ت | te | ر | re | ظ | ẓa | م | mīm |
+| ث | the / se | ز | zēn | ع | ʿēn | ن | nūn |
+| ج | jīm (zhīm) | س | sīn | غ | ghēn | ه | he |
+| ح | ḥe | ش | shīn | ف | fe | و | wāw |
+| خ | khe | ص | ṣād | ق | ʾāf | ي | ye |
+
+Name each file with the English spelling (e.g. `be.ogg`, `te.ogg`) or type the letter
+in the message. Each new recording replaces the old one for that letter automatically.
+
 ### 1. Letter sounds (priority: high) — 20 clips
 
 For each letter below, record the letter with a fatha (e.g. تَ "ta"). Hard letters are marked ★ — these matter most.
