@@ -46,11 +46,11 @@ export async function celebrate(event, { student } = {}) {
     english: e.english,
   });
 
-  // A gentle chime for every celebration except "try again" (never a 'wrong' sound).
-  if (event !== 'tryAgain') sfx(small ? 'correct' : 'celebrate');
-
-  // Celebration voice plays only if Alsama's own recording exists.
-  if (e.sound && !getSettings().muted && await hasRecording(e.sound)) playAudio(e.sound);
+  // Alsama's own recorded voice (e.g. "برافوو") when it exists; otherwise a gentle chime.
+  // Never both, so sounds don't overlap. "Try again" never plays a 'wrong' sound.
+  if (getSettings().muted) return;
+  if (e.sound && await hasRecording(e.sound)) playAudio(e.sound, null, { quiet: true });
+  else if (event !== 'tryAgain') sfx(small ? 'correct' : 'celebrate');
 }
 
 function show({ small, title, sticker, message, english }) {
