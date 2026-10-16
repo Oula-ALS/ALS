@@ -90,6 +90,27 @@ it could not be listened to here, and it is too long for a celebration sound.
 
 برافو! · ممتاز! · برافو عليك! · شاطر! · شاطرة! · يلا، جرّب مرة تانية! · كل محاولة بتعلّمك شي جديد! · أهلاً وسهلاً في عيلة مدرسة السما للغات!
 
+## Received but not yet labelled (16 Oct 2026)
+
+Five WhatsApp voice notes were received. They have been **cleaned** (rumble and hiss
+reduced, silence trimmed, volume evened out — see below) and saved as
+`assets/audio/incoming/clip-1.mp3` … `clip-5.mp3`. They are **not used in the app yet**
+because each one still needs to be matched to the word or sound it contains.
+
+| File | Length after cleaning | What does it say? |
+|---|---|---|
+| clip-1.mp3 (sent 10:54:04) | 1.6 s | ? |
+| clip-2.mp3 (sent 10:54:08) | 2.0 s | ? |
+| clip-3.mp3 (sent 10:54:39) | 3.1 s | ? |
+| clip-4.mp3 (sent 10:54:50) | 4.3 s | ? |
+| clip-5.mp3 (sent 10:54:57) | 5.6 s | ? |
+
+## Audio cleaning
+
+Every new recording goes through `scripts/clean-audio.sh` (ffmpeg): low-rumble and
+high-hiss filtering, gentle noise reduction, silence trimmed at both ends, and loudness
+evened out so all clips play at the same volume without clipping.
+
 ## How to add a recording later
 
 1. Record as MP3 (a phone voice-memo app is fine; quiet room, 1–2 seconds).

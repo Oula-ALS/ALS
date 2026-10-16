@@ -25,7 +25,7 @@ Warm, inclusive, polished; for teens and adults, not preschool.
 
 ## Language
 
-Teach 28 letters with MSA spelling and Levantine (Shami) pronunciation. Label MSA vs Shami
+Teach **Lebanese Arabic** (owner's brief, 16 Oct 2026) with MSA spelling and Lebanese pronunciation. Label MSA vs Shami
 where they differ. Honest descriptions of ع ح خ غ ق ص ض ط ظ (no fake English equivalents).
 Non-connecting letters: ا د ذ ر ز و. Letter content lives in `js/data/letters.js`; every shape
 example must contain the letter once, in the labelled position (verified by script in Stage 3).
@@ -35,6 +35,12 @@ example must contain the letter once, in the labelled position (verified by scri
 0 Inspect ✅ · 1 Setup ✅ · 2 Core shell ✅ · 2b Registration, letter Back/Next/Home, music ✅ ·
 3 Alphabet explorer ✅ (tips, Shami notes, example words, shapes in words, find-the-letter) · 4 Lessons + tracing ·
 5 Stickers · 6 Games · 7 Progress · 8 Teacher email reports · 9 Full QA
+**16 Oct 2026 brief ✅:** Welcome → Student info → Dashboard with six sections (ABC Alphabet, Short
+Sounds, Long Sounds, Writing & Speaking, Listening & Speaking, Practice & Games). No pop-up after
+registration. Engine: `js/exercises.js` (choose/match/build/type/speak); activities: `js/sections.js`;
+content: `js/data/content.js`. Progress = real activity log in `js/progress.js` (`stats()`, `level()`,
+`countWrittenWords()` — correct answers only, once per exercise per day, letters not counted).
+Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 
 ## Assets
 

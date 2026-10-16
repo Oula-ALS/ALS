@@ -8,6 +8,9 @@ import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
 import { sendRegistration, sendPendingRegistrations, deleteRegistration } from './register.js';
 import { LETTERS, LOOKALIKES } from './data/letters.js';
+import { VOWELS } from './data/content.js';
+import { SECTIONS, SETS } from './sections.js';
+import { startSession, afterRender, leaveSession, wordsAr, exercisesAr, soundsAr } from './exercises.js';
 
 const app = document.getElementById('app');
 
@@ -35,8 +38,8 @@ function welcomeScreen() {
         <img class="sticker sticker-corner" src="assets/stickers/graduates-celebrate.png" alt="">
       </figure>
 
-      <p class="ar-line" lang="ar" dir="rtl">يلا نتعلّم عربي شامي سوا!</p>
-      <p class="lead small">Let's learn Levantine Arabic together!</p>
+      <p class="ar-line" lang="ar" dir="rtl">يلا نتعلّم عربي لبناني سوا!</p>
+      <p class="lead small">Let's learn Lebanese Arabic together!</p>
 
       <button class="button big" type="button" data-go="start">Start learning</button>
       <p class="muted">Listen, practise, play games and repeat any lesson whenever you need. No sign-up needed.</p>
@@ -274,7 +277,7 @@ function letterDetails(L) {
           : '<span class="soon-pill">🎙️ Letter sound: recording coming soon</span>'}
       </div>
       <p>${L.tip}</p>
-      ${L.shami ? `<p class="note shami"><b>In Shami:</b> ${L.shami}</p>` : ''}
+      ${L.shami ? `<p class="note shami"><b>In Lebanese:</b> ${L.shami}</p>` : ''}
     </section>
 
     <section class="card letter-section">
@@ -284,7 +287,7 @@ function letterDetails(L) {
         <div>
           <p class="word-ar" lang="ar" dir="rtl">${w.ar}</p>
           <p class="word-en"><b>${w.latin}</b> · ${w.en}</p>
-          ${w.msa ? `<p class="word-msa"><span class="tag">MSA</span> ${w.msa} &nbsp; <span class="tag shami-tag">Shami</span> ${w.latin}</p>` : ''}
+          ${w.msa ? `<p class="word-msa"><span class="tag">MSA</span> ${w.msa} &nbsp; <span class="tag shami-tag">Lebanese</span> ${w.latin}</p>` : ''}
         </div>
         <button class="icon-button word-play" type="button" data-say="${w.ar}" aria-label="Listen to ${w.latin}">🔊</button>
       </div>
@@ -413,59 +416,238 @@ function stepNav(back, next) {
     </nav>`;
 }
 
+// ---- Dashboard: the six core sections ------------------------------------------
+
+function progressMessages(s) {
+  const st = store.stats(s.id);
+  const f = s.address === 'f';
+  const own = f ? 'شاطرة!' : s.address === 'm' ? 'شاطر!' : 'برافو!';
+  const msgs = [];
+  if (st.today.exercises) msgs.push(`برافو! خلّصت ${exercisesAr(st.today.exercises)} اليوم!`);
+  if (st.today.words) msgs.push(`${own} كتبت اليوم ${wordsAr(st.today.words)}!`);
+  const sounds = st.total.shortSounds + st.total.longSounds;
+  if (sounds) msgs.push(`${own} ميّزت ${soundsAr(sounds)} لحدّ هلّق!`);
+  if (st.shortLongCorrect >= 5) msgs.push(f ? 'ممتاز! صرتي تميّزي بين الأصوات القصيرة والطويلة!' : 'ممتاز! صرت تميّز بين الأصوات القصيرة والطويلة!');
+  return { st, msgs };
+}
+
 function homeScreen() {
   const s = store.getCurrentStudent();
   if (!s) { go('who'); return ''; }
   const name = store.displayName(s);
-
-  const progress = store.getProgress(s.id);
-  const sections = [
-    { title: 'Explore the alphabet', ar: 'الحروف', img: 'images/teacher-fist-bump.jpg',
-      href: `#/letters/${progress.lastLetter}`,
-      text: progress.lettersHeard.length
-        ? `You've heard ${progress.lettersHeard.length} of 28 letters. Continue from letter ${progress.lastLetter}.`
-        : 'Meet all 28 letters and hear how they sound.' },
-    { title: 'Lessons', ar: 'الدروس', text: 'Six short lessons, step by step.', img: 'stickers/teacher-helping-student.png', stage: 4, sticker: true },
-    { title: 'Writing practice', ar: 'الكتابة', text: 'Trace letters with your finger or mouse.', stage: 4 },
-    { title: 'Games', ar: 'الألعاب', text: 'Listen, match and play.', img: 'stickers/teacher-cheering.png', stage: 6, sticker: true },
-  ];
+  const { st, msgs } = progressMessages(s);
 
   return `
-    <section>
+    <section class="dashboard">
       <div class="hero">
         <div>
           <h1 lang="ar" dir="rtl" tabindex="-1">أهلاً يا ${esc(name)}!</h1>
-          <p>Ready to learn some Shami Arabic today?</p>
+          <p>Ready to learn some Lebanese Arabic today?</p>
           ${store.isBirthdayToday(s) ? `<p class="birthday" lang="ar" dir="rtl">🎂 عيد ميلاد سعيد يا ${esc(name)}!</p>` : ''}
           ${s.favouriteWord ? `<p class="fav">Your favourite word: <span lang="ar" dir="rtl">${esc(s.favouriteWord)}</span></p>` : ''}
           <button class="speaker-pill light" type="button" data-say="مَرْحَبًا" aria-label="Listen: marhaba">
             🔊 <span lang="ar" dir="rtl">مَرْحَبًا</span>
           </button>
         </div>
-        <img class="sticker hero-sticker" src="assets/stickers/graduates-celebrate.png"
-             alt="Two Alsama graduates celebrating with a certificate">
+        <img class="hero-photo" src="assets/images/students-walking-books.jpg"
+             alt="Alsama students walking together with their books">
       </div>
 
-      <h2>What would you like to do?</h2>
-      <div class="sections">
-        ${sections.map(x => `
-          <${x.href ? `a href="${x.href}"` : 'article'} class="section-card ${x.href ? 'is-live' : 'is-soon'}">
-            ${x.img ? `<img class="${x.sticker ? 'sticker' : 'photo'}" src="assets/${x.img}" alt="">` : '<div class="section-icon" aria-hidden="true">✍️</div>'}
-            <div>
-              <h3>${x.title} <span lang="ar" dir="rtl">${x.ar}</span></h3>
-              <p>${x.text}</p>
-              ${x.href ? '<span class="badge live">Start ›</span>' : '<span class="badge">Coming soon</span>'}
-            </div>
-          </${x.href ? 'a' : 'article'}>`).join('')}
-      </div>
-
-      <a class="section-card classic" href="legacy/arabic-alphabet-app.html">
-        <div class="section-icon" aria-hidden="true">🔤</div>
-        <div>
-          <h3>Classic alphabet app</h3>
-          <p>Use the original six lessons while the new ones are being built.</p>
+      <div class="today card">
+        <h2>Today <span lang="ar" dir="rtl">اليوم</span></h2>
+        <ul class="chips-row">
+          <li><b>${st.today.exercises}</b> exercises</li>
+          <li><b>${st.today.words}</b> words written</li>
+          <li><b>${st.today.listening}</b> listening</li>
+          <li><b>${st.today.speaking}</b> speaking</li>
+          <li><b>${st.today.games}</b> games</li>
+        </ul>
+        ${msgs.length
+          ? msgs.map(m => `<p class="cheer-line" lang="ar" dir="rtl">${m}</p>`).join('')
+          : '<p class="muted">Start any section below — your progress for today will appear here.</p>'}
+        <div class="row">
+          <a class="button" href="#/play/g-daily">${st.today.dailyDone ? '✓ Daily Challenge done — play again' : '⭐ Daily Challenge'}</a>
+          <a class="button secondary" href="#/progress">My progress</a>
         </div>
-      </a>
+      </div>
+
+      <h2>Choose a section <span lang="ar" dir="rtl">اختار قسم</span></h2>
+      <div class="core-grid">
+        ${SECTIONS.map((sec, k) => `
+          <a class="core-card" href="#/s/${sec.id}">
+            <span class="core-num" aria-hidden="true">${k + 1}</span>
+            <img class="${sec.sticker ? 'sticker' : 'photo'}" src="assets/${sec.img}" alt="">
+            <span class="core-icon" lang="ar" aria-hidden="true">${sec.icon}</span>
+            <h3>${sec.title}</h3>
+            <p class="core-ar" lang="ar" dir="rtl">${sec.ar}</p>
+            <p>${sec.about}</p>
+          </a>`).join('')}
+      </div>
+
+      <p class="classic-link"><a href="legacy/arabic-alphabet-app.html">Open the classic alphabet app</a></p>
+    </section>`;
+}
+
+// ---- Section pages ---------------------------------------------------------------
+
+function sectionIntro(id, s) {
+  if (id === 'alphabet') {
+    const p = store.getProgress(s.id);
+    return `
+      <div class="card intro">
+        <h2>All 28 letters</h2>
+        <p>Tap a letter to hear its name. Open the letter pages for pronunciation tips, shapes and Lebanese examples.</p>
+        <div class="letter-strip quick" dir="rtl">
+          ${LETTERS.map(L => `<button type="button" lang="ar" data-say="${L.name}" aria-label="${L.latin}">${L.char}</button>`).join('')}
+        </div>
+        <a class="button" href="#/letters/${p.lastLetter}">📖 Open the letter pages (${p.lettersHeard.length}/28 heard)</a>
+      </div>`;
+  }
+  if (id === 'short') {
+    return `
+      <div class="card intro">
+        <h2>Three short vowels</h2>
+        <p>Arabic writes short vowels as small marks on the letter. Tap to hear them on ب, م and ل:</p>
+        <div class="vowel-table">
+          ${VOWELS.map(v => `
+            <div class="vowel-row">
+              <div><b>${v.name}</b> <span lang="ar">${v.ar}</span><br><small>${v.where} · "${v.short}"</small></div>
+              <div class="vowel-sounds">${['ب', 'م', 'ل'].map(c => `
+                <button class="speaker-pill" type="button" data-say="${c + v.mark}" lang="ar">${c + v.mark}</button>`).join('')}</div>
+              <p class="note">${v.lebanese}</p>
+            </div>`).join('')}
+        </div>
+        <p class="note"><b>Spelling vs speech:</b> everyday writing usually leaves the vowel marks out — learners and children's books show them. Lebanese speech also shifts some vowels, so listen to the recordings as your guide.</p>
+      </div>`;
+  }
+  if (id === 'long') {
+    return `
+      <div class="card intro">
+        <h2>Short vs long</h2>
+        <p>A <b>long vowel</b> is the same vowel held about <b>twice as long</b>. Arabic shows it by adding a letter after the consonant:</p>
+        <div class="vowel-table">
+          ${VOWELS.map(v => `
+            <div class="vowel-row">
+              <div><b>${v.longLetter}</b> stretches ${v.name}: "${v.short}" → "${v.long}"</div>
+              <div class="vowel-sounds">
+                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark}" lang="ar">${'ب' + v.mark} <small>short</small></button>
+                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark + v.longLetter}" lang="ar">${'ب' + v.mark + v.longLetter} <small>long</small></button>
+              </div>
+            </div>`).join('')}
+        </div>
+        <p class="note">In Lebanese, و and ي are often said "ō" and "ē": موز = mōz, بيت = beit/bēt.</p>
+      </div>`;
+  }
+  if (id === 'writing') {
+    const st = store.stats(s.id);
+    const recent = st.writingByDay.slice(-7);
+    return `
+      <div class="card intro">
+        <h2>Today's writing</h2>
+        <p class="big-number"><b>${st.today.words}</b> ${st.today.words === 1 ? 'word' : 'words'} written correctly today</p>
+        ${st.today.words ? `<p class="cheer-line" lang="ar" dir="rtl">برافو عليك! كتبت اليوم ${wordsAr(st.today.words)}!</p>` : ''}
+        ${recent.length > 1 ? `<div class="mini-bars" aria-label="Words written per day">${recent.map(d => `
+          <div><span style="height:${Math.min(100, d.words * 8)}px"></span><small>${d.d.slice(5)}</small><b>${d.words}</b></div>`).join('')}</div>` : ''}
+        <p class="hint">How words are counted: only correct answers, each exercise once a day. Single letters don't count as words.</p>
+      </div>`;
+  }
+  if (id === 'listening') {
+    return `
+      <div class="card intro">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><b>Listen</b> to the recording.</li><li><b>Identify</b> what you heard.</li><li><b>Answer.</b></li>
+          <li><b>Speak:</b> listen again and say it out loud.</li><li><b>Record</b> yourself and play it back.</li>
+          <li><b>Compare</b> your voice with the recording.</li>
+        </ol>
+        <p class="note">The app checks your answers, but it does <b>not</b> score your pronunciation — compare with your own ears, and ask your Alsama teacher.</p>
+      </div>`;
+  }
+  return '';
+}
+
+function sectionScreen(id) {
+  const s = store.getCurrentStudent();
+  if (!s) { go('who'); return ''; }
+  const sec = SECTIONS.find(x => x.id === id);
+  if (!sec) { go('home'); return ''; }
+  const st = store.stats(s.id);
+  return `
+    <section class="section-page">
+      <div class="section-head">
+        <a class="icon-button" href="#/home" aria-label="Back to dashboard">‹</a>
+        <div>
+          <h1 tabindex="-1">${sec.title} <span lang="ar" dir="rtl">${sec.ar}</span></h1>
+          <p class="muted">${sec.about}</p>
+        </div>
+      </div>
+      ${sectionIntro(id, s)}
+      <h2>Activities</h2>
+      <div class="activity-list">
+        ${sec.sets.map(setId => {
+          const set = SETS[setId];
+          const daily = set.daily && st.today.dailyDone;
+          return `
+          <a class="activity-card" href="#/play/${setId}">
+            <div>
+              <h3>${set.title}${daily ? ' ✓' : ''}</h3>
+              <p class="core-ar" lang="ar" dir="rtl">${set.titleAr}</p>
+              <p>${set.about}</p>
+            </div>
+            <span class="badge live">Start ›</span>
+          </a>`;
+        }).join('')}
+      </div>
+    </section>`;
+}
+
+function playScreen(id) {
+  const s = store.getCurrentStudent();
+  if (!s) { go('who'); return ''; }
+  const set = SETS[id];
+  if (!set) { go('home'); return ''; }
+  return startSession(set);
+}
+
+function progressScreen() {
+  const s = store.getCurrentStudent();
+  if (!s) { go('who'); return ''; }
+  const { st, msgs } = progressMessages(s);
+  const row = (label, value) => `<li><span>${label}</span><b>${value}</b></li>`;
+  const days = st.writingByDay.slice(-7);
+  return `
+    <section class="narrow">
+      <div class="section-head">
+        <a class="icon-button" href="#/home" aria-label="Back to dashboard">‹</a>
+        <h1 tabindex="-1">My progress <span lang="ar" dir="rtl">تقدّمي</span></h1>
+      </div>
+      <div class="card">
+        ${msgs.map(m => `<p class="cheer-line" lang="ar" dir="rtl">${m}</p>`).join('') || '<p class="muted">No activity yet — every exercise you finish will show here.</p>'}
+        <h2>Today</h2>
+        <ul class="stat-list">
+          ${row('Exercises finished', st.today.exercises)}
+          ${row('Right on the first try', st.today.correct)}
+          ${row('Words written correctly', st.today.words)}
+          ${row('Writing exercises', st.today.writing)}
+          ${row('Listening exercises', st.today.listening)}
+          ${row('Speaking activities', st.today.speaking)}
+          ${row('Games finished', st.today.games)}
+          ${row('Daily Challenge', st.today.dailyDone ? '✓ done' : 'not yet')}
+        </ul>
+        <h2>All time</h2>
+        <ul class="stat-list">
+          ${row('Letters heard (letter pages)', `${st.total.lettersHeard} / 28`)}
+          ${row('Letters recognised correctly', `${st.total.lettersKnown} / 28`)}
+          ${row('Short sounds practised', st.total.shortSounds)}
+          ${row('Long sounds practised', st.total.longSounds)}
+          ${row('Writing exercises', st.total.writing)}
+          ${row('Listening exercises', st.total.listening)}
+          ${row('Speaking activities', st.total.speaking)}
+          ${row('Games finished', st.total.games)}
+        </ul>
+        ${days.length ? `<h2>Words written per day</h2><ul class="stat-list">${days.map(d => row(d.d, d.words)).join('')}</ul>` : ''}
+        <p class="hint">Only finished activities are counted. Progress is saved on this device for each learner.</p>
+      </div>
     </section>`;
 }
 
@@ -474,7 +656,7 @@ function aboutScreen() {
     <section class="narrow card">
       <h1 tabindex="-1">About this app</h1>
       <p>This app is made by <b>Alsama Language School</b> to help you learn
-      <b>Levantine (Shami) Arabic</b>, the Arabic spoken every day in Syria, Lebanon, Jordan and Palestine.</p>
+      <b>Lebanese Arabic</b> — the Arabic people really speak every day in Lebanon (part of the Levantine family, close to Syrian, Palestinian and Jordanian Arabic).</p>
       <p>The recordings are by the Alsama team, and the photos show real Alsama students and teachers.</p>
       <h2>Your information</h2>
       <p>🔒 When you join, your registration details (name, age group and anything else you choose
@@ -492,6 +674,8 @@ function aboutScreen() {
 
 function render() {
   stopAudio();
+  leaveSession();
+  document.querySelector('.celebration')?.remove(); // never carry a pop-up to another page
   const [screen, param] = location.hash.replace(/^#\/?/, '').split('/');
   const routes = {
     '': welcomeScreen,
@@ -500,6 +684,9 @@ function render() {
     profile: () => profileScreen(param === 'new' ? null : param),
     home: homeScreen,
     about: aboutScreen,
+    s: () => sectionScreen(param),
+    play: () => playScreen(param),
+    progress: progressScreen,
     letters: () => (param === 'done' ? lettersDoneScreen() : letterScreen(param || store.getProgress(store.getCurrentStudent()?.id).lastLetter)),
   };
   const html = (routes[screen] || welcomeScreen)();
@@ -508,6 +695,7 @@ function render() {
   updateHeader();
   window.scrollTo(0, 0);
   app.querySelector('h1')?.focus({ preventScroll: true });
+  if (screen === 'play') afterRender();
   if (autoplayLetter && screen === 'letters' && param !== 'done') {
     playLetter(Number(param), app.querySelector('.letter-card .speaker-pill'), true);
   }
@@ -726,9 +914,9 @@ document.addEventListener('submit', async e => {
     already: '✅ You are already registered — welcome back!',
     pending: '💾 Saved. Your details will be sent to Alsama as soon as the connection works.',
   };
+  // Straight to the dashboard — no extra screens or pop-ups after registration.
   go('home');
   showAudioMessage(messages[result]);
-  if (isNew) celebrate('welcome', { student });
 });
 
 // Hide the "write your name" message as soon as they start typing.
