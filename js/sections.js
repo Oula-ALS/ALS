@@ -458,6 +458,40 @@ function traceGroup() {
     prompt: `Trace ${letterBy(c).latin}. Watch the dots: ${group.join(' ')} only differ by dots or a small detail.` }));
 }
 
+// ---- Reading challenge ---------------------------------------------------------
+// A word appears with no sound; the learner reads it aloud, then checks by listening.
+
+function readingPool(level) {
+  const pool = SYLLABLES.map(x => ({ text: x.text, latin: x.latin, audio: x.text, lvl: 1 }));
+  if (level >= 2) pool.push(...WORDS.map(w => ({ text: w.vowelled, latin: w.latin, en: w.en, emoji: w.emoji, audio: w.audio, lvl: 2 })));
+  if (level >= 3) pool.push(...LETTERS.map(L => ({ text: L.word.ar, latin: L.word.latin, en: L.word.en, emoji: L.word.emoji, audio: L.word.ar, lvl: 3 })));
+  if (level >= 4) pool.push(...SENTENCES.map(x => ({ text: x.ar, latin: x.latin, en: x.en, lvl: 4 })));
+  return pool;
+}
+
+function readAloud(level = lvl()) {
+  // Prefer items at the learner's own level, with some easier ones mixed in.
+  const pool = readingPool(level);
+  const top = pool.filter(x => x.lvl === Math.min(level, 4));
+  const x = pick(Math.random() < 0.7 && top.length ? top : pool);
+  return {
+    type: 'read', kind: 'read', item: x.text, id: 'read:' + x.text, autoplay: false,
+    text: x.text, latin: x.latin, en: x.en, emoji: x.emoji, audio: x.audio,
+    prompt: 'Read it out loud — no sound yet! Then tap Check.', promptAr: 'إقرا بصوت عالي، وبعدين اكبس "Check".',
+  };
+}
+
+function readMeaning() {
+  const w = pick(WORDS);
+  const opts = shuffle([w, ...shuffle(WORDS.filter(x => x !== w)).slice(0, 3)]);
+  return {
+    type: 'choose', kind: 'read', item: w.ar, id: 'read-meaning:' + w.ar, autoplay: false,
+    display: esc(w.vowelled), prompt: 'Read the word. What does it mean?', promptAr: 'إقرا الكلمة. شو معناها؟',
+    options: opts.map(x => ({ label: `${x.emoji} ${x.en}`, value: x.ar })), answer: w.ar,
+    explain: `${w.vowelled} = ${w.latin} (${w.en}).`,
+  };
+}
+
 // ---- Lessons: short explanation cards + practice -------------------------------
 
 const say = (key, label = key) => `<button class="speaker-pill" type="button" data-say="${key}" lang="ar">🔊 ${label}</button>`;
@@ -536,7 +570,7 @@ const LESSON_DEFS = {
         <p>Letters join to make words. Listen and look:</p>
         <div class="learn-row">${WORDS.slice(0, 4).map(w => say(w.ar, `${w.ar} ${w.emoji}`)).join('')}</div>
         <p>Now you'll build a word, write one, and say it out loud.</p>`),
-      buildWord(), traceLetter('س'), typeWord(null, true), writeSentence(1),
+      buildWord(), readAloud(2), traceLetter('س'), typeWord(null, true), writeSentence(1),
     ],
   },
 };
@@ -587,6 +621,8 @@ export const SETS = {
   'ls-word': { title: 'Which word? Then say it', titleAr: 'أيّا كلمة؟ وقول', about: 'Identify the word, then repeat it.', build: () => many(5, () => wordChallenge(true)) },
 
   // Practice & games
+  'g-reading': { game: true, title: 'Reading Challenge', titleAr: 'تحدّي القراية', about: 'A word appears — read it out loud, then check by listening.', build: () => many(6, [readAloud, readAloud, readMeaning]) },
+  'w-reading': { title: 'Reading challenge', titleAr: 'تحدّي القراية', about: 'Read words out loud on your own, then check.', build: () => many(6, [readAloud, readMeaning]) },
   'g-detective': { game: true, title: 'Sound Detective', titleAr: 'محقّق الأصوات', about: 'Listen carefully and identify the sound.', build: () => many(8, detective) },
   'g-shortlong': { game: true, title: 'Short or Long?', titleAr: 'قصير ولّا طويل؟', about: 'Quick-fire short vs long.', build: () => many(10, () => shortOrLong()) },
   'g-listen': { game: true, title: 'Listen and Choose', titleAr: 'إسمع واختار', about: 'Hear it, pick the right answer.', build: () => many(8, listenChoose) },
@@ -622,13 +658,13 @@ export const SECTIONS = [
   { id: 'writing', title: 'Writing & Speaking', ar: 'كتابة وحكي', icon: '✍️', img: 'stickers/teacher-helping-student.png', sticker: true,
     about: 'Type letters, words and sentences — then say them.',
     lessons: ['lesson-6'],
-    sets: ['w-trace', 'w-trace-similar', 'w-letter', 'w-missing', 'w-listen', 'w-copy', 'w-lws', 'w-fix', 'w-arrange', 'w-sentence'] },
+    sets: ['w-reading', 'w-trace', 'w-trace-similar', 'w-letter', 'w-missing', 'w-listen', 'w-copy', 'w-lws', 'w-fix', 'w-arrange', 'w-sentence'] },
   { id: 'listening', title: 'Listening & Speaking', ar: 'سمع وحكي', icon: '🎧', img: 'stickers/teacher-shrug.png', sticker: true,
     about: 'Listen, identify, answer — then say it and record yourself.',
     sets: ['ls-shortlong', 'ls-vowel', 'ls-letter', 'ls-word'] },
   { id: 'games', title: 'Practice & Games', ar: 'تمارين وألعاب', icon: '🎮', img: 'stickers/teacher-cheering.png', sticker: true,
     about: '14 games that mix everything, at your level.',
-    sets: ['g-daily', 'g-detective', 'g-shortlong', 'g-listen', 'g-match', 'g-missing', 'g-build', 'g-type',
+    sets: ['g-daily', 'g-reading', 'g-detective', 'g-shortlong', 'g-listen', 'g-match', 'g-missing', 'g-build', 'g-type',
       'g-repeat', 'g-word', 'g-sentence', 'g-quiz', 'g-review', 'g-mixed'] },
 ];
 

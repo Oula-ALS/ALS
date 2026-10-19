@@ -8,11 +8,13 @@
 //   speak   – listen, say it, record yourself, compare (no automatic scoring)
 //   learn   – a short explanation card inside a lesson (not scored, not logged)
 //   trace   – trace a letter on the tracing pad (never graded)
+//   read    – read a word with no sound, then check by listening; the learner says honestly
+//             whether they read it right (the app does not score pronunciation)
 // Any choose/type exercise can add `speakAfter: { audio, text, latin }` for the Speak step.
 //
 // Every finished exercise is logged with its kind, so progress shows only real activity.
 
-import { playAudio, stopAudio, showAudioMessage } from './audio.js';
+import { playAudio, stopAudio, showAudioMessage, hasRecording } from './audio.js';
 import * as store from './progress.js';
 import { sfx } from './music.js';
 import { celebrate } from './celebrate.js';
@@ -216,6 +218,24 @@ const RENDER = {
   speak: ex => `${display(ex)}${speakPanel(ex.speak || ex)}`,
 
   learn: ex => `<div class="learn">${ex.html}</div>`,
+
+  read: ex => `
+    <div class="ex-display read-word" lang="ar" dir="rtl">${esc(ex.text)}</div>
+    <div class="speak-buttons">
+      ${canRecord() ? `
+        <button class="speaker-pill rec" type="button" data-rec aria-pressed="false">🎙️ Record me reading</button>
+        <button class="speaker-pill" type="button" data-rec-play disabled>▶️ My voice</button>` : ''}
+    </div>
+    <button class="button" type="button" data-read-check>Check ✓</button>
+    <div class="read-reveal" id="read-reveal" hidden>
+      <p class="read-answer"><b>${esc(ex.latin)}</b>${ex.en ? ` · ${esc(ex.en)}` : ''} ${ex.emoji || ''}</p>
+      <p class="hint" id="read-audio-note"></p>
+      <p>Did you read it right?</p>
+      <div class="row center">
+        <button class="button" type="button" data-read-self="yes">✓ Yes, I read it</button>
+        <button class="button secondary" type="button" data-read-self="no">↺ Not yet</button>
+      </div>
+    </div>`,
 
   trace: ex => `
     ${display(ex)}${tracingHTML(ex.glyph, 'trace-pad')}
@@ -449,7 +469,7 @@ function speakDone() {
 
 document.addEventListener('click', e => {
   if (!session || !root()) return;
-  const t = e.target.closest('[data-trace-done],[data-ex-play],[data-opt],[data-ml],[data-mr],[data-tile],[data-build-undo],[data-build-check],[data-rec],[data-rec-play],[data-speak-done],[data-ex-next],[data-ex-replay]');
+  const t = e.target.closest('[data-read-check],[data-read-self],[data-trace-done],[data-ex-play],[data-opt],[data-ml],[data-mr],[data-tile],[data-build-undo],[data-build-check],[data-rec],[data-rec-play],[data-speak-done],[data-ex-next],[data-ex-replay]');
   if (!t || !root().contains(t)) return;
   const ex = session.items[session.i];
   if (t.hasAttribute('data-ex-play')) playAudio(ex.audio, t);
@@ -459,7 +479,18 @@ document.addEventListener('click', e => {
   else if (t.hasAttribute('data-rec')) toggleRecord(t);
   else if (t.hasAttribute('data-rec-play')) { stopAudio(); if (ex.myVoice) new Audio(ex.myVoice).play().catch(() => {}); }
   else if (t.hasAttribute('data-speak-done')) speakDone();
-  else if (t.hasAttribute('data-trace-done')) {
+  else if (t.hasAttribute('data-read-check')) revealReading(ex, t);
+  else if (t.dataset.readSelf) {
+    document.querySelectorAll('[data-read-self]').forEach(b => { b.disabled = true; });
+    const s = store.getCurrentStudent();
+    if (t.dataset.readSelf === 'yes') {
+      sfx('correct');
+      feedback(`<b lang="ar" dir="rtl">${cheer(s)}</b><span class="ex-explain" dir="ltr">You're reading Arabic!</span>`, 'ok');
+    } else {
+      feedback(`<span lang="ar" dir="rtl">كل محاولة بتعلّمك شي جديد!</span><span class="ex-explain" dir="ltr">Listen again, then read it once more out loud.</span>`, 'try');
+    }
+    finishExercise(ex, t.dataset.readSelf === 'yes');
+  } else if (t.hasAttribute('data-trace-done')) {
     t.disabled = true;
     feedback(`<b lang="ar" dir="rtl">${cheer()}</b><span class="ex-explain" dir="ltr">Compare your letter with the example. Clear and trace again any time!</span>`, 'ok');
     finishExercise(ex, true);
@@ -493,3 +524,17 @@ document.addEventListener('traced', e => {
   const done = document.querySelector('[data-trace-done]');
   if (done && !session?.items[session.i]?.finished) done.disabled = Number(e.target.dataset.drawn || 0) < 5;
 });
+
+// Reading challenge: show how it is said, and play Alsama's recording when there is one.
+async function revealReading(ex, btn) {
+  btn.disabled = true;
+  if (isRecording()) document.querySelector('[data-rec]')?.click();
+  document.getElementById('read-reveal').hidden = false;
+  const note = document.getElementById('read-audio-note');
+  if (ex.audio && await hasRecording(ex.audio)) {
+    note.innerHTML = `<button class="speaker-pill" type="button" data-say="${esc(ex.audio)}">🔊 Listen again</button>`;
+    playAudio(ex.audio, note.querySelector('button'), { quiet: true });
+  } else {
+    note.textContent = 'Recording coming soon — use the pronunciation above.';
+  }
+}

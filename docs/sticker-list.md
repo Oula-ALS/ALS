@@ -6,9 +6,11 @@ edge and a soft shadow; the photo itself is not changed (only cropped to its out
 
 ## In the app now
 
+The graduates photo was removed at the owner's request (19 Oct 2026); celebrations that used it now show words only.
+
+
 | File | Photo | Where it appears |
 |---|---|---|
-| `assets/stickers/graduates-celebrate.png` | Two graduates with a certificate | Replaces the old owl 🦉: home screen hero, welcome photo corner, **برافووووو!** celebration, lesson complete |
 | `assets/stickers/teacher-cheering.png` | Teacher and student cheering | "Games" card, About page, streak / correct-answer sticker |
 | `assets/stickers/teacher-helping-student.png` | Teacher helping a student with her work | Student details page, "Lessons" card, try-again sticker |
 | `assets/images/students-library.jpg` | Students together in the library | Welcome page main photo |

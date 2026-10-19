@@ -125,6 +125,13 @@ because each one still needs to be matched to the word or sound it contains.
 | clip-5.mp3 (sent 10:54:57) | 5.6 s | ? |
 | clip-6.mp3 (sent later) | 2.4 s | ✅ يلا جرّب مرة تانية → `phrases/yalla-jarreb.mp3` (masculine; a feminine جرّبي version would be welcome) |
 
+## Long recordings received 19 Oct 2026 — waiting for the teacher's check
+
+Two long recordings (all letters, ~39 s; all words, ~32 s) were cut automatically into 28 + 28
+pieces in `assets/audio/incoming/letters/` and `assets/audio/incoming/words/`. The pauses were
+uneven, so the cuts may be wrong in places. They are **not used in lessons** until the teacher
+confirms each one on the check page: `/tools/check-recordings.html`.
+
 ## Audio cleaning
 
 Every new recording goes through `scripts/clean-audio.sh` (ffmpeg): low-rumble and
