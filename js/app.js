@@ -42,8 +42,8 @@ function welcomeScreen() {
 
       <button class="button big" type="button" data-go="start">Start learning</button>
       <p class="muted">Listen, practise, play games and repeat any lesson whenever you need. No sign-up needed.</p>
-      <button class="speaker-pill" type="button" data-say="مَرْحَبًا" aria-label="Listen: marhaba">
-        🔊 <span lang="ar" dir="rtl">مَرْحَبًا</span> <small>marhaba · hello</small>
+      <button class="speaker-pill greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama">
+        🔊 <span lang="ar" dir="rtl">أهلاً وسهلاً بعيلة السما</span> <small>ahlan w sahlan b-3ilet el-Sama · welcome to the Alsama family</small>
       </button>
     </section>`;
 }
