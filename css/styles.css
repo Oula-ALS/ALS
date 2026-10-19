@@ -94,6 +94,8 @@ main:focus { outline: none; }
 .speaker-pill [lang="ar"] { font-size: 22px; }
 .speaker-pill small { color: var(--text-soft); }
 .speaker-pill.light { border-color: var(--white); }
+.speaker-pill.greeting { flex-wrap: wrap; justify-content: center; max-width: 100%; border-radius: 24px; padding: 10px 20px; }
+.speaker-pill.greeting small { flex-basis: 100%; text-align: center; }
 
 /* Audio states set by playAudio() */
 [data-audio-state="loading"] { opacity: .7; cursor: progress; }
