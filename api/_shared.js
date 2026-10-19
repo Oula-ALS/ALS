@@ -64,7 +64,36 @@ async function db(config, path, options = {}) {
   return { ok: res.ok, status: res.status, data };
 }
 
+const escHtml = s => String(s ?? '—').replace(/[&<>"']/g, c =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// Emails the school (NOTIFY_EMAIL) through Resend. Returns 'sent' | 'failed' | 'not_configured'.
+// rows: [[label, value], …] shown as a small table.
+async function notifySchool(subject, heading, rows) {
+  const key = process.env.RESEND_API_KEY;
+  const to = process.env.NOTIFY_EMAIL;
+  if (!key || !to) return 'not_configured';
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: process.env.NOTIFY_FROM || 'Alsama Arabic <onboarding@resend.dev>',
+        to: [to],
+        subject,
+        html: `<h2>${escHtml(heading)}</h2><table>${rows.map(([k, v]) =>
+          `<tr><td><b>${escHtml(k)}</b></td><td>${escHtml(v)}</td></tr>`).join('')}</table>`,
+      }),
+    });
+    if (!res.ok) console.error('Resend error', res.status, await res.text());
+    return res.ok ? 'sent' : 'failed';
+  } catch (e) {
+    console.error('Resend unreachable', e);
+    return 'failed';
+  }
+}
+
 const hash = token => crypto.createHash('sha256').update(String(token)).digest('hex');
 const newToken = () => crypto.randomBytes(24).toString('base64url');
 
-module.exports = { send, readJson, rateLimited, supabaseConfig, db, hash, newToken };
+module.exports = { send, readJson, rateLimited, supabaseConfig, db, hash, newToken, notifySchool };

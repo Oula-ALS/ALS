@@ -9,7 +9,7 @@
 //   NOTIFY_EMAIL               optional, who receives the notification
 //   NOTIFY_FROM                optional, e.g. "Alsama Arabic <app@alsamaproject.com>"
 
-const { send, readJson, rateLimited, supabaseConfig, db, hash, newToken } = require('./_shared');
+const { send, readJson, rateLimited, supabaseConfig, db, hash, newToken, notifySchool } = require('./_shared');
 
 const AGE_GROUPS = ['under13', '13-17', '18plus'];
 const LEVELS = ['new', 'some-letters', 'read-a-little', 'speak-a-little', 'not-sure'];
@@ -43,35 +43,14 @@ function validate(body) {
   return { record: r, errors };
 }
 
-const escHtml = s => String(s ?? '—').replace(/[&<>"']/g, c =>
-  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-
 async function notify(record) {
-  const key = process.env.RESEND_API_KEY;
-  const to = process.env.NOTIFY_EMAIL;
-  if (!key || !to) return 'not_configured';
-  const rows = [
+  return notifySchool(`New learner: ${record.first_name}`, 'New Alsama Arabic learner', [
     ['Name', record.first_name], ['Nickname', record.nickname], ['Age group', record.age_group],
     ['Country', record.country], ['Native language', record.native_language],
     ['Arabic level', record.arabic_level], ['Email', record.email],
     ['Parent consent', record.parent_consent ? 'yes' : 'not needed / no'],
-  ];
-  try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        from: process.env.NOTIFY_FROM || 'Alsama Arabic <onboarding@resend.dev>',
-        to: [to],
-        subject: `New learner: ${record.first_name}`,
-        html: `<h2>New Alsama Arabic learner</h2><table>${rows.map(([k, v]) =>
-          `<tr><td><b>${k}</b></td><td>${escHtml(v)}</td></tr>`).join('')}</table>`,
-      }),
-    });
-    return res.ok ? 'sent' : 'failed';
-  } catch (e) {
-    return 'failed';
-  }
+    ['Time', new Date().toLocaleString('en-GB', { timeZone: 'Asia/Beirut' }) + ' (Beirut)'],
+  ]);
 }
 
 module.exports = async (req, res) => {

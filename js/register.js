@@ -68,6 +68,22 @@ export async function sendPendingRegistrations() {
   }
 }
 
+// Tell the school a registered learner is learning today (at most once a day per learner).
+export async function notifyLogin(student) {
+  const remote = (student && student.remote) || {};
+  if (!remote.id || !remote.token) return 'not-registered';
+  const day = new Date().toISOString().slice(0, 10);
+  if (remote.loginNotified === day) return 'already-today';
+  try {
+    const r = await post('api/notify-login', { id: remote.id, token: remote.token });
+    if (r.status === 200 && ['sent', 'already_today'].includes(r.data.notification)) {
+      store.setRemote(student.id, { loginNotified: day });
+      return 'sent';
+    }
+  } catch (e) { /* offline: try again next time */ }
+  return 'not-sent';
+}
+
 // Returns 'deleted' | 'nothing-to-delete' | 'failed'
 export async function deleteRegistration(student) {
   const remote = student.remote || {};

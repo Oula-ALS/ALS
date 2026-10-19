@@ -6,7 +6,7 @@ import * as store from './progress.js';
 import { stopAudio, playAudio, showAudioMessage } from './audio.js';
 import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
-import { sendRegistration, sendPendingRegistrations, deleteRegistration } from './register.js';
+import { sendRegistration, sendPendingRegistrations, deleteRegistration, notifyLogin } from './register.js';
 import { LETTERS, LOOKALIKES } from './data/letters.js';
 import { VOWELS } from './data/content.js';
 import { SECTIONS, SETS } from './sections.js';
@@ -29,8 +29,6 @@ const go = route => { location.hash = '#/' + route; };
 function welcomeScreen() {
   return `
     <section class="welcome">
-      <img class="welcome-hero" src="assets/images/welcome-yalla-netaallam.jpg"
-           alt="An Alsama teacher smiling with open hands, under the words يلا نتعلم عربي — let's learn Arabic">
       <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً!</h1>
       <p class="lead">Welcome to the Alsama Language School family!</p>
 
@@ -143,7 +141,8 @@ function profileScreen(id) {
           </div>
         </fieldset>
 
-        <p class="privacy">🔒 Your registration details go only to Alsama Language School. Birthday,
+        <p class="privacy">🔒 Your registration details go only to Alsama Language School, and your
+        teacher gets an email when you join and when you log in to learn. Birthday,
         favourite word and learning progress stay on this device. You can delete your details at any
         time (Who's learning → ✏️ → Delete learner).</p>
         <p class="field-error" id="save-error" role="alert" hidden></p>
@@ -686,6 +685,8 @@ function aboutScreen() {
       <p>🔒 When you join, your registration details (name, age group and anything else you choose
       to add, such as country, native language, Arabic level or email) are sent securely to
       <b>Alsama Language School</b>, so your teacher can support you. They are never sold or shared.</p>
+      <p>Your teacher also gets a short email when you join and when you log in to learn (once a day) —
+      just your name, age group, country and level, so they can follow and support you.</p>
       <p>Your birthday, favourite word and learning progress stay only on this device.</p>
       <p>You can edit or delete a learner at any time from <a href="#/who">Who's learning today?</a>
       Deleting a learner also deletes their registration from Alsama's records.</p>
@@ -805,6 +806,7 @@ document.addEventListener('click', e => {
     go(t.dataset.go);
   } else if (t.dataset.pick) {
     store.setCurrentStudent(t.dataset.pick);
+    notifyLogin(store.getCurrentStudent()); // the teacher gets an email when a learner logs in
     go('home');
   } else if (t.dataset.edit) {
     go('profile/' + t.dataset.edit);
@@ -957,3 +959,4 @@ document.addEventListener('change', e => {
 window.addEventListener('hashchange', render);
 render();
 sendPendingRegistrations(); // retry any registration that couldn't be sent before
+notifyLogin(store.getCurrentStudent()); // returning learner opened the app: tell the teacher (once a day)

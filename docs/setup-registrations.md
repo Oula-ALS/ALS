@@ -27,7 +27,13 @@ You need about 20 minutes. Everything here is free.
    any file in GitHub, into a chat, or into the website code. It goes **only** into
    Vercel (Part 3).
 
-## Part 2 — Email notifications (Resend) — optional
+## Part 2 — Email notifications (Resend)
+
+With this set up, **Oula.Khalaf@alsamaproject.com** receives an email:
+- **"New learner: …"** when a student registers, and
+- **"Learner logged in: …"** when a registered student opens the app or picks their name
+  (at most once per student per day, so the inbox doesn't fill up).
+
 
 1. Go to **https://resend.com** → **Sign up** (free: 3,000 emails/month).
 2. Left menu → **API Keys** → **Create API Key** → name `alsama-arabic`, permission *Sending access* → **Add**. Copy the key (starts with `re_`).
