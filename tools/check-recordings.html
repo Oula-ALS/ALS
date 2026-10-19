@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Check recordings · Alsama Arabic (teacher tool)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .check { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; }
+    .check table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+    .check th, .check td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+    .check th { background: var(--magenta); color: var(--white); }
+    .check td.ar { font: 700 30px/1.4 var(--font-ar); color: var(--burgundy); }
+    .check .pill { margin: 0; }
+    .check .mark { min-width: 48px; min-height: 44px; border: 2px solid var(--line); border-radius: 12px; background: var(--white); font-size: 20px; cursor: pointer; }
+    .check .mark[aria-pressed="true"].yes { background: #1B7A47; border-color: #1B7A47; color: #fff; }
+    .check .mark[aria-pressed="true"].no { background: var(--danger); border-color: var(--danger); color: #fff; }
+    .check textarea { width: 100%; min-height: 90px; font: 16px var(--font-en); padding: 10px; border-radius: 12px; border: 2px solid var(--line); }
+    .check h2 { margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main class="check">
+    <h1>Check the recordings</h1>
+    <p>Your two long recordings were cut into pieces automatically. Please play each piece and tap
+    <b>✓</b> if it says the word on the left, or <b>✗</b> if it doesn't (wrong word, cut in the middle, or two words together).
+    When you finish, tap <b>Copy my answers</b> and paste them into the chat with Claude.</p>
+    <p class="muted">This page is only for the teacher. Students never see it.</p>
+
+    <h2>Letters (28 pieces)</h2>
+    <table><thead><tr><th>#</th><th>Should say</th><th></th><th>Correct?</th></tr></thead><tbody id="letters"></tbody></table>
+
+    <h2>Words (28 pieces)</h2>
+    <table><thead><tr><th>#</th><th>Should say</th><th></th><th>Correct?</th></tr></thead><tbody id="words"></tbody></table>
+
+    <h2>Your answers</h2>
+    <textarea id="summary" readonly></textarea>
+    <p><button class="button" type="button" id="copy">Copy my answers</button></p>
+  </main>
+
+  <script type="module">
+    import { LETTERS } from '../js/data/letters.js';
+
+    // Lebanese letter names, in alphabet order (what the letters recording is expected to say).
+    const NAMES = ['alef', 'be', 'te', 'the / se', 'jīm', 'ḥe', 'khe', 'dāl', 'zāl', 're', 'zēn', 'sīn', 'shīn', 'ṣād',
+      'ḍād', 'ṭa', 'ẓa', 'ʿēn', 'ghēn', 'fe', 'ʾāf', 'kāf', 'lām', 'mīm', 'nūn', 'he', 'wāw', 'ye'];
+    const lists = {
+      letters: LETTERS.map((L, i) => ({ ar: L.char, latin: NAMES[i] })),
+      words: LETTERS.map(L => ({ ar: L.word.ar, latin: `${L.word.latin} · ${L.word.en}` })),
+    };
+    const answers = { letters: {}, words: {} };
+    const pad = n => String(n).padStart(2, '0');
+
+    for (const kind of ['letters', 'words']) {
+      document.getElementById(kind).innerHTML = lists[kind].map((x, i) => `
+        <tr>
+          <td>${i + 1}</td>
+          <td class="ar" lang="ar">${x.ar} <small style="font:14px var(--font-en);color:var(--text-soft)">${x.latin}</small></td>
+          <td><button class="speaker-pill pill" type="button" data-play="../assets/audio/incoming/${kind}/${pad(i + 1)}.mp3">▶ Play</button></td>
+          <td>
+            <button class="mark yes" type="button" aria-pressed="false" data-kind="${kind}" data-n="${i + 1}" data-v="ok" aria-label="Piece ${i + 1} is correct">✓</button>
+            <button class="mark no" type="button" aria-pressed="false" data-kind="${kind}" data-n="${i + 1}" data-v="wrong" aria-label="Piece ${i + 1} is wrong">✗</button>
+          </td>
+        </tr>`).join('');
+    }
+
+    let audio = null;
+    function summary() {
+      const part = kind => {
+        const a = answers[kind];
+        const wrong = Object.keys(a).filter(n => a[n] === 'wrong').map(Number).sort((x, y) => x - y);
+        const ok = Object.keys(a).filter(n => a[n] === 'ok').length;
+        const unchecked = 28 - Object.keys(a).length;
+        return `${kind}: ${ok} correct, wrong: ${wrong.length ? wrong.join(', ') : 'none'}${unchecked ? `, not checked: ${unchecked}` : ''}`;
+      };
+      document.getElementById('summary').value = `${part('letters')}\n${part('words')}`;
+    }
+    summary();
+
+    document.addEventListener('click', e => {
+      const play = e.target.closest('[data-play]');
+      if (play) { if (audio) audio.pause(); audio = new Audio(play.dataset.play); audio.play().catch(() => {}); return; }
+      const mark = e.target.closest('.mark');
+      if (mark) {
+        const { kind, n, v } = mark.dataset;
+        answers[kind][n] = v;
+        mark.parentElement.querySelectorAll('.mark').forEach(b => b.setAttribute('aria-pressed', String(b === mark)));
+        summary();
+      }
+      if (e.target.id === 'copy') {
+        const t = document.getElementById('summary');
+        navigator.clipboard?.writeText(t.value).then(() => { e.target.textContent = 'Copied ✓'; })
+          .catch(() => { t.select(); document.execCommand('copy'); e.target.textContent = 'Copied ✓'; });
+      }
+    });
+  </script>
+</body>
+</html>

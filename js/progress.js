@@ -145,7 +145,7 @@ export const today = () => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
 
-// kind: 'letter' | 'short' | 'long' | 'write' | 'listen' | 'speak' | 'game'
+// kind: 'letter' | 'short' | 'long' | 'write' | 'listen' | 'speak' | 'read' | 'game'
 // item: what was practised (a letter, syllable or word); ok: right on the first try.
 export function logActivity(studentId, { kind, item, ok, ex }) {
   const p = getProgress(studentId);
@@ -189,6 +189,7 @@ export function stats(studentId) {
       writing: count(todays, 'write'),
       listening: count(todays, 'listen'),
       speaking: count(todays, 'speak'),
+      reading: count(todays, 'read'),
       games: count(todays, 'game'),
       dailyDone: Boolean(p.daily[day]),
     },
@@ -201,6 +202,7 @@ export function stats(studentId) {
       writing: count(p.log, 'write'),
       listening: count(p.log, 'listen'),
       speaking: count(p.log, 'speak'),
+      reading: count(p.log, 'read'),
       games: count(p.log, 'game'),
     },
     // Correct answers in exercises that compare short and long sounds.

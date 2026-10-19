@@ -41,7 +41,7 @@ export async function celebrate(event, { student } = {}) {
   show({
     small,
     title,
-    sticker: pick(e.stickers),
+    sticker: e.stickers && e.stickers.length ? pick(e.stickers) : null,
     message: pick(messages),
     english: e.english,
   });
@@ -80,7 +80,8 @@ function show({ small, title, sticker, message, english }) {
   box.querySelector('.celebration-message').textContent = message || '';
   box.querySelector('.celebration-english').textContent = english || '';
   const img = box.querySelector('img');
-  img.src = 'assets/' + sticker;
+  if (!sticker) img.remove(); // some celebrations have no photo — just the words
+  else img.src = 'assets/' + sticker;
   img.onerror = () => img.replaceWith(Object.assign(document.createElement('div'), {
     className: 'sticker-placeholder', textContent: 'STICKER: ' + sticker,
   }));

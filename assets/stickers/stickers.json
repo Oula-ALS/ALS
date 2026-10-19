@@ -2,9 +2,7 @@
   "_comment": "Which real Alsama photo and recorded voice appear for each event. Swap a file name here to change a sticker; no code changes needed. 'sounds' are Arabic keys from assets/audio/manifest.json (one is picked at random); 'soundsMale'/'soundsFemale' replace them when the student chose شاطر or شاطرة (an empty list means no voice). 'messagesMale'/'messagesFemale' and 'titleFemale' work the same way.",
   "events": {
     "welcome": {
-      "stickers": [
-        "stickers/graduates-celebrate.png"
-      ],
+      "stickers": [],
       "title": "برافووووو!",
       "messages": [
         "أهلاً وسهلاً في عيلة مدرسة السما للغات!"
@@ -24,7 +22,6 @@
     },
     "correct": {
       "stickers": [
-        "stickers/graduates-celebrate.png",
         "stickers/teacher-cheering.png"
       ],
       "title": "برافووووو!",
@@ -79,9 +76,7 @@
       ]
     },
     "lessonComplete": {
-      "stickers": [
-        "stickers/graduates-celebrate.png"
-      ],
+      "stickers": [],
       "title": "برافووووو!",
       "messages": [
         "أهلاً وسهلاً في عيلة مدرسة السما للغات!"

@@ -396,8 +396,6 @@ function lettersDoneScreen() {
 
   return `
     <section class="narrow card done-card">
-      <img class="sticker done-sticker" src="assets/stickers/graduates-celebrate.png"
-           alt="Two Alsama graduates celebrating">
       <h1 tabindex="-1">You've met all 28 letters!</h1>
       <p class="ar-line" lang="ar" dir="rtl">برافو عليك يا ${esc(store.displayName(s))}!</p>
       <p>You listened to <b>${p.lettersHeard.length}</b> of 28 letters.
@@ -466,6 +464,7 @@ function homeScreen() {
           <li><b>${st.today.words}</b> words written</li>
           <li><b>${st.today.listening}</b> listening</li>
           <li><b>${st.today.speaking}</b> speaking</li>
+          <li><b>${st.today.reading}</b> reading</li>
           <li><b>${st.today.games}</b> games</li>
         </ul>
         ${msgs.length
@@ -654,6 +653,7 @@ function progressScreen() {
           ${row('Writing exercises', st.today.writing)}
           ${row('Listening exercises', st.today.listening)}
           ${row('Speaking activities', st.today.speaking)}
+          ${row('Reading challenges', st.today.reading)}
           ${row('Games finished', st.today.games)}
           ${row('Daily Challenge', st.today.dailyDone ? '✓ done' : 'not yet')}
         </ul>
@@ -666,6 +666,7 @@ function progressScreen() {
           ${row('Writing exercises', st.total.writing)}
           ${row('Listening exercises', st.total.listening)}
           ${row('Speaking activities', st.total.speaking)}
+          ${row('Reading challenges', st.total.reading)}
           ${row('Games finished', st.total.games)}
         </ul>
         ${days.length ? `<h2>Words written per day</h2><ul class="stat-list">${days.map(d => row(d.d, d.words)).join('')}</ul>` : ''}
