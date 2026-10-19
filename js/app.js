@@ -448,8 +448,8 @@ function homeScreen() {
           <p>Ready to learn some Lebanese Arabic today?</p>
           ${store.isBirthdayToday(s) ? `<p class="birthday" lang="ar" dir="rtl">🎂 عيد ميلاد سعيد يا ${esc(name)}!</p>` : ''}
           ${s.favouriteWord ? `<p class="fav">Your favourite word: <span lang="ar" dir="rtl">${esc(s.favouriteWord)}</span></p>` : ''}
-          <button class="speaker-pill light" type="button" data-say="مَرْحَبًا" aria-label="Listen: marhaba">
-            🔊 <span lang="ar" dir="rtl">مَرْحَبًا</span>
+          <button class="speaker-pill light greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama (welcome to the Alsama family)">
+            🔊 <span lang="ar" dir="rtl">أهلاً وسهلاً بعيلة السما</span>
           </button>
         </div>
         <img class="hero-photo" src="assets/images/students-walking-books.jpg"
