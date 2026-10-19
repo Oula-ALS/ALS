@@ -542,6 +542,8 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
 
 @media (max-width: 480px) {
   .hero-photo { width: 34%; }
+  .hero .speaker-pill.greeting { flex-wrap: nowrap; padding: 8px 12px; gap: 6px; }
+  .hero .speaker-pill.greeting [lang="ar"] { font-size: 17px; white-space: nowrap; }
   .ex-display { font-size: 44px; }
   .ex-options.many { grid-template-columns: repeat(2, 1fr); }
   .kb-key { min-height: 40px; font-size: 18px; }
