@@ -9,40 +9,40 @@ Use this list to record. ✅ = the app already has your recording. ⬜ = please 
 - Say everything the **Lebanese** way. If you say a word differently from the "Say it" column, say it your way and tell me.
 - I clean every file (remove noise, even out the volume) before adding it. Each new recording appears in the app automatically.
 
-## A. Letter names, the Lebanese way — 28 (most important)
+## A. Letter names, the Lebanese way — 28 ✅ done (23 Oct 2026)
 
-The app has these names from the old app, but they are said the formal way (بَاء "bāʾ"). Re-record them the Lebanese way.
+Recorded by Oula on 23 Oct 2026 and now used everywhere in the app (`assets/audio/letters-lebanese/`). ث uses the same recording as ت, and ذ the same as د, because that is how they are said in Lebanese.
 
 | Code | Letter | Say it | |
 |---|---|---|---|
-| A01 | ا | alef | ⬜ |
-| A02 | ب | be | ⬜ |
-| A03 | ت | te | ⬜ |
-| A04 | ث | the / se | ⬜ |
-| A05 | ج | jīm (zhīm) | ⬜ |
-| A06 | ح | ḥe | ⬜ |
-| A07 | خ | khe | ⬜ |
-| A08 | د | dāl | ⬜ |
-| A09 | ذ | zāl | ⬜ |
-| A10 | ر | re | ⬜ |
-| A11 | ز | zēn | ⬜ |
-| A12 | س | sīn | ⬜ |
-| A13 | ش | shīn | ⬜ |
-| A14 | ص | ṣād | ⬜ |
-| A15 | ض | ḍād | ⬜ |
-| A16 | ط | ṭa | ⬜ |
-| A17 | ظ | ẓa | ⬜ |
-| A18 | ع | ʿēn | ⬜ |
-| A19 | غ | ghēn | ⬜ |
-| A20 | ف | fe | ⬜ |
-| A21 | ق | ʾāf | ⬜ |
-| A22 | ك | kāf | ⬜ |
-| A23 | ل | lām | ⬜ |
-| A24 | م | mīm | ⬜ |
-| A25 | ن | nūn | ⬜ |
-| A26 | ه | he | ⬜ |
-| A27 | و | wāw | ⬜ |
-| A28 | ي | ye | ⬜ |
+| A01 | ا | alef | ✅ |
+| A02 | ب | be | ✅ |
+| A03 | ت | te | ✅ |
+| A04 | ث | the / se | ✅ |
+| A05 | ج | jīm (zhīm) | ✅ |
+| A06 | ح | ḥe | ✅ |
+| A07 | خ | khe | ✅ |
+| A08 | د | dāl | ✅ |
+| A09 | ذ | zāl | ✅ |
+| A10 | ر | re | ✅ |
+| A11 | ز | zēn | ✅ |
+| A12 | س | sīn | ✅ |
+| A13 | ش | shīn | ✅ |
+| A14 | ص | ṣād | ✅ |
+| A15 | ض | ḍād | ✅ |
+| A16 | ط | ṭa | ✅ |
+| A17 | ظ | ẓa | ✅ |
+| A18 | ع | ʿēn | ✅ |
+| A19 | غ | ghēn | ✅ |
+| A20 | ف | fe | ✅ |
+| A21 | ق | ʾāf | ✅ |
+| A22 | ك | kāf | ✅ |
+| A23 | ل | lām | ✅ |
+| A24 | م | mīm | ✅ |
+| A25 | ن | nūn | ✅ |
+| A26 | ه | he | ✅ |
+| A27 | و | wāw | ✅ |
+| A28 | ي | ye | ✅ |
 
 ## B. Letter sounds — 20 to record
 
@@ -203,6 +203,6 @@ Each letter page shows the letter inside real words. They have no sound yet. If 
 | F59 | عربي | ʿarabi | Arabic |
 
 ---
-**Total to record: 79** (A–E), plus 59 optional (F).
+**Total to record: 51** (A–E), plus 59 optional (F).
 
 > Note: on 19 Oct you sent two long recordings (all the letters, and the words). Those are cut into pieces in `assets/audio/incoming/`, waiting to be checked on `/tools/check-recordings.html`. If you check them there, you may not need to re-record parts of lists A and C.
