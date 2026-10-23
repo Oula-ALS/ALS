@@ -444,6 +444,21 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
 .vowel-table { display: grid; gap: 10px; margin: 10px 0; }
 .vowel-row { padding: 10px 12px; border-radius: 14px; background: var(--cream); border: 1px solid var(--line); }
 .vowel-row .note { margin: 6px 0 0; font-size: 14px; color: var(--text-soft); }
+.vowel-row .mark { font-size: 26px; color: var(--magenta); }
+.practice-table { margin: 12px 0; padding: 12px; border-radius: 14px; border: 2px solid var(--pink); }
+.practice-table p { margin: 0 0 8px; }
+.pt-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 6px 0; }
+.pt-label { min-width: 96px; font-weight: 700; color: var(--burgundy); }
+.groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 14px; }
+.group-box { padding: 12px; border-radius: 14px; border: 2px solid var(--line); background: var(--cream); }
+.group-box.g1 { border-color: var(--magenta); }
+.group-box.g2 { border-color: var(--pink); }
+.group-letters { font-family: var(--font-ar); font-size: 26px; margin: 6px 0; color: var(--burgundy); word-spacing: 4px; }
+.group-badge { display: inline-block; margin: 6px 0; padding: 4px 12px; border-radius: 999px; font-size: 14px; color: var(--burgundy); }
+.group-badge.g1 { background: var(--pink); }
+.group-badge.g2 { background: var(--cream); border: 1px solid var(--pink); }
+.sounds-label { margin: 8px 0 4px; font-weight: 700; color: var(--burgundy); }
+.sound-chip { display: inline-block; padding: 6px 14px; border-radius: 999px; border: 2px solid var(--line); font-family: var(--font-ar); font-size: 22px; color: var(--burgundy); }
 .vowel-sounds { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
 .vowel-sounds .speaker-pill { margin-top: 0; font-family: var(--font-ar); font-size: 22px; }
 .vowel-sounds small { font-family: var(--font-en); font-size: 12px; }

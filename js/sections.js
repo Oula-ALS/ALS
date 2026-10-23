@@ -3,7 +3,7 @@
 // Lebanese Arabic instructions with English help. Only items with Alsama recordings are used
 // for listening; sentences (no recordings yet) are used for reading, writing and arranging.
 
-import { LETTERS, LOOKALIKES } from './data/letters.js';
+import { LETTERS, LOOKALIKES, groupOf, GROUP_1, GROUP_2 } from './data/letters.js';
 import { VOWELS, SYLLABLES, WORDS, COMPLETE_SHORT, SENTENCES, MISSPELLINGS } from './data/content.js';
 import { shuffle, pick, esc } from './exercises.js';
 import * as store from './progress.js';
@@ -427,8 +427,8 @@ function joinsNext() {
     prompt: 'Does this letter join the letter after it?', promptAr: 'هالحرف بيلزق بالحرف اللي بعدو؟',
     options: [{ label: 'Yes, it joins', value: 'yes' }, { label: 'No, never', value: 'no' }],
     answer: never ? 'no' : 'yes',
-    explain: never ? `${L.char} is one of the 6 letters (${NON_JOINING.join(' ')}) that never join the next letter.`
-      : `${L.char} joins on both sides.`,
+    explain: never ? `${L.char} is in Group 1 (${NON_JOINING.join(' ')}): these 6 letters never join the next letter.`
+      : `${L.char} is in Group 2: it joins on both sides.`,
   };
 }
 
@@ -439,7 +439,22 @@ function neverJoins() {
     type: 'choose', kind: 'letter', item: nj, id: 'never-joins:' + nj,
     prompt: 'Which letter never joins the letter after it?', promptAr: 'أيّا حرف ما بيلزق بالحرف اللي بعدو؟',
     options: shuffle([nj, ...others]).map(c => ({ label: c, ar: true, value: c })), answer: nj,
-    explain: `Only ${NON_JOINING.join(' ')} never join the next letter.`,
+    explain: `Only the Group 1 letters ${NON_JOINING.join(' ')} never join the next letter.`,
+  };
+}
+
+// Group 1 (2 shapes, never joins forward) or Group 2 (4 shapes, joins both sides)?
+function whichGroup() {
+  const L = pick(Math.random() < 0.45 ? LETTERS.filter(l => groupOf(l) === 1) : LETTERS);
+  const g = groupOf(L);
+  return {
+    type: 'choose', kind: 'letter', item: L.char, id: 'group:' + L.char,
+    display: esc(L.char), displaySub: L.latin,
+    prompt: 'Which group is this letter in?', promptAr: 'هالحرف من أيّا مجموعة؟',
+    options: [{ label: 'Group 1 · 2 shapes', value: '1' }, { label: 'Group 2 · 4 shapes', value: '2' }],
+    answer: String(g),
+    explain: g === 1 ? `${L.char} is in Group 1 (${GROUP_1.join(' ')}): only 2 shapes, and it never joins the letter after it.`
+      : `${L.char} is in Group 2: 4 shapes, and it joins on both sides.`,
   };
 }
 
@@ -532,20 +547,33 @@ const LESSON_DEFS = {
     },
   },
   'lesson-3': {
-    title: 'Lesson 3 · Joining letters', titleAr: 'الدرس ٣ · الأحرف اللي بتلزق', about: 'The 6 letters that never join the next one.',
+    title: 'Lesson 3 · Two groups of letters', titleAr: 'الدرس ٣ · مجموعتين من الأحرف', about: 'Group 1 (2 shapes) and Group 2 (4 shapes).',
     build: () => [
-      learn('3a', 'Six letters never join forward', `
-        <p>Most letters join on both sides. But these <b>6</b> letters never join the letter <b>after</b> them:</p>
-        <p class="learn-big" lang="ar" dir="rtl">${NON_JOINING.join(' &nbsp; ')}</p>
-        <p>So the word breaks after them — look at ${say('ورد', 'ورد ward')} and ${say('دار', 'دار dār')}.</p>`),
-      joinsNext(), joinsNext(), neverJoins(), neverJoins(), joinsNext(),
+      learn('3a', 'Group 1: six letters, two shapes', `
+        <p>These <b>6</b> letters have only <b>2 shapes</b> (alone and end):</p>
+        <p class="learn-big" lang="ar" dir="rtl">${GROUP_1.join(' &nbsp; ')}</p>
+        <ul>
+          <li>They join only to the letter <b>before</b> them — never to the letter <b>after</b> them.</li>
+          <li>So the word has a natural <b>break</b> after them.</li>
+          <li>If the letter before is also Group 1, they don't join at all.</li>
+        </ul>`),
+      learn('3b', 'Group 1 inside words', `
+        <p>${say('وعد', 'وعد waʿd')} — و does not join ع, but ع joins forward, so the word still flows.</p>
+        <p>${say('ورد', 'ورد ward')} — ر does not join د, so د stands alone.</p>
+        <p>${say('دار', 'دار dār')} — د, ا and ر are all Group 1, so no letter joins.</p>`),
+      learn('3c', 'Group 2: all the other letters, four shapes', `
+        <p>All the other <b>22</b> letters have <b>4 shapes</b>: alone, start, middle and end.</p>
+        <p class="learn-big" lang="ar" dir="rtl">${GROUP_2.join(' ')}</p>
+        <p>They join on <b>both sides</b> — except when they come after a Group 1 letter.</p>`),
+      whichGroup(), whichGroup(), joinsNext(), neverJoins(), whichGroup(),
     ],
   },
   'lesson-4': {
     title: 'Lesson 4 · Long vowels', titleAr: 'الدرس ٤ · المدّ', about: 'How ا، و، ي make a vowel long.',
     build: () => [
       learn('4a', 'Short + letter = long', `
-        <p>A long vowel is the same sound held <b>about twice as long</b>. The letters ا، و، ي after a consonant make it long:</p>
+        <p>Three letters make long sounds: <b lang="ar">ا و ي</b> — the vowels of the Arabic alphabet. ${say('ا و ي')}</p>
+        <p>They come after a letter to make the sound <b>twice as long</b>:</p>
         ${VOWELS.map(v => `<div class="learn-row">${say('ب' + v.mark, 'ب' + v.mark)} → ${say('ب' + v.mark + v.longLetter, 'ب' + v.mark + v.longLetter)}
           <small>"${v.short}" → "${v.long}"</small></div>`).join('')}
         <p class="note">In Lebanese, و and ي are often said "ō" and "ē": موز = mōz, بيت = bēt.</p>`),
@@ -553,9 +581,10 @@ const LESSON_DEFS = {
     ],
   },
   'lesson-5': {
-    title: 'Lesson 5 · Short vowels', titleAr: 'الدرس ٥ · الحركات', about: 'Fatḥa, kasra and ḍamma.',
+    title: 'Lesson 5 · Short vowels', titleAr: 'الدرس ٥ · الحركات', about: 'Fatḥa (a), ḍamma (o) and kasra (i).',
     build: () => [
       learn('5a', 'Three small marks', `
+        <p>Short vowels are small marks above or below the letter. Each one is <b>half</b> of a long vowel: a (half of aa), o (half of oo), i (half of ee).</p>
         ${VOWELS.map(v => `<div class="learn-vowel"><b>${v.name}</b> <span lang="ar">${v.ar}</span> — ${v.where}
           <div class="learn-row">${['ب', 'م', 'ل'].map(c => say(c + v.mark)).join('')}</div>
           <small>${v.lebanese}</small></div>`).join('')}`),
@@ -583,10 +612,11 @@ export const SETS = {
   'a-match': { title: 'Match letters to sounds', titleAr: 'وصّل الأصوات بالأحرف', about: 'Tap a sound, then its letter.', build: () => many(4, matchLetters) },
   'a-similar': { title: 'Look-alike letters', titleAr: 'أحرف بتشبه بعض', about: 'Tell apart letters that only differ by dots.', build: () => many(8, similarLetters) },
   'a-words': { title: 'Letters in words', titleAr: 'الأحرف بالكلمات', about: 'Find letters inside simple Lebanese words.', build: () => many(8, letterInWord) },
+  'a-groups': { title: 'Group 1 or Group 2?', titleAr: 'أيّا مجموعة؟', about: 'Two shapes or four? Sort the letters into their groups.', build: () => many(8, [whichGroup, whichGroup, joinsNext]) },
   'a-quiz': { title: 'Alphabet quiz', titleAr: 'امتحان صغير', about: 'A short mixed review of the alphabet.', build: () => many(10, [() => hearLetter(), similarLetters, letterInWord]) },
 
   // Short sounds
-  's-vowel': { title: 'Which short vowel?', titleAr: 'أيّا حركة؟', about: 'Hear a syllable: fatḥa, kasra or ḍamma?', build: () => many(8, () => whichVowel()) },
+  's-vowel': { title: 'Which short vowel?', titleAr: 'أيّا حركة؟', about: 'Hear a syllable: fatḥa (a), ḍamma (o) or kasra (i)?', build: () => many(8, () => whichVowel()) },
   's-letter': { title: 'Hear & choose the syllable', titleAr: 'إسمع واختار', about: 'Hear a sound and pick how it is written.', build: () => many(8, () => hearSyllable('short')) },
   's-match': { title: 'Match sounds and vowels', titleAr: 'وصّل الصوت بالحركة', about: 'Match each sound to its written syllable.', build: () => many(4, () => matchSyllables('short')) },
   's-compare': { title: 'Compare two sounds', titleAr: 'قارن بين صوتين', about: 'Two close sounds — which one is written?', build: () => many(6, compareShort) },
@@ -594,7 +624,7 @@ export const SETS = {
   's-repeat': { title: 'Repeat after me', titleAr: 'عيد ورايي', about: 'Listen, say it, record and compare.', build: () => many(5, () => { const s = pick(shortSyl()); return repeatSound(s.text, s.latin, 'short'); }) },
 
   // Long sounds
-  'l-which': { title: 'Which long vowel?', titleAr: 'أيّا حرف مدّ؟', about: 'ا (aa), و (uu) or ي (ii)?', build: () => many(8, () => whichLong()) },
+  'l-which': { title: 'Which long vowel?', titleAr: 'أيّا حرف مدّ؟', about: 'ا (aa), و (oo) or ي (ee)?', build: () => many(8, () => whichLong()) },
   'l-shortlong': { title: 'Short or long?', titleAr: 'قصير ولّا طويل؟', about: 'The key skill: hear the difference.', build: () => many(10, () => shortOrLong()) },
   'l-compare': { title: 'Compare short and long', titleAr: 'قارن القصير بالطويل', about: 'Play two sounds: which one is long?', build: () => many(6, compareLong) },
   'l-match': { title: 'Match sounds and words', titleAr: 'وصّل الصوت بالكلمة', about: 'Long syllables and words with long vowels.', build: () => many(4, matchLong) },
@@ -644,11 +674,11 @@ for (const [id, def] of Object.entries(LESSON_DEFS)) SETS[id] = { ...def, lesson
 
 export const SECTIONS = [
   { id: 'alphabet', title: 'ABC Alphabet', ar: 'الأحرف', icon: 'أ ب', img: 'images/students-classroom.jpg',
-    about: 'Meet all 28 letters, hear them, and spot look-alikes.',
+    about: 'Meet all 28 letters, the two letter groups, and look-alikes.',
     lessons: ['lesson-1', 'lesson-2', 'lesson-3'],
-    sets: ['a-hear', 'a-match', 'a-similar', 'a-words', 'a-quiz'] },
+    sets: ['a-hear', 'a-match', 'a-groups', 'a-similar', 'a-words', 'a-quiz'] },
   { id: 'short', title: 'Short Sounds', ar: 'الحركات', icon: 'بَ بِ بُ', img: 'images/girl-laughing-sports.jpg',
-    about: 'Fatḥa, kasra and ḍamma — the small vowel marks.',
+    about: 'Fatḥa (a), ḍamma (o), kasra (i) — each is half of a long sound.',
     lessons: ['lesson-5'],
     sets: ['s-vowel', 's-letter', 's-match', 's-compare', 's-complete', 's-repeat'] },
   { id: 'long', title: 'Long Sounds', ar: 'المدّ', icon: 'با بو بي', img: 'images/girl-trophy.jpg',

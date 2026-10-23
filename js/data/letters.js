@@ -256,3 +256,10 @@ export const LOOKALIKES = [
   ['ب', 'ت', 'ث', 'ن', 'ي'], ['ج', 'ح', 'خ'], ['د', 'ذ'], ['ر', 'ز'], ['س', 'ش'],
   ['ص', 'ض'], ['ط', 'ظ'], ['ع', 'غ'], ['ف', 'ق'], ['ك', 'ل'], ['ه', 'م'], ['ا', 'ل'], ['و', 'ر'],
 ];
+
+// The two groups of letters (Alsama Alphabet Workbook):
+//   Group 1 — ا د ذ ر ز و: only 2 shapes; they never join the letter after them.
+//   Group 2 — all the others: 4 shapes; they join on both sides (except after a Group 1 letter).
+export const groupOf = L => (L.joins === false ? 1 : 2);
+export const GROUP_1 = LETTERS.filter(L => groupOf(L) === 1).map(L => L.char);
+export const GROUP_2 = LETTERS.filter(L => groupOf(L) === 2).map(L => L.char);
