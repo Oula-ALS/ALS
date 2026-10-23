@@ -29,8 +29,11 @@ const go = route => { location.hash = '#/' + route; };
 function welcomeScreen() {
   return `
     <section class="welcome">
-      <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً!</h1>
+      <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً بعيلة السما</h1>
       <p class="lead">Welcome to the Alsama Language School family!</p>
+      <button class="speaker-pill greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama">
+        🔊 Listen <small>ahlan w sahlan b-3ilet el-Sama</small>
+      </button>
 
       <figure class="photo-frame">
         <img src="assets/images/students-library.jpg"
@@ -42,9 +45,6 @@ function welcomeScreen() {
 
       <button class="button big" type="button" data-go="start">Start learning</button>
       <p class="muted">Listen, practise, play games and repeat any lesson whenever you need. No sign-up needed.</p>
-      <button class="speaker-pill greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama">
-        🔊 <span lang="ar" dir="rtl">أهلاً وسهلاً بعيلة السما</span> <small>ahlan w sahlan b-3ilet el-Sama · welcome to the Alsama family</small>
-      </button>
     </section>`;
 }
 
@@ -88,6 +88,9 @@ function profileScreen(id) {
       <form class="card form" id="profile-form" novalidate>
         <h1 tabindex="-1">${s ? 'Edit your details' : 'Tell us about you'}</h1>
         <p class="ar-line" lang="ar" dir="rtl">عرّفنا عليك!</p>
+        ${s ? '' : `<button class="speaker-pill greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama (welcome to the Alsama family)">
+          🔊 <span lang="ar" dir="rtl">أهلاً وسهلاً بعيلة السما</span> <small>welcome to the Alsama family</small>
+        </button>`}
 
         <div class="why-box">
           <b>Why we ask</b>
