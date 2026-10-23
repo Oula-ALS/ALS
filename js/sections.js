@@ -288,7 +288,7 @@ function writeSentence(level) {
     display: esc(s.ar), displaySub: `${s.latin} — ${s.en}`,
     prompt: 'Write this short Lebanese sentence.', promptAr: 'اكتب هالجملة.',
     answer: s.ar, hint: 'Check each word, and leave a space between words.',
-    speakAfter: { audio: null, text: s.ar, latin: s.latin },
+    speakAfter: { audio: s.ar, text: s.ar, latin: s.latin }, // plays once Oula's recording (D01–D08) is added
   };
 }
 
@@ -480,7 +480,7 @@ function readingPool(level) {
   const pool = SYLLABLES.map(x => ({ text: x.text, latin: x.latin, audio: x.text, lvl: 1 }));
   if (level >= 2) pool.push(...WORDS.map(w => ({ text: w.vowelled, latin: w.latin, en: w.en, emoji: w.emoji, audio: w.audio, lvl: 2 })));
   if (level >= 3) pool.push(...LETTERS.map(L => ({ text: L.word.ar, latin: L.word.latin, en: L.word.en, emoji: L.word.emoji, audio: L.word.ar, lvl: 3 })));
-  if (level >= 4) pool.push(...SENTENCES.map(x => ({ text: x.ar, latin: x.latin, en: x.en, lvl: 4 })));
+  if (level >= 4) pool.push(...SENTENCES.map(x => ({ text: x.ar, latin: x.latin, en: x.en, audio: x.ar, lvl: 4 })));
   return pool;
 }
 

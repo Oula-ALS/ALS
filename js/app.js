@@ -3,7 +3,7 @@
 // so the browser Back button works.
 
 import * as store from './progress.js';
-import { stopAudio, playAudio, showAudioMessage } from './audio.js';
+import { stopAudio, playAudio, showAudioMessage, nowPlaying } from './audio.js';
 import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
 import { sendRegistration, sendPendingRegistrations, deleteRegistration, notifyLogin } from './register.js';
@@ -31,9 +31,6 @@ function welcomeScreen() {
     <section class="welcome">
       <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً بعيلة السما</h1>
       <p class="lead">Welcome to the Alsama Language School family!</p>
-      <button class="speaker-pill greeting" type="button" data-say="أهلاً وسهلاً بعيلة السما" aria-label="Listen: ahlan w sahlan b-3ilet el-Sama">
-        🔊 Listen <small>ahlan w sahlan b-3ilet el-Sama</small>
-      </button>
 
       <figure class="photo-frame">
         <img src="assets/images/students-library.jpg"
@@ -757,8 +754,26 @@ function aboutScreen() {
 
 // ---- Router ---------------------------------------------------------------
 
+// The welcome greeting (Oula's voice) plays by itself once per visit. Browsers only allow
+// sound after the visitor's first tap or key press, so if it is blocked we play it then.
+const GREETING = 'أهلاً وسهلاً بعيلة السما';
+let greeted = false;
+async function greetVisitor() {
+  if (greeted || store.getSettings().muted) return;
+  greeted = true;
+  const result = await playAudio(GREETING, null, { quiet: true });
+  if (result === 'played') return;
+  if (result !== 'error') return; // no recording: nothing to retry
+  greeted = false;
+  const firstTouch = () => {
+    ['pointerdown', 'keydown'].forEach(t => removeEventListener(t, firstTouch, true));
+    greetVisitor();
+  };
+  ['pointerdown', 'keydown'].forEach(t => addEventListener(t, firstTouch, true));
+}
+
 function render() {
-  stopAudio();
+  if (nowPlaying() !== GREETING) stopAudio(); // let the greeting finish when "Start learning" is tapped
   leaveSession();
   document.querySelector('.celebration')?.remove(); // never carry a pop-up to another page
   const [screen, param] = location.hash.replace(/^#\/?/, '').split('/');
@@ -774,7 +789,8 @@ function render() {
     progress: progressScreen,
     letters: () => (param === 'done' ? lettersDoneScreen() : letterScreen(param || store.getProgress(store.getCurrentStudent()?.id).lastLetter)),
   };
-  const html = (routes[screen] || welcomeScreen)();
+  const show = routes[screen] || welcomeScreen;
+  const html = show();
   if (!html) return; // the screen redirected somewhere else
   app.innerHTML = html;
   updateHeader();
@@ -782,6 +798,7 @@ function render() {
   app.querySelector('h1')?.focus({ preventScroll: true });
   if (screen === 'play') afterRender();
   initTracing(app);
+  if (show === welcomeScreen) greetVisitor();
   if (autoplayLetter && screen === 'letters' && param !== 'done') {
     playLetter(Number(param), app.querySelector('.letter-card .speaker-pill'), true);
   }
