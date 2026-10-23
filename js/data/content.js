@@ -8,17 +8,18 @@ export const CONSONANTS = [
   { c: 'س', latin: 's' }, { c: 'ر', latin: 'r' }, { c: 'د', latin: 'd' },
 ];
 
-// Short vowels (harakat) and the long vowel letter that goes with each one.
+// Short vowels (harakat) and the long vowel letter that goes with each one — taught as in the
+// Alsama Alphabet Workbook: order a, o, i; each short vowel is "half" of its long vowel (aa, oo, ee).
 export const VOWELS = [
-  { id: 'fatha', mark: 'َ', name: 'Fatḥa', ar: 'فتحة', short: 'a', long: 'aa', longLetter: 'ا',
+  { id: 'fatha', mark: 'َ', name: 'Fatḥa', ar: 'فتحة', short: 'a', long: 'aa', longLetter: 'ا', longName: 'aleph',
     where: 'a small line above the letter',
     lebanese: 'In Lebanese it often sounds like "a" — and at the end of many words it moves towards "e" (طاولة = ṭāwle).' },
-  { id: 'kasra', mark: 'ِ', name: 'Kasra', ar: 'كسرة', short: 'i', long: 'ii', longLetter: 'ي',
+  { id: 'damma', mark: 'ُ', name: 'Ḍamma', ar: 'ضمة', short: 'o', long: 'oo', longLetter: 'و', longName: 'waw',
+    where: 'a small curl (like a tiny و) above the letter',
+    lebanese: 'In Lebanese it often sounds between "o" and "u" (كُل = kol, "eat!").' },
+  { id: 'kasra', mark: 'ِ', name: 'Kasra', ar: 'كسرة', short: 'i', long: 'ee', longLetter: 'ي', longName: 'ya',
     where: 'a small line below the letter',
     lebanese: 'In Lebanese it often sounds between "i" and "e" (مِن = min / men).' },
-  { id: 'damma', mark: 'ُ', name: 'Ḍamma', ar: 'ضمة', short: 'u', long: 'uu', longLetter: 'و',
-    where: 'a small curl (like a tiny و) above the letter',
-    lebanese: 'In Lebanese it often sounds between "u" and "o" (كُل = kol, "eat!").' },
 ];
 
 // Syllable = consonant + short vowel, or consonant + short vowel + long letter.

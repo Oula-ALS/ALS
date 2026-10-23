@@ -131,6 +131,19 @@ These appear in the reading and writing activities. With your voice, learners ca
 | E06 | شاطر / شاطرة | clever (boy / girl) | ✅ |
 | E07 | يلا جرّب مرة تانية | try again (to a boy/man) | ✅ |
 
+## Received 23 Oct 2026 (other_audios.rar)
+
+| File | What happened |
+|---|---|
+| bravo, hello (مرحبا), شاطر, شاطرة | ✅ replaced the old clips |
+| يلا نجرب | ✅ new — now the "try again" voice for girls, and for learners who didn't pick boy/girl |
+| short sounds for ب | ✅ split into بَ ba · بُ bo · بِ bi |
+| long sounds for ب | ✅ split into با baa · بو boo · بي bee |
+| how to say ا و ي | ✅ added as one clip (Long Sounds page and Lesson 4) |
+| Short sentences | ⏸ **same file as "Phrase يلا جرّبي"** (identical copy) — please re-send both |
+| Example words (23 pieces) | ⏸ waiting: tell me which words, in order |
+| باب بيت نور دار موز ملك سمك ورد وعد (7 pieces) | ⏸ waiting: 9 words but only 7 pieces — some words run together |
+
 ## Already recorded — nothing to do ✅
 
 - **Syllables (42):** ب م ل ن س ر د with every short vowel and long vowel, e.g. بَ بَا بِ بِي بُ بُو …

@@ -48,6 +48,9 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
   `node scripts/extract-assets.js` (it rewrites the manifest — re-add later entries afterwards).
   Letter names are Oula's Lebanese recordings in `assets/audio/letters-lebanese/` (23 Oct 2026;
   ث = ت and ذ = د on purpose). Recording checklist with file codes: `docs/recording-list.md`.
+- Teaching follows Oula's **Alphabet Workbook**: Group 1 = ا د ذ ر ز و (2 shapes, never join forward),
+  Group 2 = the other 22 (4 shapes) — `groupOf()` in `js/data/letters.js`. Vowel order a · o · i,
+  each short vowel is "half" of its long one (aa · oo · ee); practice table with ر.
 - Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
   `assets/stickers/stickers.json` (see `docs/sticker-list.md`). Graduates sticker replaces the old owl. Logo: `assets/logo/alsama-language-school.png`.
 

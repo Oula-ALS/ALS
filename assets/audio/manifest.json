@@ -27,12 +27,12 @@
   "هَاء": "audio/letters-lebanese/haa.mp3",
   "وَاو": "audio/letters-lebanese/waaw.mp3",
   "يَاء": "audio/letters-lebanese/yaa.mp3",
-  "بَ": "audio/syllables/ba.mp3",
-  "بُ": "audio/syllables/bu.mp3",
-  "بِ": "audio/syllables/bi.mp3",
-  "بَا": "audio/syllables/baa.mp3",
-  "بُو": "audio/syllables/buu.mp3",
-  "بِي": "audio/syllables/bii.mp3",
+  "بَ": "audio/syllables-lebanese/ba.mp3",
+  "بُ": "audio/syllables-lebanese/bu.mp3",
+  "بِ": "audio/syllables-lebanese/bi.mp3",
+  "بَا": "audio/syllables-lebanese/baa.mp3",
+  "بُو": "audio/syllables-lebanese/buu.mp3",
+  "بِي": "audio/syllables-lebanese/bii.mp3",
   "مَ": "audio/syllables/ma.mp3",
   "مُ": "audio/syllables/mu.mp3",
   "مِ": "audio/syllables/mi.mp3",
@@ -84,5 +84,7 @@
   "برافو": "audio/phrases/bravo.mp3",
   "شاطر": "audio/phrases/shater.mp3",
   "شاطرة": "audio/phrases/shatra.mp3",
-  "يلا جرب مرة تانية": "audio/phrases/yalla-jarreb.mp3"
+  "يلا جرب مرة تانية": "audio/phrases/yalla-jarreb.mp3",
+  "يلا نجرب": "audio/phrases/yalla-njarreb.mp3",
+  "ا و ي": "audio/phrases/alef-waw-ya.mp3"
 }

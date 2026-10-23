@@ -7,8 +7,8 @@ import { stopAudio, playAudio, showAudioMessage } from './audio.js';
 import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
 import { sendRegistration, sendPendingRegistrations, deleteRegistration, notifyLogin } from './register.js';
-import { LETTERS, LOOKALIKES } from './data/letters.js';
-import { VOWELS } from './data/content.js';
+import { LETTERS, LOOKALIKES, groupOf, GROUP_1 } from './data/letters.js';
+import { VOWELS, CONSONANTS } from './data/content.js';
 import { SECTIONS, SETS } from './sections.js';
 import { startSession, afterRender, leaveSession, wordsAr, exercisesAr, soundsAr } from './exercises.js';
 import { tracingHTML, initTracing } from './tracing.js';
@@ -245,6 +245,7 @@ function letterScreen(n) {
                 aria-label="Hear the letter ${L.latin}">${L.char}</button>
         <p class="letter-name" lang="ar" dir="rtl">${L.name}</p>
         <p class="letter-latin">${L.latin}</p>
+        ${groupBadge(L)}
         <button class="speaker-pill" type="button" data-letter-say="${i}" aria-label="Listen to ${L.latin}">
           🔊 Listen
         </button>
@@ -268,6 +269,33 @@ const POS_LABEL = { alone: 'Alone', start: 'Start', middle: 'Middle', end: 'End'
 const TATWEEL = 'ـ';
 const glyph = (c, pos) => ({ alone: c, start: c + TATWEEL, middle: TATWEEL + c + TATWEEL, end: TATWEEL + c }[pos]);
 
+function groupBadge(L) {
+  return groupOf(L) === 1
+    ? '<p class="group-badge g1"><b>Group 1</b> · 2 shapes · never joins the letter after it</p>'
+    : '<p class="group-badge g2"><b>Group 2</b> · 4 shapes · joins on both sides</p>';
+}
+
+// The letter with the 3 short and 3 long sounds, as in the Alsama workbook (رَ رُ رِ · را رو ري).
+const RECORDED_SYLLABLES = CONSONANTS.map(k => k.c);
+function letterSounds(L) {
+  if (L.char === 'ا') return '';
+  const c = L.char;
+  const recorded = RECORDED_SYLLABLES.includes(c);
+  const chip = (key, shown, sub) => recorded
+    ? `<button class="speaker-pill" type="button" data-say="${key}" lang="ar">🔊 ${shown} <small>${sub}</small></button>`
+    : `<span class="sound-chip" lang="ar">${shown}</span>`;
+  const latin = recorded ? CONSONANTS.find(k => k.c === c).latin : '';
+  return `
+    <section class="card letter-section">
+      <h2>Short &amp; long sounds</h2>
+      <p class="sounds-label">Short sounds</p>
+      <div class="sound-row" dir="rtl">${VOWELS.map(v => chip(c + v.mark, c + v.mark, latin + v.short)).join('')}</div>
+      <p class="sounds-label">Long sounds</p>
+      <div class="sound-row" dir="rtl">${VOWELS.map(v => chip(c + v.mark + v.longLetter, c + v.longLetter, latin + v.long)).join('')}</div>
+      ${recorded ? '' : '<p class="hint">Read them out loud: a · o · i, then aa · oo · ee. 🎙️ Recordings coming soon.</p>'}
+    </section>`;
+}
+
 // How to say it · example word · shapes
 function letterDetails(L) {
   const w = L.word;
@@ -282,6 +310,8 @@ function letterDetails(L) {
       <p>${L.tip}</p>
       ${L.shami ? `<p class="note shami"><b>In Lebanese:</b> ${L.shami}</p>` : ''}
     </section>
+
+    ${letterSounds(L)}
 
     <section class="card letter-section">
       <h2>Example word</h2>
@@ -497,6 +527,20 @@ function homeScreen() {
 
 // ---- Section pages ---------------------------------------------------------------
 
+// "Practice with the letter ر" table from the Alsama workbook.
+function practiceTable(c) {
+  const k = CONSONANTS.find(x => x.c === c);
+  const cell = (key, shown, sub) => `<button class="speaker-pill" type="button" data-say="${key}" lang="ar">${shown} <small>${sub}</small></button>`;
+  return `
+    <div class="practice-table">
+      <p><b>Practice with the letter <span lang="ar">${c}</span></b></p>
+      <div class="pt-row"><span class="pt-label">Short sound</span>
+        <div class="vowel-sounds" dir="rtl">${VOWELS.map(v => cell(c + v.mark, c + v.mark, k.latin + v.short)).join('')}</div></div>
+      <div class="pt-row"><span class="pt-label">Long sound</span>
+        <div class="vowel-sounds" dir="rtl">${VOWELS.map(v => cell(c + v.mark + v.longLetter, c + v.longLetter, k.latin + v.long)).join('')}</div></div>
+    </div>`;
+}
+
 function sectionIntro(id, s) {
   if (id === 'alphabet') {
     const p = store.getProgress(s.id);
@@ -508,40 +552,53 @@ function sectionIntro(id, s) {
           ${LETTERS.map(L => `<button type="button" lang="ar" data-say="${L.name}" aria-label="${L.latin}">${L.char}</button>`).join('')}
         </div>
         <a class="button" href="#/letters/${p.lastLetter}">📖 Open the letter pages (${p.lettersHeard.length}/28 heard)</a>
+        <div class="groups">
+          <div class="group-box g1"><b>Group 1</b> · 2 shapes
+            <p class="group-letters" lang="ar" dir="rtl">${GROUP_1.join(' ')}</p>
+            <small>They never join the letter after them, so the word breaks.</small></div>
+          <div class="group-box g2"><b>Group 2</b> · 4 shapes
+            <p class="group-letters" lang="ar" dir="rtl">${LETTERS.filter(L => groupOf(L) === 2).map(L => L.char).join(' ')}</p>
+            <small>All the other letters. They join on both sides.</small></div>
+        </div>
       </div>`;
   }
   if (id === 'short') {
     return `
       <div class="card intro">
-        <h2>Three short vowels</h2>
-        <p>Arabic writes short vowels as small marks on the letter. Tap to hear them on ب, م and ل:</p>
+        <h2>Three short sounds</h2>
+        <p>Short vowels are small marks <b>above or below</b> the letter. Each short vowel is <b>half</b> of its long vowel:</p>
         <div class="vowel-table">
           ${VOWELS.map(v => `
             <div class="vowel-row">
-              <div><b>${v.name}</b> <span lang="ar">${v.ar}</span><br><small>${v.where} · "${v.short}"</small></div>
-              <div class="vowel-sounds">${['ب', 'م', 'ل'].map(c => `
+              <div><b>${v.name}</b> <span lang="ar">${v.ar}</span> <span class="mark" lang="ar">${'ـ' + v.mark}</span><br>
+                <small>${v.where} · half of "${v.long}" (${v.longLetter}) → "${v.short}"</small></div>
+              <div class="vowel-sounds">${['ب', 'ر', 'م'].map(c => `
                 <button class="speaker-pill" type="button" data-say="${c + v.mark}" lang="ar">${c + v.mark}</button>`).join('')}</div>
               <p class="note">${v.lebanese}</p>
             </div>`).join('')}
         </div>
+        ${practiceTable('ر')}
         <p class="note"><b>Spelling vs speech:</b> everyday writing usually leaves the vowel marks out — learners and children's books show them. Lebanese speech also shifts some vowels, so listen to the recordings as your guide.</p>
       </div>`;
   }
   if (id === 'long') {
     return `
       <div class="card intro">
-        <h2>Short vs long</h2>
-        <p>A <b>long vowel</b> is the same vowel held about <b>twice as long</b>. Arabic shows it by adding a letter after the consonant:</p>
+        <h2>Three long sounds</h2>
+        <p>Three special letters make long vowel sounds: <b lang="ar">ا و ي</b>. They are the <b>vowels</b> of the Arabic alphabet.
+          They come <b>after</b> a letter to make its sound longer.</p>
+        <p><button class="speaker-pill" type="button" data-say="ا و ي" lang="ar">🔊 ا و ي</button></p>
         <div class="vowel-table">
           ${VOWELS.map(v => `
             <div class="vowel-row">
-              <div><b>${v.longLetter}</b> stretches ${v.name}: "${v.short}" → "${v.long}"</div>
+              <div><b lang="ar">${v.longLetter}</b> (${v.longName}) makes "${v.long}" — twice as long as ${v.name} "${v.short}"</div>
               <div class="vowel-sounds">
-                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark}" lang="ar">${'ب' + v.mark} <small>short</small></button>
-                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark + v.longLetter}" lang="ar">${'ب' + v.mark + v.longLetter} <small>long</small></button>
+                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark}" lang="ar">${'ب' + v.mark} <small>short · b${v.short}</small></button>
+                <button class="speaker-pill" type="button" data-say="${'ب' + v.mark + v.longLetter}" lang="ar">${'ب' + v.longLetter} <small>long · b${v.long}</small></button>
               </div>
             </div>`).join('')}
         </div>
+        ${practiceTable('ر')}
         <p class="note">In Lebanese, و and ي are often said "ō" and "ē": موز = mōz, بيت = beit/bēt.</p>
       </div>`;
   }
