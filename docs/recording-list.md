@@ -1,92 +1,74 @@
-# Recording list — every word the app says
+# Recording list — every sound the app needs
 
-Use this list to record. ✅ = the app already has your recording. ⬜ = please record.
+Updated 24 Oct 2026. ✅ = your recording is in the app. ⬜ = please record.
 
 ## How to record and send
 
-- **One word per file.** Say it once, clearly, in a quiet room, with the phone about 20 cm from your mouth.
-- **Name each file with its code**, e.g. `A01.ogg`, `B05.ogg`. (Arabic file names get lost when you upload, so the code tells me which word it is.) WhatsApp voice notes are fine — just rename them, or type the code in the message.
-- Say everything the **Lebanese** way. If you say a word differently from the "Say it" column, say it your way and tell me.
-- I clean every file (remove noise, even out the volume) before adding it. Each new recording appears in the app automatically.
+- **One file per code**, named with the code: `G01.ogg`, `H05.ogg`, `C12.ogg` … (Arabic file names get lost when uploading).
+- Quiet room, phone about 20 cm away, say it the **Lebanese** way. I clean every file (noise removed, volume levelled).
+- For files with **3 sounds** (list G): say them in the order shown, with a **2-second pause** between them — exactly like your ب files, which worked perfectly.
+- You can zip everything into one file and upload it.
 
-## A. Letter names, the Lebanese way — 28 ✅ done (23 Oct 2026)
+## Part 1 — needed now (52 files, 76 sounds)
 
-Recorded by Oula on 23 Oct 2026 and now used everywhere in the app (`assets/audio/letters-lebanese/`). ث uses the same recording as ت, and ذ the same as د, because that is how they are said in Lebanese.
+These are the sounds used in **Short Sounds, Long Sounds, Writing & Speaking, Listening & Speaking, and Practice & Games**. The "sheep" sound you hear comes from the **old recordings from the first app** (lists G and H) — your new recordings replace them automatically.
 
-| Code | Letter | Say it | |
+| Section | Uses |
+|---|---|
+| Short Sounds | G (short sounds) · H06 ملك, H07 سمك |
+| Long Sounds | G (short and long) · H01–H05 |
+| Writing & Speaking | G · H · C · D · letter names ✅ |
+| Listening & Speaking | G · H |
+| Practice & Games | G · H · C · D · letter names ✅ |
+
+### G. Short and long sounds — 12 files (replace the old "sheep" sounds)
+
+Each file has 3 sounds, in this order. (ب is already done ✅.)
+
+| Code | Letter | Say, in this order | |
 |---|---|---|---|
-| A01 | ا | alef | ✅ |
-| A02 | ب | be | ✅ |
-| A03 | ت | te | ✅ |
-| A04 | ث | the / se | ✅ |
-| A05 | ج | jīm (zhīm) | ✅ |
-| A06 | ح | ḥe | ✅ |
-| A07 | خ | khe | ✅ |
-| A08 | د | dāl | ✅ |
-| A09 | ذ | zāl | ✅ |
-| A10 | ر | re | ✅ |
-| A11 | ز | zēn | ✅ |
-| A12 | س | sīn | ✅ |
-| A13 | ش | shīn | ✅ |
-| A14 | ص | ṣād | ✅ |
-| A15 | ض | ḍād | ✅ |
-| A16 | ط | ṭa | ✅ |
-| A17 | ظ | ẓa | ✅ |
-| A18 | ع | ʿēn | ✅ |
-| A19 | غ | ghēn | ✅ |
-| A20 | ف | fe | ✅ |
-| A21 | ق | ʾāf | ✅ |
-| A22 | ك | kāf | ✅ |
-| A23 | ل | lām | ✅ |
-| A24 | م | mīm | ✅ |
-| A25 | ن | nūn | ✅ |
-| A26 | ه | he | ✅ |
-| A27 | و | wāw | ✅ |
-| A28 | ي | ye | ✅ |
+| G01 | د short | دَ da · دُ do · دِ di | ⬜ |
+| G02 | د long | دا daa · دو doo · دي dee | ⬜ |
+| G03 | ر short | رَ ra · رُ ro · رِ ri | ⬜ |
+| G04 | ر long | را raa · رو roo · ري ree | ⬜ |
+| G05 | س short | سَ sa · سُ so · سِ si | ⬜ |
+| G06 | س long | سا saa · سو soo · سي see | ⬜ |
+| G07 | ل short | لَ la · لُ lo · لِ li | ⬜ |
+| G08 | ل long | لا laa · لو loo · لي lee | ⬜ |
+| G09 | م short | مَ ma · مُ mo · مِ mi | ⬜ |
+| G10 | م long | ما maa · مو moo · مي mee | ⬜ |
+| G11 | ن short | نَ na · نُ no · نِ ni | ⬜ |
+| G12 | ن long | نا naa · نو noo · ني nee | ⬜ |
 
-## B. Letter sounds — 20 to record
+### H. The 9 first words — 9 files (replace the old recordings)
 
-Say the letter with a fatḥa, like "ta", "ḥa". ★ = hard sounds, these matter most. Already recorded: بَ دَ رَ سَ لَ مَ نَ ✅
+| Code | Word | Say it | Meaning | |
+|---|---|---|---|---|
+| H01 | باب | bāb | door | ⬜ |
+| H02 | بيت | beit | house | ⬜ |
+| H03 | نور | nūr | light | ⬜ |
+| H04 | دار | dār | home | ⬜ |
+| H05 | موز | mōz | bananas | ⬜ |
+| H06 | ملك | malek | king | ⬜ |
+| H07 | سمك | samak | fish | ⬜ |
+| H08 | ورد | ward | roses | ⬜ |
+| H09 | وعد | waʿd | promise | ⬜ |
 
-| Code | Letter | Say | |
-|---|---|---|---|
-| B01 | ت | تَ | ⬜ |
-| B02 | ث | ثَ | ⬜ |
-| B03 | ج | جَ | ⬜ |
-| B04 | ح ★ | حَ | ⬜ |
-| B05 | خ ★ | خَ | ⬜ |
-| B06 | ذ | ذَ | ⬜ |
-| B07 | ز | زَ | ⬜ |
-| B08 | ش | شَ | ⬜ |
-| B09 | ص ★ | صَ | ⬜ |
-| B10 | ض ★ | ضَ | ⬜ |
-| B11 | ط ★ | طَ | ⬜ |
-| B12 | ظ ★ | ظَ | ⬜ |
-| B13 | ع ★ | عَ | ⬜ |
-| B14 | غ ★ | غَ | ⬜ |
-| B15 | ف | فَ | ⬜ |
-| B16 | ق ★ | قَ | ⬜ |
-| B17 | ك | كَ | ⬜ |
-| B18 | ه | هَ | ⬜ |
-| B19 | و | وَ | ⬜ |
-| B20 | ي | يَ | ⬜ |
+### C. Example words — 22 files
 
-## C. Example words (one for each letter) — 28
+Used in the Reading Challenge, writing and games. (Your 23-piece "Example words" file could not be matched safely — please send one file per word.)
 
 | Code | Letter | Word | Say it | Meaning | |
 |---|---|---|---|---|---|
 | C01 | ا | أرنب | arnab | rabbit | ⬜ |
-| C02 | ب | بيت | beit | house | ✅ |
 | C03 | ت | تفاحة | tiffāḥa | apple | ⬜ |
 | C04 | ث | ثلج | talj | snow | ⬜ |
 | C05 | ج | جبنة | jibne | cheese | ⬜ |
 | C06 | ح | حليب | ḥalīb | milk | ⬜ |
 | C07 | خ | خبز | khebez | bread | ⬜ |
-| C08 | د | دار | dār | home | ✅ |
 | C09 | ذ | ذهب | dahab | gold | ⬜ |
 | C10 | ر | رز | rizz | rice | ⬜ |
 | C11 | ز | زيتون | zeitūn | olives | ⬜ |
-| C12 | س | سمك | samak | fish | ✅ |
 | C13 | ش | شمس | shams | sun | ⬜ |
 | C14 | ص | صابون | ṣābūn | soap | ⬜ |
 | C15 | ض | ضفدع | ḍifdaʿ | frog | ⬜ |
@@ -98,15 +80,12 @@ Say the letter with a fatḥa, like "ta", "ḥa". ★ = hard sounds, these matte
 | C21 | ق | قهوة | ʾahwe | coffee | ⬜ |
 | C22 | ك | كتاب | ktāb | book | ⬜ |
 | C23 | ل | ليمون | laymūn | lemon | ⬜ |
-| C24 | م | موز | mōz | bananas | ✅ |
-| C25 | ن | نور | nūr | light | ✅ |
 | C26 | ه | هوا | hawa | air, wind | ⬜ |
-| C27 | و | ورد | ward | roses | ✅ |
 | C28 | ي | ياسمين | yasmīn | jasmine | ⬜ |
 
-## D. Short Lebanese sentences — 8
+### D. Short Lebanese sentences — 8 files
 
-These appear in the reading and writing activities. With your voice, learners can also listen to them.
+Used in "Write a sentence", "Arrange the sentence", the Reading Challenge and the Sentence Builder game. Once added, learners can listen to each sentence and repeat it.
 
 | Code | Sentence | Say it | Meaning | |
 |---|---|---|---|---|
@@ -119,37 +98,29 @@ These appear in the reading and writing activities. With your voice, learners ca
 | D07 | البيت كبير | el-beit kbīr | The house is big. | ⬜ |
 | D08 | هيدا بيتي الكبير | hayda beiti l-kbīr | This is my big house. | ⬜ |
 
-## E. Phrases
+### E01. Phrase — 1 file
 
 | Code | Phrase | Meaning | |
 |---|---|---|---|
-| E01 | يلا جرّبي مرة تانية | try again (to a girl/woman) — the app has only the version for boys/men | ⬜ |
-| E02 | مَرْحَبًا | hello (used in the "Say hello" lesson) | ✅ |
-| E03 | أهلاً وسهلاً بعيلة السما | welcome to the Alsama family | ✅ |
-| E04 | أَحْسَنْت | well done | ✅ |
-| E05 | برافو | bravo | ✅ |
-| E06 | شاطر / شاطرة | clever (boy / girl) | ✅ |
-| E07 | يلا جرّب مرة تانية | try again (to a boy/man) | ✅ |
+| E01 | يلا جرّبي مرة تانية | try again (to a girl/woman) | ⬜ |
 
-## Received 23 Oct 2026 (other_audios.rar)
+**Total: 12 + 9 + 22 + 8 + 1 = 52 files** (76 sounds).
 
-| File | What happened |
-|---|---|
-| bravo, hello (مرحبا), شاطر, شاطرة | ✅ replaced the old clips |
-| يلا نجرب | ✅ new — now the "try again" voice for girls, and for learners who didn't pick boy/girl |
-| short sounds for ب | ✅ split into بَ ba · بُ bo · بِ bi |
-| long sounds for ب | ✅ split into با baa · بو boo · بي bee |
-| how to say ا و ي | ✅ added as one clip (Long Sounds page and Lesson 4) |
-| Short sentences | ⏸ **same file as "Phrase يلا جرّبي"** (identical copy) — please re-send both |
-| Example words (23 pieces) | ⏸ waiting: tell me which words, in order |
-| باب بيت نور دار موز ملك سمك ورد وعد (7 pieces) | ⏸ waiting: 9 words but only 7 pieces — some words run together |
+## Done ✅
 
-## Already recorded — nothing to do ✅
+- **Letter names (28)** — Lebanese, 23 Oct (`assets/audio/letters-lebanese/`). ث = ت and ذ = د on purpose.
+- **ب short and long sounds** — بَ بُ بِ · با بو بي (24 Oct).
+- **Phrases** — أهلاً وسهلاً بعيلة السما (plays by itself on the welcome page), مرحبا، برافو، شاطر، شاطرة، يلا نجرب، يلا جرّب مرة تانية، ا و ي.
 
-- **Syllables (42):** ب م ل ن س ر د with every short vowel and long vowel, e.g. بَ بَا بِ بِي بُ بُو …
-- **Words (9):** بيت، دار، سمك، موز، نور، ورد، باب، ملك، وعد
+## Part 2 — optional, later
 
-## F. Optional: words in the "Letter shapes" boxes — 59
+### B. Short and long sounds for the other letters
+
+Every letter page now shows its 6 sounds (like the workbook). The letters below show them as text with "Recordings coming soon". Same method as list G: one "short" file and one "long" file per letter, e.g. `B-ت-short.ogg` (تَ ta · تُ to · تِ ti) and `B-ت-long.ogg` (تا taa · تو too · تي tee).
+
+ت ث ج ح خ ذ ز ش ص ض ط ظ ع غ ف ق ك ه و ي
+
+### F. Words in the "Letter shapes" boxes (optional) — 59
 
 Each letter page shows the letter inside real words. They have no sound yet. If you record them, I can add a 🔊 button to each one. Do these last, only if you want to.
 
@@ -215,7 +186,3 @@ Each letter page shows the letter inside real words. They have no sound yet. If 
 | F58 | شاي | shāy | tea |
 | F59 | عربي | ʿarabi | Arabic |
 
----
-**Total to record: 51** (A–E), plus 59 optional (F).
-
-> Note: on 19 Oct you sent two long recordings (all the letters, and the words). Those are cut into pieces in `assets/audio/incoming/`, waiting to be checked on `/tools/check-recordings.html`. If you check them there, you may not need to re-record parts of lists A and C.

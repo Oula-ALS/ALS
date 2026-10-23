@@ -8,6 +8,10 @@ import { getSettings } from './progress.js';
 let manifest = null;
 let current = null;        // the Audio object playing now
 let currentButton = null;  // the button that started it
+let currentKey = null;     // the Arabic key of the sound playing now
+
+// The key of the recording playing right now, or null.
+export const nowPlaying = () => (current ? currentKey : null);
 
 async function loadManifest() {
   if (manifest) return manifest;
@@ -66,6 +70,7 @@ export async function playAudio(key, button, { quiet = false, onEnded } = {}) {
 
   const audio = new Audio('assets/' + path);
   current = audio;
+  currentKey = key;
   currentButton = button || null;
   setState(button, 'loading');
   voice('start');
@@ -81,7 +86,7 @@ export async function playAudio(key, button, { quiet = false, onEnded } = {}) {
     return 'played';
   } catch (e) {
     if (current !== audio) return 'played'; // another sound started; not an error
-    console.error('Audio failed', key, e);
+    if (!quiet) console.error('Audio failed', key, e); // automatic playback may be blocked until a tap
     setState(button, 'error');
     current = null;
     voice('end');
