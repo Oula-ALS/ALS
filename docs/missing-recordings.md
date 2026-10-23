@@ -18,7 +18,7 @@ If a clip on this list is missing, the app shows **"Recording coming soon"**.
 
 ## Needed
 
-### 0. Letter names in Lebanese (priority: highest — requested 18 Oct 2026)
+### 0. Letter names in Lebanese — ✅ DONE 23 Oct 2026 (`assets/audio/letters-lebanese/`)
 
 The 28 letter-name recordings came from the old app and say the names the formal way
 (بَاء "bāʾ", تَاء "tāʾ" …). To hear them the Lebanese way, they need to be re-recorded.
