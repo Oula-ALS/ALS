@@ -1,5 +1,7 @@
 # Missing recordings
 
+> **Recording checklist with codes:** see [recording-list.md](recording-list.md). This page has the background notes.
+
 The app never replaces your recordings with a synthetic or non-Levantine voice.
 If a clip on this list is missing, the app shows **"Recording coming soon"**.
 
