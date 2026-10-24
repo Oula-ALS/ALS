@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Label recordings · Alsama Arabic (teacher tool)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .check { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; }
+    .check table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+    .check th, .check td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+    .check th { background: var(--magenta); color: var(--white); }
+    .check select { width: 100%; min-height: 44px; font: 700 20px var(--font-ar); color: var(--burgundy); border: 2px solid var(--line); border-radius: 12px; padding: 4px 8px; background: var(--white); }
+    .check .play { min-width: 56px; min-height: 44px; border: 2px solid var(--magenta); border-radius: 12px; background: var(--white); font-size: 20px; cursor: pointer; }
+    .check .play.playing { background: var(--pink); }
+    .check textarea { width: 100%; min-height: 110px; font: 16px var(--font-en); padding: 10px; border-radius: 12px; border: 2px solid var(--line); }
+    .check h2 { margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main class="check">
+    <h1>Which word is each piece?</h1>
+    <p>Your recordings were cut into pieces. Play each piece (▶) and check the word next to it.
+    If it's a different word, pick the right one from the list. Pick <b>— not a word —</b> for a cough, a cut
+    word, or two words together. Then tap <b>Copy my answers</b> and paste them into the chat with Claude.</p>
+    <p class="muted">This page is only for the teacher. Students never see it.</p>
+
+    <h2>"The first 9 words" (<span id="n-H"></span> pieces)</h2>
+    <table><thead><tr><th>#</th><th></th><th>This piece says…</th></tr></thead><tbody id="H"></tbody></table>
+
+    <h2>"Example words" (<span id="n-C"></span> pieces)</h2>
+    <table><thead><tr><th>#</th><th></th><th>This piece says…</th></tr></thead><tbody id="C"></tbody></table>
+
+    <h2>Your answers</h2>
+    <textarea id="summary" readonly></textarea>
+    <p><button class="button" type="button" id="copy">Copy my answers</button></p>
+  </main>
+
+  <script type="module">
+    import { LETTERS } from '../js/data/letters.js';
+    import { WORDS } from '../js/data/content.js';
+
+    const DIR = '../assets/audio/incoming/2026-10-24/';
+    const NONE = '— not a word —';
+    // The words each recording was meant to contain, in the order of docs/recording-list.md.
+    const first9 = ['باب', 'بيت', 'نور', 'دار', 'موز', 'ملك', 'سمك', 'ورد', 'وعد'];
+    const recorded = new Set(WORDS.map(w => w.ar));
+    const example = LETTERS.map(L => L.word.ar).filter(w => !recorded.has(w));  // the 22 still missing
+    const choices = { H: first9, C: [...example, ...LETTERS.map(L => L.word.ar).filter(w => recorded.has(w))] };
+    const expected = { H: first9, C: example };
+
+    const pieces = await (await fetch(DIR + 'pieces.json')).json();
+    const answers = { H: [], C: [] };
+    let audio = null;
+
+    for (const kind of ['H', 'C']) {
+      document.getElementById('n-' + kind).textContent = pieces[kind].length;
+      answers[kind] = pieces[kind].map((_, i) => expected[kind][i] || NONE);   // first guess: same order as the list
+      document.getElementById(kind).innerHTML = pieces[kind].map((file, i) => `
+        <tr>
+          <td>${i + 1}</td>
+          <td><button class="play" type="button" data-file="${file}" aria-label="Play piece ${i + 1}">▶</button></td>
+          <td><select data-kind="${kind}" data-i="${i}" lang="ar" dir="rtl" aria-label="Word for piece ${i + 1}">
+            ${[...choices[kind], NONE].map(w => `<option ${w === answers[kind][i] ? 'selected' : ''}>${w}</option>`).join('')}
+          </select></td>
+        </tr>`).join('');
+    }
+
+    function summary() {
+      document.getElementById('summary').value = ['H', 'C'].map(kind =>
+        pieces[kind].map((file, i) => `${file.replace('.mp3', '')}=${answers[kind][i]}`).join(', ')).join('\n');
+    }
+    summary();
+
+    document.addEventListener('change', e => {
+      const s = e.target.closest('select[data-kind]');
+      if (!s) return;
+      answers[s.dataset.kind][Number(s.dataset.i)] = s.value;
+      summary();
+    });
+    document.addEventListener('click', async e => {
+      const b = e.target.closest('.play');
+      if (b) {
+        if (audio) { audio.pause(); document.querySelectorAll('.play.playing').forEach(x => x.classList.remove('playing')); }
+        audio = new Audio(DIR + b.dataset.file);
+        b.classList.add('playing');
+        audio.onended = () => b.classList.remove('playing');
+        audio.play().catch(() => {}); // interrupted by the next ▶ — fine
+      }
+      if (e.target.id === 'copy') {
+        const t = document.getElementById('summary');
+        try { await navigator.clipboard.writeText(t.value); e.target.textContent = '✓ Copied — paste it in the chat'; }
+        catch { t.select(); e.target.textContent = 'Select the text above and copy it'; }
+      }
+    });
+  </script>
+</body>
+</html>

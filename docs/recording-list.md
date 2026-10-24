@@ -21,26 +21,26 @@ These are the sounds used in **Short Sounds, Long Sounds, Writing & Speaking, Li
 | Listening & Speaking | G · H |
 | Practice & Games | G · H · C · D · letter names ✅ |
 
-### G. Short and long sounds — 12 files (replace the old "sheep" sounds)
+### G. Short and long sounds — ✅ done 24 Oct (all 36 old "sheep" sounds replaced)
 
 Each file has 3 sounds, in this order. (ب is already done ✅.)
 
 | Code | Letter | Say, in this order | |
 |---|---|---|---|
-| G01 | د short | دَ da · دُ do · دِ di | ⬜ |
-| G02 | د long | دا daa · دو doo · دي dee | ⬜ |
-| G03 | ر short | رَ ra · رُ ro · رِ ri | ⬜ |
-| G04 | ر long | را raa · رو roo · ري ree | ⬜ |
-| G05 | س short | سَ sa · سُ so · سِ si | ⬜ |
-| G06 | س long | سا saa · سو soo · سي see | ⬜ |
-| G07 | ل short | لَ la · لُ lo · لِ li | ⬜ |
-| G08 | ل long | لا laa · لو loo · لي lee | ⬜ |
-| G09 | م short | مَ ma · مُ mo · مِ mi | ⬜ |
-| G10 | م long | ما maa · مو moo · مي mee | ⬜ |
-| G11 | ن short | نَ na · نُ no · نِ ni | ⬜ |
-| G12 | ن long | نا naa · نو noo · ني nee | ⬜ |
+| G01 | د short | دَ da · دُ do · دِ di | ✅ |
+| G02 | د long | دا daa · دو doo · دي dee | ✅ |
+| G03 | ر short | رَ ra · رُ ro · رِ ri | ✅ |
+| G04 | ر long | را raa · رو roo · ري ree | ✅ |
+| G05 | س short | سَ sa · سُ so · سِ si | ✅ |
+| G06 | س long | سا saa · سو soo · سي see | ✅ |
+| G07 | ل short | لَ la · لُ lo · لِ li | ✅ |
+| G08 | ل long | لا laa · لو loo · لي lee | ✅ |
+| G09 | م short | مَ ma · مُ mo · مِ mi | ✅ |
+| G10 | م long | ما maa · مو moo · مي mee | ✅ |
+| G11 | ن short | نَ na · نُ no · نِ ni | ✅ |
+| G12 | ن long | نا naa · نو noo · ني nee | ✅ |
 
-### H. The 9 first words — 9 files (replace the old recordings)
+### H. The 9 first words — received 24 Oct: 8 pieces, waiting for you to label them on `/tools/label-recordings.html`
 
 | Code | Word | Say it | Meaning | |
 |---|---|---|---|---|
@@ -54,7 +54,7 @@ Each file has 3 sounds, in this order. (ب is already done ✅.)
 | H08 | ورد | ward | roses | ⬜ |
 | H09 | وعد | waʿd | promise | ⬜ |
 
-### C. Example words — 22 files
+### C. Example words — received 24 Oct: 20 pieces, waiting for you to label them on `/tools/label-recordings.html`
 
 Used in the Reading Challenge, writing and games. (Your 23-piece "Example words" file could not be matched safely — please send one file per word.)
 
