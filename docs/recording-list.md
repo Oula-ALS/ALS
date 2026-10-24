@@ -102,9 +102,9 @@ Used in "Write a sentence", "Arrange the sentence", the Reading Challenge and th
 
 | Code | Phrase | Meaning | |
 |---|---|---|---|
-| E01 | يلا جرّبي مرة تانية | try again (to a girl/woman) | ⬜ |
+| E01 | يلا جرّبي مرة تانية | try again (to a girl/woman) | ✅ 24 Oct |
 
-**Total: 12 + 9 + 22 + 8 + 1 = 52 files** (76 sounds).
+**Still to do:** label the H and C pieces, and record the 8 sentences (D).
 
 ## Done ✅
 
