@@ -4,11 +4,17 @@
 // for listening; sentences (no recordings yet) are used for reading, writing and arranging.
 
 import { LETTERS, LOOKALIKES, groupOf, GROUP_1, GROUP_2 } from './data/letters.js';
-import { VOWELS, SYLLABLES, WORDS, COMPLETE_SHORT, SENTENCES, MISSPELLINGS } from './data/content.js';
+import { VOWELS, SYLLABLES, WORDS as ALL_WORDS, COMPLETE_SHORT, SENTENCES, MISSPELLINGS } from './data/content.js';
 import { shuffle, pick, esc } from './exercises.js';
 import * as store from './progress.js';
 
 // ---- Helpers ------------------------------------------------------------------
+
+// Which sounds have Oula's recording. Listening activities only use recorded words, so a
+// question never has a silent sound; a new recording joins the activities automatically.
+const MANIFEST = await fetch('assets/audio/manifest.json').then(r => r.json()).catch(() => ({}));
+const hasAudio = key => Boolean(MANIFEST[key]);
+const WORDS = ALL_WORDS.filter(w => hasAudio(w.audio));
 
 const letterBy = c => LETTERS.find(l => l.char === c || (c === 'أ' && l.char === 'ا'));
 const shortSyl = () => SYLLABLES.filter(s => s.length === 'short');
@@ -479,7 +485,7 @@ function traceGroup() {
 function readingPool(level) {
   const pool = SYLLABLES.map(x => ({ text: x.text, latin: x.latin, audio: x.text, lvl: 1 }));
   if (level >= 2) pool.push(...WORDS.map(w => ({ text: w.vowelled, latin: w.latin, en: w.en, emoji: w.emoji, audio: w.audio, lvl: 2 })));
-  if (level >= 3) pool.push(...LETTERS.map(L => ({ text: L.word.ar, latin: L.word.latin, en: L.word.en, emoji: L.word.emoji, audio: L.word.ar, lvl: 3 })));
+  if (level >= 3) pool.push(...LETTERS.filter(L => hasAudio(L.word.ar)).map(L => ({ text: L.word.ar, latin: L.word.latin, en: L.word.en, emoji: L.word.emoji, audio: L.word.ar, lvl: 3 })));
   if (level >= 4) pool.push(...SENTENCES.map(x => ({ text: x.ar, latin: x.latin, en: x.en, audio: x.ar, lvl: 4 })));
   return pool;
 }
@@ -558,7 +564,7 @@ const LESSON_DEFS = {
           <li>If the letter before is also Group 1, they don't join at all.</li>
         </ul>`),
       learn('3b', 'Group 1 inside words', `
-        <p>${say('وعد', 'وعد waʿd')} — و does not join ع, but ع joins forward, so the word still flows.</p>
+        <p>${hasAudio('وعد') ? say('وعد', 'وعد waʿd') : '<b lang="ar">وعد</b> waʿd'} — و does not join ع, but ع joins forward, so the word still flows.</p>
         <p>${say('ورد', 'ورد ward')} — ر does not join د, so د stands alone.</p>
         <p>${say('دار', 'دار dār')} — د, ا and ر are all Group 1, so no letter joins.</p>`),
       learn('3c', 'Group 2: all the other letters, four shapes', `
