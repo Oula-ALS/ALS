@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Which word? · Alsama Arabic (teacher tool)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .ww { max-width: 760px; margin: 0 auto; padding: 24px 16px 80px; text-align: center; }
+    .ww .count { font-weight: 800; color: var(--burgundy); }
+    .ww .big-play { width: 120px; height: 120px; border-radius: 50%; border: 0; background: var(--magenta); color: #fff; font-size: 48px; cursor: pointer; margin: 16px auto; display: block; }
+    .ww .big-play.playing { background: var(--burgundy); }
+    .ww .words { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 16px 0; }
+    .ww .words button { min-height: 64px; border: 2px solid var(--pink); border-radius: 16px; background: var(--white); font: 700 26px var(--font-ar); color: var(--burgundy); cursor: pointer; }
+    .ww .words button small { display: block; font: 600 13px var(--font-en); color: var(--text-soft); }
+    .ww .words button:hover { border-color: var(--magenta); }
+    .ww .other { min-height: 48px; padding: 0 18px; border: 2px dashed var(--line); border-radius: 14px; background: var(--white); font: 700 16px var(--font-en); color: var(--text-soft); cursor: pointer; margin: 4px; }
+    .ww textarea { width: 100%; min-height: 120px; font: 16px var(--font-en); padding: 10px; border-radius: 12px; border: 2px solid var(--line); text-align: left; }
+  </style>
+</head>
+<body>
+  <main class="ww" id="ww"></main>
+
+  <script type="module">
+    import { LETTERS } from '../js/data/letters.js';
+
+    // Teacher tool: one recorded piece at a time — listen, tap the word you hear.
+    const DIR = '../assets/audio/incoming/2026-10-24/';
+    const SAVE = 'alsama.which-word.v1';
+    const nine = ['باب', 'بيت', 'نور', 'دار', 'موز', 'ملك', 'سمك', 'ورد', 'وعد'];
+    const example = LETTERS.map(L => ({ ar: L.word.ar, en: L.word.en })).filter(w => !nine.includes(w.ar));
+    const nineEn = { 'باب': 'door', 'بيت': 'house', 'نور': 'light', 'دار': 'home', 'موز': 'bananas', 'ملك': 'king', 'سمك': 'fish', 'ورد': 'roses', 'وعد': 'promise' };
+
+    const pieces = await (await fetch(DIR + 'pieces.json')).json();
+    const queue = [...pieces.H.map(f => ({ f, words: nine.map(ar => ({ ar, en: nineEn[ar] })) })),
+                   ...pieces.C.map(f => ({ f, words: example }))];
+    let answers = {};
+    try { answers = JSON.parse(localStorage.getItem(SAVE)) || {}; } catch { /* private window */ }
+    let i = queue.findIndex(q => !answers[q.f]);
+    if (i < 0) i = queue.length;
+    let audio = null;
+
+    const save = () => { try { localStorage.setItem(SAVE, JSON.stringify(answers)); } catch { /* fine */ } };
+    function play() {
+      if (audio) audio.pause();
+      const b = document.querySelector('.big-play');
+      audio = new Audio(DIR + queue[i].f);
+      b?.classList.add('playing');
+      audio.onended = () => b?.classList.remove('playing');
+      audio.play().catch(() => b?.classList.remove('playing'));
+    }
+    function summary() {
+      return queue.map(q => `${q.f.replace('.mp3', '')}=${answers[q.f] || '?'}`).join(', ');
+    }
+
+    function render() {
+      const main = document.getElementById('ww');
+      if (i >= queue.length) {
+        main.innerHTML = `
+          <h1>Finished — thank you! 🎉</h1>
+          <p>Tap <b>Copy my answers</b>, then paste them in the chat with Claude.</p>
+          <textarea id="summary" readonly>${summary()}</textarea>
+          <p><button class="button" type="button" id="copy">Copy my answers</button></p>
+          <p><button class="other" type="button" id="restart">Start again</button></p>`;
+        return;
+      }
+      const q = queue[i];
+      main.innerHTML = `
+        <h1>Which word do you hear?</h1>
+        <p class="count">Piece ${i + 1} of ${queue.length}</p>
+        <button class="big-play" type="button" aria-label="Play again">▶</button>
+        <p class="muted">Tap ▶ to hear it again. Then tap the word you hear.</p>
+        <div class="words">${q.words.map(w => `<button type="button" data-word="${w.ar}" lang="ar">${w.ar}<small>${w.en}</small></button>`).join('')}</div>
+        <button class="other" type="button" data-word="not a word">Not a word / two words / cut</button>
+        ${i > 0 ? '<button class="other" type="button" id="back">‹ Back</button>' : ''}`;
+      play();
+    }
+
+    document.addEventListener('click', async e => {
+      if (e.target.closest('.big-play')) return play();
+      const w = e.target.closest('[data-word]');
+      if (w) { answers[queue[i].f] = w.dataset.word; save(); i++; return render(); }
+      if (e.target.id === 'back') { i--; return render(); }
+      if (e.target.id === 'restart') { answers = {}; save(); i = 0; return render(); }
+      if (e.target.id === 'copy') {
+        const t = document.getElementById('summary');
+        try { await navigator.clipboard.writeText(t.value); e.target.textContent = '✓ Copied — paste it in the chat'; }
+        catch { t.select(); e.target.textContent = 'Select the text above and copy it'; }
+      }
+    });
+    render();
+  </script>
+</body>
+</html>
