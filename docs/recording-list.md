@@ -40,46 +40,46 @@ Each file has 3 sounds, in this order. (ب is already done ✅.)
 | G11 | ن short | نَ na · نُ no · نِ ni | ✅ |
 | G12 | ن long | نا naa · نو noo · ني nee | ✅ |
 
-### H. The 9 first words — ✅ 8 added 25 Oct (H09 وعد still to record)
+### H. The 9 first words — ⏸ 8 pieces received, but NOT in list order: waiting for Oula to identify each one on `/tools/which-word.html` (the app uses the old recordings meanwhile)
 
 | Code | Word | Say it | Meaning | |
 |---|---|---|---|---|
-| H01 | باب | bāb | door | ✅ |
-| H02 | بيت | beit | house | ✅ |
-| H03 | نور | nūr | light | ✅ |
-| H04 | دار | dār | home | ✅ |
-| H05 | موز | mōz | bananas | ✅ |
-| H06 | ملك | malek | king | ✅ |
-| H07 | سمك | samak | fish | ✅ |
-| H08 | ورد | ward | roses | ✅ |
+| H01 | باب | bāb | door | ⬜ |
+| H02 | بيت | beit | house | ⬜ |
+| H03 | نور | nūr | light | ⬜ |
+| H04 | دار | dār | home | ⬜ |
+| H05 | موز | mōz | bananas | ⬜ |
+| H06 | ملك | malek | king | ⬜ |
+| H07 | سمك | samak | fish | ⬜ |
+| H08 | ورد | ward | roses | ⬜ |
 | H09 | وعد | waʿd | promise | ⬜ |
 
-### C. Example words — ✅ 20 added 25 Oct (C26 هوا and C28 ياسمين still to record)
+### C. Example words — ⏸ 20 pieces received: waiting for Oula to identify each one on `/tools/which-word.html`
 
 Used in the Reading Challenge, writing and games. (Your 23-piece "Example words" file could not be matched safely — please send one file per word.)
 
 | Code | Letter | Word | Say it | Meaning | |
 |---|---|---|---|---|---|
-| C01 | ا | أرنب | arnab | rabbit | ✅ |
-| C03 | ت | تفاحة | tiffāḥa | apple | ✅ |
-| C04 | ث | ثلج | talj | snow | ✅ |
-| C05 | ج | جبنة | jibne | cheese | ✅ |
-| C06 | ح | حليب | ḥalīb | milk | ✅ |
-| C07 | خ | خبز | khebez | bread | ✅ |
-| C09 | ذ | ذهب | dahab | gold | ✅ |
-| C10 | ر | رز | rizz | rice | ✅ |
-| C11 | ز | زيتون | zeitūn | olives | ✅ |
-| C13 | ش | شمس | shams | sun | ✅ |
-| C14 | ص | صابون | ṣābūn | soap | ✅ |
-| C15 | ض | ضفدع | ḍifdaʿ | frog | ✅ |
-| C16 | ط | طاولة | ṭāwle | table | ✅ |
-| C17 | ظ | ظرف | ẓarf | envelope | ✅ |
-| C18 | ع | عنب | ʿinab | grapes | ✅ |
-| C19 | غ | غيمة | ghēme | cloud | ✅ |
-| C20 | ف | فلافل | falāfel | falafel | ✅ |
-| C21 | ق | قهوة | ʾahwe | coffee | ✅ |
-| C22 | ك | كتاب | ktāb | book | ✅ |
-| C23 | ل | ليمون | laymūn | lemon | ✅ |
+| C01 | ا | أرنب | arnab | rabbit | ⬜ |
+| C03 | ت | تفاحة | tiffāḥa | apple | ⬜ |
+| C04 | ث | ثلج | talj | snow | ⬜ |
+| C05 | ج | جبنة | jibne | cheese | ⬜ |
+| C06 | ح | حليب | ḥalīb | milk | ⬜ |
+| C07 | خ | خبز | khebez | bread | ⬜ |
+| C09 | ذ | ذهب | dahab | gold | ⬜ |
+| C10 | ر | رز | rizz | rice | ⬜ |
+| C11 | ز | زيتون | zeitūn | olives | ⬜ |
+| C13 | ش | شمس | shams | sun | ⬜ |
+| C14 | ص | صابون | ṣābūn | soap | ⬜ |
+| C15 | ض | ضفدع | ḍifdaʿ | frog | ⬜ |
+| C16 | ط | طاولة | ṭāwle | table | ⬜ |
+| C17 | ظ | ظرف | ẓarf | envelope | ⬜ |
+| C18 | ع | عنب | ʿinab | grapes | ⬜ |
+| C19 | غ | غيمة | ghēme | cloud | ⬜ |
+| C20 | ف | فلافل | falāfel | falafel | ⬜ |
+| C21 | ق | قهوة | ʾahwe | coffee | ⬜ |
+| C22 | ك | كتاب | ktāb | book | ⬜ |
+| C23 | ل | ليمون | laymūn | lemon | ⬜ |
 | C26 | ه | هوا | hawa | air, wind | ⬜ |
 | C28 | ي | ياسمين | yasmīn | jasmine | ⬜ |
 
@@ -104,7 +104,7 @@ Used in "Write a sentence", "Arrange the sentence", the Reading Challenge and th
 |---|---|---|---|
 | E01 | يلا جرّبي مرة تانية | try again (to a girl/woman) | ✅ 24 Oct |
 
-**Still to do (11):** H09 وعد · C26 هوا · C28 ياسمين · the 8 sentences D01–D08. No old "sheep" recordings are used anywhere any more (25 Oct).
+**Still to do (11):** H09 وعد · C26 هوا · C28 ياسمين · the 8 sentences D01–D08. The 9 words still use the old recordings until their pieces are identified.
 
 ## Done ✅
 
