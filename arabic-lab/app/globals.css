@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* Alsama brand tokens (sampled from the Alsama booklet and logo). */
+:root {
+  --alsama-plum: #351b4a;
+  --alsama-orange: #ef9952;
+  --alsama-yellow: #fff5ac;
+  --alsama-sky: #9fb9c6;
+  --alsama-peach: #fbeccc;
+  --ink: #24152f;
+
+  /* Derived tokens so text always meets 4.5:1 contrast. */
+  --page: #fffdf8;
+  --surface: #ffffff;
+  --heading: var(--alsama-plum);
+  --muted: #5c4a6b;
+  --accent-text: #b4570f; /* brand orange is too light for text on white */
+  --on-accent: var(--alsama-plum);
+  --ring: #351b4a;
+  --shape-a: var(--alsama-sky);
+  --shape-b: var(--alsama-yellow);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #1a0f22;
+    --surface: #26172f;
+    --ink: #f3eaf8;
+    --heading: #f3eaf8;
+    --muted: #c9b8d6;
+    --accent-text: var(--alsama-orange);
+    --ring: var(--alsama-orange);
+    --shape-a: #2f4450;
+    --shape-b: #3d2a4c;
+  }
+}
+
+:root[data-theme="dark"] {
+  --page: #1a0f22;
+  --surface: #26172f;
+  --ink: #f3eaf8;
+  --heading: #f3eaf8;
+  --muted: #c9b8d6;
+  --accent-text: var(--alsama-orange);
+  --ring: var(--alsama-orange);
+  --shape-a: #2f4450;
+  --shape-b: #3d2a4c;
+}
+
+@theme inline {
+  --color-plum: var(--alsama-plum);
+  --color-orange: var(--alsama-orange);
+  --color-yellow: var(--alsama-yellow);
+  --color-sky: var(--alsama-sky);
+  --color-peach: var(--alsama-peach);
+  --color-ink: var(--ink);
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-heading: var(--heading);
+  --color-muted: var(--muted);
+  --color-accent-text: var(--accent-text);
+  --color-on-accent: var(--on-accent);
+  --color-shape-a: var(--shape-a);
+  --color-shape-b: var(--shape-b);
+  --font-sans: var(--font-readex), system-ui, sans-serif;
+  --font-display: var(--font-baloo), var(--font-readex), system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* Visible focus for keyboard users everywhere. */
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+/* Arabic text gets a little more line height so dots and vowels don't clash. */
+[lang="ar"] {
+  line-height: 1.7;
+}
+
+/* Swap the logo in dark mode. */
+.logo-dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .logo-dark {
+    display: block;
+  }
+}
+:root[data-theme="dark"] .logo-light {
+  display: none;
+}
+:root[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

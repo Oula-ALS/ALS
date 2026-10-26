@@ -63,3 +63,11 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 - Optional email via Resend. Setup steps for the owner: `docs/setup-registrations.md`.
 - Music and sound effects are generated in `js/music.js` (Web Audio, no files). Recordings duck the
   music via the `alsama:voice` event from `js/audio.js`.
+
+## Alsama Arabic Lab (`arabic-lab/`)
+
+A separate Next.js + TypeScript + Tailwind app (approved 26 Oct 2026) built from Oula's
+"Alsama App Prompt". Own brand: plum `#351B4A`, orange `#EF9952` (orange *text* on light
+backgrounds uses `--accent-text` `#B4570F` for contrast), yellow, sky, peach; fonts Baloo Bhaijaan 2
++ Readex Pro. Read `arabic-lab/AGENTS.md` before touching Next.js code (new Next version).
+Progress checklist: `arabic-lab/README.md`.
