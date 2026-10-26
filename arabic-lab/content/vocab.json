@@ -1,0 +1,361 @@
+{
+ "generatedAt": "2026-10-26T07:24:38.927Z",
+ "sample": true,
+ "units": [
+  {
+   "id": "topic-1",
+   "number": 1,
+   "title": "Hobbies (sample)",
+   "titleIsArabic": false,
+   "level": "book1",
+   "section": "01_Hobbies (sample)",
+   "words": [
+    {
+     "id": "book1-topic-1-1",
+     "ar": "القراية",
+     "chat": "el-2raye",
+     "en": "reading",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-2",
+     "ar": "الرسم",
+     "chat": "er-rasem",
+     "en": "drawing",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-3",
+     "ar": "الطبخ",
+     "chat": "et-tabekh",
+     "en": "cooking",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-4",
+     "ar": "السباحة",
+     "chat": "es-sbe7a",
+     "en": "swimming",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-5",
+     "ar": "الرياضة",
+     "chat": "er-riyada",
+     "en": "sport",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-6",
+     "ar": "الفوتبول",
+     "chat": "el-football",
+     "en": "football",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-7",
+     "ar": "الموسيقى",
+     "chat": "el-mousi2a",
+     "en": "music",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-8",
+     "ar": "التصوير",
+     "chat": "et-tasweer",
+     "en": "photography",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-9",
+     "ar": "المشي",
+     "chat": "el-mashi",
+     "en": "walking",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-10",
+     "ar": "الرقص",
+     "chat": "er-ra2es",
+     "en": "dancing",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-11",
+     "ar": "ألعاب الفيديو",
+     "chat": "al3ab el-video",
+     "en": "video games",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-1-12",
+     "ar": "السفر",
+     "chat": "es-safar",
+     "en": "travelling",
+     "pos": "noun"
+    }
+   ]
+  },
+  {
+   "id": "topic-2",
+   "number": 2,
+   "title": "Animals (sample)",
+   "titleIsArabic": false,
+   "level": "book1",
+   "section": "02_Animals (sample)",
+   "words": [
+    {
+     "id": "book1-topic-2-1",
+     "ar": "القطة",
+     "chat": "el-2otta",
+     "en": "cat",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-2",
+     "ar": "الكلب",
+     "chat": "el-kalb",
+     "en": "dog",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-3",
+     "ar": "الحصان",
+     "chat": "el-7san",
+     "en": "horse",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-4",
+     "ar": "العصفور",
+     "chat": "el-3asfour",
+     "en": "bird",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-5",
+     "ar": "الأسد",
+     "chat": "el-asad",
+     "en": "lion",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-6",
+     "ar": "الفيل",
+     "chat": "el-feel",
+     "en": "elephant",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-7",
+     "ar": "السمكة",
+     "chat": "es-samake",
+     "en": "fish",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-8",
+     "ar": "الأرنب",
+     "chat": "el-arnab",
+     "en": "rabbit",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-9",
+     "ar": "الجمل",
+     "chat": "ej-jamal",
+     "en": "camel",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-10",
+     "ar": "الدلفين",
+     "chat": "ed-dolfeen",
+     "en": "dolphin",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-11",
+     "ar": "السلحفة",
+     "chat": "es-sel7fe",
+     "en": "turtle",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-2-12",
+     "ar": "النمر",
+     "chat": "en-nemr",
+     "en": "tiger",
+     "pos": "noun"
+    }
+   ]
+  },
+  {
+   "id": "topic-3",
+   "number": 3,
+   "title": "Describing people (sample)",
+   "titleIsArabic": false,
+   "level": "book1",
+   "section": "03_Describing people (sample)",
+   "words": [
+    {
+     "id": "book1-topic-3-1",
+     "ar": "طويل/طويلة",
+     "chat": "taweel/taweeleh",
+     "en": "tall",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-2",
+     "ar": "قصير/قصيرة",
+     "chat": "2aseer/2aseereh",
+     "en": "short",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-3",
+     "ar": "شعر",
+     "chat": "sha3er",
+     "en": "hair",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-3-4",
+     "ar": "عيون",
+     "chat": "3youn",
+     "en": "eyes",
+     "pos": "noun"
+    },
+    {
+     "id": "book1-topic-3-5",
+     "ar": "أشقر/شقرا",
+     "chat": "ash2ar/sha2ra",
+     "en": "blond",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-6",
+     "ar": "أسود",
+     "chat": "aswad",
+     "en": "black",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-7",
+     "ar": "بنّي",
+     "chat": "bunni",
+     "en": "brown",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-8",
+     "ar": "طيّب/طيّبة",
+     "chat": "tayyeb/tayybeh",
+     "en": "kind",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-9",
+     "ar": "ذكي/ذكية",
+     "chat": "zaki/zakiyyeh",
+     "en": "smart",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-10",
+     "ar": "مضحك/مضحكة",
+     "chat": "mud'hek/mud'hikeh",
+     "en": "funny",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-11",
+     "ar": "هادي/هادية",
+     "chat": "hadi/hadyeh",
+     "en": "calm",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-12",
+     "ar": "خجول/خجولة",
+     "chat": "5ajoul/5ajouleh",
+     "en": "shy",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-13",
+     "ar": "اجتماعي/اجتماعية",
+     "chat": "ejtima3i/ejtima3iyyeh",
+     "en": "sociable",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-14",
+     "ar": "شاطر/شاطرة",
+     "chat": "shater/shatra",
+     "en": "clever",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-15",
+     "ar": "كريم/كريمة",
+     "chat": "kareem/kareemeh",
+     "en": "generous",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-3-16",
+     "ar": "لطيف/لطيفة",
+     "chat": "lateef/lateefeh",
+     "en": "nice",
+     "pos": "adjective"
+    }
+   ]
+  },
+  {
+   "id": "topic-4",
+   "number": 4,
+   "title": "Free time (sample)",
+   "titleIsArabic": false,
+   "level": "book1",
+   "section": "04_Free time (sample)",
+   "words": [
+    {
+     "id": "book1-topic-4-1",
+     "ar": "بيريّحني",
+     "chat": "byrayye7ni",
+     "en": "it relaxes me",
+     "pos": "phrase"
+    },
+    {
+     "id": "book1-topic-4-2",
+     "ar": "ممتع",
+     "chat": "mumte3",
+     "en": "fun",
+     "pos": "adjective"
+    },
+    {
+     "id": "book1-topic-4-3",
+     "ar": "بتعلّم",
+     "chat": "bet3allam",
+     "en": "I learn",
+     "pos": "verb"
+    },
+    {
+     "id": "book1-topic-4-4",
+     "ar": "مع رفقاتي",
+     "chat": "ma3 rif2ati",
+     "en": "with my friends",
+     "pos": "phrase"
+    },
+    {
+     "id": "book1-topic-4-5",
+     "ar": "بوقت الفراغ",
+     "chat": "b wa2t el-fara8",
+     "en": "in free time",
+     "pos": "phrase"
+    }
+   ]
+  }
+ ]
+}

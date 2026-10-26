@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* `dark:` follows the device setting unless the 🌙/☀️ button chose a theme. */
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+  &:where([data-theme="dark"] *) {
+    @slot;
+  }
+}
+
 /* Alsama brand tokens (sampled from the Alsama booklet and logo). */
 :root {
   --alsama-plum: #351b4a;
@@ -124,4 +136,37 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Confetti for 2–3 star results */
+@keyframes confetti-fall {
+  from {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(105vh) rotate(540deg);
+    opacity: 0.6;
+  }
+}
+.confetti-piece {
+  animation: confetti-fall 2s ease-in forwards;
+}
+
+/* Flashcard flip */
+.flip-card {
+  perspective: 1200px;
+}
+.flip-inner {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.flip-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
 }

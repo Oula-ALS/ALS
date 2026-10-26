@@ -14,6 +14,19 @@ cp .env.example .env.local   # then fill in the values
 npm run dev                  # http://localhost:3000
 ```
 
+## Content (words)
+
+1. Put the three vocabulary CSVs in `content/source/` (original file names).
+2. Run `npm run import-content`. It writes `content/vocab.json` and `content/import-report.md`
+   (fixes made and anything suspicious). Until then a small **sample** list is used.
+
+Real recordings: put `public/audio/<word id>.mp3` and list the id in `content/recordings.json`;
+it then plays instead of the computer voice.
+
+## Tests
+
+`npm test` (CSV import, quiz generator, XP/stars/ranks/streaks).
+
 ## Environment variables
 
 See `.env.example`. Secrets live only in `.env.local` (locally) and in Vercel → Project →
@@ -44,6 +57,9 @@ Add the environment variables above, then deploy.
 - `app/api/students/` – register / edit / delete (server)
 - `lib/` – logic (picker options, validation, local student data; `lib/server/` = database + email)
 - `supabase/schema.sql` – database table
+- `components/words/` – word list, flashcards, quiz, match
+- `lib/content/` – CSV import + content loader · `lib/games/` – quiz, scoring · `lib/progress.ts` – XP, streak, stars (on the device)
+- `content/` – vocab.json, sample list, source CSVs · `scripts/` – import script · `tests/`
 - `docs/` – setup guide and Arabic to review
 - `public/brand/` – Alsama logo (plus a lightened dark-mode copy) and welcome photo
 
@@ -52,7 +68,7 @@ Add the environment variables above, then deploy.
 - [x] Stage 1 – setup, brand, dark mode, welcome screen
 - [ ] Stage 2 – content import (needs the CSVs, PDF and Book1.docx)
 - [x] Stage 3 – registration + teacher email, edit and delete my details
-- [ ] Stage 4 – home, Words and the three games
+- [x] Stage 4 – home, Words and the three games (running on sample words)
 - [ ] Stage 5 – Top 100 phrases and grammar
 - [ ] Stage 6 – About Me and Writing
 - [ ] Stage 7 – teacher dashboard
