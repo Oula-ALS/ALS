@@ -19,6 +19,8 @@
   --ring: #351b4a;
   --shape-a: var(--alsama-sky);
   --shape-b: var(--alsama-yellow);
+  --error: #b42318;
+  --success: #1f6f43;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +34,8 @@
     --ring: var(--alsama-orange);
     --shape-a: #2f4450;
     --shape-b: #3d2a4c;
+    --error: #ffb4a8;
+    --success: #8fd9ac;
   }
 }
 
@@ -45,6 +49,8 @@
   --ring: var(--alsama-orange);
   --shape-a: #2f4450;
   --shape-b: #3d2a4c;
+  --error: #ffb4a8;
+  --success: #8fd9ac;
 }
 
 @theme inline {
@@ -62,6 +68,8 @@
   --color-on-accent: var(--on-accent);
   --color-shape-a: var(--shape-a);
   --color-shape-b: var(--shape-b);
+  --color-error: var(--error);
+  --color-success: var(--success);
   --font-sans: var(--font-readex), system-ui, sans-serif;
   --font-display: var(--font-baloo), var(--font-readex), system-ui, sans-serif;
 }

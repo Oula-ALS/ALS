@@ -1,18 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useSyncExternalStore } from "react";
-import { readLocalStudent } from "@/lib/student";
-
-const noop = () => () => {};
+import { useLocalStudent } from "@/lib/student";
 
 export function StartButton() {
-  // null on the server and for new visitors; the student's name for returning ones.
-  const name = useSyncExternalStore(
-    noop,
-    () => readLocalStudent()?.name ?? null,
-    () => null,
-  );
+  const name = useLocalStudent()?.name;
 
   const base =
     "inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-lg font-display font-bold shadow-sm transition-transform hover:-translate-y-0.5";

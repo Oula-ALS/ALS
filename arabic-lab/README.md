@@ -18,12 +18,16 @@ npm run dev                  # http://localhost:3000
 
 See `.env.example`. Secrets live only in `.env.local` (locally) and in Vercel → Project →
 Settings → Environment Variables (online). Never commit them.
+Step-by-step setup: `docs/setup-registration.md`.
+
+Without Supabase keys, `npm run dev` saves students to `.data/students.json` and prints
+the teacher email in the terminal, so you can try everything locally.
 
 | Name | What it is |
 |---|---|
 | `TEACHER_EMAIL` | Who receives new-student and writing emails |
 | `TEACHER_PASSWORD` | Password for the teacher dashboard |
-| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `SUPABASE_URL` | Supabase project URL |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase server key (server only) |
 | `RESEND_API_KEY` | Resend key for sending email |
 | `EMAIL_FROM` | Verified sender address |
@@ -37,14 +41,17 @@ Add the environment variables above, then deploy.
 
 - `app/` – screens (routes)
 - `components/` – shared UI (header, logo, waves…)
-- `lib/` – logic (stats, local student data; later quiz, XP, intro builder)
+- `app/api/students/` – register / edit / delete (server)
+- `lib/` – logic (picker options, validation, local student data; `lib/server/` = database + email)
+- `supabase/schema.sql` – database table
+- `docs/` – setup guide and Arabic to review
 - `public/brand/` – Alsama logo (plus a lightened dark-mode copy) and welcome photo
 
 ## Progress
 
 - [x] Stage 1 – setup, brand, dark mode, welcome screen
 - [ ] Stage 2 – content import (needs the CSVs, PDF and Book1.docx)
-- [ ] Stage 3 – registration + teacher email
+- [x] Stage 3 – registration + teacher email, edit and delete my details
 - [ ] Stage 4 – home, Words and the three games
 - [ ] Stage 5 – Top 100 phrases and grammar
 - [ ] Stage 6 – About Me and Writing

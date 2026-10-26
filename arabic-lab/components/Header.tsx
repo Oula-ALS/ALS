@@ -12,7 +12,12 @@ export function Header() {
             Arabic Lab
           </span>
         </Link>
-        <ThemeToggle />
+        <nav className="flex items-center gap-1">
+          <Link href="/profile" className="rounded-full px-3 py-2 text-sm font-medium text-heading hover:bg-shape-b">
+            My details
+          </Link>
+          <ThemeToggle />
+        </nav>
       </div>
     </header>
   );
