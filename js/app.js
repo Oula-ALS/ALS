@@ -8,8 +8,8 @@ import { celebrate } from './celebrate.js';
 import { applyMusicSettings, sfx } from './music.js';
 import { sendRegistration, sendPendingRegistrations, deleteRegistration, notifyLogin } from './register.js';
 import { LETTERS, LOOKALIKES, groupOf, GROUP_1 } from './data/letters.js';
-import { VOWELS, CONSONANTS } from './data/content.js';
-import { SECTIONS, SETS } from './sections.js';
+import { VOWELS, CONSONANTS, WORDS } from './data/content.js';
+import { SECTIONS, SETS, hasAudio } from './sections.js';
 import { startSession, afterRender, leaveSession, wordsAr, exercisesAr, soundsAr } from './exercises.js';
 import { tracingHTML, initTracing } from './tracing.js';
 
@@ -26,9 +26,22 @@ const go = route => { location.hash = '#/' + route; };
 
 // ---- Screens --------------------------------------------------------------
 
+// Letters floating up behind the welcome page. Tap one to hear its name (Oula's voice).
+function flyingLetters() {
+  return `<div class="flying-letters">${shuffle(LETTERS).slice(0, 18).map((L, k) => {
+    const left = (k * 5.5 + Math.random() * 4).toFixed(1);
+    const dur = (11 + Math.random() * 9).toFixed(1);
+    const size = Math.round(30 + Math.random() * 34);
+    return `<button type="button" class="fly c${k % 3}" data-fly="${L.name}" tabindex="-1" aria-hidden="true"
+      style="left:${left}%;--top:${Math.round(Math.random() * 85)}%;font-size:${size}px;animation-duration:${dur}s;animation-delay:-${(Math.random() * dur).toFixed(1)}s"
+      lang="ar">${L.char}</button>`;
+  }).join('')}</div>`;
+}
+
 function welcomeScreen() {
   return `
     <section class="welcome">
+      ${flyingLetters()}
       <h1 class="ar-hero" lang="ar" dir="rtl" tabindex="-1">أهلاً وسهلاً بعيلة السما</h1>
       <p class="lead">Welcome to the Alsama Language School family!</p>
 
@@ -42,6 +55,7 @@ function welcomeScreen() {
 
       <button class="button big" type="button" data-go="start">Start learning</button>
       <p class="muted">Listen, practise, play games and repeat any lesson whenever you need. No sign-up needed.</p>
+      <p class="hint fly-hint">✨ Tap a flying letter to hear it!</p>
     </section>`;
 }
 
@@ -216,6 +230,50 @@ function registrationFields(r) {
 
 // ---- Letters: Back / Next / Home through all 28 letters ----------------------
 
+const DOTS_NOTE = {
+  'ث': 'In Lebanese, <span lang="ar">ث</span> sounds like <span lang="ar">ت</span> ("ta"). Remember it by its <b>three dots</b>.',
+  'ذ': 'In Lebanese, <span lang="ar">ذ</span> sounds like <span lang="ar">د</span> ("da"). Remember it by the <b>dot above</b>.',
+};
+
+// "Words to know": the app's words (the 9 first words + one example word per letter).
+const VOCAB = [...new Map([...WORDS.map(w => [w.ar, w]), ...LETTERS.map(L => [L.word.ar, L.word])]
+  .map(([ar, w]) => [ar, { ar, latin: w.latin, en: w.en, emoji: w.emoji }])).values()];
+const wordsWith = c => VOCAB.filter(w => w.ar.replace(/[أإآ]/g, 'ا').includes(c));
+const wordChip = w => hasAudio(w.ar)
+  ? `<button class="word-chip" type="button" data-say="${w.ar}"><span aria-hidden="true">${w.emoji}</span>
+      <b lang="ar">${w.ar}</b><small>🔊 ${w.latin} · ${w.en}</small></button>`
+  : `<span class="word-chip"><span aria-hidden="true">${w.emoji}</span>
+      <b lang="ar">${w.ar}</b><small>${w.latin} · ${w.en}</small></span>`;
+
+function wordsCard(L) {
+  const list = wordsWith(L.char);
+  if (!list.length) return '';
+  return `
+    <section class="card letter-section">
+      <h2>Words to know with <span lang="ar">${L.char}</span></h2>
+      <div class="word-chips" dir="rtl">${list.map(wordChip).join('')}</div>
+      <p><a class="link-button" href="#/words">📚 All words to know</a></p>
+    </section>`;
+}
+
+function wordsScreen() {
+  return `
+    <section class="narrow">
+      <h1 tabindex="-1">Words to know</h1>
+      <p class="ar-line" lang="ar" dir="rtl">كلمات لازم تعرفها</p>
+      <p>Everyday Lebanese words for every letter. Tap a word to hear it.</p>
+      ${LETTERS.map(L => `
+        <div class="card words-letter">
+          <a class="words-letter-head" href="#/letters/${LETTERS.indexOf(L) + 1}" lang="ar">${L.char}</a>
+          <div class="word-chips" dir="rtl">${wordsWith(L.char).map(wordChip).join('')}</div>
+        </div>`).join('')}
+      <p class="row center">
+        <a class="button secondary" href="#/s/alphabet">‹ ABC Alphabet</a>
+        <button class="button" type="button" data-go="home">🏠 Home</button>
+      </p>
+    </section>`;
+}
+
 function letterScreen(n) {
   const s = store.getCurrentStudent();
   if (!s) { go('who'); return ''; }
@@ -248,9 +306,11 @@ function letterScreen(n) {
         </button>
         <p class="heard ${heard ? 'is-heard' : ''}" id="heard">${heard ? '✓ Heard' : 'Tap to listen'}</p>
         ${L.hard ? '<p class="letter-note">👂 A special Arabic sound — listen carefully and repeat it out loud.</p>' : ''}
+        ${DOTS_NOTE[L.char] ? `<p class="letter-note dots">👀 ${DOTS_NOTE[L.char]}</p>` : ''}
       </div>
 
       ${letterDetails(L)}
+      ${wordsCard(L)}
       ${findActivity(i)}
 
       ${stepNav(i > 1 ? `letters/${i - 1}` : null, i < LETTERS.length ? `letters/${i + 1}` : 'letters/done')}
@@ -549,6 +609,7 @@ function sectionIntro(id, s) {
           ${LETTERS.map(L => `<button type="button" lang="ar" data-say="${L.name}" aria-label="${L.latin}">${L.char}</button>`).join('')}
         </div>
         <a class="button" href="#/letters/${p.lastLetter}">📖 Open the letter pages (${p.lettersHeard.length}/28 heard)</a>
+        <a class="button secondary" href="#/words">📚 Words to know</a>
         <div class="groups">
           <div class="group-box g1"><b>Group 1</b> · 2 shapes
             <p class="group-letters" lang="ar" dir="rtl">${GROUP_1.join(' ')}</p>
@@ -772,6 +833,16 @@ async function greetVisitor() {
   ['pointerdown', 'keydown'].forEach(t => addEventListener(t, firstTouch, true));
 }
 
+// Tap a flying letter on the welcome page: it pops and says its name (never over the greeting).
+document.addEventListener('click', e => {
+  const f = e.target.closest('[data-fly]');
+  if (!f) return;
+  f.classList.remove('pop');
+  void f.offsetWidth; // restart the pop animation
+  f.classList.add('pop');
+  if (nowPlaying() !== GREETING) playAudio(f.dataset.fly, null, { quiet: true });
+});
+
 function render() {
   if (nowPlaying() !== GREETING) stopAudio(); // let the greeting finish when "Start learning" is tapped
   leaveSession();
@@ -784,6 +855,7 @@ function render() {
     profile: () => profileScreen(param === 'new' ? null : param),
     home: homeScreen,
     about: aboutScreen,
+    words: wordsScreen,
     s: () => sectionScreen(param),
     play: () => playScreen(param),
     progress: progressScreen,
