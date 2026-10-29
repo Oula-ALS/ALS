@@ -163,7 +163,8 @@ const playBtn = ex => ex.audio
   ? `<button class="big-play" type="button" data-ex-play aria-label="Play the sound">🔊</button>` : '';
 const display = ex => `
   ${ex.display ? `<div class="ex-display" lang="ar" dir="rtl">${ex.display}</div>` : ''}
-  ${ex.displaySub ? `<p class="ex-sub">${esc(ex.displaySub)}</p>` : ''}`;
+  ${ex.displaySub ? `<p class="ex-sub">${esc(ex.displaySub)}</p>` : ''}
+  ${ex.tip ? `<p class="ex-tip">💡 ${ex.tip}</p>` : ''}`;
 
 const RENDER = {
   choose: ex => `

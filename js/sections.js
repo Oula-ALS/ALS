@@ -13,7 +13,29 @@ import * as store from './progress.js';
 // Which sounds have Oula's recording. Listening activities only use recorded words, so a
 // question never has a silent sound; a new recording joins the activities automatically.
 const MANIFEST = await fetch('assets/audio/manifest.json').then(r => r.json()).catch(() => ({}));
-const hasAudio = key => Boolean(MANIFEST[key]);
+export const hasAudio = key => Boolean(MANIFEST[key]);
+
+// In Lebanese ث sounds like ت ("ta") and ذ like د ("da"), so Oula recorded them the same.
+// When only the sound is given, the dots tell them apart — show a tip, as in the workbook.
+const TWIN = { 'ث': 'ت', 'ت': 'ث', 'ذ': 'د', 'د': 'ذ' };
+const DOTS_TIP = {
+  'ث': 'In Lebanese, <span lang="ar">ث</span> and <span lang="ar">ت</span> sound the same ("ta"). This one is the letter with <b>three dots</b>.',
+  'ت': 'In Lebanese, <span lang="ar">ت</span> and <span lang="ar">ث</span> sound the same ("ta"). This one is the letter with <b>two dots</b>.',
+  'ذ': 'In Lebanese, <span lang="ar">ذ</span> and <span lang="ar">د</span> sound the same ("da"). This one has <b>a dot above</b>.',
+  'د': 'In Lebanese, <span lang="ar">د</span> and <span lang="ar">ذ</span> sound the same ("da"). This one has <b>no dot</b>.',
+};
+const nameToChar = key => (LETTERS.find(L => L.name === key) || {}).char;
+
+// Adds the dots tip when a letter is given only by its sound and its twin could be the answer.
+function withTwinTip(ex) {
+  const c = nameToChar(ex.audio);
+  if (!c || !TWIN[c] || ex.answer !== c) return ex;
+  const twinOffered = ex.type === 'type' || (ex.options || []).some(o => o.value === TWIN[c]);
+  return twinOffered ? { ...ex, tip: DOTS_TIP[c] } : ex;
+}
+// A match game can't have both twins: their sounds are identical.
+const hasTwinPair = ex => ex.type === 'match' &&
+  ex.pairs.some(p => { const c = nameToChar(p.audio); return c && TWIN[c] && ex.pairs.some(q => nameToChar(q.audio) === TWIN[c]); });
 const WORDS = ALL_WORDS.filter(w => hasAudio(w.audio));
 
 const letterBy = c => LETTERS.find(l => l.char === c || (c === 'أ' && l.char === 'ا'));
@@ -37,8 +59,9 @@ function many(n, gens) {
   const out = [];
   const ids = new Set();
   for (let guard = 0; out.length < n && guard < n * 25; guard++) {
-    const ex = pick(list)();
-    if (!ex || ids.has(ex.id)) continue;
+    let ex = pick(list)();
+    if (!ex || ids.has(ex.id) || hasTwinPair(ex)) continue;
+    ex = withTwinTip(ex);
     ids.add(ex.id);
     out.push(ex);
   }
@@ -486,7 +509,7 @@ function readingPool(level) {
   const pool = SYLLABLES.map(x => ({ text: x.text, latin: x.latin, audio: x.text, lvl: 1 }));
   if (level >= 2) pool.push(...WORDS.map(w => ({ text: w.vowelled, latin: w.latin, en: w.en, emoji: w.emoji, audio: w.audio, lvl: 2 })));
   if (level >= 3) pool.push(...LETTERS.filter(L => hasAudio(L.word.ar)).map(L => ({ text: L.word.ar, latin: L.word.latin, en: L.word.en, emoji: L.word.emoji, audio: L.word.ar, lvl: 3 })));
-  if (level >= 4) pool.push(...SENTENCES.map(x => ({ text: x.ar, latin: x.latin, en: x.en, audio: x.ar, lvl: 4 })));
+  if (level >= 4) pool.push(...SENTENCES.filter(x => hasAudio(x.ar)).map(x => ({ text: x.ar, latin: x.latin, en: x.en, audio: x.ar, lvl: 4 })));
   return pool;
 }
 
@@ -677,6 +700,12 @@ export const SETS = {
 };
 
 for (const [id, def] of Object.entries(LESSON_DEFS)) SETS[id] = { ...def, lesson: true };
+
+// Every activity and lesson: dots tip for ت/ث and د/ذ, and no match game with both twins.
+for (const def of Object.values(SETS)) {
+  const build = def.build;
+  def.build = () => build().filter(ex => ex && !hasTwinPair(ex)).map(withTwinTip);
+}
 
 export const SECTIONS = [
   { id: 'alphabet', title: 'ABC Alphabet', ar: 'الأحرف', icon: 'أ ب', img: 'images/students-classroom.jpg',

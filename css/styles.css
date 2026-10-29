@@ -125,7 +125,7 @@ main:focus { outline: none; }
 
 /* ---- Welcome ----------------------------------------------------------- */
 
-.welcome { text-align: center; max-width: 620px; margin: 0 auto; }
+.welcome { text-align: center; max-width: 620px; margin: 0 auto; position: relative; isolation: isolate; }
 .welcome-logo { width: 240px; max-width: 70%; background: var(--white); border-radius: 18px; padding: 8px 14px; box-shadow: var(--shadow); }
 .ar-hero { font-size: 48px; color: var(--magenta); margin: 18px 0 0; line-height: 1.5; }
 .lead { font-size: 20px; font-weight: 800; color: var(--burgundy); margin: 0 0 18px; }
@@ -496,6 +496,8 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
 .ex-emoji { font-size: 48px; }
 .gap { display: inline-block; min-width: 1.2em; border-bottom: 4px solid var(--magenta); color: var(--magenta); }
 .ex-sub { margin: 0 0 6px; color: var(--text-soft); }
+.ex-tip { margin: 6px auto 10px; max-width: 520px; padding: 10px 14px; border-radius: 14px; background: #FFF4D6; border: 1px solid #F2D27A; color: var(--burgundy); font-size: 16px; }
+.ex-tip [lang="ar"] { font-family: var(--font-ar); font-size: 22px; color: var(--magenta); }
 .ex-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 14px 0 4px; }
 .ex-options.many { grid-template-columns: repeat(3, 1fr); }
 .opt-wrap { display: flex; gap: 6px; align-items: stretch; }
@@ -609,3 +611,42 @@ a.icon-button { display: grid; place-items: center; text-decoration: none; color
 .read-reveal { margin-top: 14px; padding: 12px; border-radius: 16px; background: var(--cream); border: 2px dashed var(--magenta); }
 .read-answer { font-size: 22px; margin: 0; }
 @media (max-width: 480px) { .read-word { font-size: 52px; } }
+
+/* Welcome page: letters floating up in the background. Tap one to hear it. */
+.flying-letters { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.fly {
+  position: absolute; bottom: -80px; top: auto !important; pointer-events: auto;
+  border: 0; background: none; padding: 6px; cursor: pointer; line-height: 1;
+  font-family: var(--font-ar); font-weight: 700; opacity: .55;
+  animation: fly-up linear infinite;
+}
+.fly.c0 { color: var(--magenta); }
+.fly.c1 { color: var(--pink); opacity: .8; }
+.fly.c2 { color: var(--burgundy); opacity: .35; }
+.fly:hover { opacity: 1; }
+.fly.pop { animation: fly-up linear infinite, fly-pop .6s ease-out; opacity: 1; }
+@keyframes fly-up {
+  0%   { transform: translate(0, 0) rotate(-8deg); }
+  50%  { transform: translate(24px, -55vh) rotate(8deg); }
+  100% { transform: translate(-12px, -115vh) rotate(-6deg); }
+}
+@keyframes fly-pop { 0% { scale: 1; } 40% { scale: 1.8; } 100% { scale: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .fly { animation: none !important; bottom: auto; top: var(--top, 50%) !important; }
+}
+.fly-hint { margin-top: 18px; }
+
+/* Words to know */
+.word-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.word-chip {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 2px; min-width: 96px;
+  padding: 8px 12px; border-radius: 16px; border: 2px solid var(--pink); background: var(--white);
+  font: inherit; color: var(--burgundy); cursor: default; text-align: center;
+}
+button.word-chip { cursor: pointer; border-color: var(--magenta); }
+.word-chip b { font-family: var(--font-ar); font-size: 24px; }
+.word-chip small { font-size: 13px; color: var(--text-soft); }
+.words-letter { display: flex; align-items: center; gap: 14px; margin: 10px 0; }
+.words-letter-head { font: 700 40px var(--font-ar); color: var(--magenta); text-decoration: none; min-width: 48px; text-align: center; }
+.letter-note.dots { background: #FFF4D6; border-radius: 12px; padding: 8px 12px; }
+.letter-note.dots [lang="ar"] { font-family: var(--font-ar); font-size: 22px; color: var(--magenta); }

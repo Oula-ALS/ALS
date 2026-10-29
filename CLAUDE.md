@@ -53,6 +53,10 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
   each short vowel is "half" of its long one (aa · oo · ee); practice table with ر.
 - Welcome greeting (Oula's voice) plays by itself once per visit — on the first tap if the browser
   blocks autoplay (`greetVisitor()` in `js/app.js`). No greeting button on the welcome page.
+  Flying letters on the welcome page (tap → letter name; still with reduced motion).
+- ث = ت and ذ = د sound the same: `withTwinTip()` in `js/sections.js` adds a 💡 dots tip to every
+  activity that gives the letter only by sound; match games never pair the twins.
+- "Words to know" page (`#/words`) + a card on each letter page; activities only use recorded words.
 - Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
   `assets/stickers/stickers.json` (see `docs/sticker-list.md`). Graduates sticker replaces the old owl. Logo: `assets/logo/alsama-language-school.png`.
 
