@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Baloo_Bhaijaan_2, Readex_Pro } from "next/font/google";
 import { Header } from "@/components/Header";
+import { ServiceWorker } from "@/components/ServiceWorker";
 import "./globals.css";
 
 const baloo = Baloo_Bhaijaan_2({
@@ -17,6 +18,8 @@ const readex = Readex_Pro({
 
 export const metadata: Metadata = {
   title: "Alsama Arabic Lab",
+  applicationName: "Alsama Arabic Lab",
+  appleWebApp: { capable: true, title: "Arabic Lab", statusBarStyle: "default" },
   description:
     "Practise Levantine Arabic between classes at Alsama Language School.",
 };
@@ -44,6 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1 flex flex-col">{children}</main>
+        <ServiceWorker />
       </body>
     </html>
   );

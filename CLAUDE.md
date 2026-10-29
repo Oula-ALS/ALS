@@ -70,4 +70,8 @@ A separate Next.js + TypeScript + Tailwind app (approved 26 Oct 2026) built from
 "Alsama App Prompt". Own brand: plum `#351B4A`, orange `#EF9952` (orange *text* on light
 backgrounds uses `--accent-text` `#B4570F` for contrast), yellow, sky, peach; fonts Baloo Bhaijaan 2
 + Readex Pro. Read `arabic-lab/AGENTS.md` before touching Next.js code (new Next version).
-Progress checklist: `arabic-lab/README.md`.
+Progress checklist: `arabic-lab/README.md`. Stages 1, 3, 4, 6, 7, 8 done; 2 + 5 wait for Oula's
+CSVs/PDF/Book1.docx. Words run on `content/sample/` until `npm run import-content` sees `content/source/`.
+Claude-written Arabic is marked `draft` and listed in `arabic-lab/docs/arabic-review.md`. Listen buttons
+use the device's Arabic voice unless a recording exists (owner's prompt asks for this; ask before
+changing). Run `npm test`, `npm run lint`, `npm run build` before pushing.

@@ -398,7 +398,7 @@ function Guided({ segments, student, draft, onUse }: { segments: Segment[]; stud
               onChange={(e) => setValues({ ...values, [s.blank]: e.target.value })}
               dir="auto"
               size={Math.max(8, (values[s.blank] ?? s.label).length + 1)}
-              className="mx-1 rounded-lg border-b-2 border-orange bg-yellow/40 px-2 py-0.5 text-lg"
+              className="mx-1 rounded-lg border-b-2 border-orange bg-yellow px-2 py-0.5 text-lg text-plum placeholder:text-plum/60"
             />
           );
         })}

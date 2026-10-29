@@ -67,7 +67,7 @@ export default function Welcome() {
             sizes="(min-width: 768px) 384px, 90vw"
             className="relative rounded-[2rem] object-cover shadow-lg"
           />
-          <figcaption className="relative mt-4 text-center text-sm text-muted">
+          <figcaption className="relative mt-4 text-center text-sm font-medium text-heading">
             Alsama Language School · Shatila, Beirut
           </figcaption>
         </figure>

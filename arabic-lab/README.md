@@ -45,6 +45,14 @@ the teacher email in the terminal, so you can try everything locally.
 | `RESEND_API_KEY` | Resend key for sending email |
 | `EMAIL_FROM` | Verified sender address |
 
+## Install on a phone and offline use
+
+- Open the app's address in the phone browser → **Add to Home Screen** (iPhone: Share button;
+  Android: ⋮ menu → Install app).
+- After the first visit (online), the app saves every page and the word lists on the phone, once a
+  day, so words, games, About Me and writing drafts work without internet. Sending a writing and
+  registering need internet.
+
 ## Deploy
 
 In Vercel, create a new project from this repo and set **Root Directory** to `arabic-lab`.
@@ -74,4 +82,13 @@ Add the environment variables above, then deploy.
 - [ ] Stage 5 – Top 100 phrases and grammar
 - [x] Stage 6 – About Me (intro, build my sentences, ask your partner) and Writing (13 topics, guided + free, checklist, submit, feedback)
 - [x] Stage 7 – teacher dashboard at /teacher (this session, students + CSV, writings inbox, content review)
-- [ ] Stage 8 – PWA, tests, QA
+- [x] Stage 8 – installable app (manifest, icons), offline use (`public/sw.js`), security headers, tests, accessibility check (axe: 0 issues on 16 screens, light + dark)
+
+## Still waiting for
+
+- **Content files** (`Book1 - Vocabs- 437words.csv`, `B1_Vocabs_211words.csv`,
+  `Advanced_Level_Vocabs_431words.csv`, `Arabic learning1.pdf`, `Book1.docx`):
+  needed for the real word lists, the Top 100 phrases + 20 Q&A, the 17 grammar lessons and unit pictures.
+  The Phrases and Grammar tiles say "Coming soon" until then.
+- **Teacher review** of the Arabic listed in `docs/arabic-review.md`.
+- **Recordings** to replace the computer voice (`public/audio/` + `content/recordings.json`).

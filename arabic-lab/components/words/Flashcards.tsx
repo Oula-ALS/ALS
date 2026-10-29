@@ -73,9 +73,10 @@ function FlashcardRound({ level, unitId, words, arFirst, onRestart }: Props & { 
     setFlipped(false);
   };
 
-  const arabicSide = <ArabicStack ar={card.ar} chat={card.chat} size="xl" showEn={false} showChat={!arFirst || flipped} />;
+  // The back of the card is yellow, so its text stays dark in dark mode too.
+  const arabicSide = <ArabicStack ar={card.ar} chat={card.chat} size="xl" showEn={false} showChat={!arFirst || flipped} onYellow={!arFirst} />;
   const arabicShowing = arFirst !== flipped;
-  const englishSide = <p className="text-center font-display text-3xl font-bold text-heading">{card.en}</p>;
+  const englishSide = <p className={`text-center font-display text-3xl font-bold ${arFirst ? "text-plum" : "text-heading"}`}>{card.en}</p>;
 
   return (
     <div className="mx-auto max-w-md">
