@@ -9,18 +9,20 @@ import { dayKey, visibleStreak } from "@/lib/games/scoring";
 import { emptyProgress, unitKey, useProgress } from "@/lib/progress";
 import { sessionUnit } from "@/lib/session";
 import { useLocalStudent } from "@/lib/student";
+import { useSettings } from "@/lib/use-settings";
 
 const TILES = [
   { href: "/words", en: "Words", ar: "كلمات", icon: "📚", ready: true },
   { href: "/phrases", en: "Top 100 Phrases", ar: "أهم ١٠٠ جملة", icon: "💬", ready: false },
   { href: "/grammar", en: "Grammar", ar: "قواعد", icon: "🧩", ready: false },
-  { href: "/writing", en: "Writing", ar: "كتابة", icon: "✍️", ready: false },
-  { href: "/about-me", en: "About Me", ar: "عنّي", icon: "🙋", ready: false },
+  { href: "/writing", en: "Writing", ar: "كتابة", icon: "✍️", ready: true },
+  { href: "/about-me", en: "About Me", ar: "عنّي", icon: "🙋", ready: true },
 ];
 
 export function HomeView({ units, sample }: { units: UnitSummary[]; sample: boolean }) {
   const student = useLocalStudent();
   const progress = useProgress() ?? emptyProgress;
+  const settings = useSettings();
 
   if (student === undefined) return null;
   if (!student) {
@@ -36,7 +38,7 @@ export function HomeView({ units, sample }: { units: UnitSummary[]; sample: bool
   }
 
   const streak = visibleStreak(progress.streak, progress.lastDay, dayKey());
-  const session = sessionUnit(student.level, units);
+  const session = sessionUnit(student.level, units, settings.session);
   const sessionHref = session.unit ? `/words/${session.unit.level}/${session.unit.id}` : "/words";
 
   return (
@@ -76,8 +78,10 @@ export function HomeView({ units, sample }: { units: UnitSummary[]; sample: bool
               {session.unit.wordCount} words ·{" "}
               <Stars value={progress.stars[unitKey(session.unit.level, session.unit.id)] ?? 0} size="text-sm" />
             </p>
-            {!session.pinnedByTeacher && (
-              <p className="mt-1 text-sm text-muted">Your teacher will soon be able to pin the unit from class here.</p>
+            {session.note && (
+              <p className="mt-2 rounded-2xl bg-yellow p-3 text-sm text-plum">
+                <strong>Note from your teacher:</strong> {session.note}
+              </p>
             )}
             <div className="mt-4 flex flex-wrap gap-3">
               <Link href={`${sessionHref}/quiz`} className="rounded-full bg-orange px-6 py-3 font-bold text-on-accent">

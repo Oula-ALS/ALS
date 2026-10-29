@@ -30,3 +30,30 @@ create index if not exists students_email_idx on public.students (lower(email));
 
 alter table public.students enable row level security;
 revoke all on table public.students from anon, authenticated;
+
+-- Writings students submit, with the teacher's feedback.
+create table if not exists public.writings (
+  id          uuid primary key default gen_random_uuid(),
+  student_id  uuid not null references public.students(id) on delete cascade,
+  topic_id    text not null check (char_length(topic_id) <= 20),
+  text        text not null check (char_length(text) between 1 and 5000),
+  status      text not null default 'new' check (status in ('new', 'reviewed')),
+  feedback    text check (char_length(feedback) <= 3000),
+  stars       integer check (stars between 1 and 3),
+  created_at  timestamptz not null default now(),
+  reviewed_at timestamptz
+);
+create index if not exists writings_student_idx on public.writings (student_id);
+
+alter table public.writings enable row level security;
+revoke all on table public.writings from anon, authenticated;
+
+-- Teacher settings: "session" (pinned unit per level) and "content" (approved model texts).
+create table if not exists public.settings (
+  key        text primary key,
+  value      jsonb not null,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.settings enable row level security;
+revoke all on table public.settings from anon, authenticated;

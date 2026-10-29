@@ -25,7 +25,7 @@ it then plays instead of the computer voice.
 
 ## Tests
 
-`npm test` (CSV import, quiz generator, XP/stars/ranks/streaks).
+`npm test` (CSV import, quiz generator, XP/stars/ranks/streaks, intro builder, writing checklist).
 
 ## Environment variables
 
@@ -60,6 +60,8 @@ Add the environment variables above, then deploy.
 - `components/words/` – word list, flashcards, quiz, match
 - `lib/content/` – CSV import + content loader · `lib/games/` – quiz, scoring · `lib/progress.ts` – XP, streak, stars (on the device)
 - `content/` – vocab.json, sample list, source CSVs · `scripts/` – import script · `tests/`
+- `content/writing.ts` – writing topics · `lib/about-me.ts` – intro builder · `lib/writing/checklist.ts`
+- `app/teacher/` + `app/api/teacher/` – teacher dashboard (password: `TEACHER_PASSWORD`)
 - `docs/` – setup guide and Arabic to review
 - `public/brand/` – Alsama logo (plus a lightened dark-mode copy) and welcome photo
 
@@ -70,6 +72,6 @@ Add the environment variables above, then deploy.
 - [x] Stage 3 – registration + teacher email, edit and delete my details
 - [x] Stage 4 – home, Words and the three games (running on sample words)
 - [ ] Stage 5 – Top 100 phrases and grammar
-- [ ] Stage 6 – About Me and Writing
-- [ ] Stage 7 – teacher dashboard
+- [x] Stage 6 – About Me (intro, build my sentences, ask your partner) and Writing (13 topics, guided + free, checklist, submit, feedback)
+- [x] Stage 7 – teacher dashboard at /teacher (this session, students + CSV, writings inbox, content review)
 - [ ] Stage 8 – PWA, tests, QA

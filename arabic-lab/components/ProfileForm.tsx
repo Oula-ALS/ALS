@@ -157,8 +157,9 @@ export function ProfileForm({ existing, onSaved }: Props) {
         <h2 className="font-display text-lg font-bold">Why we ask</h2>
         <p className="mt-1 text-sm">
           Your details are sent to your teacher at Alsama Language School, so they know who is
-          practising and can send you feedback on your writing. Your favourites are used to build
-          your own Arabic introduction. Name, email, gender, where you are from and level are
+          practising and can send you feedback on your writing. While you practise, the app also
+          shares your XP, streak and the writings you choose to submit. Your favourites are used to
+          build your own Arabic introduction. Name, email, gender, where you are from and level are
           required; the rest is optional. You can change or delete your details at any time
           from <strong>My details</strong>.
         </p>

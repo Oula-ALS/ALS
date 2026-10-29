@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { ModeNav } from "./ModeNav";
 import { getUnit, unitSummaries } from "@/lib/content";
 import { LEVEL_NAMES } from "@/lib/content/types";
@@ -8,7 +9,15 @@ export function generateStaticParams() {
   return unitSummaries().map((u) => ({ level: u.level, unit: u.id }));
 }
 
-export default async function UnitLayout({ children, params }: LayoutProps<"/words/[level]/[unit]">) {
+export default function UnitLayout({ children, params }: LayoutProps<"/words/[level]/[unit]">) {
+  return (
+    <Suspense fallback={null}>
+      <UnitShell params={params}>{children}</UnitShell>
+    </Suspense>
+  );
+}
+
+async function UnitShell({ children, params }: { children: React.ReactNode; params: LayoutProps<"/words/[level]/[unit]">["params"] }) {
   const { level, unit: unitId } = await params;
   const unit = getUnit(level, unitId);
   if (!unit) notFound();

@@ -7,6 +7,7 @@ computer (`npm run dev`), where students are saved to `arabic-lab/.data/students
 
 1. Go to https://supabase.com → your project (or **New project**).
 2. **SQL Editor → New query**, paste everything from `arabic-lab/supabase/schema.sql`, press **Run**.
+   (It creates three tables: `students`, `writings`, `settings`. Running it again is safe.)
 3. **Project Settings → API**: copy the **Project URL** and the **service_role** key.
    The service_role key is secret: never paste it into code or chat.
 
@@ -33,3 +34,4 @@ computer (`npm run dev`), where students are saved to `arabic-lab/.data/students
 
 4. **Deploy**. Then register yourself as a test student: you should get the email and see
    the row in Supabase → **Table Editor → students**.
+5. Open `/teacher` on your app's address and log in with `TEACHER_PASSWORD`.

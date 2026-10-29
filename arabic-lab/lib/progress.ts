@@ -1,6 +1,8 @@
 // Learning progress, kept on this device: XP, daily streak and best stars per unit.
+// XP and streak (only those two numbers) are also sent to the teacher's table.
 import { createLocalStore } from "./local-store";
 import { dayKey, nextStreak } from "./games/scoring";
+import { queueActivitySync } from "./sync";
 
 export type Progress = {
   xp: number;
@@ -27,7 +29,9 @@ export const unitKey = (level: string, unitId: string) => `${level}/${unitId}`;
 export function addXp(amount: number) {
   const p = store.read() ?? emptyProgress;
   const today = dayKey();
-  store.write({ ...p, xp: p.xp + amount, streak: nextStreak(p.streak, p.lastDay, today), lastDay: today });
+  const next = { ...p, xp: p.xp + amount, streak: nextStreak(p.streak, p.lastDay, today), lastDay: today };
+  store.write(next);
+  queueActivitySync(next.xp, next.streak);
 }
 
 /** Keeps the best star result for a unit. Returns true if it is a new best. */

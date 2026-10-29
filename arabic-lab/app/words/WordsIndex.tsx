@@ -8,6 +8,7 @@ import { LEVEL_NAMES, type LevelId } from "@/lib/content/types";
 import { emptyProgress, unitKey, useProgress } from "@/lib/progress";
 import { sessionUnit } from "@/lib/session";
 import { useLocalStudent } from "@/lib/student";
+import { useSettings } from "@/lib/use-settings";
 
 const LEVELS: Array<{ id: LevelId; hint: string }> = [
   { id: "book1", hint: "Units 1–7" },
@@ -18,10 +19,11 @@ const LEVELS: Array<{ id: LevelId; hint: string }> = [
 export function WordsIndex({ units, sample }: { units: UnitSummary[]; sample: boolean }) {
   const student = useLocalStudent();
   const progress = useProgress() ?? emptyProgress;
+  const settings = useSettings();
   const [picked, setPicked] = useState<LevelId | null>(null);
   const level = picked ?? student?.level ?? "book1";
   const list = units.filter((u) => u.level === level);
-  const session = sessionUnit(level, units).unit;
+  const session = sessionUnit(level, units, settings.session).unit;
 
   function onKey(e: KeyboardEvent, i: number) {
     const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
