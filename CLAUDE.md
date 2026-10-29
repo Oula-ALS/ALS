@@ -57,6 +57,8 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 - ث = ت and ذ = د sound the same: `withTwinTip()` in `js/sections.js` adds a 💡 dots tip to every
   activity that gives the letter only by sound; match games never pair the twins.
 - "Words to know" page (`#/words`) + a card on each letter page; activities only use recorded words.
+- One-file copy for Oula (double-click, no website): `node scripts/export-single-file.js out.html`.
+  Registration/emails don't work in it (they need the website); everything else does.
 - Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
   `assets/stickers/stickers.json` (see `docs/sticker-list.md`). Graduates sticker replaces the old owl. Logo: `assets/logo/alsama-language-school.png`.
 
