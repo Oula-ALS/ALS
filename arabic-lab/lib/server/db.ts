@@ -31,7 +31,9 @@ function supabaseTable<T extends Row>(url: string, key: string, name: string): T
       ...init,
       headers: {
         apikey: key,
-        Authorization: `Bearer ${key}`,
+        // Legacy service_role keys are JWTs ("eyJ…") and also go in Authorization;
+        // new secret keys ("sb_secret_…") only go in the apikey header.
+        ...(key.startsWith("eyJ") ? { Authorization: `Bearer ${key}` } : {}),
         "Content-Type": "application/json",
         Prefer: init.prefer ?? "return=representation",
       },
