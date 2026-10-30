@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Ar from "../components/Ar";
 import Layout from "../components/Layout";
 import { GenderBadge, SpeakButton, StarButton } from "../components/WordBits";
-import { hasRecording } from "../lib/audio";
+import { hasLebaneseAudio } from "../lib/audio";
 import { shuffled } from "../lib/random";
 import { getLevel, getUnit, wordsOf } from "../lib/data";
 import { recordAnswer, useProgress } from "../lib/progress";
@@ -17,10 +17,28 @@ function arabicSize(text: string) {
   return text.length > 22 ? "text-3xl" : text.length > 12 ? "text-4xl" : "text-5xl";
 }
 
+/** Flashcards for the unit in the URL. */
 export default function Flashcards() {
   const params = useParams();
   const data = getLevel(params.level);
   const unit = data && getUnit(data, params.unit);
+  const words = useMemo(() => (data && unit ? wordsOf(data, unit) : []), [data, unit]);
+  if (!data || !unit) return <NotFound />;
+  return <FlashcardDeck words={words} title={unit.title} titleIsArabic={unit.titleIsArabic} backTo={`/${data.level}/${unit.slug}`} backLabel={unit.title} />;
+}
+
+interface DeckProps {
+  words: Word[];
+  title: string;
+  titleIsArabic?: boolean;
+  backTo: string;
+  backLabel: string;
+  /** Text of the last button on the end screen. */
+  doneText?: string;
+}
+
+/** A flashcard session over any list of words (a unit, a whole level, or words due for review). */
+export function FlashcardDeck({ words: allWords, title, titleIsArabic, backTo, backLabel, doneText = "Back to the unit" }: DeckProps) {
   const progress = useProgress();
   const settings = useSettings();
 
@@ -35,7 +53,6 @@ export default function Flashcards() {
   const [dx, setDx] = useState(0);
   const drag = useRef<{ x: number; id: number } | null>(null);
 
-  const allWords = useMemo(() => (data && unit ? wordsOf(data, unit) : []), [data, unit]);
   const starredIds = progress.starred;
 
   const start = useCallback(
@@ -86,8 +103,6 @@ export default function Flashcards() {
     return () => window.removeEventListener("keydown", onKey);
   }, [answer]);
 
-  if (!data || !unit) return <NotFound />;
-
   // ----- swipe -----
   function onPointerDown(e: PointerEvent<HTMLDivElement>) {
     if ((e.target as HTMLElement).closest("button")) return;
@@ -108,9 +123,9 @@ export default function Flashcards() {
     }
   }
 
-  const base = `/${data.level}/${unit.slug}`;
   const starredInUnit = allWords.filter((w) => starredIds.includes(w.id)).length;
-  const usesComputerVoice = allWords.some((w) => !hasRecording(w));
+  // Some words would use the phone's own voice: show the note (and the on/off switch).
+  const usesComputerVoice = allWords.some((w) => !hasLebaneseAudio(w));
 
   const front = (w: Word) =>
     arabicFirst ? (
@@ -126,11 +141,11 @@ export default function Flashcards() {
     );
 
   return (
-    <Layout back={{ to: base, label: unit.title }}>
+    <Layout back={{ to: backTo, label: backLabel }}>
       <div className="flex items-baseline justify-between gap-2">
         <h1 className="truncate text-xl font-extrabold">
           Flashcards ·{" "}
-          {unit.titleIsArabic ? <Ar className="font-semibold">{unit.title}</Ar> : <span>{unit.title}</span>}
+          {titleIsArabic ? <Ar className="font-semibold">{title}</Ar> : <span>{title}</span>}
         </h1>
         {deck.length > 0 && !done && (
           <span className="shrink-0 font-bold text-muted">
@@ -225,7 +240,7 @@ export default function Flashcards() {
             </div>
             {Math.abs(dx) > 30 && (
               <div
-                className={`pointer-events-none absolute left-1/2 top-4 z-10 -translate-x-1/2 rounded-full px-4 py-1 font-extrabold text-white ${dx > 0 ? "bg-good" : "bg-brand"}`}
+                className={`pointer-events-none absolute left-1/2 top-4 z-10 -translate-x-1/2 rounded-full px-4 py-1 font-extrabold text-white ${dx > 0 ? "bg-good-fill" : "bg-brand-fill"}`}
               >
                 {dx > 0 ? "I know it ✓" : "Still learning"}
               </div>
@@ -236,7 +251,7 @@ export default function Flashcards() {
             <button type="button" className="btn-ghost min-h-14" onClick={() => answer(false)}>
               ← Still learning
             </button>
-            <button type="button" className="btn min-h-14 bg-good text-white hover:opacity-90" onClick={() => answer(true)}>
+            <button type="button" className="btn min-h-14 bg-good-fill text-white hover:opacity-90" onClick={() => answer(true)}>
               I know it →
             </button>
           </div>
@@ -271,8 +286,8 @@ export default function Flashcards() {
             >
               Start again
             </button>
-            <Link to={base} className="btn-ghost">
-              Back to the unit
+            <Link to={backTo} className="btn-ghost">
+              {doneText}
             </Link>
           </div>
         </div>
@@ -300,7 +315,7 @@ export default function Flashcards() {
 function Face({ children, backSide }: { children: ReactNode; backSide?: boolean }) {
   return (
     <div
-      className={`absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-3xl border-2 p-6 text-center shadow-sm ${backSide ? "border-brand bg-brand-soft" : "border-line bg-white"}`}
+      className={`absolute inset-0 flex flex-col items-center justify-center gap-3 rounded-3xl border-2 p-6 text-center shadow-sm ${backSide ? "border-brand bg-brand-soft" : "border-line bg-surface"}`}
       style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", transform: backSide ? "rotateY(180deg)" : undefined }}
     >
       {children}

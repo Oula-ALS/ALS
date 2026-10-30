@@ -45,7 +45,8 @@ export function SpeakButton({ word, big }: { word: Word; big?: boolean }) {
   if (source === "none") {
     return <span className="text-xs text-muted">Recording coming soon</span>;
   }
-  const label = source === "recording" ? "Play recording" : "Play computer voice";
+  const label =
+    source === "recording" ? "Play Alsama recording" : source === "tts" ? "Play Lebanese computer voice" : "Play computer voice (may not sound Lebanese)";
   return (
     <span className="inline-flex flex-col items-center">
       <button
@@ -56,7 +57,7 @@ export function SpeakButton({ word, big }: { word: Word; big?: boolean }) {
         }}
         aria-label={label}
         title={label}
-        className={`flex shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand hover:bg-brand hover:text-white ${big ? "size-14 text-2xl" : "size-12 text-xl"}`}
+        className={`flex shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand hover:bg-brand-fill hover:text-white ${big ? "size-14 text-2xl" : "size-12 text-xl"}`}
       >
         🔊
       </button>
@@ -89,7 +90,7 @@ export function SpeakSentence({ text }: { text: string }) {
         onClick={() => setFailed(!playText(text))}
         aria-label="Play the sentence (computer voice)"
         title="Computer voice — may not sound Lebanese"
-        className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-soft text-xl text-brand hover:bg-brand hover:text-white"
+        className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-soft text-xl text-brand hover:bg-brand-fill hover:text-white"
       >
         🔊
       </button>

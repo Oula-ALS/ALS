@@ -3,12 +3,17 @@ import Ar from "../components/Ar";
 import Layout from "../components/Layout";
 import { ProgressBar } from "../components/WordBits";
 import { LEVEL_INFO, LEVELS } from "../lib/data";
-import { masteredShare, useProgress } from "../lib/progress";
+import { dueWordIds, masteredShare, nextDue, useProgress } from "../lib/progress";
 import { useStudent } from "../lib/student";
+
+// Only words still in the lists (a teacher may have removed some).
+const KNOWN_IDS = new Set(LEVELS.flatMap((l) => l.words.map((w) => w.id)));
 
 export default function Home() {
   const student = useStudent();
   const progress = useProgress();
+  const due = dueWordIds(progress).filter((id) => KNOWN_IDS.has(id)).length;
+  const next = nextDue(progress);
   // The student's own book first.
   const levels = [...LEVELS].sort((a, b) => Number(b.level === student?.level) - Number(a.level === student?.level));
 
@@ -19,6 +24,27 @@ export default function Home() {
       </p>
       <h1 className="text-3xl font-extrabold">Hi {student?.name} 👋</h1>
       <p className="mt-1 text-muted">Choose your book to start.</p>
+
+      {due > 0 ? (
+        <Link to="/review" className="card mt-5 flex items-center gap-4 border-brand bg-brand-soft p-4">
+          <span className="text-3xl" aria-hidden>
+            🔁
+          </span>
+          <span className="flex-1">
+            <span className="block text-lg font-extrabold">Review due words ({due})</span>
+            <span className="text-sm text-muted">Words you studied before that are ready to practise again.</span>
+          </span>
+          <span className="text-2xl text-brand" aria-hidden>
+            →
+          </span>
+        </Link>
+      ) : (
+        next && (
+          <p className="mt-5 rounded-2xl bg-good-soft p-4 text-sm font-semibold text-good">
+            🌿 No words to review today. The next ones come back on {new Date(next).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" })}.
+          </p>
+        )
+      )}
 
       <div className="mt-6 space-y-4">
         {levels.map((l) => {

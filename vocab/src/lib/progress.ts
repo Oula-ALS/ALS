@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from "react";
-import { review, isMastered, type Card } from "./leitner";
+import { isDue, isMastered, review, type Card } from "./leitner";
 import { load, save } from "./storage";
 
 // Learning progress, saved on this device only.
@@ -42,4 +42,21 @@ export function toggleStar(wordId: string) {
 export function masteredShare(p: Progress, wordIds: string[]): number {
   if (!wordIds.length) return 0;
   return wordIds.filter((id) => isMastered(p.cards[id])).length / wordIds.length;
+}
+
+export function getProgress(): Progress {
+  return state;
+}
+
+/** Words whose review day has come. */
+export function dueWordIds(p: Progress, now = Date.now()): string[] {
+  return Object.entries(p.cards)
+    .filter(([, c]) => isDue(c, now))
+    .map(([id]) => id);
+}
+
+/** When the next word comes back (null if none are waiting). */
+export function nextDue(p: Progress, now = Date.now()): number | null {
+  const later = Object.values(p.cards).map((c) => c.due).filter((d) => d > now);
+  return later.length ? Math.min(...later) : null;
 }

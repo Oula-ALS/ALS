@@ -92,7 +92,7 @@ export function WriteQuestion({ word, prompt, typeIn, onDone }: WriteProps) {
             <button
               type="button"
               onClick={() => playWord(word)}
-              className="flex size-20 items-center justify-center rounded-full bg-brand text-4xl text-white shadow hover:bg-brand-dark"
+              className="flex size-20 items-center justify-center rounded-full bg-brand-fill text-4xl text-white shadow hover:bg-brand-dark"
               aria-label="Play the word again"
             >
               🔊

@@ -78,9 +78,11 @@ Quizlet-style vocabulary app, approved to use **Vite + React + TypeScript + Tail
 rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw/*.csv` →
 `npm run build-data` → `vocab/src/data/*.json` + `vocab/data/report.md` (never auto-fix the CSVs).
 Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
-Audio: `public/audio/{id}.mp3` first; otherwise a clearly labelled computer voice (can be turned off).
+Audio: `public/audio/{id}.mp3` = Alsama recordings (first); `public/audio/tts/{id}.mp3` = Lebanese Azure voice
+(`npm run generate-audio`, never touches recordings); else the phone voice. Always labelled honestly.
+Recording checklist with file names: `vocab/data/recording-list.csv`. App icon in `public/icons/` is a placeholder.
 Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz ✅ (`npm test`) · 5 Example
-sentences + teacher page ✅ · 6 PWA, QR, review, dark mode, deploy.
+sentences + teacher page ✅ · 6 PWA, QR, review, search, dark mode, README ✅ (deploy: owner, see `vocab/README.md`).
 Sentences: `vocab/src/data/examples.json` (keyed by word id; `reviewed`, `rejected`, `answer`, `cloze`).
 Students see only `approvedExample()` (reviewed and not rejected). AI writes them with
 `npm run generate-examples` (key in `vocab/.env`, never committed); teachers review on `/teacher`

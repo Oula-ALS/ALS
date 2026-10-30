@@ -443,13 +443,32 @@ for (const l of levels) {
   writeFileSync(join(OUT_DIR, `${l.level}.json`), JSON.stringify(clean, null, 1) + "\n");
 }
 
-// Recorded audio: public/audio/{word id}.mp3 is played instead of the computer voice.
+// Audio files, kept apart so they're never mixed up:
+//   public/audio/{word id}.mp3      Alsama recordings (played first)
+//   public/audio/tts/{word id}.mp3  Lebanese computer voice (scripts/generate-audio.ts)
 const allIds = new Set(levels.flatMap((l) => l.words.map((w) => w.id)));
-const audio = existsSync(AUDIO_DIR)
-  ? readdirSync(AUDIO_DIR).filter((f) => f.endsWith(".mp3")).map((f) => f.slice(0, -4)).filter((id) => allIds.has(id)).sort()
-  : [];
-writeFileSync(join(OUT_DIR, "audio.json"), JSON.stringify(audio) + "\n");
+const mp3Ids = (dir: string) =>
+  existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".mp3")).map((f) => f.slice(0, -4)).filter((id) => allIds.has(id)).sort() : [];
+const recorded = mp3Ids(AUDIO_DIR);
+const tts = mp3Ids(join(AUDIO_DIR, "tts"));
+writeFileSync(join(OUT_DIR, "audio.json"), JSON.stringify({ recorded, tts }) + "\n");
+
+// Recording checklist for Oula: one row per word (opens in Excel / Google Sheets).
+const csvCell = (v: string) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
+const recSet = new Set(recorded);
+const ttsSet = new Set(tts);
+const rows = levels.flatMap((l) =>
+  l.words.map((w) =>
+    [`${w.id}.mp3`, l.title, w.unitTitle, w.display, w.arabizi, w.english, recSet.has(w.id) ? "recorded" : ttsSet.has(w.id) ? "computer voice only" : "missing"]
+      .map(csvCell)
+      .join(","),
+  ),
+);
+writeFileSync(
+  join(ROOT, "data/recording-list.csv"),
+  "\uFEFF" + ["File name,Level,Unit,Arabic,Arabizi,English,Status", ...rows].join("\n") + "\n",
+);
 
 for (const l of levels) console.log(`${l.title.padEnd(22)} ${String(l.units.length).padStart(3)} units  ${String(l.words.length).padStart(4)} words`);
-console.log(`Recorded audio files: ${audio.length}`);
+console.log(`Audio: ${recorded.length} Alsama recordings, ${tts.length} computer-voice files · checklist: data/recording-list.csv`);
 console.log(`POS warnings: ${posIssues.length} · duplicates/forms: see data/report.md`);

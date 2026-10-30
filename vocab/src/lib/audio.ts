@@ -1,18 +1,26 @@
-// Plays a word aloud.
-// 1. If public/audio/{id}.mp3 exists (listed in src/data/audio.json), play that recording.
-// 2. Otherwise, if allowed in settings, use the phone's computer voice. Most of these
-//    sound like Modern Standard Arabic, not Lebanese, so the app labels it clearly.
-import recorded from "../data/audio.json";
+// Plays a word aloud, always saying honestly what the sound is:
+// 1. Alsama recording: public/audio/{id}.mp3
+// 2. Lebanese computer voice made by scripts/generate-audio.ts: public/audio/tts/{id}.mp3
+// 3. If allowed in settings, the phone's own computer voice. Most of these sound like
+//    Modern Standard Arabic, not Lebanese, so the app labels it clearly.
+// Which files exist is listed in src/data/audio.json (written by npm run build-data).
+import audioFiles from "../data/audio.json";
 import type { Word } from "../types";
 import { getSettings } from "./settings";
 
-const RECORDED = new Set<string>(recorded as string[]);
+const RECORDED = new Set<string>(audioFiles.recorded);
+const TTS = new Set<string>(audioFiles.tts);
 const VOICE_ORDER = ["ar-LB", "ar-SY", "ar-JO"];
 
-export type AudioSource = "recording" | "computer" | "none";
+export type AudioSource = "recording" | "tts" | "computer" | "none";
 
 export function hasRecording(word: Word): boolean {
   return RECORDED.has(word.id);
+}
+
+/** True when the word has a Lebanese sound file (Alsama recording or Lebanese computer voice). */
+export function hasLebaneseAudio(word: Word): boolean {
+  return RECORDED.has(word.id) || TTS.has(word.id);
 }
 
 function speechSupported(): boolean {
@@ -43,6 +51,7 @@ function arabicVoiceAvailable(): boolean {
 
 export function audioSource(word: Word): AudioSource {
   if (hasRecording(word)) return "recording";
+  if (TTS.has(word.id) && getSettings().computerVoice) return "tts";
   if (getSettings().computerVoice && arabicVoiceAvailable()) return "computer";
   return "none";
 }
@@ -56,8 +65,8 @@ export function playWord(word: Word): boolean {
   if (speechSupported()) speechSynthesis.cancel();
   player?.pause();
 
-  if (source === "recording") {
-    player = new Audio(`/audio/${word.id}.mp3`);
+  if (source === "recording" || source === "tts") {
+    player = new Audio(source === "recording" ? `/audio/${word.id}.mp3` : `/audio/tts/${word.id}.mp3`);
     player.playbackRate = rate;
     player.play().catch(() => {});
     return true;

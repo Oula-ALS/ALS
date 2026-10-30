@@ -7,6 +7,7 @@ import { getLevel, getUnit, wordsOf } from "../lib/data";
 import { approvedExample } from "../lib/examples";
 import { masteredShare, useProgress } from "../lib/progress";
 import { setSettings, useSettings } from "../lib/settings";
+import QrPanel from "../components/QrPanel";
 import NotFound from "./NotFound";
 
 const MODES = [
@@ -107,6 +108,7 @@ export default function UnitPage() {
 
       <div className="mt-4 flex flex-wrap gap-2">
         <CopyLink />
+        <QrPanel url={`${window.location.origin}${base}`} level={data.title} title={unit.title} titleIsArabic={unit.titleIsArabic} />
       </div>
 
       <div className="mt-8 flex items-center justify-between gap-2">

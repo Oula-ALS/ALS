@@ -8,9 +8,9 @@ const totalWords = LEVELS.reduce((n, l) => n + l.words.length, 0);
 export default function Welcome() {
   const student = useStudent();
   return (
-    <div className="min-h-dvh bg-white">
+    <div className="min-h-dvh bg-page">
       <div className="mx-auto max-w-2xl px-4 pb-12 pt-6">
-        <img src="/images/logo.png" alt="Alsama Language School" className="mx-auto h-16 w-auto" />
+        <img src="/images/logo.png" alt="Alsama Language School" className="logo-badge mx-auto h-16 w-auto" />
 
         <div className="relative mt-6 overflow-hidden rounded-3xl">
           <img

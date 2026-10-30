@@ -70,7 +70,7 @@ export default function SentenceMode() {
               <GenderBadge gender={word.gender} />
             </div>
 
-            <div className="mt-5 rounded-2xl bg-white text-center">
+            <div className="mt-5 rounded-2xl text-center">
               <HighlightedSentence {...splitAround(example.arabic, example.answer)} className="block text-3xl leading-loose" />
               {settings.showArabizi && <p className="mt-1 text-muted">{example.arabizi}</p>}
               {showEnglish && <p className="mt-1 text-lg">{example.english}</p>}
