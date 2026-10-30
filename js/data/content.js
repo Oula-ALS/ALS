@@ -72,3 +72,18 @@ export const MISSPELLINGS = [
   { wrong: 'ملق', right: 'ملك', hint: 'ك (k), not ق' },
   { wrong: 'نوذ', right: 'نور', hint: 'ر (r), not ذ' },
 ];
+
+// Extra words from the Alsama Alphabet Workbook, for spelling practice
+// (join the letters / break the word). Not recorded — used without sound.
+export const WORKBOOK_WORDS = [
+  { ar: 'بحر', latin: 'baḥr', en: 'sea', emoji: '🌊' },
+  { ar: 'بنت', latin: 'bint', en: 'girl', emoji: '👧' },
+  { ar: 'ولد', latin: 'walad', en: 'boy', emoji: '👦' },
+  { ar: 'قلم', latin: 'ʾalam', en: 'pen', emoji: '✏️' },
+  { ar: 'نار', latin: 'nār', en: 'fire', emoji: '🔥' },
+  { ar: 'شمس', latin: 'shams', en: 'sun', emoji: '☀️' },
+  { ar: 'كتاب', latin: 'ktāb', en: 'book', emoji: '📚' },
+  { ar: 'جبل', latin: 'jabal', en: 'mountain', emoji: '⛰️' },
+  { ar: 'سوق', latin: 'sū2', en: 'market', emoji: '🛍️' },
+  { ar: 'درس', latin: 'dars', en: 'lesson', emoji: '📖' },
+];

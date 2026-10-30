@@ -57,6 +57,8 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 - ث = ت and ذ = د sound the same: `withTwinTip()` in `js/sections.js` adds a 💡 dots tip to every
   activity that gives the letter only by sound; match games never pair the twins.
 - "Words to know" page (`#/words`) + a card on each letter page; activities only use recorded words.
+- Lessons 1–6 have 11–15 exercises each (lesson 1: ث/ذ dots card + countDots; lesson 2: shapes table,
+  pickShape, connectLetters, breakWord; lesson 3: breakInWord). ABC: a-dots, a-shapes, a-join. Activities have 10+.
 - One-file copy for Oula (double-click, no website): `node scripts/export-single-file.js out.html`.
   Registration/emails don't work in it (they need the website); everything else does.
 - Stickers: real Alsama photos in `assets/stickers/` + `assets/images/`, mapped to events in
