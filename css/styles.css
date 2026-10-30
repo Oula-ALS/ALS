@@ -650,3 +650,10 @@ button.word-chip { cursor: pointer; border-color: var(--magenta); }
 .words-letter-head { font: 700 40px var(--font-ar); color: var(--magenta); text-decoration: none; min-width: 48px; text-align: center; }
 .letter-note.dots { background: #FFF4D6; border-radius: 12px; padding: 8px 12px; }
 .letter-note.dots [lang="ar"] { font-family: var(--font-ar); font-size: 22px; color: var(--magenta); }
+
+/* Lesson 2: every letter and its shapes */
+.shapes-table { display: grid; gap: 4px; max-height: 360px; overflow-y: auto; margin: 8px 0; }
+.shapes-table .st-head, .shapes-table .st-row { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; }
+.shapes-table .st-head span { font: 700 13px var(--font-en); color: var(--text-soft); }
+.shapes-table .st-row span { font: 700 26px/1.6 var(--font-ar); color: var(--burgundy); background: var(--cream); border-radius: 8px; }
+.shapes-table .st-row.g1 span { color: var(--magenta); }

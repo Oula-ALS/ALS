@@ -4,7 +4,7 @@
 // for listening; sentences (no recordings yet) are used for reading, writing and arranging.
 
 import { LETTERS, LOOKALIKES, groupOf, GROUP_1, GROUP_2 } from './data/letters.js';
-import { VOWELS, SYLLABLES, WORDS as ALL_WORDS, COMPLETE_SHORT, SENTENCES, MISSPELLINGS } from './data/content.js';
+import { VOWELS, SYLLABLES, WORDS as ALL_WORDS, COMPLETE_SHORT, SENTENCES, MISSPELLINGS, WORKBOOK_WORDS } from './data/content.js';
 import { shuffle, pick, esc } from './exercises.js';
 import * as store from './progress.js';
 
@@ -403,9 +403,9 @@ const repeatGame = byLevel(
 
 function allGens() {
   const l = lvl();
-  const gens = [hearLetter, similarLetters, letterInWord, () => typeLetter()];
-  if (l >= 2) gens.push(() => whichVowel(), () => shortOrLong(), () => whichLong(), completeShort, compareLong);
-  if (l >= 3) gens.push(() => wordChallenge(false), () => typeWord(), () => longInWord(), buildWord, fixSpelling);
+  const gens = [() => hearLetter(), similarLetters, letterInWord, () => typeLetter(), countDots, pickShape];
+  if (l >= 2) gens.push(() => whichVowel(), () => shortOrLong(), () => whichLong(), completeShort, compareLong, whichGroup, breakWord);
+  if (l >= 3) gens.push(() => wordChallenge(false), () => typeWord(), () => longInWord(), buildWord, fixSpelling, connectLetters, breakInWord);
   if (l >= 4) gens.push(() => arrangeSentence(l));
   return gens;
 }
@@ -469,6 +469,101 @@ function neverJoins() {
     prompt: 'Which letter never joins the letter after it?', promptAr: 'أيّا حرف ما بيلزق بالحرف اللي بعدو؟',
     options: shuffle([nj, ...others]).map(c => ({ label: c, ar: true, value: c })), answer: nj,
     explain: `Only the Group 1 letters ${NON_JOINING.join(' ')} never join the next letter.`,
+  };
+}
+
+// ---- Dots, shapes, joining and breaking words (Alsama Alphabet Workbook) ---------
+
+// Dots on each letter (letters not listed have none).
+const DOTS = { 'ب': [1, 'below'], 'ت': [2, 'above'], 'ث': [3, 'above'], 'ج': [1, 'below'], 'خ': [1, 'above'],
+  'ذ': [1, 'above'], 'ز': [1, 'above'], 'ش': [3, 'above'], 'ض': [1, 'above'], 'ظ': [1, 'above'], 'غ': [1, 'above'],
+  'ف': [1, 'above'], 'ق': [2, 'above'], 'ن': [1, 'above'], 'ي': [2, 'below'] };
+const dotsText = c => DOTS[c] ? `${DOTS[c][0]} ${DOTS[c][0] === 1 ? 'dot' : 'dots'} ${DOTS[c][1]}` : 'no dots';
+
+function countDots() {
+  const L = pick(Math.random() < 0.3 ? LETTERS.filter(l => ['ث', 'ت', 'ذ', 'د', 'ش', 'س'].includes(l.char)) : LETTERS);
+  const n = DOTS[L.char] ? DOTS[L.char][0] : 0;
+  const twin = { 'ث': ' In Lebanese ث sounds like ت ("ta") — the three dots tell them apart.',
+    'ذ': ' In Lebanese ذ sounds like د ("da") — the dot above tells them apart.' }[L.char] || '';
+  return {
+    type: 'choose', kind: 'letter', item: L.char, id: 'dots:' + L.char,
+    display: esc(L.char), displaySub: L.latin,
+    prompt: 'How many dots does this letter have?', promptAr: 'قدّيش نقطة عند هالحرف؟',
+    options: [0, 1, 2, 3].map(k => ({ label: k === 0 ? 'No dots' : `${k} ${k === 1 ? 'dot' : 'dots'}`, value: String(k) })),
+    answer: String(n), explain: `${L.char} has ${dotsText(L.char)}.${twin}`,
+  };
+}
+
+// All the words the app knows, for spelling practice (no sound needed).
+const SPELL_WORDS = [...new Map([...ALL_WORDS, ...LETTERS.map(L => L.word), ...WORKBOOK_WORDS]
+  .map(w => [w.ar, { ar: w.ar, latin: w.latin, en: w.en, emoji: w.emoji }])).values()];
+const lettersOf = ar => [...ar.replace(/[\u064B-\u0652]/g, '')];
+
+// "Which is the middle shape of ع?" — pick the shape (workbook: each letter's shapes).
+function pickShape() {
+  const L = pick(LETTERS);
+  const f = pick(L.forms.filter(x => x.word));
+  return {
+    type: 'choose', kind: 'letter', item: L.char, id: 'pick-shape:' + L.char + f.pos,
+    display: esc(L.char), displaySub: `${L.latin} · ${groupOf(L) === 1 ? 'Group 1: 2 shapes' : 'Group 2: 4 shapes'}`,
+    prompt: `Which one is the ${POS[f.pos].toLowerCase()} shape?`, promptAr: 'أيّا شكل هو الصح؟',
+    options: L.forms.map(x => ({ label: glyph(L.char, x.pos), ar: true, value: x.pos, sub: POS[x.pos] === POS[f.pos] ? '' : '' })),
+    answer: f.pos, explain: `${glyph(L.char, f.pos)} — like in ${f.word} (${f.latin}).`,
+    hint: 'A line on the left joins the next letter; a line on the right joins the letter before.',
+  };
+}
+
+// Workbook: "Connect the letters to make a word: ب + ح + ر".
+function connectLetters() {
+  const w = pick(SPELL_WORDS.filter(x => lettersOf(x.ar).length <= 6));
+  const parts = lettersOf(w.ar);
+  return {
+    type: 'type', kind: 'write', item: w.ar, id: 'connect:' + w.ar,
+    display: `<span class="ex-emoji" aria-hidden="true">${w.emoji}</span> ${parts.join(' + ')}`,
+    displaySub: `${w.latin} · ${w.en}`,
+    prompt: 'Join the letters to make the word.', promptAr: 'لزّق الأحرف واكتب الكلمة.',
+    answer: w.ar, hint: 'Type the letters in order, starting on the right — they join by themselves.',
+    explain: `${parts.join(' + ')} = ${w.ar}`,
+  };
+}
+
+// Workbook: "Break the words into letters: شمس = ش + م + س".
+function breakWord() {
+  const w = pick(SPELL_WORDS.filter(x => { const n = lettersOf(x.ar).length; return n >= 3 && n <= 6; }));
+  const parts = lettersOf(w.ar);
+  const right = parts.join(' + ');
+  const wrongs = new Set();
+  for (let g = 0; wrongs.size < 3 && g < 60; g++) {
+    const k = Math.floor(Math.random() * parts.length);
+    const near = lookalikes(parts[k] === 'أ' ? 'ا' : parts[k]);
+    const alt = [...parts];
+    alt[k] = pick(near.length ? near : LETTERS.map(l => l.char));
+    if (alt.join(' + ') !== right) wrongs.add(alt.join(' + '));
+  }
+  return {
+    type: 'choose', kind: 'letter', item: w.ar, id: 'break:' + w.ar,
+    display: `<span class="ex-emoji" aria-hidden="true">${w.emoji}</span> ${esc(w.ar)}`, displaySub: `${w.latin} · ${w.en}`,
+    prompt: 'Break the word into its letters.', promptAr: 'فكّك الكلمة لأحرفها.',
+    options: shuffle([right, ...wrongs]).map(x => ({ label: x, ar: true, value: x })), answer: right,
+    hint: 'Look carefully at the dots of each letter.', explain: `${w.ar} = ${right}`,
+  };
+}
+
+// Lesson 3: "In this word, which letter does NOT join the letter after it?"
+function breakInWord() {
+  const ok = w => { const ps = lettersOf(w.ar).map(c => (c === 'أ' ? 'ا' : c));
+    return ps.slice(0, -1).filter(c => GROUP_1.includes(c)).length === 1 && new Set(ps).size >= 3; };
+  const w = pick(SPELL_WORDS.filter(ok));
+  const ps = lettersOf(w.ar).map(c => (c === 'أ' ? 'ا' : c));
+  const breaker = ps.slice(0, -1).find(c => GROUP_1.includes(c));
+  const opts = [...new Set(ps)].filter(c => c !== breaker).slice(0, 3);
+  return {
+    type: 'choose', kind: 'letter', item: breaker, id: 'break-in:' + w.ar,
+    display: `<span class="ex-emoji" aria-hidden="true">${w.emoji}</span> ${esc(w.ar)}`, displaySub: `${w.latin} · ${w.en}`,
+    prompt: 'In this word, which letter does NOT join the letter after it?', promptAr: 'أيّا حرف ما بيلزق باللي بعدو؟',
+    options: shuffle([breaker, ...opts]).map(c => ({ label: c, ar: true, value: c })), answer: breaker,
+    hint: `Look for a Group 1 letter: ${GROUP_1.join(' ')}.`,
+    explain: `${breaker} is in Group 1, so the word breaks after it.`,
   };
 }
 
@@ -556,7 +651,14 @@ const LESSON_DEFS = {
         <p>Many letters share the same body — only the <b>dots</b> change:</p>
         <div class="learn-row">${['ب', 'ت', 'ث'].map(c => say(letterBy(c).name, c)).join('')}</div>
         <p>ب has one dot below, ت two above, ث three above.</p>`),
-      hearLetter('ب'), hearLetter(), similarLetters(), similarLetters(), letterInWord(),
+      learn('1d', 'Same sound, different dots', `
+        <p>In Lebanese Arabic some letters <b>sound the same</b> — only the dots tell you which one to write.</p>
+        <div class="learn-row">${say(letterBy('ت').name, 'ت')} = ${say(letterBy('ث').name, 'ث')}</div>
+        <p><b lang="ar">ث</b> is said like <b lang="ar">ت</b> ("ta"), but <b>ث has three dots</b> and ت has two.</p>
+        <div class="learn-row">${say(letterBy('د').name, 'د')} = ${say(letterBy('ذ').name, 'ذ')}</div>
+        <p><b lang="ar">ذ</b> is said like <b lang="ar">د</b> ("da"), but <b>ذ has a dot above</b> and د has none.</p>`),
+      hearLetter('ب'), hearLetter('ث'), hearLetter('ذ'), ...many(3, () => hearLetter()),
+      ...many(3, countDots), ...many(3, similarLetters), ...many(2, letterInWord), matchLetters(),
     ],
   },
   'lesson-2': {
@@ -571,7 +673,19 @@ const LESSON_DEFS = {
         learn('2b', 'How to spot the shape', `
           <p>The little tail tells you: a line on the <b>left</b> joins the next letter; a line on the <b>right</b> joins the letter before.</p>
           <p class="learn-big" lang="ar">بـ &nbsp; ـبـ &nbsp; ـب</p>`),
-        whichShape(), whichShape(), whichShape(), whichShape(), traceLetter('ب', 'start'),
+        learn('2c', 'Every letter and its shapes', `
+          <p>Here are all 28 letters. <b>Group 1</b> letters (<span lang="ar" dir="rtl">${GROUP_1.join(' ')}</span>) have only 2 shapes, so start and middle show "—".</p>
+          <div class="shapes-table" dir="rtl" lang="ar">
+            <div class="st-head"><span>Alone</span><span>Start</span><span>Middle</span><span>End</span></div>
+            ${LETTERS.map(L => `<div class="st-row ${groupOf(L) === 1 ? 'g1' : ''}">${['alone', 'start', 'middle', 'end'].map(pos =>
+              `<span>${L.forms.some(f => f.pos === pos) ? glyph(L.char, pos) : '—'}</span>`).join('')}</div>`).join('')}
+          </div>`),
+        learn('2d', 'Join letters, break words', `
+          <p>Letters join to make a word, and every word can be broken back into letters:</p>
+          <p class="learn-big" lang="ar" dir="rtl">ش + م + س = شمس ☀️</p>
+          <p>When you type the letters, the computer joins them for you — just type them in order, starting on the right.</p>`),
+        ...many(3, whichShape), ...many(3, pickShape), ...many(3, connectLetters), ...many(3, breakWord),
+        traceLetter('ب', 'start'),
       ];
     },
   },
@@ -594,7 +708,7 @@ const LESSON_DEFS = {
         <p>All the other <b>22</b> letters have <b>4 shapes</b>: alone, start, middle and end.</p>
         <p class="learn-big" lang="ar" dir="rtl">${GROUP_2.join(' ')}</p>
         <p>They join on <b>both sides</b> — except when they come after a Group 1 letter.</p>`),
-      whichGroup(), whichGroup(), joinsNext(), neverJoins(), whichGroup(),
+      ...many(4, whichGroup), ...many(3, breakInWord), ...many(3, joinsNext), ...many(2, neverJoins),
     ],
   },
   'lesson-4': {
@@ -606,7 +720,8 @@ const LESSON_DEFS = {
         ${VOWELS.map(v => `<div class="learn-row">${say('ب' + v.mark, 'ب' + v.mark)} → ${say('ب' + v.mark + v.longLetter, 'ب' + v.mark + v.longLetter)}
           <small>"${v.short}" → "${v.long}"</small></div>`).join('')}
         <p class="note">In Lebanese, و and ي are often said "ō" and "ē": موز = mōz, بيت = bēt.</p>`),
-      shortOrLong(), shortOrLong(), compareLong(), whichLong(), longInWord(),
+      ...many(3, () => shortOrLong()), ...many(2, compareLong), ...many(3, () => whichLong()), ...many(2, () => longInWord()),
+      ...many(2, () => hearSyllable('long')),
     ],
   },
   'lesson-5': {
@@ -617,7 +732,7 @@ const LESSON_DEFS = {
         ${VOWELS.map(v => `<div class="learn-vowel"><b>${v.name}</b> <span lang="ar">${v.ar}</span> — ${v.where}
           <div class="learn-row">${['ب', 'م', 'ل'].map(c => say(c + v.mark)).join('')}</div>
           <small>${v.lebanese}</small></div>`).join('')}`),
-      whichVowel(), whichVowel(), compareShort(), hearSyllable('short'),
+      ...many(4, () => whichVowel()), ...many(3, compareShort), ...many(3, () => hearSyllable('short')), completeShort(),
       (() => { const x = pick(shortSyl()); return repeatSound(x.text, x.latin, 'short'); })(),
     ],
   },
@@ -628,7 +743,8 @@ const LESSON_DEFS = {
         <p>Letters join to make words. Listen and look:</p>
         <div class="learn-row">${WORDS.slice(0, 4).map(w => say(w.ar, `${w.ar} ${w.emoji}`)).join('')}</div>
         <p>Now you'll build a word, write one, and say it out loud.</p>`),
-      buildWord(), readAloud(2), traceLetter('س'), typeWord(null, true), writeSentence(1),
+      ...many(2, buildWord), ...many(2, connectLetters), ...many(2, () => readAloud(2)), traceLetter('س'),
+      ...many(2, () => typeWord(null, true)), breakWord(), writeSentence(1),
     ],
   },
 };
@@ -637,62 +753,65 @@ const LESSON_DEFS = {
 
 export const SETS = {
   // ABC Alphabet
-  'a-hear': { title: 'Hear & choose the letter', titleAr: 'إسمع واختار الحرف', about: 'Hear a letter name and pick it out.', build: () => many(8, () => hearLetter()) },
-  'a-match': { title: 'Match letters to sounds', titleAr: 'وصّل الأصوات بالأحرف', about: 'Tap a sound, then its letter.', build: () => many(4, matchLetters) },
-  'a-similar': { title: 'Look-alike letters', titleAr: 'أحرف بتشبه بعض', about: 'Tell apart letters that only differ by dots.', build: () => many(8, similarLetters) },
-  'a-words': { title: 'Letters in words', titleAr: 'الأحرف بالكلمات', about: 'Find letters inside simple Lebanese words.', build: () => many(8, letterInWord) },
-  'a-groups': { title: 'Group 1 or Group 2?', titleAr: 'أيّا مجموعة؟', about: 'Two shapes or four? Sort the letters into their groups.', build: () => many(8, [whichGroup, whichGroup, joinsNext]) },
-  'a-quiz': { title: 'Alphabet quiz', titleAr: 'امتحان صغير', about: 'A short mixed review of the alphabet.', build: () => many(10, [() => hearLetter(), similarLetters, letterInWord]) },
+  'a-hear': { title: 'Hear & choose the letter', titleAr: 'إسمع واختار الحرف', about: 'Hear a letter name and pick it out.', build: () => many(10, () => hearLetter()) },
+  'a-match': { title: 'Match letters to sounds', titleAr: 'وصّل الأصوات بالأحرف', about: 'Tap a sound, then its letter.', build: () => many(6, matchLetters) },
+  'a-similar': { title: 'Look-alike letters', titleAr: 'أحرف بتشبه بعض', about: 'Tell apart letters that only differ by dots.', build: () => many(10, similarLetters) },
+  'a-words': { title: 'Letters in words', titleAr: 'الأحرف بالكلمات', about: 'Find letters inside simple Lebanese words.', build: () => many(10, letterInWord) },
+  'a-groups': { title: 'Group 1 or Group 2?', titleAr: 'أيّا مجموعة؟', about: 'Two shapes or four? Sort the letters into their groups.', build: () => many(10, [whichGroup, whichGroup, joinsNext]) },
+  'a-dots': { title: 'Count the dots', titleAr: 'عدّ النقط', about: 'Dots tell letters apart — even ت and ث, which sound the same.', build: () => many(10, [countDots, countDots, similarLetters]) },
+  'a-shapes': { title: 'Letter shapes', titleAr: 'أشكال الأحرف', about: 'Alone, start, middle, end: find the right shape.', build: () => many(10, [pickShape, whichShape]) },
+  'a-join': { title: 'Join & break words', titleAr: 'لزّق وفكّك', about: 'Join letters into a word, and break words into letters.', build: () => many(10, [connectLetters, breakWord, breakInWord]) },
+  'a-quiz': { title: 'Alphabet quiz', titleAr: 'امتحان صغير', about: 'A mixed review of the alphabet.', build: () => many(15, [() => hearLetter(), similarLetters, letterInWord, countDots, pickShape, whichGroup, breakWord]) },
 
   // Short sounds
-  's-vowel': { title: 'Which short vowel?', titleAr: 'أيّا حركة؟', about: 'Hear a syllable: fatḥa (a), ḍamma (o) or kasra (i)?', build: () => many(8, () => whichVowel()) },
-  's-letter': { title: 'Hear & choose the syllable', titleAr: 'إسمع واختار', about: 'Hear a sound and pick how it is written.', build: () => many(8, () => hearSyllable('short')) },
-  's-match': { title: 'Match sounds and vowels', titleAr: 'وصّل الصوت بالحركة', about: 'Match each sound to its written syllable.', build: () => many(4, () => matchSyllables('short')) },
-  's-compare': { title: 'Compare two sounds', titleAr: 'قارن بين صوتين', about: 'Two close sounds — which one is written?', build: () => many(6, compareShort) },
-  's-complete': { title: 'Complete the word', titleAr: 'كمّل الكلمة', about: 'Choose the missing syllable in a word.', build: () => many(4, completeShort) },
-  's-repeat': { title: 'Repeat after me', titleAr: 'عيد ورايي', about: 'Listen, say it, record and compare.', build: () => many(5, () => { const s = pick(shortSyl()); return repeatSound(s.text, s.latin, 'short'); }) },
+  's-vowel': { title: 'Which short vowel?', titleAr: 'أيّا حركة؟', about: 'Hear a syllable: fatḥa (a), ḍamma (o) or kasra (i)?', build: () => many(10, () => whichVowel()) },
+  's-letter': { title: 'Hear & choose the syllable', titleAr: 'إسمع واختار', about: 'Hear a sound and pick how it is written.', build: () => many(10, () => hearSyllable('short')) },
+  's-match': { title: 'Match sounds and vowels', titleAr: 'وصّل الصوت بالحركة', about: 'Match each sound to its written syllable.', build: () => many(6, () => matchSyllables('short')) },
+  's-compare': { title: 'Compare two sounds', titleAr: 'قارن بين صوتين', about: 'Two close sounds — which one is written?', build: () => many(10, compareShort) },
+  's-complete': { title: 'Complete the word', titleAr: 'كمّل الكلمة', about: 'Choose the missing syllable in a word.', build: () => many(10, completeShort) },
+  's-repeat': { title: 'Repeat after me', titleAr: 'عيد ورايي', about: 'Listen, say it, record and compare.', build: () => many(10, () => { const s = pick(shortSyl()); return repeatSound(s.text, s.latin, 'short'); }) },
 
   // Long sounds
-  'l-which': { title: 'Which long vowel?', titleAr: 'أيّا حرف مدّ؟', about: 'ا (aa), و (oo) or ي (ee)?', build: () => many(8, () => whichLong()) },
+  'l-which': { title: 'Which long vowel?', titleAr: 'أيّا حرف مدّ؟', about: 'ا (aa), و (oo) or ي (ee)?', build: () => many(10, () => whichLong()) },
   'l-shortlong': { title: 'Short or long?', titleAr: 'قصير ولّا طويل؟', about: 'The key skill: hear the difference.', build: () => many(10, () => shortOrLong()) },
-  'l-compare': { title: 'Compare short and long', titleAr: 'قارن القصير بالطويل', about: 'Play two sounds: which one is long?', build: () => many(6, compareLong) },
-  'l-match': { title: 'Match sounds and words', titleAr: 'وصّل الصوت بالكلمة', about: 'Long syllables and words with long vowels.', build: () => many(4, matchLong) },
-  'l-words': { title: 'Long vowels in words', titleAr: 'المدّ بالكلمات', about: 'Find the missing ا, و or ي in a word.', build: () => many(5, () => longInWord()) },
-  'l-repeat': { title: 'Repeat the word', titleAr: 'عيد الكلمة', about: 'Words with long vowels: listen, say, record.', build: () => many(5, () => { const w = pick(WORDS.filter(x => x.long)); return repeatSound(w.ar, w.latin, 'long'); }) },
+  'l-compare': { title: 'Compare short and long', titleAr: 'قارن القصير بالطويل', about: 'Play two sounds: which one is long?', build: () => many(10, compareLong) },
+  'l-match': { title: 'Match sounds and words', titleAr: 'وصّل الصوت بالكلمة', about: 'Long syllables and words with long vowels.', build: () => many(6, matchLong) },
+  'l-words': { title: 'Long vowels in words', titleAr: 'المدّ بالكلمات', about: 'Find the missing ا, و or ي in a word.', build: () => many(10, () => longInWord()) },
+  'l-repeat': { title: 'Repeat the word', titleAr: 'عيد الكلمة', about: 'Words with long vowels: listen, say, record.', build: () => many(10, () => { const w = pick(WORDS.filter(x => x.long)); return repeatSound(w.ar, w.latin, 'long'); }) },
   'l-review': { title: 'Short + long review', titleAr: 'مراجعة', about: 'A mixed quiz of short and long sounds.', build: () => many(10, [() => whichVowel(), () => whichLong(), () => shortOrLong(), compareLong]) },
 
   // Writing & speaking
-  'w-letter': { title: 'Write the letter you hear', titleAr: 'إسمع واكتب الحرف', about: 'Hear a letter and type it.', build: () => many(6, () => typeLetter()) },
-  'w-missing': { title: 'Missing letter', titleAr: 'الحرف الناقص', about: 'Type the letter missing from a word.', build: () => many(6, missingLetter) },
-  'w-listen': { title: 'Listen and type', titleAr: 'إسمع واكتب', about: 'Hear a word and write it.', build: () => many(6, () => typeWord()) },
-  'w-sentence': { title: 'Write a sentence', titleAr: 'اكتب جملة', about: 'Copy a short Lebanese sentence, then say it.', build: () => many(4, () => writeSentence(4)) },
-  'w-arrange': { title: 'Arrange the sentence', titleAr: 'رتّب الجملة', about: 'Put words in the right order.', build: () => many(5, () => arrangeSentence(4)) },
-  'w-copy': { title: 'Copy & say', titleAr: 'انسخ وقول', about: 'Write a word, then practise saying it.', build: () => many(5, copySay) },
-  'w-lws': { title: 'Listen, write, speak', titleAr: 'إسمع، اكتب، قول', about: 'All three skills together.', build: () => many(5, () => typeWord(null, true)) },
-  'w-trace': { title: 'Trace letters', titleAr: 'ارسم الأحرف', about: 'Trace letters with your finger, mouse or stylus.', build: () => many(5, () => traceLetter()) },
+  'w-letter': { title: 'Write the letter you hear', titleAr: 'إسمع واكتب الحرف', about: 'Hear a letter and type it.', build: () => many(10, () => typeLetter()) },
+  'w-missing': { title: 'Missing letter', titleAr: 'الحرف الناقص', about: 'Type the letter missing from a word.', build: () => many(10, missingLetter) },
+  'w-listen': { title: 'Listen and type', titleAr: 'إسمع واكتب', about: 'Hear a word and write it.', build: () => many(10, () => typeWord()) },
+  'w-sentence': { title: 'Write a sentence', titleAr: 'اكتب جملة', about: 'Copy a short Lebanese sentence, then say it.', build: () => many(10, () => writeSentence(4)) },
+  'w-arrange': { title: 'Arrange the sentence', titleAr: 'رتّب الجملة', about: 'Put words in the right order.', build: () => many(10, () => arrangeSentence(4)) },
+  'w-copy': { title: 'Copy & say', titleAr: 'انسخ وقول', about: 'Write a word, then practise saying it.', build: () => many(10, copySay) },
+  'w-lws': { title: 'Listen, write, speak', titleAr: 'إسمع، اكتب، قول', about: 'All three skills together.', build: () => many(10, () => typeWord(null, true)) },
+  'w-trace': { title: 'Trace letters', titleAr: 'ارسم الأحرف', about: 'Trace letters with your finger, mouse or stylus.', build: () => many(10, () => traceLetter()) },
   'w-trace-similar': { title: 'Trace look-alike letters', titleAr: 'ارسم الأحرف المتشابهة', about: 'Trace letters that differ only by dots.', build: traceGroup },
-  'w-fix': { title: 'Fix the spelling', titleAr: 'صلّح الغلط', about: 'One letter is wrong — write it correctly.', build: () => many(5, fixSpelling) },
+  'w-fix': { title: 'Fix the spelling', titleAr: 'صلّح الغلط', about: 'One letter is wrong — write it correctly.', build: () => many(10, fixSpelling) },
 
   // Listening & speaking: listen → identify → answer → speak → record → compare
-  'ls-shortlong': { title: 'Short or long? Then say it', titleAr: 'قصير ولّا طويل؟ وقول', about: 'Identify the length, then repeat it.', build: () => many(5, lsShortLong) },
-  'ls-vowel': { title: 'Which vowel? Then say it', titleAr: 'أيّا حركة؟ وقول', about: 'Identify the short vowel, then repeat it.', build: () => many(5, lsVowel) },
-  'ls-letter': { title: 'Which letter? Then say it', titleAr: 'أيّا حرف؟ وقول', about: 'Identify the first letter, then repeat it.', build: () => many(5, lsLetter) },
-  'ls-word': { title: 'Which word? Then say it', titleAr: 'أيّا كلمة؟ وقول', about: 'Identify the word, then repeat it.', build: () => many(5, () => wordChallenge(true)) },
+  'ls-shortlong': { title: 'Short or long? Then say it', titleAr: 'قصير ولّا طويل؟ وقول', about: 'Identify the length, then repeat it.', build: () => many(10, lsShortLong) },
+  'ls-vowel': { title: 'Which vowel? Then say it', titleAr: 'أيّا حركة؟ وقول', about: 'Identify the short vowel, then repeat it.', build: () => many(10, lsVowel) },
+  'ls-letter': { title: 'Which letter? Then say it', titleAr: 'أيّا حرف؟ وقول', about: 'Identify the first letter, then repeat it.', build: () => many(10, lsLetter) },
+  'ls-word': { title: 'Which word? Then say it', titleAr: 'أيّا كلمة؟ وقول', about: 'Identify the word, then repeat it.', build: () => many(10, () => wordChallenge(true)) },
 
   // Practice & games
-  'g-reading': { game: true, title: 'Reading Challenge', titleAr: 'تحدّي القراية', about: 'A word appears — read it out loud, then check by listening.', build: () => many(6, [readAloud, readAloud, readMeaning]) },
-  'w-reading': { title: 'Reading challenge', titleAr: 'تحدّي القراية', about: 'Read words out loud on your own, then check.', build: () => many(6, [readAloud, readMeaning]) },
-  'g-detective': { game: true, title: 'Sound Detective', titleAr: 'محقّق الأصوات', about: 'Listen carefully and identify the sound.', build: () => many(8, detective) },
+  'g-reading': { game: true, title: 'Reading Challenge', titleAr: 'تحدّي القراية', about: 'A word appears — read it out loud, then check by listening.', build: () => many(10, [readAloud, readAloud, readMeaning]) },
+  'w-reading': { title: 'Reading challenge', titleAr: 'تحدّي القراية', about: 'Read words out loud on your own, then check.', build: () => many(10, [readAloud, readMeaning]) },
+  'g-detective': { game: true, title: 'Sound Detective', titleAr: 'محقّق الأصوات', about: 'Listen carefully and identify the sound.', build: () => many(10, detective) },
   'g-shortlong': { game: true, title: 'Short or Long?', titleAr: 'قصير ولّا طويل؟', about: 'Quick-fire short vs long.', build: () => many(10, () => shortOrLong()) },
-  'g-listen': { game: true, title: 'Listen and Choose', titleAr: 'إسمع واختار', about: 'Hear it, pick the right answer.', build: () => many(8, listenChoose) },
-  'g-match': { game: true, title: 'Match the Sound', titleAr: 'وصّل الصوت', about: 'Match sounds to letters, vowels or words.', build: () => many(4, matchGame) },
-  'g-missing': { game: true, title: 'Missing Sound', titleAr: 'الصوت الناقص', about: 'Complete the word.', build: () => many(5, missingSound) },
-  'g-build': { game: true, title: 'Build a Word', titleAr: 'عمول كلمة', about: 'Arrange letters to make a word.', build: () => many(5, buildWord) },
-  'g-type': { game: true, title: 'Listen and Type', titleAr: 'إسمع واكتب', about: 'Write what you hear.', build: () => many(6, listenType) },
-  'g-repeat': { game: true, title: 'Repeat After Me', titleAr: 'عيد ورايي', about: 'Listen, say it, record, compare.', build: () => many(5, repeatGame) },
-  'g-word': { game: true, title: 'Word Challenge', titleAr: 'تحدّي الكلمات', about: 'Identify a word from its sound.', build: () => many(8, () => wordChallenge(false)) },
-  'g-sentence': { game: true, title: 'Sentence Builder', titleAr: 'عمول جملة', about: 'Put words in order to make a sentence.', build: () => many(5, () => arrangeSentence(lvl())) },
-  'g-quiz': { game: true, title: 'Quick Quiz', titleAr: 'امتحان سريع', about: 'Six quick questions at your level.', build: () => many(6, allGens()) },
+  'g-listen': { game: true, title: 'Listen and Choose', titleAr: 'إسمع واختار', about: 'Hear it, pick the right answer.', build: () => many(10, listenChoose) },
+  'g-match': { game: true, title: 'Match the Sound', titleAr: 'وصّل الصوت', about: 'Match sounds to letters, vowels or words.', build: () => many(6, matchGame) },
+  'g-missing': { game: true, title: 'Missing Sound', titleAr: 'الصوت الناقص', about: 'Complete the word.', build: () => many(10, missingSound) },
+  'g-build': { game: true, title: 'Build a Word', titleAr: 'عمول كلمة', about: 'Arrange letters to make a word.', build: () => many(10, buildWord) },
+  'g-type': { game: true, title: 'Listen and Type', titleAr: 'إسمع واكتب', about: 'Write what you hear.', build: () => many(10, listenType) },
+  'g-repeat': { game: true, title: 'Repeat After Me', titleAr: 'عيد ورايي', about: 'Listen, say it, record, compare.', build: () => many(10, repeatGame) },
+  'g-word': { game: true, title: 'Word Challenge', titleAr: 'تحدّي الكلمات', about: 'Identify a word from its sound.', build: () => many(10, () => wordChallenge(false)) },
+  'g-sentence': { game: true, title: 'Sentence Builder', titleAr: 'عمول جملة', about: 'Put words in order to make a sentence.', build: () => many(10, () => arrangeSentence(lvl())) },
+  'g-quiz': { game: true, title: 'Quick Quiz', titleAr: 'امتحان سريع', about: 'Six quick questions at your level.', build: () => many(10, allGens()) },
   'g-review': { game: true, title: 'Review Challenge', titleAr: 'راجع الغلطات', about: 'Practise the sounds and words you missed.', build: reviewItems,
     emptyMessage: 'Nothing to review yet — you have no recent mistakes. Try Mixed Practice!' },
   'g-daily': { game: true, daily: true, title: 'Daily Challenge', titleAr: 'تحدّي اليوم', about: 'Five exercises a day at your level.', build: () => many(5, allGens()) },
@@ -711,7 +830,7 @@ export const SECTIONS = [
   { id: 'alphabet', title: 'ABC Alphabet', ar: 'الأحرف', icon: 'أ ب', img: 'images/students-classroom.jpg',
     about: 'Meet all 28 letters, the two letter groups, and look-alikes.',
     lessons: ['lesson-1', 'lesson-2', 'lesson-3'],
-    sets: ['a-hear', 'a-match', 'a-groups', 'a-similar', 'a-words', 'a-quiz'] },
+    sets: ['a-hear', 'a-match', 'a-groups', 'a-dots', 'a-shapes', 'a-join', 'a-similar', 'a-words', 'a-quiz'] },
   { id: 'short', title: 'Short Sounds', ar: 'الحركات', icon: 'بَ بِ بُ', img: 'images/girl-laughing-sports.jpg',
     about: 'Fatḥa (a), ḍamma (o), kasra (i) — each is half of a long sound.',
     lessons: ['lesson-5'],
