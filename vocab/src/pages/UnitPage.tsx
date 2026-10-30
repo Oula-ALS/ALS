@@ -8,6 +8,12 @@ import { masteredShare, useProgress } from "../lib/progress";
 import { setSettings, useSettings } from "../lib/settings";
 import NotFound from "./NotFound";
 
+const MODES = [
+  { path: "flashcards", icon: "🗂️", title: "Flashcards", text: "Flip, listen, and sort the words you know." },
+  { path: "write", icon: "✍️", title: "Listen & write", text: "Hear the word (or read the English) and type it." },
+  { path: "quiz", icon: "✅", title: "Quiz", text: "10, 20 or all words — a mix of question types." },
+];
+
 function CopyLink() {
   const [copied, setCopied] = useState<"yes" | "no" | null>(null);
   async function copy() {
@@ -58,18 +64,27 @@ export default function UnitPage() {
         <ProgressBar value={masteredShare(progress, words.map((w) => w.id))} label="Words you know" />
       </div>
 
-      <Link to={`${base}/flashcards`} className="card mt-6 flex items-center gap-4 border-brand p-5 hover:bg-brand-soft">
-        <span className="text-4xl" aria-hidden>
-          🗂️
-        </span>
-        <span className="flex-1">
-          <span className="block text-xl font-extrabold">Flashcards</span>
-          <span className="text-sm text-muted">Flip, listen, and sort the words you know.</span>
-        </span>
-        <span className="text-2xl text-brand" aria-hidden>
-          →
-        </span>
-      </Link>
+      <ul className="mt-6 grid gap-3">
+        {MODES.map((m, i) => (
+          <li key={m.path}>
+            <Link
+              to={`${base}/${m.path}`}
+              className={`card flex items-center gap-4 p-4 hover:bg-brand-soft ${i === 0 ? "border-brand" : "hover:border-brand"}`}
+            >
+              <span className="text-3xl" aria-hidden>
+                {m.icon}
+              </span>
+              <span className="flex-1">
+                <span className="block text-lg font-extrabold">{m.title}</span>
+                <span className="text-sm text-muted">{m.text}</span>
+              </span>
+              <span className="text-2xl text-brand" aria-hidden>
+                →
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <div className="mt-4 flex flex-wrap gap-2">
         <CopyLink />

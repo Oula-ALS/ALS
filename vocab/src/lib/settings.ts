@@ -6,10 +6,12 @@ export interface Settings {
   /** Use the phone's computer voice when there is no Alsama recording. */
   computerVoice: boolean;
   rate: 0.75 | 1;
+  /** What students type in Listen & write and the quiz. */
+  typeIn: "arabic" | "arabizi";
 }
 
 const KEY = "settings";
-let state: Settings = { showArabizi: true, computerVoice: true, rate: 1, ...load<Partial<Settings>>(KEY, {}) };
+let state: Settings = { showArabizi: true, computerVoice: true, rate: 1, typeIn: "arabic", ...load<Partial<Settings>>(KEY, {}) };
 const listeners = new Set<() => void>();
 
 export function setSettings(patch: Partial<Settings>) {

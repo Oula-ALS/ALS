@@ -79,5 +79,5 @@ rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw
 `npm run build-data` → `vocab/src/data/*.json` + `vocab/data/report.md` (never auto-fix the CSVs).
 Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
 Audio: `public/audio/{id}.mp3` first; otherwise a clearly labelled computer voice (can be turned off).
-Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz · 5 Example
+Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz ✅ (`npm test`) · 5 Example
 sentences + teacher page · 6 PWA, QR, review, dark mode, deploy.

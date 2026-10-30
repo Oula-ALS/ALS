@@ -18,8 +18,15 @@ Then open the address it prints (usually http://localhost:5173).
 | `/beginner` | Beginner units |
 | `/beginner/unit-3` | Unit 3 word list (with a "Copy link" button) |
 | `/beginner/unit-3/flashcards` | Flashcards for unit 3 |
+| `/beginner/unit-3/write` | Listen & write for unit 3 |
+| `/beginner/unit-3/quiz` | Quiz for unit 3 |
 | `/beginner/all/flashcards` | Flashcards for the whole level |
 | `/advanced/topic-13` | Advanced topic 13 |
+
+## Checks
+
+`npm test` checks the Arabic answer matching, the wrong options in multiple choice, and
+the review boxes, using the real word lists.
 
 ## Updating the word lists
 

@@ -35,9 +35,15 @@ if (speechSupported()) {
   speechSynthesis.addEventListener?.("voiceschanged", () => speechSynthesis.getVoices());
 }
 
+/** False only when the phone's voice list has loaded and has no Arabic voice. */
+function arabicVoiceAvailable(): boolean {
+  if (!speechSupported()) return false;
+  return speechSynthesis.getVoices().length === 0 || !!pickVoice();
+}
+
 export function audioSource(word: Word): AudioSource {
   if (hasRecording(word)) return "recording";
-  if (getSettings().computerVoice && speechSupported()) return "computer";
+  if (getSettings().computerVoice && arabicVoiceAvailable()) return "computer";
   return "none";
 }
 

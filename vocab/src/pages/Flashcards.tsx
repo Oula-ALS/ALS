@@ -4,6 +4,7 @@ import Ar from "../components/Ar";
 import Layout from "../components/Layout";
 import { GenderBadge, SpeakButton, StarButton } from "../components/WordBits";
 import { hasRecording } from "../lib/audio";
+import { shuffled } from "../lib/random";
 import { getLevel, getUnit, wordsOf } from "../lib/data";
 import { recordAnswer, useProgress } from "../lib/progress";
 import { setSettings, useSettings } from "../lib/settings";
@@ -11,15 +12,6 @@ import type { Word } from "../types";
 import NotFound from "./NotFound";
 
 const SWIPE = 90; // px needed to count as a swipe
-
-function shuffled<T>(list: T[]): T[] {
-  const a = [...list];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 function arabicSize(text: string) {
   return text.length > 22 ? "text-3xl" : text.length > 12 ? "text-4xl" : "text-5xl";
