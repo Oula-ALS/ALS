@@ -8,7 +8,7 @@
  * - Writes data/report.md: things teachers should check. Nothing in the
  *   report is fixed automatically.
  */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,6 +20,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const RAW_DIR = join(ROOT, "data/raw");
 const OUT_DIR = join(ROOT, "src/data");
 const REPORT = join(ROOT, "data/report.md");
+const AUDIO_DIR = join(ROOT, "public/audio");
 
 // Which CSV belongs to which level is decided by its file name.
 // Checked in this order, so "Advanced" wins before "B1".
@@ -442,5 +443,13 @@ for (const l of levels) {
   writeFileSync(join(OUT_DIR, `${l.level}.json`), JSON.stringify(clean, null, 1) + "\n");
 }
 
+// Recorded audio: public/audio/{word id}.mp3 is played instead of the computer voice.
+const allIds = new Set(levels.flatMap((l) => l.words.map((w) => w.id)));
+const audio = existsSync(AUDIO_DIR)
+  ? readdirSync(AUDIO_DIR).filter((f) => f.endsWith(".mp3")).map((f) => f.slice(0, -4)).filter((id) => allIds.has(id)).sort()
+  : [];
+writeFileSync(join(OUT_DIR, "audio.json"), JSON.stringify(audio) + "\n");
+
 for (const l of levels) console.log(`${l.title.padEnd(22)} ${String(l.units.length).padStart(3)} units  ${String(l.words.length).padStart(4)} words`);
+console.log(`Recorded audio files: ${audio.length}`);
 console.log(`POS warnings: ${posIssues.length} · duplicates/forms: see data/report.md`);

@@ -4,12 +4,28 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
     "build-data": "tsx scripts/build-data.ts"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.8",
     "@types/node": "^26.6.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.4.1",
     "csv-parse": "^7.0.3",
+    "tailwindcss": "^4.1.8",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
   }
 }
