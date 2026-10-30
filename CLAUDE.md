@@ -71,3 +71,20 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 - Optional email via Resend. Setup steps for the owner: `docs/setup-registrations.md`.
 - Music and sound effects are generated in `js/music.js` (Web Audio, no files). Recordings duck the
   music via the `alsama:voice` event from `js/audio.js`.
+
+## Vocab app (`vocab/`, separate app, started 30 Oct 2026)
+
+Quizlet-style vocabulary app, approved to use **Vite + React + TypeScript + Tailwind** (exception to
+rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw/*.csv` →
+`npm run build-data` → `vocab/src/data/*.json` + `vocab/data/report.md` (never auto-fix the CSVs).
+Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
+Audio: `public/audio/{id}.mp3` = Alsama recordings (first); `public/audio/tts/{id}.mp3` = Lebanese Azure voice
+(`npm run generate-audio`, never touches recordings); else the phone voice. Always labelled honestly.
+Recording checklist with file names: `vocab/data/recording-list.csv`. App icon in `public/icons/` is a placeholder.
+Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz ✅ (`npm test`) · 5 Example
+sentences + teacher page ✅ · 6 PWA, QR, review, search, dark mode, README ✅ (deploy: owner, see `vocab/README.md`).
+Sentences: `vocab/src/data/examples.json` (keyed by word id; `reviewed`, `rejected`, `answer`, `cloze`).
+Students see only `approvedExample()` (reviewed and not rejected). AI writes them with
+`npm run generate-examples` (key in `vocab/.env`, never committed); teachers review on `/teacher`
+(passcode via `api/teacher-login.js` + `TEACHER_PASSCODE` in Vercel; open without passcode in `npm run dev`)
+and export the file. 31 sample sentences for Beginner Unit 3 were written by Claude, `source: "claude-sample"`.

@@ -1,0 +1,3877 @@
+{
+ "level": "intermediate",
+ "title": "Intermediate (A2–B1)",
+ "source": "B1_Vocabs_211words.csv",
+ "units": [
+  {
+   "id": "intermediate/unit-2",
+   "level": "intermediate",
+   "slug": "unit-2",
+   "order": 2,
+   "title": "Unit 2 · Daily Routine",
+   "titleIsArabic": false,
+   "wordCount": 29
+  },
+  {
+   "id": "intermediate/unit-3",
+   "level": "intermediate",
+   "slug": "unit-3",
+   "order": 3,
+   "title": "Unit 3 · Free Time",
+   "titleIsArabic": false,
+   "wordCount": 36
+  },
+  {
+   "id": "intermediate/unit-4",
+   "level": "intermediate",
+   "slug": "unit-4",
+   "order": 4,
+   "title": "Unit 4 · Travel",
+   "titleIsArabic": false,
+   "wordCount": 41
+  },
+  {
+   "id": "intermediate/unit-5",
+   "level": "intermediate",
+   "slug": "unit-5",
+   "order": 5,
+   "title": "Unit 5 · Airport & Hotel",
+   "titleIsArabic": false,
+   "wordCount": 24
+  },
+  {
+   "id": "intermediate/unit-6",
+   "level": "intermediate",
+   "slug": "unit-6",
+   "order": 6,
+   "title": "Unit 6 · Restaurant",
+   "titleIsArabic": false,
+   "wordCount": 79
+  },
+  {
+   "id": "intermediate/unit-7",
+   "level": "intermediate",
+   "slug": "unit-7",
+   "order": 7,
+   "title": "Unit 7 · Attendance",
+   "titleIsArabic": false,
+   "wordCount": 2
+  }
+ ],
+ "words": [
+  {
+   "id": "int-2-bcc0d0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بفيق",
+   "alternatives": [
+    "بفيق",
+    "بوعى",
+    "بصحى"
+   ],
+   "display": "بفيق / بوعى / بصحى",
+   "arabizi": "bfee2",
+   "arabiziAlternatives": [
+    "bfee2"
+   ],
+   "english": "I wake up"
+  },
+  {
+   "id": "int-2-60bda6",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بتروّق",
+   "alternatives": [
+    "بتروّق"
+   ],
+   "display": "بتروّق",
+   "arabizi": "btroo2",
+   "arabiziAlternatives": [
+    "btroo2"
+   ],
+   "english": "I eat breakfast"
+  },
+  {
+   "id": "int-2-6c68c9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بروح ع الشغل",
+   "alternatives": [
+    "بروح ع الشغل",
+    "الجامعة"
+   ],
+   "display": "بروح ع الشغل / الجامعة",
+   "arabizi": "broo7 3 alshghl",
+   "arabiziAlternatives": [
+    "broo7 3 alshghl"
+   ],
+   "english": "I go to work/university"
+  },
+  {
+   "id": "int-2-79cc0f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بدرس",
+   "alternatives": [
+    "بدرس"
+   ],
+   "display": "بدرس",
+   "arabizi": "bdrs",
+   "arabiziAlternatives": [
+    "bdrs"
+   ],
+   "english": "I study"
+  },
+  {
+   "id": "int-2-bb970e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "برجع ع البيت",
+   "alternatives": [
+    "برجع ع البيت"
+   ],
+   "display": "برجع ع البيت",
+   "arabizi": "brj3 3 albeet",
+   "arabiziAlternatives": [
+    "brj3 3 albeet"
+   ],
+   "english": "I come back home"
+  },
+  {
+   "id": "int-2-6d5a68",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بتعشّى",
+   "alternatives": [
+    "بتعشّى"
+   ],
+   "display": "بتعشّى",
+   "arabizi": "bt3sha",
+   "arabiziAlternatives": [
+    "bt3sha"
+   ],
+   "english": "I eat dinner"
+  },
+  {
+   "id": "int-2-2faad9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بنام",
+   "alternatives": [
+    "بنام"
+   ],
+   "display": "بنام",
+   "arabizi": "bnam",
+   "arabiziAlternatives": [
+    "bnam"
+   ],
+   "english": "I sleep"
+  },
+  {
+   "id": "int-2-54b10d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "دائماً",
+   "alternatives": [
+    "دائماً"
+   ],
+   "display": "دائماً",
+   "arabizi": "da2ma",
+   "arabiziAlternatives": [
+    "da2ma"
+   ],
+   "english": "Always"
+  },
+  {
+   "id": "int-2-ec6876",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "عادةً",
+   "alternatives": [
+    "عادةً",
+    "بالعادة"
+   ],
+   "display": "عادةً / بالعادة",
+   "arabizi": "3ade",
+   "arabiziAlternatives": [
+    "3ade"
+   ],
+   "english": "Usually"
+  },
+  {
+   "id": "int-2-f00eeb",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "أحياناً",
+   "alternatives": [
+    "أحياناً"
+   ],
+   "display": "أحياناً",
+   "arabizi": "a7eeana",
+   "arabiziAlternatives": [
+    "a7eeana"
+   ],
+   "english": "Sometimes"
+  },
+  {
+   "id": "int-2-0e60ec",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "نادراً",
+   "alternatives": [
+    "نادراً",
+    "قليل ما"
+   ],
+   "display": "نادراً / قليل ما",
+   "arabizi": "nadra 2leel ma",
+   "arabiziAlternatives": [
+    "nadra 2leel ma"
+   ],
+   "english": "Rarely"
+  },
+  {
+   "id": "int-2-f80253",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "كل يوم",
+   "alternatives": [
+    "كل يوم"
+   ],
+   "display": "كل يوم",
+   "arabizi": "kl eeoom",
+   "arabiziAlternatives": [
+    "kl eeoom"
+   ],
+   "english": "Every day"
+  },
+  {
+   "id": "int-2-fb1565",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "أبداً",
+   "alternatives": [
+    "أبداً"
+   ],
+   "display": "أبداً",
+   "arabizi": "abda",
+   "arabiziAlternatives": [
+    "abda"
+   ],
+   "english": "Never"
+  },
+  {
+   "id": "int-2-f45710",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "المطبخ",
+   "alternatives": [
+    "المطبخ"
+   ],
+   "display": "المطبخ",
+   "arabizi": "el-maṭbakh",
+   "arabiziAlternatives": [
+    "el-maṭbakh"
+   ],
+   "english": "kitchen"
+  },
+  {
+   "id": "int-2-593150",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "الغرفة",
+   "alternatives": [
+    "الغرفة"
+   ],
+   "display": "الغرفة",
+   "arabizi": "el-ghurfe",
+   "arabiziAlternatives": [
+    "el-ghurfe"
+   ],
+   "english": "room"
+  },
+  {
+   "id": "int-2-453b42",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "برتّب الغرفة",
+   "alternatives": [
+    "برتّب الغرفة"
+   ],
+   "display": "برتّب الغرفة",
+   "arabizi": "brattib el-ghurfe",
+   "arabiziAlternatives": [
+    "brattib el-ghurfe"
+   ],
+   "english": "I tidy the room"
+  },
+  {
+   "id": "int-2-ae131d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بلبس تيابي",
+   "alternatives": [
+    "بلبس تيابي"
+   ],
+   "display": "بلبس تيابي",
+   "arabizi": "bilbes tyabee",
+   "arabiziAlternatives": [
+    "bilbes tyabee"
+   ],
+   "english": "I put my clothes"
+  },
+  {
+   "id": "int-2-3b01d7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بجلي",
+   "alternatives": [
+    "بجلي"
+   ],
+   "display": "بجلي",
+   "arabizi": "bjle",
+   "arabiziAlternatives": [
+    "bjle"
+   ],
+   "english": "I wash the dishes"
+  },
+  {
+   "id": "int-2-c80828",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بطبخ",
+   "alternatives": [
+    "بطبخ"
+   ],
+   "display": "بطبخ",
+   "arabizi": "baṭbokh",
+   "arabiziAlternatives": [
+    "baṭbokh"
+   ],
+   "english": "I cook"
+  },
+  {
+   "id": "int-2-385715",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بنضّف",
+   "alternatives": [
+    "بنضّف"
+   ],
+   "display": "بنضّف",
+   "arabizi": "bnaddif",
+   "arabiziAlternatives": [
+    "bnaddif"
+   ],
+   "english": "I clean"
+  },
+  {
+   "id": "int-2-869981",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بقعد بالجنينة",
+   "alternatives": [
+    "بقعد بالجنينة"
+   ],
+   "display": "بقعد بالجنينة",
+   "arabizi": "b2a3od bel-jeneyneh",
+   "arabiziAlternatives": [
+    "b2a3od bel-jeneyneh"
+   ],
+   "english": "I sit in the garden"
+  },
+  {
+   "id": "int-2-6b1ea8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بشرب قهوة عالبلكون",
+   "alternatives": [
+    "بشرب قهوة عالبلكون"
+   ],
+   "display": "بشرب قهوة عالبلكون",
+   "arabizi": "bshrab ahwe 3al-balcone",
+   "arabiziAlternatives": [
+    "bshrab ahwe 3al-balcone"
+   ],
+   "english": "I drink coffee on the balcony"
+  },
+  {
+   "id": "int-2-0e8f12",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بغسّل إيدي",
+   "alternatives": [
+    "بغسّل إيدي"
+   ],
+   "display": "بغسّل إيدي",
+   "arabizi": "bghassel eedé",
+   "arabiziAlternatives": [
+    "bghassel eedé"
+   ],
+   "english": "I wash my hands"
+  },
+  {
+   "id": "int-2-64bba2",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بغسّل وجهي",
+   "alternatives": [
+    "بغسّل وجهي"
+   ],
+   "display": "بغسّل وجهي",
+   "arabizi": "bghassel wejje",
+   "arabiziAlternatives": [
+    "bghassel wejje"
+   ],
+   "english": "I wash my face"
+  },
+  {
+   "id": "int-2-007303",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "بس",
+   "alternatives": [
+    "بس"
+   ],
+   "display": "بس",
+   "arabizi": "bass",
+   "arabiziAlternatives": [
+    "bass"
+   ],
+   "english": "but"
+  },
+  {
+   "id": "int-2-ebf833",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "أما",
+   "alternatives": [
+    "أما"
+   ],
+   "display": "أما",
+   "arabizi": "amma",
+   "arabiziAlternatives": [
+    "amma"
+   ],
+   "english": "as for / while"
+  },
+  {
+   "id": "int-2-0e0f2e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "بالعادة",
+   "alternatives": [
+    "بالعادة"
+   ],
+   "display": "بالعادة",
+   "arabizi": "bel-3adeh",
+   "arabiziAlternatives": [
+    "bel-3adeh"
+   ],
+   "english": "usually"
+  },
+  {
+   "id": "int-2-604ae8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "بالعطلة",
+   "alternatives": [
+    "بالعطلة"
+   ],
+   "display": "بالعطلة",
+   "arabizi": "bel-3oṭleh",
+   "arabiziAlternatives": [
+    "bel-3oṭleh"
+   ],
+   "english": "on the weekend"
+  },
+  {
+   "id": "int-2-e74a25",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-2",
+   "unitTitle": "Unit 2 · Daily Routine",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "خلال الأسبوع",
+   "alternatives": [
+    "خلال الأسبوع"
+   ],
+   "display": "خلال الأسبوع",
+   "arabizi": "khilal el-usboo3",
+   "arabiziAlternatives": [
+    "khilal el-usboo3"
+   ],
+   "english": "during the week"
+  },
+  {
+   "id": "int-3-2aaad3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "العطلة",
+   "alternatives": [
+    "العطلة"
+   ],
+   "display": "العطلة",
+   "arabizi": "al3tle",
+   "arabiziAlternatives": [
+    "al3tle"
+   ],
+   "english": "weekend / holiday"
+  },
+  {
+   "id": "int-3-604786",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الشغل",
+   "alternatives": [
+    "الشغل"
+   ],
+   "display": "الشغل",
+   "arabizi": "alshghl",
+   "arabiziAlternatives": [
+    "alshghl"
+   ],
+   "english": "work"
+  },
+  {
+   "id": "int-3-716d2a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "تعبان",
+   "alternatives": [
+    "تعبان"
+   ],
+   "display": "تعبان",
+   "arabizi": "t3ban",
+   "arabiziAlternatives": [
+    "t3ban"
+   ],
+   "english": "tired"
+  },
+  {
+   "id": "int-3-fcde99",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "مرتاح",
+   "alternatives": [
+    "مرتاح"
+   ],
+   "display": "مرتاح",
+   "arabizi": "mrta7",
+   "arabiziAlternatives": [
+    "mrta7"
+   ],
+   "english": "relaxed"
+  },
+  {
+   "id": "int-3-ecbbe8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "طويل",
+   "alternatives": [
+    "طويل"
+   ],
+   "display": "طويل",
+   "arabizi": "taweel",
+   "arabiziAlternatives": [
+    "taweel"
+   ],
+   "english": "long"
+  },
+  {
+   "id": "int-3-d62459",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "سريع",
+   "alternatives": [
+    "سريع"
+   ],
+   "display": "سريع",
+   "arabizi": "sree3",
+   "arabiziAlternatives": [
+    "sree3"
+   ],
+   "english": "fast"
+  },
+  {
+   "id": "int-3-5d5eed",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "وقت",
+   "alternatives": [
+    "وقت"
+   ],
+   "display": "وقت",
+   "arabizi": "wa2et",
+   "arabiziAlternatives": [
+    "wa2et"
+   ],
+   "english": "time"
+  },
+  {
+   "id": "int-3-885527",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "وقت فراغ",
+   "alternatives": [
+    "وقت فراغ"
+   ],
+   "display": "وقت فراغ",
+   "arabizi": "wa2et fareigh",
+   "arabiziAlternatives": [
+    "wa2et fareigh"
+   ],
+   "english": "free time"
+  },
+  {
+   "id": "int-3-462b22",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "برتاح",
+   "alternatives": [
+    "برتاح"
+   ],
+   "display": "برتاح",
+   "arabizi": "brta7",
+   "arabiziAlternatives": [
+    "brta7"
+   ],
+   "english": "I relax"
+  },
+  {
+   "id": "int-3-2df63c",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "بفيق",
+   "alternatives": [
+    "بفيق"
+   ],
+   "display": "بفيق",
+   "arabizi": "bfee2",
+   "arabiziAlternatives": [
+    "bfee2"
+   ],
+   "english": "I wake up"
+  },
+  {
+   "id": "int-3-c18207",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "بقضي وقتي",
+   "alternatives": [
+    "بقضي وقتي"
+   ],
+   "display": "بقضي وقتي",
+   "arabizi": "b2dee oo2tee",
+   "arabiziAlternatives": [
+    "b2dee oo2tee"
+   ],
+   "english": "I spend my time"
+  },
+  {
+   "id": "int-3-d124b8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "بطلع",
+   "alternatives": [
+    "بطلع"
+   ],
+   "display": "بطلع",
+   "arabizi": "btl3",
+   "arabiziAlternatives": [
+    "btl3"
+   ],
+   "english": "I go out"
+  },
+  {
+   "id": "int-3-8a9600",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "بقعد",
+   "alternatives": [
+    "بقعد"
+   ],
+   "display": "بقعد",
+   "arabizi": "b23d",
+   "arabiziAlternatives": [
+    "b23d"
+   ],
+   "english": "I stay/sit at home"
+  },
+  {
+   "id": "int-3-11da4f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "كبير",
+   "alternatives": [
+    "كبير"
+   ],
+   "display": "كبير",
+   "arabizi": "kbeer",
+   "arabiziAlternatives": [
+    "kbeer"
+   ],
+   "english": "big"
+  },
+  {
+   "id": "int-3-e47674",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "صغير",
+   "alternatives": [
+    "صغير"
+   ],
+   "display": "صغير",
+   "arabizi": "zgheer",
+   "arabiziAlternatives": [
+    "zgheer"
+   ],
+   "english": "small"
+  },
+  {
+   "id": "int-3-6d7896",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "قصير",
+   "alternatives": [
+    "قصير"
+   ],
+   "display": "قصير",
+   "arabizi": "2seer",
+   "arabiziAlternatives": [
+    "2seer"
+   ],
+   "english": "short"
+  },
+  {
+   "id": "int-3-67bd2e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "سهل",
+   "alternatives": [
+    "سهل"
+   ],
+   "display": "سهل",
+   "arabizi": "sahel",
+   "arabiziAlternatives": [
+    "sahel"
+   ],
+   "english": "easy"
+  },
+  {
+   "id": "int-3-3c3ca9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "صعب",
+   "alternatives": [
+    "صعب"
+   ],
+   "display": "صعب",
+   "arabizi": "sa3eb",
+   "arabiziAlternatives": [
+    "sa3eb"
+   ],
+   "english": "difficult / hard"
+  },
+  {
+   "id": "int-3-8b87e7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "بطيء",
+   "alternatives": [
+    "بطيء"
+   ],
+   "display": "بطيء",
+   "arabizi": "batee2",
+   "arabiziAlternatives": [
+    "batee2"
+   ],
+   "english": "slow"
+  },
+  {
+   "id": "int-3-5d0c68",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "قريب",
+   "alternatives": [
+    "قريب"
+   ],
+   "display": "قريب",
+   "arabizi": "2areeb",
+   "arabiziAlternatives": [
+    "2areeb"
+   ],
+   "english": "near"
+  },
+  {
+   "id": "int-3-9dcbfd",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "بعيد",
+   "alternatives": [
+    "بعيد"
+   ],
+   "display": "بعيد",
+   "arabizi": "b3eed",
+   "arabiziAlternatives": [
+    "b3eed"
+   ],
+   "english": "far"
+  },
+  {
+   "id": "int-3-1f4de3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "حلو",
+   "alternatives": [
+    "حلو"
+   ],
+   "display": "حلو",
+   "arabizi": "helou",
+   "arabiziAlternatives": [
+    "helou"
+   ],
+   "english": "nice / beautiful"
+  },
+  {
+   "id": "int-3-35142f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "غالي",
+   "alternatives": [
+    "غالي"
+   ],
+   "display": "غالي",
+   "arabizi": "ghale",
+   "arabiziAlternatives": [
+    "ghale"
+   ],
+   "english": "expensive"
+  },
+  {
+   "id": "int-3-bb4c2d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "رخيص",
+   "alternatives": [
+    "رخيص"
+   ],
+   "display": "رخيص",
+   "arabizi": "rkhees",
+   "arabiziAlternatives": [
+    "rkhees"
+   ],
+   "english": "cheap"
+  },
+  {
+   "id": "int-3-9097d3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "قوي",
+   "alternatives": [
+    "قوي"
+   ],
+   "display": "قوي",
+   "arabizi": "2awe",
+   "arabiziAlternatives": [
+    "2awe"
+   ],
+   "english": "strong"
+  },
+  {
+   "id": "int-3-34b1b1",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "ضعيف",
+   "alternatives": [
+    "ضعيف"
+   ],
+   "display": "ضعيف",
+   "arabizi": "da3eef",
+   "arabiziAlternatives": [
+    "da3eef"
+   ],
+   "english": "weak"
+  },
+  {
+   "id": "int-3-034d87",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "عالي",
+   "alternatives": [
+    "عالي"
+   ],
+   "display": "عالي",
+   "arabizi": "3ale",
+   "arabiziAlternatives": [
+    "3ale"
+   ],
+   "english": "high"
+  },
+  {
+   "id": "int-3-a18f74",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "واطي",
+   "alternatives": [
+    "واطي"
+   ],
+   "display": "واطي",
+   "arabizi": "wate",
+   "arabiziAlternatives": [
+    "wate"
+   ],
+   "english": "low"
+  },
+  {
+   "id": "int-3-89465c",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "جديد",
+   "alternatives": [
+    "جديد"
+   ],
+   "display": "جديد",
+   "arabizi": "jdeed",
+   "arabiziAlternatives": [
+    "jdeed"
+   ],
+   "english": "new"
+  },
+  {
+   "id": "int-3-d9738f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "قديم",
+   "alternatives": [
+    "قديم"
+   ],
+   "display": "قديم",
+   "arabizi": "2adeem",
+   "arabiziAlternatives": [
+    "2adeem"
+   ],
+   "english": "old"
+  },
+  {
+   "id": "int-3-6df749",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "سيّئ",
+   "alternatives": [
+    "سيّئ"
+   ],
+   "display": "سيّئ",
+   "arabizi": "see2",
+   "arabiziAlternatives": [
+    "see2"
+   ],
+   "english": "bad"
+  },
+  {
+   "id": "int-3-924e7a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "مريح",
+   "alternatives": [
+    "مريح"
+   ],
+   "display": "مريح",
+   "arabizi": "mreeh",
+   "arabiziAlternatives": [
+    "mreeh"
+   ],
+   "english": "comfortable"
+  },
+  {
+   "id": "int-3-3a0042",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "مهم",
+   "alternatives": [
+    "مهم"
+   ],
+   "display": "مهم",
+   "arabizi": "muhemm",
+   "arabiziAlternatives": [
+    "muhemm"
+   ],
+   "english": "important"
+  },
+  {
+   "id": "int-3-547138",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "ذكي",
+   "alternatives": [
+    "ذكي"
+   ],
+   "display": "ذكي",
+   "arabizi": "zaki",
+   "arabiziAlternatives": [
+    "zaki"
+   ],
+   "english": "smart"
+  },
+  {
+   "id": "int-3-448e2a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "غني",
+   "alternatives": [
+    "غني"
+   ],
+   "display": "غني",
+   "arabizi": "ghani",
+   "arabiziAlternatives": [
+    "ghani"
+   ],
+   "english": "rich"
+  },
+  {
+   "id": "int-3-b509a5",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-3",
+   "unitTitle": "Unit 3 · Free Time",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "فقير",
+   "alternatives": [
+    "فقير"
+   ],
+   "display": "فقير",
+   "arabizi": "fa2eer",
+   "arabiziAlternatives": [
+    "fa2eer"
+   ],
+   "english": "poor"
+  },
+  {
+   "id": "int-4-a74ecc",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "سفر",
+   "alternatives": [
+    "سفر"
+   ],
+   "display": "سفر",
+   "arabizi": "sfr",
+   "arabiziAlternatives": [
+    "sfr"
+   ],
+   "english": "travel"
+  },
+  {
+   "id": "int-4-66a9f6",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "بلد",
+   "alternatives": [
+    "بلد"
+   ],
+   "display": "بلد",
+   "arabizi": "balad",
+   "arabiziAlternatives": [
+    "balad"
+   ],
+   "english": "country"
+  },
+  {
+   "id": "int-4-9b194b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "مدينة",
+   "alternatives": [
+    "مدينة"
+   ],
+   "display": "مدينة",
+   "arabizi": "madineh",
+   "arabiziAlternatives": [
+    "madineh"
+   ],
+   "english": "city"
+  },
+  {
+   "id": "int-4-2c89de",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "سياحة",
+   "alternatives": [
+    "سياحة"
+   ],
+   "display": "سياحة",
+   "arabizi": "seyeha",
+   "arabiziAlternatives": [
+    "seyeha"
+   ],
+   "english": "tourism"
+  },
+  {
+   "id": "int-4-98e369",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "مطار",
+   "alternatives": [
+    "مطار"
+   ],
+   "display": "مطار",
+   "arabizi": "matar",
+   "arabiziAlternatives": [
+    "matar"
+   ],
+   "english": "airport"
+  },
+  {
+   "id": "int-4-0371d2",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "طيارة",
+   "alternatives": [
+    "طيارة"
+   ],
+   "display": "طيارة",
+   "arabizi": "tayyara",
+   "arabiziAlternatives": [
+    "tayyara"
+   ],
+   "english": "plane"
+  },
+  {
+   "id": "int-4-3c7b56",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "بحر",
+   "alternatives": [
+    "بحر"
+   ],
+   "display": "بحر",
+   "arabizi": "ba7er",
+   "arabiziAlternatives": [
+    "ba7er"
+   ],
+   "english": "sea"
+  },
+  {
+   "id": "int-4-fd2ca7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "نهر",
+   "alternatives": [
+    "نهر"
+   ],
+   "display": "نهر",
+   "arabizi": "naher",
+   "arabiziAlternatives": [
+    "naher"
+   ],
+   "english": "river"
+  },
+  {
+   "id": "int-4-3989fa",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "صحرا",
+   "alternatives": [
+    "صحرا"
+   ],
+   "display": "صحرا",
+   "arabizi": "sahra",
+   "arabiziAlternatives": [
+    "sahra"
+   ],
+   "english": "desert"
+  },
+  {
+   "id": "int-4-021926",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "جبل",
+   "alternatives": [
+    "جبل"
+   ],
+   "display": "جبل",
+   "arabizi": "jabal",
+   "arabiziAlternatives": [
+    "jabal"
+   ],
+   "english": "mountain"
+  },
+  {
+   "id": "int-4-a4f9bd",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "أماكن",
+   "alternatives": [
+    "أماكن"
+   ],
+   "display": "أماكن",
+   "arabizi": "amakn",
+   "arabiziAlternatives": [
+    "amakn"
+   ],
+   "english": "places"
+  },
+  {
+   "id": "int-4-46a548",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "تاريخي",
+   "alternatives": [
+    "تاريخي"
+   ],
+   "display": "تاريخي",
+   "arabizi": "taree5ee",
+   "arabiziAlternatives": [
+    "taree5ee"
+   ],
+   "english": "historical"
+  },
+  {
+   "id": "int-4-0ca102",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "تقليدي",
+   "alternatives": [
+    "تقليدي"
+   ],
+   "display": "تقليدي",
+   "arabizi": "t2leedee",
+   "arabiziAlternatives": [
+    "t2leedee"
+   ],
+   "english": "traditional"
+  },
+  {
+   "id": "int-4-87cc3d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "مطعم",
+   "alternatives": [
+    "مطعم"
+   ],
+   "display": "مطعم",
+   "arabizi": "mt3m",
+   "arabiziAlternatives": [
+    "mt3m"
+   ],
+   "english": "restaurant"
+  },
+  {
+   "id": "int-4-fd5432",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "تسوّق",
+   "alternatives": [
+    "تسوّق"
+   ],
+   "display": "تسوّق",
+   "arabizi": "tsoo2",
+   "arabiziAlternatives": [
+    "tsoo2"
+   ],
+   "english": "shopping"
+  },
+  {
+   "id": "int-4-639460",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "أكل",
+   "alternatives": [
+    "أكل"
+   ],
+   "display": "أكل",
+   "arabizi": "akl",
+   "arabiziAlternatives": [
+    "akl"
+   ],
+   "english": "food"
+  },
+  {
+   "id": "int-4-513774",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "جو",
+   "alternatives": [
+    "جو"
+   ],
+   "display": "جو",
+   "arabizi": "joo",
+   "arabiziAlternatives": [
+    "joo"
+   ],
+   "english": "weather / atmosphere"
+  },
+  {
+   "id": "int-4-b659f3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "طقس",
+   "alternatives": [
+    "طقس"
+   ],
+   "display": "طقس",
+   "arabizi": "ta2es",
+   "arabiziAlternatives": [
+    "ta2es"
+   ],
+   "english": "weather"
+  },
+  {
+   "id": "int-4-b7a458",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "عالم",
+   "alternatives": [
+    "عالم"
+   ],
+   "display": "عالم",
+   "arabizi": "3alam",
+   "arabiziAlternatives": [
+    "3alam"
+   ],
+   "english": "people"
+  },
+  {
+   "id": "int-4-178a65",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "فندق",
+   "alternatives": [
+    "فندق"
+   ],
+   "display": "فندق",
+   "arabizi": "fondo2",
+   "arabiziAlternatives": [
+    "fondo2"
+   ],
+   "english": "hotel"
+  },
+  {
+   "id": "int-4-dd422a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "صور",
+   "alternatives": [
+    "صور"
+   ],
+   "display": "صور",
+   "arabizi": "soor",
+   "arabiziAlternatives": [
+    "soor"
+   ],
+   "english": "pictures"
+  },
+  {
+   "id": "int-4-295012",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "أول شي",
+   "alternatives": [
+    "أول شي"
+   ],
+   "display": "أول شي",
+   "arabizi": "aool shee",
+   "arabiziAlternatives": [
+    "aool shee"
+   ],
+   "english": "first"
+  },
+  {
+   "id": "int-4-bf82a8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "بعدين",
+   "alternatives": [
+    "بعدين"
+   ],
+   "display": "بعدين",
+   "arabizi": "b3deen",
+   "arabiziAlternatives": [
+    "b3deen"
+   ],
+   "english": "then"
+  },
+  {
+   "id": "int-4-423f7b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "بعد ما",
+   "alternatives": [
+    "بعد ما"
+   ],
+   "display": "بعد ما",
+   "arabizi": "b3d ma",
+   "arabiziAlternatives": [
+    "b3d ma"
+   ],
+   "english": "after"
+  },
+  {
+   "id": "int-4-9de4ca",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "لأنو",
+   "alternatives": [
+    "لأنو"
+   ],
+   "display": "لأنو",
+   "arabizi": "lanoo",
+   "arabiziAlternatives": [
+    "lanoo"
+   ],
+   "english": "because"
+  },
+  {
+   "id": "int-4-7896f9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "لهيك",
+   "alternatives": [
+    "لهيك"
+   ],
+   "display": "لهيك",
+   "arabizi": "lheek",
+   "arabiziAlternatives": [
+    "lheek"
+   ],
+   "english": "so"
+  },
+  {
+   "id": "int-4-788da0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "كمان",
+   "alternatives": [
+    "كمان"
+   ],
+   "display": "كمان",
+   "arabizi": "kman",
+   "arabiziAlternatives": [
+    "kman"
+   ],
+   "english": "also"
+  },
+  {
+   "id": "int-4-f063ee",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "إذا",
+   "alternatives": [
+    "إذا"
+   ],
+   "display": "إذا",
+   "arabizi": "aza",
+   "arabiziAlternatives": [
+    "aza"
+   ],
+   "english": "if"
+  },
+  {
+   "id": "int-4-f9c87e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "phrase",
+   "arabic": "عادةً",
+   "alternatives": [
+    "عادةً"
+   ],
+   "display": "عادةً",
+   "arabizi": "3ade",
+   "arabiziAlternatives": [
+    "3ade"
+   ],
+   "english": "usually"
+  },
+  {
+   "id": "int-4-1e9a69",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "حَجَز",
+   "alternatives": [
+    "حَجَز"
+   ],
+   "display": "حَجَز",
+   "arabizi": "7jz",
+   "arabiziAlternatives": [
+    "7jz"
+   ],
+   "english": "Booked"
+  },
+  {
+   "id": "int-4-e3e96b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "طار",
+   "alternatives": [
+    "طار"
+   ],
+   "display": "طار",
+   "arabizi": "tar",
+   "arabiziAlternatives": [
+    "tar"
+   ],
+   "english": "Flew"
+  },
+  {
+   "id": "int-4-f95feb",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "رِحْلة",
+   "alternatives": [
+    "رِحْلة"
+   ],
+   "display": "رِحْلة",
+   "arabizi": "r7le",
+   "arabiziAlternatives": [
+    "r7le"
+   ],
+   "english": "Trip \\ flight \\ journey"
+  },
+  {
+   "id": "int-4-3dfde8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "سافر",
+   "alternatives": [
+    "سافر"
+   ],
+   "display": "سافر",
+   "arabizi": "safr",
+   "arabiziAlternatives": [
+    "safr"
+   ],
+   "english": "Travelled"
+  },
+  {
+   "id": "int-4-5d44d5",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "قرّر",
+   "alternatives": [
+    "قرّر"
+   ],
+   "display": "قرّر",
+   "arabizi": "2rr",
+   "arabiziAlternatives": [
+    "2rr"
+   ],
+   "english": "Decided"
+  },
+  {
+   "id": "int-4-55bb02",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "حَبّ",
+   "alternatives": [
+    "حَبّ"
+   ],
+   "display": "حَبّ",
+   "arabizi": "7b",
+   "arabiziAlternatives": [
+    "7b"
+   ],
+   "english": "Liked / Loved"
+  },
+  {
+   "id": "int-4-cf5875",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "وصلت",
+   "alternatives": [
+    "وصلت",
+    "نزلت"
+   ],
+   "display": "وصلت / نزلت",
+   "arabizi": "wslt",
+   "arabiziAlternatives": [
+    "wslt"
+   ],
+   "english": "Arrived / Landed (the plane)"
+  },
+  {
+   "id": "int-4-0d72a7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "طلع",
+   "alternatives": [
+    "طلع"
+   ],
+   "display": "طلع",
+   "arabizi": "tl3",
+   "arabiziAlternatives": [
+    "tl3"
+   ],
+   "english": "Take off / Leave / Go up"
+  },
+  {
+   "id": "int-4-27c119",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "غُرْفة",
+   "alternatives": [
+    "غُرْفة"
+   ],
+   "display": "غُرْفة",
+   "arabizi": "ghrfe",
+   "arabiziAlternatives": [
+    "ghrfe"
+   ],
+   "english": "Room"
+  },
+  {
+   "id": "int-4-73ea18",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "تِكِت",
+   "alternatives": [
+    "تِكِت",
+    "تذكرة"
+   ],
+   "display": "تِكِت / تذكرة",
+   "arabizi": "tkt",
+   "arabiziAlternatives": [
+    "tkt",
+    "tzkre"
+   ],
+   "english": "Ticket"
+  },
+  {
+   "id": "int-4-4538bf",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "شَنْاتي",
+   "alternatives": [
+    "شَنْاتي",
+    "شَنْتة"
+   ],
+   "display": "شَنْاتي / شَنْتة",
+   "arabizi": "shnateeshnte",
+   "arabiziAlternatives": [
+    "shnateeshnte"
+   ],
+   "english": "Bag / Suitcase"
+  },
+  {
+   "id": "int-4-36ced4",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-4",
+   "unitTitle": "Unit 4 · Travel",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "ضبّيت",
+   "alternatives": [
+    "ضبّيت"
+   ],
+   "display": "ضبّيت",
+   "arabizi": "dbeet",
+   "arabiziAlternatives": [
+    "dbeet"
+   ],
+   "english": "Packed"
+  },
+  {
+   "id": "int-5-458d54",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "فتّش",
+   "alternatives": [
+    "فتّش"
+   ],
+   "display": "فتّش",
+   "arabizi": "ftsh",
+   "arabiziAlternatives": [
+    "ftsh"
+   ],
+   "english": "Looked for/Searched / Inspected"
+  },
+  {
+   "id": "int-5-baa413",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "لقى",
+   "alternatives": [
+    "لقى"
+   ],
+   "display": "لقى",
+   "arabizi": "l2a",
+   "arabiziAlternatives": [
+    "l2a"
+   ],
+   "english": "Found"
+  },
+  {
+   "id": "int-5-8c6117",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "تسجيل الدخول",
+   "alternatives": [
+    "تسجيل الدخول"
+   ],
+   "display": "تسجيل الدخول",
+   "arabizi": "tsjeel ald5ool",
+   "arabiziAlternatives": [
+    "tsjeel ald5ool"
+   ],
+   "english": "Check-in"
+  },
+  {
+   "id": "int-5-195dad",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "غرفة لشخصين",
+   "alternatives": [
+    "غرفة لشخصين"
+   ],
+   "display": "غرفة لشخصين",
+   "arabizi": "ghrfe lsh5seen",
+   "arabiziAlternatives": [
+    "ghrfe lsh5seen"
+   ],
+   "english": "Double room"
+  },
+  {
+   "id": "int-5-c8a039",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "غرفة لشخص واحد",
+   "alternatives": [
+    "غرفة لشخص واحد"
+   ],
+   "display": "غرفة لشخص واحد",
+   "arabizi": "ghrfe lsh5s ooa7d",
+   "arabiziAlternatives": [
+    "ghrfe lsh5s ooa7d"
+   ],
+   "english": "Single room"
+  },
+  {
+   "id": "int-5-e0cc9f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "طابق",
+   "alternatives": [
+    "طابق"
+   ],
+   "display": "طابق",
+   "arabizi": "tab2",
+   "arabiziAlternatives": [
+    "tab2"
+   ],
+   "english": "Floor"
+  },
+  {
+   "id": "int-5-9aa9fc",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مصعد",
+   "alternatives": [
+    "مصعد"
+   ],
+   "display": "مصعد",
+   "arabizi": "ms3d",
+   "arabiziAlternatives": [
+    "ms3d"
+   ],
+   "english": "Elevator"
+  },
+  {
+   "id": "int-5-353663",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "حمّام",
+   "alternatives": [
+    "حمّام"
+   ],
+   "display": "حمّام",
+   "arabizi": "7mam",
+   "arabiziAlternatives": [
+    "7mam"
+   ],
+   "english": "Bathroom"
+  },
+  {
+   "id": "int-5-79ecb8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "بلكون",
+   "alternatives": [
+    "بلكون"
+   ],
+   "display": "بلكون",
+   "arabizi": "blkoon",
+   "arabiziAlternatives": [
+    "blkoon"
+   ],
+   "english": "Balcony"
+  },
+  {
+   "id": "int-5-ee0314",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "واي فاي",
+   "alternatives": [
+    "واي فاي"
+   ],
+   "display": "واي فاي",
+   "arabizi": "waee faee",
+   "arabiziAlternatives": [
+    "waee faee"
+   ],
+   "english": "Wi-Fi"
+  },
+  {
+   "id": "int-5-2d501a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "الفطور مشمول",
+   "alternatives": [
+    "الفطور مشمول"
+   ],
+   "display": "الفطور مشمول",
+   "arabizi": "alftoor mshmool",
+   "arabiziAlternatives": [
+    "alftoor mshmool"
+   ],
+   "english": "Breakfast included"
+  },
+  {
+   "id": "int-5-b2e811",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مفتاح",
+   "alternatives": [
+    "مفتاح"
+   ],
+   "display": "مفتاح",
+   "arabizi": "mfta7",
+   "arabiziAlternatives": [
+    "mfta7"
+   ],
+   "english": "Key"
+  },
+  {
+   "id": "int-5-a928c0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مشكلة",
+   "alternatives": [
+    "مشكلة"
+   ],
+   "display": "مشكلة",
+   "arabizi": "mshkle",
+   "arabiziAlternatives": [
+    "mshkle"
+   ],
+   "english": "Problem"
+  },
+  {
+   "id": "int-5-188f9e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مكيّف",
+   "alternatives": [
+    "مكيّف"
+   ],
+   "display": "مكيّف",
+   "arabizi": "mkeef",
+   "arabiziAlternatives": [
+    "mkeef"
+   ],
+   "english": "Air conditioner"
+  },
+  {
+   "id": "int-5-e1380f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "منشفة",
+   "alternatives": [
+    "منشفة"
+   ],
+   "display": "منشفة",
+   "arabizi": "mnshfe",
+   "arabiziAlternatives": [
+    "mnshfe"
+   ],
+   "english": "Towel"
+  },
+  {
+   "id": "int-5-3aaf2f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مي سخنة",
+   "alternatives": [
+    "مي سخنة"
+   ],
+   "display": "مي سخنة",
+   "arabizi": "mee s5ne",
+   "arabiziAlternatives": [
+    "mee s5ne"
+   ],
+   "english": "Hot water"
+  },
+  {
+   "id": "int-5-8710d6",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "تسجيل الخروج",
+   "alternatives": [
+    "تسجيل الخروج"
+   ],
+   "display": "تسجيل الخروج",
+   "arabizi": "tsjeel al5rooj",
+   "arabiziAlternatives": [
+    "tsjeel al5rooj"
+   ],
+   "english": "Check-out"
+  },
+  {
+   "id": "int-5-7b01f5",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "وصل",
+   "alternatives": [
+    "وصل"
+   ],
+   "display": "وصل",
+   "arabizi": "wsl",
+   "arabiziAlternatives": [
+    "wsl"
+   ],
+   "english": "To arrive"
+  },
+  {
+   "id": "int-5-7b01f5-2",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "وَصّل",
+   "alternatives": [
+    "وَصّل"
+   ],
+   "display": "وَصّل",
+   "arabizi": "wsl",
+   "arabiziAlternatives": [
+    "wsl"
+   ],
+   "english": "To drive or give someone a ride \\To drop someone off"
+  },
+  {
+   "id": "int-5-20d51d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "ضيّع",
+   "alternatives": [
+    "ضيّع"
+   ],
+   "display": "ضيّع",
+   "arabizi": "dee3",
+   "arabiziAlternatives": [
+    "dee3"
+   ],
+   "english": "Lost"
+  },
+  {
+   "id": "int-5-11df81",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "طلب",
+   "alternatives": [
+    "طلب"
+   ],
+   "display": "طلب",
+   "arabizi": "tlb",
+   "arabiziAlternatives": [
+    "tlb"
+   ],
+   "english": "Asked for / Requested"
+  },
+  {
+   "id": "int-5-07e647",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "سأل",
+   "alternatives": [
+    "سأل"
+   ],
+   "display": "سأل",
+   "arabizi": "sal",
+   "arabiziAlternatives": [
+    "sal"
+   ],
+   "english": "Asked"
+  },
+  {
+   "id": "int-5-f2cc82",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "أخد",
+   "alternatives": [
+    "أخد"
+   ],
+   "display": "أخد",
+   "arabizi": "a5d",
+   "arabiziAlternatives": [
+    "a5d"
+   ],
+   "english": "Took"
+  },
+  {
+   "id": "int-5-1f338a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-5",
+   "unitTitle": "Unit 5 · Airport & Hotel",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "نزل",
+   "alternatives": [
+    "نزل"
+   ],
+   "display": "نزل",
+   "arabizi": "nzl",
+   "arabiziAlternatives": [
+    "nzl"
+   ],
+   "english": "Went down"
+  },
+  {
+   "id": "int-6-95c080",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "ترويقة",
+   "alternatives": [
+    "ترويقة"
+   ],
+   "display": "ترويقة",
+   "arabizi": "trooee2e",
+   "arabiziAlternatives": [
+    "trooee2e"
+   ],
+   "english": "Breakfast"
+  },
+  {
+   "id": "int-6-2bfe19",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "غدا",
+   "alternatives": [
+    "غدا"
+   ],
+   "display": "غدا",
+   "arabizi": "ghda",
+   "arabiziAlternatives": [
+    "ghda"
+   ],
+   "english": "Lunch"
+  },
+  {
+   "id": "int-6-51460a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "عشا",
+   "alternatives": [
+    "عشا"
+   ],
+   "display": "عشا",
+   "arabizi": "3sha",
+   "arabiziAlternatives": [
+    "3sha"
+   ],
+   "english": "Dinner"
+  },
+  {
+   "id": "int-6-263aae",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "تروّقت",
+   "alternatives": [
+    "تروّقت",
+    "تروّق"
+   ],
+   "display": "تروّقت / تروّق",
+   "arabizi": "troo2t",
+   "arabiziAlternatives": [
+    "troo2t"
+   ],
+   "english": "I had breakfast"
+  },
+  {
+   "id": "int-6-d64601",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "تغدّيت",
+   "alternatives": [
+    "تغدّيت",
+    "تغدّا"
+   ],
+   "display": "تغدّيت / تغدّا",
+   "arabizi": "tghdeet",
+   "arabiziAlternatives": [
+    "tghdeet"
+   ],
+   "english": "I had lunch"
+  },
+  {
+   "id": "int-6-f93cce",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "تعشّيت",
+   "alternatives": [
+    "تعشّيت",
+    "تعشّا"
+   ],
+   "display": "تعشّيت / تعشّا",
+   "arabizi": "t3sheet",
+   "arabiziAlternatives": [
+    "t3sheet"
+   ],
+   "english": "I had dinner"
+  },
+  {
+   "id": "int-6-1b0512",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "منيو",
+   "alternatives": [
+    "منيو"
+   ],
+   "display": "منيو",
+   "arabizi": "mneeoo",
+   "arabiziAlternatives": [
+    "mneeoo"
+   ],
+   "english": "Menu"
+  },
+  {
+   "id": "int-6-eedbe1",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "حساب",
+   "alternatives": [
+    "حساب",
+    "فاتورة"
+   ],
+   "display": "حساب / فاتورة",
+   "arabizi": "7sab",
+   "arabiziAlternatives": [
+    "7sab"
+   ],
+   "english": "Bill"
+  },
+  {
+   "id": "int-6-f5b2da",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "جوعان",
+   "alternatives": [
+    "جوعان"
+   ],
+   "display": "جوعان",
+   "arabizi": "joo3an",
+   "arabiziAlternatives": [
+    "joo3an"
+   ],
+   "english": "Hungry"
+  },
+  {
+   "id": "int-6-8c49e0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "شبعان",
+   "alternatives": [
+    "شبعان"
+   ],
+   "display": "شبعان",
+   "arabizi": "shb3an",
+   "arabiziAlternatives": [
+    "shb3an"
+   ],
+   "english": "Full"
+  },
+  {
+   "id": "int-6-42c260",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "طيّب",
+   "alternatives": [
+    "طيّب"
+   ],
+   "display": "طيّب",
+   "arabizi": "teeb",
+   "arabiziAlternatives": [
+    "teeb"
+   ],
+   "english": "Delicious"
+  },
+  {
+   "id": "int-6-be32ac",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "جرّب",
+   "alternatives": [
+    "جرّب"
+   ],
+   "display": "جرّب",
+   "arabizi": "jrb",
+   "arabiziAlternatives": [
+    "jrb"
+   ],
+   "english": "Try"
+  },
+  {
+   "id": "int-6-892dee",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "طاولة",
+   "alternatives": [
+    "طاولة"
+   ],
+   "display": "طاولة",
+   "arabizi": "taoole",
+   "arabiziAlternatives": [
+    "taoole"
+   ],
+   "english": "Table"
+  },
+  {
+   "id": "int-6-07f40f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "كرسون",
+   "alternatives": [
+    "كرسون",
+    "جرسون"
+   ],
+   "display": "كرسون / جرسون",
+   "arabizi": "krsoon",
+   "arabiziAlternatives": [
+    "krsoon"
+   ],
+   "english": "Waiter"
+  },
+  {
+   "id": "int-6-3f51a0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "زبون",
+   "alternatives": [
+    "زبون"
+   ],
+   "display": "زبون",
+   "arabizi": "zboon",
+   "arabiziAlternatives": [
+    "zboon"
+   ],
+   "english": "Customer"
+  },
+  {
+   "id": "int-6-268bf7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "مشاوي",
+   "alternatives": [
+    "مشاوي"
+   ],
+   "display": "مشاوي",
+   "arabizi": "mshaooee",
+   "arabiziAlternatives": [
+    "mshaooee"
+   ],
+   "english": "Grilled meat"
+  },
+  {
+   "id": "int-6-be26f6",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "فتّوش",
+   "alternatives": [
+    "فتّوش"
+   ],
+   "display": "فتّوش",
+   "arabizi": "ftoosh",
+   "arabiziAlternatives": [
+    "ftoosh"
+   ],
+   "english": "Fattoush"
+  },
+  {
+   "id": "int-6-508095",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "عصير",
+   "alternatives": [
+    "عصير"
+   ],
+   "display": "عصير",
+   "arabizi": "3seer",
+   "arabiziAlternatives": [
+    "3seer"
+   ],
+   "english": "Juice"
+  },
+  {
+   "id": "int-6-c1e277",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "كاش",
+   "alternatives": [
+    "كاش"
+   ],
+   "display": "كاش",
+   "arabizi": "kash",
+   "arabiziAlternatives": [
+    "kash"
+   ],
+   "english": "Cash"
+  },
+  {
+   "id": "int-6-fdadd0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "حساب",
+   "alternatives": [
+    "حساب"
+   ],
+   "display": "حساب",
+   "arabizi": "7sab",
+   "arabiziAlternatives": [
+    "7sab"
+   ],
+   "english": "Bill"
+  },
+  {
+   "id": "int-6-6dfce5",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بندورة",
+   "alternatives": [
+    "بندورة"
+   ],
+   "display": "بندورة",
+   "arabizi": "banadoora",
+   "arabiziAlternatives": [
+    "banadoora"
+   ],
+   "english": "Tomato"
+  },
+  {
+   "id": "int-6-9e1bfa",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "خيار",
+   "alternatives": [
+    "خيار"
+   ],
+   "display": "خيار",
+   "arabizi": "5eyar",
+   "arabiziAlternatives": [
+    "5eyar"
+   ],
+   "english": "Cucumber"
+  },
+  {
+   "id": "int-6-901740",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "خس",
+   "alternatives": [
+    "خس"
+   ],
+   "display": "خس",
+   "arabizi": "5as",
+   "arabiziAlternatives": [
+    "5as"
+   ],
+   "english": "Lettuce"
+  },
+  {
+   "id": "int-6-f562ca",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بصل",
+   "alternatives": [
+    "بصل"
+   ],
+   "display": "بصل",
+   "arabizi": "bas’al",
+   "arabiziAlternatives": [
+    "bas’al"
+   ],
+   "english": "Onion"
+  },
+  {
+   "id": "int-6-fa9340",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بطاطا",
+   "alternatives": [
+    "بطاطا"
+   ],
+   "display": "بطاطا",
+   "arabizi": "ba6a6a",
+   "arabiziAlternatives": [
+    "ba6a6a"
+   ],
+   "english": "Potato"
+  },
+  {
+   "id": "int-6-37f920",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "تفاح",
+   "alternatives": [
+    "تفاح"
+   ],
+   "display": "تفاح",
+   "arabizi": "teffe7",
+   "arabiziAlternatives": [
+    "teffe7"
+   ],
+   "english": "Apple"
+  },
+  {
+   "id": "int-6-66dbc2",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "موز",
+   "alternatives": [
+    "موز"
+   ],
+   "display": "موز",
+   "arabizi": "mawz",
+   "arabiziAlternatives": [
+    "mawz"
+   ],
+   "english": "Banana"
+  },
+  {
+   "id": "int-6-0d5ed7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "عنب",
+   "alternatives": [
+    "عنب"
+   ],
+   "display": "عنب",
+   "arabizi": "3enab",
+   "arabiziAlternatives": [
+    "3enab"
+   ],
+   "english": "Grapes"
+  },
+  {
+   "id": "int-6-8afd28",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "برتقال",
+   "alternatives": [
+    "برتقال",
+    "بردقان"
+   ],
+   "display": "برتقال / بردقان",
+   "arabizi": "bird2an",
+   "arabiziAlternatives": [
+    "bird2an"
+   ],
+   "english": "Orange"
+  },
+  {
+   "id": "int-6-939b66",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "فراولة",
+   "alternatives": [
+    "فراولة"
+   ],
+   "display": "فراولة",
+   "arabizi": "fareiz",
+   "arabiziAlternatives": [
+    "fareiz"
+   ],
+   "english": "Strawberry"
+  },
+  {
+   "id": "int-6-0ff3c3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "خبز",
+   "alternatives": [
+    "خبز"
+   ],
+   "display": "خبز",
+   "arabizi": "5ebez",
+   "arabiziAlternatives": [
+    "5ebez"
+   ],
+   "english": "Bread"
+  },
+  {
+   "id": "int-6-b88177",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "جبنة",
+   "alternatives": [
+    "جبنة"
+   ],
+   "display": "جبنة",
+   "arabizi": "jebneh",
+   "arabiziAlternatives": [
+    "jebneh"
+   ],
+   "english": "Cheese"
+  },
+  {
+   "id": "int-6-0147dc",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "منقوشة زعتر",
+   "alternatives": [
+    "منقوشة زعتر"
+   ],
+   "display": "منقوشة زعتر",
+   "arabizi": "man2oosheh za3tar",
+   "arabiziAlternatives": [
+    "man2oosheh za3tar"
+   ],
+   "english": "Zaatar manousheh"
+  },
+  {
+   "id": "int-6-7eda3f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "منقوشة جبنة",
+   "alternatives": [
+    "منقوشة جبنة"
+   ],
+   "display": "منقوشة جبنة",
+   "arabizi": "man2oosheh jebne",
+   "arabiziAlternatives": [
+    "man2oosheh jebne"
+   ],
+   "english": "Cheese manousheh"
+  },
+  {
+   "id": "int-6-706993",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "لبنة",
+   "alternatives": [
+    "لبنة"
+   ],
+   "display": "لبنة",
+   "arabizi": "labneh",
+   "arabiziAlternatives": [
+    "labneh"
+   ],
+   "english": "Labneh"
+  },
+  {
+   "id": "int-6-1c0d71",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "حمص",
+   "alternatives": [
+    "حمص"
+   ],
+   "display": "حمص",
+   "arabizi": "hommos",
+   "arabiziAlternatives": [
+    "hommos"
+   ],
+   "english": "Hummus"
+  },
+  {
+   "id": "int-6-86b27b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "فول",
+   "alternatives": [
+    "فول"
+   ],
+   "display": "فول",
+   "arabizi": "fool",
+   "arabiziAlternatives": [
+    "fool"
+   ],
+   "english": "Fava beans"
+  },
+  {
+   "id": "int-6-ed2011",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بيض",
+   "alternatives": [
+    "بيض"
+   ],
+   "display": "بيض",
+   "arabizi": "bayd",
+   "arabiziAlternatives": [
+    "bayd"
+   ],
+   "english": "Eggs"
+  },
+  {
+   "id": "int-6-ffca21",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "لحمة",
+   "alternatives": [
+    "لحمة"
+   ],
+   "display": "لحمة",
+   "arabizi": "la7me",
+   "arabiziAlternatives": [
+    "la7me"
+   ],
+   "english": "Meat"
+  },
+  {
+   "id": "int-6-e2303d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "دجاج",
+   "alternatives": [
+    "دجاج"
+   ],
+   "display": "دجاج",
+   "arabizi": "djej",
+   "arabiziAlternatives": [
+    "djej"
+   ],
+   "english": "Chicken"
+  },
+  {
+   "id": "int-6-903567",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "سمك",
+   "alternatives": [
+    "سمك"
+   ],
+   "display": "سمك",
+   "arabizi": "samak",
+   "arabiziAlternatives": [
+    "samak"
+   ],
+   "english": "Fish"
+  },
+  {
+   "id": "int-6-34045f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "رز",
+   "alternatives": [
+    "رز"
+   ],
+   "display": "رز",
+   "arabizi": "rezz",
+   "arabiziAlternatives": [
+    "rezz"
+   ],
+   "english": "Rice"
+  },
+  {
+   "id": "int-6-db63e9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "لبن",
+   "alternatives": [
+    "لبن"
+   ],
+   "display": "لبن",
+   "arabizi": "laban",
+   "arabiziAlternatives": [
+    "laban"
+   ],
+   "english": "Yogurt"
+  },
+  {
+   "id": "int-6-fa4785",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "زيتون",
+   "alternatives": [
+    "زيتون"
+   ],
+   "display": "زيتون",
+   "arabizi": "zeytoon",
+   "arabiziAlternatives": [
+    "zeytoon"
+   ],
+   "english": "Olives"
+  },
+  {
+   "id": "int-6-ab107d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "صحن",
+   "alternatives": [
+    "صحن"
+   ],
+   "display": "صحن",
+   "arabizi": "sa7en",
+   "arabiziAlternatives": [
+    "sa7en"
+   ],
+   "english": "Plate / Dish"
+  },
+  {
+   "id": "int-6-a9ca48",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "معلقة",
+   "alternatives": [
+    "معلقة"
+   ],
+   "display": "معلقة",
+   "arabizi": "ma3la2a",
+   "arabiziAlternatives": [
+    "ma3la2a"
+   ],
+   "english": "Spoon"
+  },
+  {
+   "id": "int-6-dc604d",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "شوكة",
+   "alternatives": [
+    "شوكة"
+   ],
+   "display": "شوكة",
+   "arabizi": "shoukeh",
+   "arabiziAlternatives": [
+    "shoukeh"
+   ],
+   "english": "Fork"
+  },
+  {
+   "id": "int-6-bb87d2",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "مشوي",
+   "alternatives": [
+    "مشوي"
+   ],
+   "display": "مشوي",
+   "arabizi": "meshwe",
+   "arabiziAlternatives": [
+    "meshwe"
+   ],
+   "english": "Grilled"
+  },
+  {
+   "id": "int-6-20c9df",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "مقلي",
+   "alternatives": [
+    "مقلي"
+   ],
+   "display": "مقلي",
+   "arabizi": "ma2le",
+   "arabiziAlternatives": [
+    "ma2le"
+   ],
+   "english": "Fried"
+  },
+  {
+   "id": "int-6-df3740",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "ميّ",
+   "alternatives": [
+    "ميّ"
+   ],
+   "display": "ميّ",
+   "arabizi": "mee",
+   "arabiziAlternatives": [
+    "mee"
+   ],
+   "english": "Water"
+  },
+  {
+   "id": "int-6-18a4d1",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "شاي",
+   "alternatives": [
+    "شاي"
+   ],
+   "display": "شاي",
+   "arabizi": "shaee",
+   "arabiziAlternatives": [
+    "shaee"
+   ],
+   "english": "Tea"
+  },
+  {
+   "id": "int-6-65bc7a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "قهوة",
+   "alternatives": [
+    "قهوة"
+   ],
+   "display": "قهوة",
+   "arabizi": "2hooe",
+   "arabiziAlternatives": [
+    "2hooe"
+   ],
+   "english": "Coffee"
+  },
+  {
+   "id": "int-6-6a4934",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "حليب",
+   "alternatives": [
+    "حليب"
+   ],
+   "display": "حليب",
+   "arabizi": "7leeb",
+   "arabiziAlternatives": [
+    "7leeb"
+   ],
+   "english": "Milk"
+  },
+  {
+   "id": "int-6-d8115f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "شاي مثلّج",
+   "alternatives": [
+    "شاي مثلّج"
+   ],
+   "display": "شاي مثلّج",
+   "arabizi": "shaee mthlj",
+   "arabiziAlternatives": [
+    "shaee mthlj"
+   ],
+   "english": "Iced tea"
+  },
+  {
+   "id": "int-6-fe39d1",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "قهوة مثلّجة",
+   "alternatives": [
+    "قهوة مثلّجة"
+   ],
+   "display": "قهوة مثلّجة",
+   "arabizi": "2hooe mthlje",
+   "arabiziAlternatives": [
+    "2hooe mthlje"
+   ],
+   "english": "Iced coffee"
+  },
+  {
+   "id": "int-6-6d8caf",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "عصير ليمون",
+   "alternatives": [
+    "عصير ليمون"
+   ],
+   "display": "عصير ليمون",
+   "arabizi": "3seer leemoon",
+   "arabiziAlternatives": [
+    "3seer leemoon"
+   ],
+   "english": "Lemon juice"
+  },
+  {
+   "id": "int-6-6c62e8",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "عصير بردقان",
+   "alternatives": [
+    "عصير بردقان"
+   ],
+   "display": "عصير بردقان",
+   "arabizi": "3seer brd2an",
+   "arabiziAlternatives": [
+    "3seer brd2an"
+   ],
+   "english": "Orange juice"
+  },
+  {
+   "id": "int-6-02e8d0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "زهورات",
+   "alternatives": [
+    "زهورات"
+   ],
+   "display": "زهورات",
+   "arabizi": "zhoorat",
+   "arabiziAlternatives": [
+    "zhoorat"
+   ],
+   "english": "Herbal tea"
+  },
+  {
+   "id": "int-6-22314e",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "كبّاية",
+   "alternatives": [
+    "كبّاية"
+   ],
+   "display": "كبّاية",
+   "arabizi": "kbaee",
+   "arabiziAlternatives": [
+    "kbaee"
+   ],
+   "english": "Glass / Cup"
+  },
+  {
+   "id": "int-6-58ba4f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "فنجان",
+   "alternatives": [
+    "فنجان"
+   ],
+   "display": "فنجان",
+   "arabizi": "fnjan",
+   "arabiziAlternatives": [
+    "fnjan"
+   ],
+   "english": "Small cup"
+  },
+  {
+   "id": "int-6-12c05a",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بارد",
+   "alternatives": [
+    "بارد"
+   ],
+   "display": "بارد",
+   "arabizi": "bard",
+   "arabiziAlternatives": [
+    "bard"
+   ],
+   "english": "Cold"
+  },
+  {
+   "id": "int-6-2e57f6",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "سخن",
+   "alternatives": [
+    "سخن"
+   ],
+   "display": "سخن",
+   "arabizi": "s5n",
+   "arabiziAlternatives": [
+    "s5n"
+   ],
+   "english": "Hot"
+  },
+  {
+   "id": "int-6-d5de81",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "تلج",
+   "alternatives": [
+    "تلج"
+   ],
+   "display": "تلج",
+   "arabizi": "tlj",
+   "arabiziAlternatives": [
+    "tlj"
+   ],
+   "english": "Ice"
+  },
+  {
+   "id": "int-6-f3c3b7",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "preposition",
+   "arabic": "مع",
+   "alternatives": [
+    "مع"
+   ],
+   "display": "مع",
+   "arabizi": "m3",
+   "arabiziAlternatives": [
+    "m3"
+   ],
+   "english": "With"
+  },
+  {
+   "id": "int-6-4a46af",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "preposition",
+   "arabic": "بدون",
+   "alternatives": [
+    "بدون"
+   ],
+   "display": "بدون",
+   "arabizi": "bdoon",
+   "arabiziAlternatives": [
+    "bdoon"
+   ],
+   "english": "Without"
+  },
+  {
+   "id": "int-6-304117",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "preposition",
+   "arabic": "و",
+   "alternatives": [
+    "و"
+   ],
+   "display": "و",
+   "arabizi": "w",
+   "arabiziAlternatives": [
+    "w"
+   ],
+   "english": "And"
+  },
+  {
+   "id": "int-6-f2ac0b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "عبالي",
+   "alternatives": [
+    "عبالي"
+   ],
+   "display": "عبالي",
+   "arabizi": "3balee",
+   "arabiziAlternatives": [
+    "3balee"
+   ],
+   "english": "I feel like / I want"
+  },
+  {
+   "id": "int-6-62031b",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "ما عبالي",
+   "alternatives": [
+    "ما عبالي"
+   ],
+   "display": "ما عبالي",
+   "arabizi": "ma 3balee",
+   "arabiziAlternatives": [
+    "ma 3balee"
+   ],
+   "english": "I don't feel like"
+  },
+  {
+   "id": "int-6-29ab56",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "شرب",
+   "alternatives": [
+    "شرب"
+   ],
+   "display": "شرب",
+   "arabizi": "shrb",
+   "arabiziAlternatives": [
+    "shrb"
+   ],
+   "english": "Drink"
+  },
+  {
+   "id": "int-6-3ddf3f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "شاف",
+   "alternatives": [
+    "شاف"
+   ],
+   "display": "شاف",
+   "arabizi": "shaf",
+   "arabiziAlternatives": [
+    "shaf"
+   ],
+   "english": "Saw"
+  },
+  {
+   "id": "int-6-7403f9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "جاب",
+   "alternatives": [
+    "جاب"
+   ],
+   "display": "جاب",
+   "arabizi": "jab",
+   "arabiziAlternatives": [
+    "jab"
+   ],
+   "english": "Brought"
+  },
+  {
+   "id": "int-6-dca6d9",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "قال",
+   "alternatives": [
+    "قال"
+   ],
+   "display": "قال",
+   "arabizi": "2al",
+   "arabiziAlternatives": [
+    "2al"
+   ],
+   "english": "Said / Told"
+  },
+  {
+   "id": "int-6-5af786",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "عطى",
+   "alternatives": [
+    "عطى"
+   ],
+   "display": "عطى",
+   "arabizi": "3ta",
+   "arabiziAlternatives": [
+    "3ta"
+   ],
+   "english": "Gave"
+  },
+  {
+   "id": "int-6-a7fc71",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "دفع",
+   "alternatives": [
+    "دفع"
+   ],
+   "display": "دفع",
+   "arabizi": "df3",
+   "arabiziAlternatives": [
+    "df3"
+   ],
+   "english": "Paid"
+  },
+  {
+   "id": "int-6-cd565f",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "شكر",
+   "alternatives": [
+    "شكر"
+   ],
+   "display": "شكر",
+   "arabizi": "shkr",
+   "arabiziAlternatives": [
+    "shkr"
+   ],
+   "english": "Thanked"
+  },
+  {
+   "id": "int-6-3c6263",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "قعد",
+   "alternatives": [
+    "قعد"
+   ],
+   "display": "قعد",
+   "arabizi": "23d",
+   "arabiziAlternatives": [
+    "23d"
+   ],
+   "english": "Sat"
+  },
+  {
+   "id": "int-6-d86fd3",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "رجع",
+   "alternatives": [
+    "رجع"
+   ],
+   "display": "رجع",
+   "arabizi": "rj3",
+   "arabiziAlternatives": [
+    "rj3"
+   ],
+   "english": "Returned"
+  },
+  {
+   "id": "int-6-9cd9d0",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "verb",
+   "arabic": "فاتورة",
+   "alternatives": [
+    "فاتورة",
+    "حساب"
+   ],
+   "display": "فاتورة / حساب",
+   "arabizi": "fatoore",
+   "arabiziAlternatives": [
+    "fatoore"
+   ],
+   "english": "Bill"
+  },
+  {
+   "id": "int-6-5daff4",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-6",
+   "unitTitle": "Unit 6 · Restaurant",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "أشخاص",
+   "alternatives": [
+    "أشخاص"
+   ],
+   "display": "أشخاص",
+   "arabizi": "ash5as",
+   "arabiziAlternatives": [
+    "ash5as"
+   ],
+   "english": "People"
+  },
+  {
+   "id": "int-7-dca579",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-7",
+   "unitTitle": "Unit 7 · Attendance",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "حَضَر",
+   "alternatives": [
+    "حَضَر"
+   ],
+   "display": "حَضَر",
+   "arabizi": "7dr",
+   "arabiziAlternatives": [
+    "7dr"
+   ],
+   "english": "Attended"
+  },
+  {
+   "id": "int-7-ad39ac",
+   "level": "intermediate",
+   "unitId": "intermediate/unit-7",
+   "unitTitle": "Unit 7 · Attendance",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "جَهَّز",
+   "alternatives": [
+    "جَهَّز"
+   ],
+   "display": "جَهَّز",
+   "arabizi": "jhz",
+   "arabiziAlternatives": [
+    "jhz"
+   ],
+   "english": "I prepared the suitcase for travelling"
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+{
+ "beg-3-007303": {
+  "arabic": "بحبّ القهوة بس ما بحبّ الشاي.",
+  "arabizi": "b7ebb el-2ahwe bas ma b7ebb esh-shay.",
+  "english": "I like coffee but I don't like tea.",
+  "answer": "بس",
+  "cloze": "بحبّ القهوة ____ ما بحبّ الشاي.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-0ae4e0": {
+  "arabic": "كم كتاب عندك؟",
+  "arabizi": "kam ktab 3andak?",
+  "english": "How many books do you have?",
+  "answer": "كم",
+  "cloze": "____ كتاب عندك؟",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-0d27d5": {
+  "arabic": "عم إقرا كتاب حلو.",
+  "arabizi": "3am i2ra ktab 7elo.",
+  "english": "I'm reading a good book.",
+  "answer": "كتاب",
+  "cloze": "عم إقرا ____ حلو.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-1159ed": {
+  "arabic": "الساعة أربعة.",
+  "arabizi": "es-sa3a arb3a.",
+  "english": "It's four o'clock.",
+  "answer": "أربعة",
+  "cloze": "الساعة ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-11ee8a": {
+  "arabic": "كم شنتة معك؟ تنتين.",
+  "arabizi": "kam shanta ma3ak? tintein.",
+  "english": "How many bags do you have? Two.",
+  "answer": "تنتين",
+  "cloze": "كم شنتة معك؟ ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-19ae30": {
+  "arabic": "هيدا صف عربي.",
+  "arabizi": "hayda saff 3arabe.",
+  "english": "This is an Arabic class.",
+  "answer": "صف",
+  "cloze": "هيدا ____ عربي.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-1aea46": {
+  "arabic": "في تلاتة طلّاب بالصف.",
+  "arabizi": "fee tlateh t'ollab bil-saff.",
+  "english": "There are three students in the class.",
+  "answer": "تلاتة",
+  "cloze": "في ____ طلّاب بالصف.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-2506e7": {
+  "arabic": "وين شنتة المدرسة؟",
+  "arabizi": "wein shantit el-madraseh?",
+  "english": "Where is the school bag?",
+  "answer": "شنتة",
+  "cloze": "وين ____ المدرسة؟",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-4c4365": {
+  "arabic": "عندي وظيفة كتير اليوم.",
+  "arabizi": "3indi wazeefeh kteer el-yom.",
+  "english": "I have a lot of homework today.",
+  "answer": "وظيفة",
+  "cloze": "عندي ____ كتير اليوم.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-510d61": {
+  "arabic": "خيّي موظف ببنك.",
+  "arabizi": "5ayyi mwazzaf b-bank.",
+  "english": "My brother works at a bank.",
+  "answer": "موظف",
+  "cloze": "خيّي ____ ببنك.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-51856b": {
+  "arabic": "بدّي قهوة وحدة لو سمحت.",
+  "arabizi": "biddi 2ahwe wa7deh law sama7t.",
+  "english": "I'd like one coffee, please.",
+  "answer": "وحدة",
+  "cloze": "بدّي قهوة ____ لو سمحت.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-5b9386": {
+  "arabic": "المدرسة بتبلّش الساعة تمانة.",
+  "arabizi": "el-madraseh btballesh es-sa3a tmaneh.",
+  "english": "School starts at eight.",
+  "answer": "تمانة",
+  "cloze": "المدرسة بتبلّش الساعة ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-6ad2f9": {
+  "arabic": "الدرس الساعة خمسة.",
+  "arabizi": "ed-dars es-sa3a 5amseh.",
+  "english": "The lesson is at five o'clock.",
+  "answer": "خمسة",
+  "cloze": "الدرس الساعة ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-7896f9": {
+  "arabic": "كنت تعبان، لهيك نمت بكّير.",
+  "arabizi": "kint ta3ban, lahek nimt bakkir.",
+  "english": "I was tired, so I went to bed early.",
+  "answer": "لهيك",
+  "cloze": "كنت تعبان، ____ نمت بكّير.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-7aa976": {
+  "arabic": "بيّي مهندس.",
+  "arabizi": "bayyi mhandes.",
+  "english": "My dad is an engineer.",
+  "answer": "مهندس",
+  "cloze": "بيّي ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-80add0": {
+  "arabic": "رايحة ع السوق.",
+  "arabizi": "rayha 3a s-sou2.",
+  "english": "I'm going to the market. (f)",
+  "answer": "ع",
+  "cloze": "رايحة ____ السوق.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-892dee": {
+  "arabic": "في طاولة كبيرة بالغرفة.",
+  "arabizi": "fee tawle kbeereh bil-ghurfe.",
+  "english": "There's a big table in the room.",
+  "answer": "طاولة",
+  "cloze": "في ____ كبيرة بالغرفة.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-91bd56": {
+  "arabic": "عندي أخ واحد بس.",
+  "arabizi": "3indi a5 wa7ad bas.",
+  "english": "I have only one brother.",
+  "answer": "واحد",
+  "cloze": "عندي أخ ____ بس.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-9312f6": {
+  "arabic": "بدّي تنين قهوة لو سمحت.",
+  "arabizi": "biddi tnein 2ahwe law sama7t.",
+  "english": "I'd like two coffees, please.",
+  "answer": "تنين",
+  "cloze": "بدّي ____ قهوة لو سمحت.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-9de4ca": {
+  "arabic": "ما رحت عالشغل لأنّو كنت مريض.",
+  "arabizi": "ma ri7et 3ash-shighel la2anno kint mareed.",
+  "english": "I didn't go to work because I was sick.",
+  "answer": "لأنّو",
+  "cloze": "ما رحت عالشغل ____ كنت مريض.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-9ed591": {
+  "arabic": "بنام الساعة عشرة.",
+  "arabizi": "bnam es-sa3a 3ashra.",
+  "english": "I go to sleep at ten.",
+  "answer": "عشرة",
+  "cloze": "بنام الساعة ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-aa7099": {
+  "arabic": "أنا من لبنان.",
+  "arabizi": "ana min Lebnen.",
+  "english": "I'm from Lebanon.",
+  "answer": "من",
+  "cloze": "أنا ____ لبنان.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-aef209": {
+  "arabic": "في كتاب عالطاولة.",
+  "arabizi": "fee ktab 3at-tawle.",
+  "english": "There's a book on the table.",
+  "answer": "في",
+  "cloze": "____ كتاب عالطاولة.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-b56379": {
+  "arabic": "مافي ماي بالبيت.",
+  "arabizi": "ma fee mayy bil-beit.",
+  "english": "There's no water in the house.",
+  "answer": "مافي",
+  "cloze": "____ ماي بالبيت.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-ba6427": {
+  "arabic": "منتعشّى الساعة سبعة.",
+  "arabizi": "mnit3asha es-sa3a sab3a.",
+  "english": "We have dinner at seven.",
+  "answer": "سبعة",
+  "cloze": "منتعشّى الساعة ____.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-c17e08": {
+  "arabic": "بخلّص شغل الساعة تسعة بالليل.",
+  "arabizi": "b5alles shighel es-sa3a tis3a bil-leil.",
+  "english": "I finish work at nine at night.",
+  "answer": "تسعة",
+  "cloze": "بخلّص شغل الساعة ____ بالليل.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-e6726c": {
+  "arabic": "أنا بفيق الساعة ستّة الصبح.",
+  "arabizi": "ana bfee2 es-sa3a sitteh es-sob7.",
+  "english": "I wake up at six in the morning.",
+  "answer": "ستّة",
+  "cloze": "أنا بفيق الساعة ____ الصبح.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-ecd4af": {
+  "arabic": "بدّي دفتر جديد للمدرسة.",
+  "arabizi": "biddi daftar jdeed lal-madraseh.",
+  "english": "I need a new notebook for school.",
+  "answer": "دفتر",
+  "cloze": "بدّي ____ جديد للمدرسة.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-efc446": {
+  "arabic": "كل يوم بشرب قهوة الصبح.",
+  "arabizi": "kell yom bishrab 2ahwe es-sob7.",
+  "english": "Every day I drink coffee in the morning.",
+  "answer": "يوم",
+  "cloze": "كل ____ بشرب قهوة الصبح.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-f3c3b7": {
+  "arabic": "بروح عالمدرسة مع رفيقي.",
+  "arabizi": "brou7 3al-madraseh ma3 rfee2i.",
+  "english": "I go to school with my friend.",
+  "answer": "مع",
+  "cloze": "بروح عالمدرسة ____ رفيقي.",
+  "reviewed": false,
+  "source": "claude-sample"
+ },
+ "beg-3-fc3146": {
+  "arabic": "في كرسي فاضي حدّي.",
+  "arabizi": "fee kersi fade 7addi.",
+  "english": "There's an empty chair next to me.",
+  "answer": "كرسي",
+  "cloze": "في ____ فاضي حدّي.",
+  "reviewed": false,
+  "source": "claude-sample"
+ }
+}

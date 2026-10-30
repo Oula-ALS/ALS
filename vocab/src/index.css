@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* Alsama colours: white + magenta. Change them here only.
+   brand      = text, borders, progress bars
+   brand-fill = backgrounds behind white text (buttons)                       */
+@theme {
+  --color-page: #ffffff;
+  --color-surface: #ffffff;
+  --color-brand: #b7155a;
+  --color-brand-fill: #b7155a;
+  --color-brand-dark: #8f1046;
+  --color-brand-soft: #fbe8f0;
+  --color-ink: #2b1a21;
+  --color-muted: #6e5a62;
+  --color-line: #ecdfe4;
+  --color-good: #1f7a4d;
+  --color-good-fill: #1f7a4d;
+  --color-good-soft: #e3f4ea;
+  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-ar: "Noto Naskh Arabic", "Geeza Pro", "Arial", serif;
+}
+
+/* Dark mode: follows the phone unless the student picks light or dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-page: #181014;
+    --color-surface: #221820;
+    --color-brand: #e8679d;
+    --color-brand-fill: #c2185f;
+    --color-brand-dark: #d42a72;
+    --color-brand-soft: #3a1a2a;
+    --color-ink: #f6eaef;
+    --color-muted: #c8b1bb;
+    --color-line: #3d2c34;
+    --color-good: #5fcf94;
+    --color-good-fill: #1f7a4d;
+    --color-good-soft: #163326;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-page: #181014;
+  --color-surface: #221820;
+  --color-brand: #e8679d;
+  --color-brand-fill: #c2185f;
+  --color-brand-dark: #d42a72;
+  --color-brand-soft: #3a1a2a;
+  --color-ink: #f6eaef;
+  --color-muted: #c8b1bb;
+  --color-line: #3d2c34;
+  --color-good: #5fcf94;
+  --color-good-fill: #1f7a4d;
+  --color-good-soft: #163326;
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Arabic text: always RTL, larger and with more line height. */
+[lang="ar"] {
+  font-family: var(--font-ar);
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 1.7;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+@utility btn {
+  @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 font-bold transition active:scale-[0.98] disabled:opacity-50;
+}
+@utility btn-primary {
+  @apply btn bg-brand-fill text-white shadow-sm hover:bg-brand-dark;
+}
+@utility btn-ghost {
+  @apply btn border-2 border-line bg-surface text-ink hover:border-brand hover:text-brand;
+}
+.chip {
+  @apply inline-flex min-h-10 items-center gap-1.5 rounded-full border-2 border-line bg-surface px-3 text-sm font-semibold text-ink;
+}
+.chip[aria-pressed="true"] {
+  @apply border-brand bg-brand-soft text-brand;
+}
+.card {
+  @apply rounded-3xl border-2 border-line bg-surface;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* The logo is grey on white, so it sits on a white badge in dark mode. */
+.logo-badge {
+  @apply rounded-xl bg-white px-1.5 py-0.5;
+}
+
+

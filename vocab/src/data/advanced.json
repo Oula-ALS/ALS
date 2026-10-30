@@ -1,0 +1,8099 @@
+{
+ "level": "advanced",
+ "title": "Advanced",
+ "source": "Advanced_Level_Vocabs_431words.csv",
+ "units": [
+  {
+   "id": "advanced/topic-1",
+   "level": "advanced",
+   "slug": "topic-1",
+   "order": 1,
+   "title": "الشغل بدول عربية",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-2",
+   "level": "advanced",
+   "slug": "topic-2",
+   "order": 2,
+   "title": "الإعلام والاقتصاد",
+   "titleIsArabic": true,
+   "wordCount": 16
+  },
+  {
+   "id": "advanced/topic-3",
+   "level": "advanced",
+   "slug": "topic-3",
+   "order": 3,
+   "title": "التحوّل الرقمي في العالم العربي",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-4",
+   "level": "advanced",
+   "slug": "topic-4",
+   "order": 4,
+   "title": "القطاع العام والقطاع الخاص",
+   "titleIsArabic": true,
+   "wordCount": 17
+  },
+  {
+   "id": "advanced/topic-5",
+   "level": "advanced",
+   "slug": "topic-5",
+   "order": 5,
+   "title": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-6",
+   "level": "advanced",
+   "slug": "topic-6",
+   "order": 6,
+   "title": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "titleIsArabic": true,
+   "wordCount": 9
+  },
+  {
+   "id": "advanced/topic-7",
+   "level": "advanced",
+   "slug": "topic-7",
+   "order": 7,
+   "title": "جغرافيا الوطن العربي",
+   "titleIsArabic": true,
+   "wordCount": 20
+  },
+  {
+   "id": "advanced/topic-8",
+   "level": "advanced",
+   "slug": "topic-8",
+   "order": 8,
+   "title": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "titleIsArabic": true,
+   "wordCount": 20
+  },
+  {
+   "id": "advanced/topic-9",
+   "level": "advanced",
+   "slug": "topic-9",
+   "order": 9,
+   "title": "المحاصيل الزراعية في العالم العربي",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-10",
+   "level": "advanced",
+   "slug": "topic-10",
+   "order": 10,
+   "title": "السودان — الجغرافيا والموارد والاقتصاد",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-11",
+   "level": "advanced",
+   "slug": "topic-11",
+   "order": 11,
+   "title": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "titleIsArabic": true,
+   "wordCount": 16
+  },
+  {
+   "id": "advanced/topic-12",
+   "level": "advanced",
+   "slug": "topic-12",
+   "order": 12,
+   "title": "سوريا ، السكان والاقتصاد",
+   "titleIsArabic": true,
+   "wordCount": 11
+  },
+  {
+   "id": "advanced/topic-13",
+   "level": "advanced",
+   "slug": "topic-13",
+   "order": 13,
+   "title": "الهجرة في الوطن العربي",
+   "titleIsArabic": true,
+   "wordCount": 18
+  },
+  {
+   "id": "advanced/topic-14",
+   "level": "advanced",
+   "slug": "topic-14",
+   "order": 14,
+   "title": "الجرائم",
+   "titleIsArabic": true,
+   "wordCount": 12
+  },
+  {
+   "id": "advanced/topic-15",
+   "level": "advanced",
+   "slug": "topic-15",
+   "order": 15,
+   "title": "الإدمان",
+   "titleIsArabic": true,
+   "wordCount": 18
+  },
+  {
+   "id": "advanced/topic-16",
+   "level": "advanced",
+   "slug": "topic-16",
+   "order": 16,
+   "title": "التحرّش",
+   "titleIsArabic": true,
+   "wordCount": 21
+  },
+  {
+   "id": "advanced/topic-17",
+   "level": "advanced",
+   "slug": "topic-17",
+   "order": 17,
+   "title": "الزواج المبكر",
+   "titleIsArabic": true,
+   "wordCount": 27
+  },
+  {
+   "id": "advanced/topic-18",
+   "level": "advanced",
+   "slug": "topic-18",
+   "order": 18,
+   "title": "الطبقات الاجتماعية",
+   "titleIsArabic": true,
+   "wordCount": 13
+  },
+  {
+   "id": "advanced/topic-19",
+   "level": "advanced",
+   "slug": "topic-19",
+   "order": 19,
+   "title": "اللاجئون والهجرة",
+   "titleIsArabic": true,
+   "wordCount": 15
+  },
+  {
+   "id": "advanced/topic-20",
+   "level": "advanced",
+   "slug": "topic-20",
+   "order": 20,
+   "title": "الفجوة بين الأجيال",
+   "titleIsArabic": true,
+   "wordCount": 17
+  },
+  {
+   "id": "advanced/topic-21",
+   "level": "advanced",
+   "slug": "topic-21",
+   "order": 21,
+   "title": "الدراسة والعمل",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-22",
+   "level": "advanced",
+   "slug": "topic-22",
+   "order": 22,
+   "title": "الذكاء الاصطناعي",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-23",
+   "level": "advanced",
+   "slug": "topic-23",
+   "order": 23,
+   "title": "التكنولوجيا",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-24",
+   "level": "advanced",
+   "slug": "topic-24",
+   "order": 24,
+   "title": "مستقبل الوظائف",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-25",
+   "level": "advanced",
+   "slug": "topic-25",
+   "order": 25,
+   "title": "الخوف من المستقبل",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-26",
+   "level": "advanced",
+   "slug": "topic-26",
+   "order": 26,
+   "title": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-27",
+   "level": "advanced",
+   "slug": "topic-27",
+   "order": 27,
+   "title": "الشخصية القوية والضعيفة",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-28",
+   "level": "advanced",
+   "slug": "topic-28",
+   "order": 28,
+   "title": "الخجل",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-29",
+   "level": "advanced",
+   "slug": "topic-29",
+   "order": 29,
+   "title": "الثقة بالنفس",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-30",
+   "level": "advanced",
+   "slug": "topic-30",
+   "order": 30,
+   "title": "الغرور",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-31",
+   "level": "advanced",
+   "slug": "topic-31",
+   "order": 31,
+   "title": "الكرم والبخل",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-32",
+   "level": "advanced",
+   "slug": "topic-32",
+   "order": 32,
+   "title": "العصبية",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-33",
+   "level": "advanced",
+   "slug": "topic-33",
+   "order": 33,
+   "title": "الصبر",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-34",
+   "level": "advanced",
+   "slug": "topic-34",
+   "order": 34,
+   "title": "الذكاء",
+   "titleIsArabic": true,
+   "wordCount": 7
+  },
+  {
+   "id": "advanced/topic-35",
+   "level": "advanced",
+   "slug": "topic-35",
+   "order": 35,
+   "title": "القيادة",
+   "titleIsArabic": true,
+   "wordCount": 6
+  },
+  {
+   "id": "advanced/topic-36",
+   "level": "advanced",
+   "slug": "topic-36",
+   "order": 36,
+   "title": "التعامل مع الشخصيات الصعبة",
+   "titleIsArabic": true,
+   "wordCount": 7
+  }
+ ],
+ "words": [
+  {
+   "id": "adv-1-b87aa2",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "الثقة",
+   "alternatives": [
+    "الثقة"
+   ],
+   "display": "الثقة",
+   "arabizi": "alth2e",
+   "arabiziAlternatives": [
+    "alth2e"
+   ],
+   "english": "Trust"
+  },
+  {
+   "id": "adv-1-628b5c",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "الصفقة",
+   "alternatives": [
+    "الصفقة"
+   ],
+   "display": "الصفقة",
+   "arabizi": "alsf2e",
+   "arabiziAlternatives": [
+    "alsf2e"
+   ],
+   "english": "Deal / Transaction"
+  },
+  {
+   "id": "adv-1-52a1b7",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "معارف",
+   "alternatives": [
+    "معارف"
+   ],
+   "display": "معارف",
+   "arabizi": "m3arf",
+   "arabiziAlternatives": [
+    "m3arf"
+   ],
+   "english": "Connections / Contacts"
+  },
+  {
+   "id": "adv-1-a38221",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "المجتمع",
+   "alternatives": [
+    "المجتمع"
+   ],
+   "display": "المجتمع",
+   "arabizi": "almjtm3",
+   "arabiziAlternatives": [
+    "almjtm3"
+   ],
+   "english": "Community"
+  },
+  {
+   "id": "adv-1-3f5a38",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "verb",
+   "arabic": "بيبيّن",
+   "alternatives": [
+    "بيبيّن",
+    "بيظهر"
+   ],
+   "display": "بيبيّن / بيظهر",
+   "arabizi": "beebeen",
+   "arabiziAlternatives": [
+    "beebeen"
+   ],
+   "english": "To appear / seem"
+  },
+  {
+   "id": "adv-1-18080b",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "التعارف",
+   "alternatives": [
+    "التعارف"
+   ],
+   "display": "التعارف",
+   "arabizi": "alt3arf",
+   "arabiziAlternatives": [
+    "alt3arf"
+   ],
+   "english": "Introduction"
+  },
+  {
+   "id": "adv-1-f710f6",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "المجالس",
+   "alternatives": [
+    "المجالس"
+   ],
+   "display": "المجالس",
+   "arabizi": "almjals",
+   "arabiziAlternatives": [
+    "almjals"
+   ],
+   "english": "Gatherings"
+  },
+  {
+   "id": "adv-1-caf102",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "مناسبات",
+   "alternatives": [
+    "مناسبات"
+   ],
+   "display": "مناسبات",
+   "arabizi": "mnasbat",
+   "arabiziAlternatives": [
+    "mnasbat"
+   ],
+   "english": "Occasions / Events"
+  },
+  {
+   "id": "adv-1-9bbc98",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "الواسطة",
+   "alternatives": [
+    "الواسطة"
+   ],
+   "display": "الواسطة",
+   "arabizi": "alooaste",
+   "arabiziAlternatives": [
+    "alooaste"
+   ],
+   "english": "Wasta / Connection"
+  },
+  {
+   "id": "adv-1-f35591",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "العلاقات",
+   "alternatives": [
+    "العلاقات"
+   ],
+   "display": "العلاقات",
+   "arabizi": "al3la2at",
+   "arabiziAlternatives": [
+    "al3la2at"
+   ],
+   "english": "Relationships"
+  },
+  {
+   "id": "adv-1-ceccba",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "النزاهة",
+   "alternatives": [
+    "النزاهة"
+   ],
+   "display": "النزاهة",
+   "arabizi": "alnzahe",
+   "arabiziAlternatives": [
+    "alnzahe"
+   ],
+   "english": "Integrity"
+  },
+  {
+   "id": "adv-1-856a7b",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "التوصية",
+   "alternatives": [
+    "التوصية"
+   ],
+   "display": "التوصية",
+   "arabizi": "altoosee",
+   "arabiziAlternatives": [
+    "altoosee"
+   ],
+   "english": "Recommendation"
+  },
+  {
+   "id": "adv-1-f0e20e",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "لسّة مو مبيّن",
+   "alternatives": [
+    "لسّة مو مبيّن"
+   ],
+   "display": "لسّة مو مبيّن",
+   "arabizi": "lse moo mbeen",
+   "arabiziAlternatives": [
+    "lse moo mbeen"
+   ],
+   "english": "It’s still not clear"
+  },
+  {
+   "id": "adv-1-fc5298",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "بعد ما توضّح",
+   "alternatives": [
+    "بعد ما توضّح"
+   ],
+   "display": "بعد ما توضّح",
+   "arabizi": "b3d ma tood7",
+   "arabiziAlternatives": [
+    "b3d ma tood7"
+   ],
+   "english": "It hasn’t been clarified yet"
+  },
+  {
+   "id": "adv-1-f5df08",
+   "level": "advanced",
+   "unitId": "advanced/topic-1",
+   "unitTitle": "الشغل بدول عربية",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "مش أكيد بعد",
+   "alternatives": [
+    "مش أكيد بعد"
+   ],
+   "display": "مش أكيد بعد",
+   "arabizi": "msh akeed b3d",
+   "arabiziAlternatives": [
+    "msh akeed b3d"
+   ],
+   "english": "It’s not certain yet"
+  },
+  {
+   "id": "adv-2-2ea70e",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "الإعلام",
+   "alternatives": [
+    "الإعلام"
+   ],
+   "display": "الإعلام",
+   "arabizi": "ala3lam",
+   "arabiziAlternatives": [
+    "ala3lam"
+   ],
+   "english": "Media"
+  },
+  {
+   "id": "adv-2-b372f7",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أسعار السلع",
+   "alternatives": [
+    "أسعار السلع"
+   ],
+   "display": "أسعار السلع",
+   "arabizi": "as3ar alsl3",
+   "arabiziAlternatives": [
+    "as3ar alsl3"
+   ],
+   "english": "Prices of goods"
+  },
+  {
+   "id": "adv-2-76a39e",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "سلوك",
+   "alternatives": [
+    "سلوك"
+   ],
+   "display": "سلوك",
+   "arabizi": "slook",
+   "arabiziAlternatives": [
+    "slook"
+   ],
+   "english": "Behavior"
+  },
+  {
+   "id": "adv-2-5ef783",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "يرفع",
+   "alternatives": [
+    "يرفع"
+   ],
+   "display": "يرفع",
+   "arabizi": "yrf3",
+   "arabiziAlternatives": [
+    "yrf3"
+   ],
+   "english": "Raise / Increase"
+  },
+  {
+   "id": "adv-2-714ca4",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "ينزّل",
+   "alternatives": [
+    "ينزّل"
+   ],
+   "display": "ينزّل",
+   "arabizi": "ynzl",
+   "arabiziAlternatives": [
+    "ynzl"
+   ],
+   "english": "Lower / Decrease"
+  },
+  {
+   "id": "adv-2-fa34d3",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أسهم",
+   "alternatives": [
+    "أسهم"
+   ],
+   "display": "أسهم",
+   "arabizi": "ashm",
+   "arabiziAlternatives": [
+    "ashm"
+   ],
+   "english": "Stocks / Shares"
+  },
+  {
+   "id": "adv-2-ac0ced",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "تنتشر",
+   "alternatives": [
+    "تنتشر"
+   ],
+   "display": "تنتشر",
+   "arabizi": "tntshr",
+   "arabiziAlternatives": [
+    "tntshr"
+   ],
+   "english": "Spread"
+  },
+  {
+   "id": "adv-2-bc705d",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "إشاعة",
+   "alternatives": [
+    "إشاعة"
+   ],
+   "display": "إشاعة",
+   "arabizi": "asha3e",
+   "arabiziAlternatives": [
+    "asha3e"
+   ],
+   "english": "Rumor"
+  },
+  {
+   "id": "adv-2-db83b0",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أزمة مصرفية",
+   "alternatives": [
+    "أزمة مصرفية"
+   ],
+   "display": "أزمة مصرفية",
+   "arabizi": "azme msrfee",
+   "arabiziAlternatives": [
+    "azme msrfee"
+   ],
+   "english": "Banking crisis"
+  },
+  {
+   "id": "adv-2-07d4b6",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "يسحب مصرياته",
+   "alternatives": [
+    "يسحب مصرياته"
+   ],
+   "display": "يسحب مصرياته",
+   "arabizi": "ys7b msreeath",
+   "arabiziAlternatives": [
+    "ys7b msreeath"
+   ],
+   "english": "Withdraw money"
+  },
+  {
+   "id": "adv-2-d86dc3",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "بيلعب دور مهم",
+   "alternatives": [
+    "بيلعب دور مهم"
+   ],
+   "display": "بيلعب دور مهم",
+   "arabizi": "beel3b door mhm",
+   "arabiziAlternatives": [
+    "beel3b door mhm"
+   ],
+   "english": "Plays an important role"
+  },
+  {
+   "id": "adv-2-7de938",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "حملة",
+   "alternatives": [
+    "حملة"
+   ],
+   "display": "حملة",
+   "arabizi": "7mle",
+   "arabiziAlternatives": [
+    "7mle"
+   ],
+   "english": "Campaign"
+  },
+  {
+   "id": "adv-2-7acd00",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "سوّاح",
+   "alternatives": [
+    "سوّاح"
+   ],
+   "display": "سوّاح",
+   "arabizi": "sooa7",
+   "arabiziAlternatives": [
+    "sooa7"
+   ],
+   "english": "Tourists"
+  },
+  {
+   "id": "adv-2-7632c3",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "تخفّف",
+   "alternatives": [
+    "تخفّف"
+   ],
+   "display": "تخفّف",
+   "arabizi": "t5ff",
+   "arabiziAlternatives": [
+    "t5ff"
+   ],
+   "english": "Reduce / Lessen"
+  },
+  {
+   "id": "adv-2-4b12b1",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "تحافظ",
+   "alternatives": [
+    "تحافظ"
+   ],
+   "display": "تحافظ",
+   "arabizi": "t7afz",
+   "arabiziAlternatives": [
+    "t7afz"
+   ],
+   "english": "Maintain"
+  },
+  {
+   "id": "adv-2-b4eb76",
+   "level": "advanced",
+   "unitId": "advanced/topic-2",
+   "unitTitle": "الإعلام والاقتصاد",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "صورة اقتصادية",
+   "alternatives": [
+    "صورة اقتصادية"
+   ],
+   "display": "صورة اقتصادية",
+   "arabizi": "soore a2tsadee",
+   "arabiziAlternatives": [
+    "soore a2tsadee"
+   ],
+   "english": "Economic image"
+  },
+  {
+   "id": "adv-3-4c64ba",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "التحوّل الرقمي",
+   "alternatives": [
+    "التحوّل الرقمي"
+   ],
+   "display": "التحوّل الرقمي",
+   "arabizi": "alt7ool alr2mee",
+   "arabiziAlternatives": [
+    "alt7ool alr2mee"
+   ],
+   "english": "Digital transformation"
+  },
+  {
+   "id": "adv-3-549168",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "عنصر أساسي",
+   "alternatives": [
+    "عنصر أساسي"
+   ],
+   "display": "عنصر أساسي",
+   "arabizi": "3nsr asasee",
+   "arabiziAlternatives": [
+    "3nsr asasee"
+   ],
+   "english": "Essential element"
+  },
+  {
+   "id": "adv-3-f93de8",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الأتمتة",
+   "alternatives": [
+    "الأتمتة"
+   ],
+   "display": "الأتمتة",
+   "arabizi": "alatmte",
+   "arabiziAlternatives": [
+    "alatmte"
+   ],
+   "english": "Automation"
+  },
+  {
+   "id": "adv-3-5fa0db",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "بيانات",
+   "alternatives": [
+    "بيانات",
+    "معطيات"
+   ],
+   "display": "بيانات / معطيات",
+   "arabizi": "beeanat",
+   "arabiziAlternatives": [
+    "beeanat"
+   ],
+   "english": "Data"
+  },
+  {
+   "id": "adv-3-7d582b",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الذكاء الاصطناعي",
+   "alternatives": [
+    "الذكاء الاصطناعي"
+   ],
+   "display": "الذكاء الاصطناعي",
+   "arabizi": "alzka2 alastna3ee",
+   "arabiziAlternatives": [
+    "alzka2 alastna3ee"
+   ],
+   "english": "Artificial intelligence"
+  },
+  {
+   "id": "adv-3-a446e5",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الخدمات الإلكترونية",
+   "alternatives": [
+    "الخدمات الإلكترونية"
+   ],
+   "display": "الخدمات الإلكترونية",
+   "arabizi": "al5dmat alalktroonee",
+   "arabiziAlternatives": [
+    "al5dmat alalktroonee"
+   ],
+   "english": "E-services"
+  },
+  {
+   "id": "adv-3-4579f5",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "البنية التكنولوجية",
+   "alternatives": [
+    "البنية التكنولوجية"
+   ],
+   "display": "البنية التكنولوجية",
+   "arabizi": "albnee altknooloojee",
+   "arabiziAlternatives": [
+    "albnee altknooloojee"
+   ],
+   "english": "Technological infrastructure"
+  },
+  {
+   "id": "adv-3-55e7a4",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الكفاءة",
+   "alternatives": [
+    "الكفاءة"
+   ],
+   "display": "الكفاءة",
+   "arabizi": "alkfa2e",
+   "arabiziAlternatives": [
+    "alkfa2e"
+   ],
+   "english": "Efficiency"
+  },
+  {
+   "id": "adv-3-210e63",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الأمن السيبراني",
+   "alternatives": [
+    "الأمن السيبراني"
+   ],
+   "display": "الأمن السيبراني",
+   "arabizi": "alamn alseebranee",
+   "arabiziAlternatives": [
+    "alamn alseebranee"
+   ],
+   "english": "Cybersecurity"
+  },
+  {
+   "id": "adv-3-0c8206",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "المصارف",
+   "alternatives": [
+    "المصارف"
+   ],
+   "display": "المصارف",
+   "arabizi": "almsarf",
+   "arabiziAlternatives": [
+    "almsarf"
+   ],
+   "english": "Banks"
+  },
+  {
+   "id": "adv-3-ec578d",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "verb",
+   "arabic": "التكيّف",
+   "alternatives": [
+    "التكيّف"
+   ],
+   "display": "التكيّف",
+   "arabizi": "altkeef",
+   "arabiziAlternatives": [
+    "altkeef"
+   ],
+   "english": "To adapt"
+  },
+  {
+   "id": "adv-3-c7bdad",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الاستثمار الأجنبي",
+   "alternatives": [
+    "الاستثمار الأجنبي"
+   ],
+   "display": "الاستثمار الأجنبي",
+   "arabizi": "alastthmar alajnbee",
+   "arabiziAlternatives": [
+    "alastthmar alajnbee"
+   ],
+   "english": "Foreign investment"
+  },
+  {
+   "id": "adv-3-fc84b0",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "مدينة ذكية",
+   "alternatives": [
+    "مدينة ذكية"
+   ],
+   "display": "مدينة ذكية",
+   "arabizi": "mdeene zkee",
+   "arabiziAlternatives": [
+    "mdeene zkee"
+   ],
+   "english": "Smart city"
+  },
+  {
+   "id": "adv-3-8383e6",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "adjective",
+   "arabic": "تدريب رقمي",
+   "alternatives": [
+    "تدريب رقمي"
+   ],
+   "display": "تدريب رقمي",
+   "arabizi": "tdreeb r2mee",
+   "arabiziAlternatives": [
+    "tdreeb r2mee"
+   ],
+   "english": "Digital training"
+  },
+  {
+   "id": "adv-3-513cfa",
+   "level": "advanced",
+   "unitId": "advanced/topic-3",
+   "unitTitle": "التحوّل الرقمي في العالم العربي",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "الإنتاجية",
+   "alternatives": [
+    "الإنتاجية"
+   ],
+   "display": "الإنتاجية",
+   "arabizi": "alantajee",
+   "arabiziAlternatives": [
+    "alantajee"
+   ],
+   "english": "Productivity"
+  },
+  {
+   "id": "adv-4-2097e7",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "أصول الدولة",
+   "alternatives": [
+    "أصول الدولة"
+   ],
+   "display": "أصول الدولة",
+   "arabizi": "asool aldoole",
+   "arabiziAlternatives": [
+    "asool aldoole"
+   ],
+   "english": "State assets"
+  },
+  {
+   "id": "adv-4-1ad780",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "adjective",
+   "arabic": "القطاع العام",
+   "alternatives": [
+    "القطاع العام"
+   ],
+   "display": "القطاع العام",
+   "arabizi": "al2ta3 al3am",
+   "arabiziAlternatives": [
+    "al2ta3 al3am"
+   ],
+   "english": "Public sector"
+  },
+  {
+   "id": "adv-4-3e2f41",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "adjective",
+   "arabic": "القطاع الخاص",
+   "alternatives": [
+    "القطاع الخاص"
+   ],
+   "display": "القطاع الخاص",
+   "arabizi": "al2ta3 al5as",
+   "arabiziAlternatives": [
+    "al2ta3 al5as"
+   ],
+   "english": "Private sector"
+  },
+  {
+   "id": "adv-4-676b86",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الخصخصة",
+   "alternatives": [
+    "الخصخصة"
+   ],
+   "display": "الخصخصة",
+   "arabizi": "al5s5se",
+   "arabiziAlternatives": [
+    "al5s5se"
+   ],
+   "english": "Privatization"
+  },
+  {
+   "id": "adv-4-211001",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "adjective",
+   "arabic": "الاستثمار",
+   "alternatives": [
+    "الاستثمار"
+   ],
+   "display": "الاستثمار",
+   "arabizi": "alastthmar",
+   "arabiziAlternatives": [
+    "alastthmar"
+   ],
+   "english": "Investment"
+  },
+  {
+   "id": "adv-4-001bfb",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الاكتناز",
+   "alternatives": [
+    "الاكتناز"
+   ],
+   "display": "الاكتناز",
+   "arabizi": "alaktnaz",
+   "arabiziAlternatives": [
+    "alaktnaz"
+   ],
+   "english": "Hoarding"
+  },
+  {
+   "id": "adv-4-5d4f4c",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الزكاة",
+   "alternatives": [
+    "الزكاة"
+   ],
+   "display": "الزكاة",
+   "arabizi": "alzkae",
+   "arabiziAlternatives": [
+    "alzkae"
+   ],
+   "english": "Zakat"
+  },
+  {
+   "id": "adv-4-f62d20",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "النظام الرأسمالي",
+   "alternatives": [
+    "النظام الرأسمالي"
+   ],
+   "display": "النظام الرأسمالي",
+   "arabizi": "alnzam alrasmalee",
+   "arabiziAlternatives": [
+    "alnzam alrasmalee"
+   ],
+   "english": "Capitalist system"
+  },
+  {
+   "id": "adv-4-2220fc",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الاقتصاد الإسلامي",
+   "alternatives": [
+    "الاقتصاد الإسلامي"
+   ],
+   "display": "الاقتصاد الإسلامي",
+   "arabizi": "ala2tsad alaslamee",
+   "arabiziAlternatives": [
+    "ala2tsad alaslamee"
+   ],
+   "english": "Islamic economy"
+  },
+  {
+   "id": "adv-4-41e42e",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الشراكة",
+   "alternatives": [
+    "الشراكة"
+   ],
+   "display": "الشراكة",
+   "arabizi": "alshrake",
+   "arabiziAlternatives": [
+    "alshrake"
+   ],
+   "english": "Partnership"
+  },
+  {
+   "id": "adv-4-243e31",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "توقيع العقود",
+   "alternatives": [
+    "توقيع العقود"
+   ],
+   "display": "توقيع العقود",
+   "arabizi": "too2ee3 al32ood",
+   "arabiziAlternatives": [
+    "too2ee3 al32ood"
+   ],
+   "english": "Signing contracts"
+  },
+  {
+   "id": "adv-4-79b99d",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "adjective",
+   "arabic": "معدات",
+   "alternatives": [
+    "معدات"
+   ],
+   "display": "معدات",
+   "arabizi": "m3dat",
+   "arabiziAlternatives": [
+    "m3dat"
+   ],
+   "english": "Equipment"
+  },
+  {
+   "id": "adv-4-486e3e",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "مخاطرة",
+   "alternatives": [
+    "مخاطرة"
+   ],
+   "display": "مخاطرة",
+   "arabizi": "m5atre",
+   "arabiziAlternatives": [
+    "m5atre"
+   ],
+   "english": "Risk"
+  },
+  {
+   "id": "adv-4-d2360f",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "إيرادات",
+   "alternatives": [
+    "إيرادات"
+   ],
+   "display": "إيرادات",
+   "arabizi": "aeeradat",
+   "arabiziAlternatives": [
+    "aeeradat"
+   ],
+   "english": "Revenues"
+  },
+  {
+   "id": "adv-4-44b711",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "مناقصة",
+   "alternatives": [
+    "مناقصة"
+   ],
+   "display": "مناقصة",
+   "arabizi": "mna2se",
+   "arabiziAlternatives": [
+    "mna2se"
+   ],
+   "english": "Tender / Bidding"
+  },
+  {
+   "id": "adv-4-a54109",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "شفافية",
+   "alternatives": [
+    "شفافية"
+   ],
+   "display": "شفافية",
+   "arabizi": "shfafee",
+   "arabiziAlternatives": [
+    "shfafee"
+   ],
+   "english": "Transparency"
+  },
+  {
+   "id": "adv-4-e180cb",
+   "level": "advanced",
+   "unitId": "advanced/topic-4",
+   "unitTitle": "القطاع العام والقطاع الخاص",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "نمو طويل الأمد",
+   "alternatives": [
+    "نمو طويل الأمد"
+   ],
+   "display": "نمو طويل الأمد",
+   "arabizi": "nmoo tooeel alamd",
+   "arabiziAlternatives": [
+    "nmoo tooeel alamd"
+   ],
+   "english": "Long-term growth"
+  },
+  {
+   "id": "adv-5-da9ea8",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مهندس استشاري",
+   "alternatives": [
+    "مهندس استشاري"
+   ],
+   "display": "مهندس استشاري",
+   "arabizi": "mhnds astsharee",
+   "arabiziAlternatives": [
+    "mhnds astsharee"
+   ],
+   "english": "Consulting engineer"
+  },
+  {
+   "id": "adv-5-b51447",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مهندس مدني",
+   "alternatives": [
+    "مهندس مدني"
+   ],
+   "display": "مهندس مدني",
+   "arabizi": "mhnds mdnee",
+   "arabiziAlternatives": [
+    "mhnds mdnee"
+   ],
+   "english": "Civil engineer"
+  },
+  {
+   "id": "adv-5-9a7118",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "إدارة أعمال",
+   "alternatives": [
+    "إدارة أعمال"
+   ],
+   "display": "إدارة أعمال",
+   "arabizi": "adare a3mal",
+   "arabiziAlternatives": [
+    "adare a3mal"
+   ],
+   "english": "Business administration"
+  },
+  {
+   "id": "adv-5-5a67be",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "خدمات نفطية",
+   "alternatives": [
+    "خدمات نفطية"
+   ],
+   "display": "خدمات نفطية",
+   "arabizi": "5dmat nftee",
+   "arabiziAlternatives": [
+    "5dmat nftee"
+   ],
+   "english": "Oilfield services"
+  },
+  {
+   "id": "adv-5-27e85a",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "اكتتاب عام",
+   "alternatives": [
+    "اكتتاب عام"
+   ],
+   "display": "اكتتاب عام",
+   "arabizi": "akttab 3am",
+   "arabiziAlternatives": [
+    "akttab 3am"
+   ],
+   "english": "IPO"
+  },
+  {
+   "id": "adv-5-95bd6f",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "صافي ثروة",
+   "alternatives": [
+    "صافي ثروة"
+   ],
+   "display": "صافي ثروة",
+   "arabizi": "safee throoe",
+   "arabiziAlternatives": [
+    "safee throoe"
+   ],
+   "english": "Net worth"
+  },
+  {
+   "id": "adv-5-bd3928",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "adjective",
+   "arabic": "سياسة اقتصادية",
+   "alternatives": [
+    "سياسة اقتصادية"
+   ],
+   "display": "سياسة اقتصادية",
+   "arabizi": "seease a2tsadee",
+   "arabiziAlternatives": [
+    "seease a2tsadee"
+   ],
+   "english": "Economic policy"
+  },
+  {
+   "id": "adv-5-42d049",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "بنية تحتية",
+   "alternatives": [
+    "بنية تحتية"
+   ],
+   "display": "بنية تحتية",
+   "arabizi": "bnee t7tee",
+   "arabiziAlternatives": [
+    "bnee t7tee"
+   ],
+   "english": "Infrastructure"
+  },
+  {
+   "id": "adv-5-a53804",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "موارد بشرية",
+   "alternatives": [
+    "موارد بشرية"
+   ],
+   "display": "موارد بشرية",
+   "arabizi": "mooard bshree",
+   "arabiziAlternatives": [
+    "mooard bshree"
+   ],
+   "english": "Human resources"
+  },
+  {
+   "id": "adv-5-755efb",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مزيج",
+   "alternatives": [
+    "مزيج"
+   ],
+   "display": "مزيج",
+   "arabizi": "mzeej",
+   "arabiziAlternatives": [
+    "mzeej"
+   ],
+   "english": "Combination"
+  },
+  {
+   "id": "adv-5-a86d40",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "قدّر",
+   "alternatives": [
+    "قدّر"
+   ],
+   "display": "قدّر",
+   "arabizi": "2dr",
+   "arabiziAlternatives": [
+    "2dr"
+   ],
+   "english": "Estimate"
+  },
+  {
+   "id": "adv-5-70448f",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "صَنّف",
+   "alternatives": [
+    "صَنّف"
+   ],
+   "display": "صَنّف",
+   "arabizi": "snf",
+   "arabiziAlternatives": [
+    "snf"
+   ],
+   "english": "Rank / Classify"
+  },
+  {
+   "id": "adv-5-c17164",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "noun",
+   "arabic": "مَقَر",
+   "alternatives": [
+    "مَقَر"
+   ],
+   "display": "مَقَر",
+   "arabizi": "m2r",
+   "arabiziAlternatives": [
+    "m2r"
+   ],
+   "english": "Headquarters"
+  },
+  {
+   "id": "adv-5-7d0ded",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "adjective",
+   "arabic": "تنمية",
+   "alternatives": [
+    "تنمية"
+   ],
+   "display": "تنمية",
+   "arabizi": "tnmee",
+   "arabiziAlternatives": [
+    "tnmee"
+   ],
+   "english": "Development"
+  },
+  {
+   "id": "adv-5-fd8674",
+   "level": "advanced",
+   "unitId": "advanced/topic-5",
+   "unitTitle": "أيمن الأصفري: من المهندس الاستشاري إلى رجل أعمال ناجح",
+   "unitOrder": 5,
+   "pos": "adjective",
+   "arabic": "مبادرة",
+   "alternatives": [
+    "مبادرة"
+   ],
+   "display": "مبادرة",
+   "arabizi": "mbadre",
+   "arabiziAlternatives": [
+    "mbadre"
+   ],
+   "english": "Initiative"
+  },
+  {
+   "id": "adv-6-ca233c",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "adjective",
+   "arabic": "تنويع الاقتصاد",
+   "alternatives": [
+    "تنويع الاقتصاد"
+   ],
+   "display": "تنويع الاقتصاد",
+   "arabizi": "tnooee3 ala2tsad",
+   "arabiziAlternatives": [
+    "tnooee3 ala2tsad"
+   ],
+   "english": "Economic diversification"
+  },
+  {
+   "id": "adv-6-0baf33",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "جذب الاستثمار",
+   "alternatives": [
+    "جذب الاستثمار"
+   ],
+   "display": "جذب الاستثمار",
+   "arabizi": "jzb alastthmar",
+   "arabiziAlternatives": [
+    "jzb alastthmar"
+   ],
+   "english": "Attracting investment"
+  },
+  {
+   "id": "adv-6-1d1ea2",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "رؤية مستقبلية",
+   "alternatives": [
+    "رؤية مستقبلية"
+   ],
+   "display": "رؤية مستقبلية",
+   "arabizi": "r2ee mst2blee",
+   "arabiziAlternatives": [
+    "r2ee mst2blee"
+   ],
+   "english": "Future vision"
+  },
+  {
+   "id": "adv-6-54bbf9",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "اقتصاد المعرفة",
+   "alternatives": [
+    "اقتصاد المعرفة"
+   ],
+   "display": "اقتصاد المعرفة",
+   "arabizi": "a2tsad alm3rfe",
+   "arabiziAlternatives": [
+    "a2tsad alm3rfe"
+   ],
+   "english": "Knowledge economy"
+  },
+  {
+   "id": "adv-6-904331",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "بيئة حاضنة للابتكار",
+   "alternatives": [
+    "بيئة حاضنة للابتكار"
+   ],
+   "display": "بيئة حاضنة للابتكار",
+   "arabizi": "bee2e 7adne llabtkar",
+   "arabiziAlternatives": [
+    "bee2e 7adne llabtkar"
+   ],
+   "english": "Innovation ecosystem"
+  },
+  {
+   "id": "adv-6-7b8b7a",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "تنافسية عالمية",
+   "alternatives": [
+    "تنافسية عالمية"
+   ],
+   "display": "تنافسية عالمية",
+   "arabizi": "tnafsee 3almee",
+   "arabiziAlternatives": [
+    "tnafsee 3almee"
+   ],
+   "english": "Global competitiveness"
+  },
+  {
+   "id": "adv-6-a5bf92",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "استدامة",
+   "alternatives": [
+    "استدامة"
+   ],
+   "display": "استدامة",
+   "arabizi": "astdame",
+   "arabiziAlternatives": [
+    "astdame"
+   ],
+   "english": "Sustainability"
+  },
+  {
+   "id": "adv-6-bb2ee8",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "المواهب",
+   "alternatives": [
+    "المواهب"
+   ],
+   "display": "المواهب",
+   "arabizi": "almooahb",
+   "arabiziAlternatives": [
+    "almooahb"
+   ],
+   "english": "Talents"
+  },
+  {
+   "id": "adv-6-c8b934",
+   "level": "advanced",
+   "unitId": "advanced/topic-6",
+   "unitTitle": "🇦🇪 الإمارات: نموذج الاقتصاد الذكي والتحوّل الرقمي في العالم العربي",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "الإقامة الذهبية",
+   "alternatives": [
+    "الإقامة الذهبية"
+   ],
+   "display": "الإقامة الذهبية",
+   "arabizi": "ala2ame alzhbee",
+   "arabiziAlternatives": [
+    "ala2ame alzhbee"
+   ],
+   "english": "Golden Residency"
+  },
+  {
+   "id": "adv-7-757f8f",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "الوطن العربي",
+   "alternatives": [
+    "الوطن العربي"
+   ],
+   "display": "الوطن العربي",
+   "arabizi": "alootn al3rbee",
+   "arabiziAlternatives": [
+    "alootn al3rbee"
+   ],
+   "english": "Arab World"
+  },
+  {
+   "id": "adv-7-c11a18",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "الموقع الجغرافي",
+   "alternatives": [
+    "الموقع الجغرافي"
+   ],
+   "display": "الموقع الجغرافي",
+   "arabizi": "almoo23 aljghrafee",
+   "arabiziAlternatives": [
+    "almoo23 aljghrafee"
+   ],
+   "english": "Geographical location"
+  },
+  {
+   "id": "adv-7-3f5149",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "الموقع الاستراتيجي",
+   "alternatives": [
+    "الموقع الاستراتيجي"
+   ],
+   "display": "الموقع الاستراتيجي",
+   "arabizi": "almoo23 alastrateejee",
+   "arabiziAlternatives": [
+    "almoo23 alastrateejee"
+   ],
+   "english": "Strategic location"
+  },
+  {
+   "id": "adv-7-b3a0da",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "قارات",
+   "alternatives": [
+    "قارات"
+   ],
+   "display": "قارات",
+   "arabizi": "2arat",
+   "arabiziAlternatives": [
+    "2arat"
+   ],
+   "english": "Continents"
+  },
+  {
+   "id": "adv-7-eb224a",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "طرق التجارة",
+   "alternatives": [
+    "طرق التجارة"
+   ],
+   "display": "طرق التجارة",
+   "arabizi": "tr2 altjare",
+   "arabiziAlternatives": [
+    "tr2 altjare"
+   ],
+   "english": "Trade routes"
+  },
+  {
+   "id": "adv-7-b363fb",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "طرق برّية",
+   "alternatives": [
+    "طرق برّية"
+   ],
+   "display": "طرق برّية",
+   "arabizi": "tr2 bree",
+   "arabiziAlternatives": [
+    "tr2 bree"
+   ],
+   "english": "Land routes"
+  },
+  {
+   "id": "adv-7-96d19a",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "طرق بحرية",
+   "alternatives": [
+    "طرق بحرية"
+   ],
+   "display": "طرق بحرية",
+   "arabizi": "tr2 b7ree",
+   "arabiziAlternatives": [
+    "tr2 b7ree"
+   ],
+   "english": "Sea routes"
+  },
+  {
+   "id": "adv-7-3f81da",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "أهمية اقتصادية",
+   "alternatives": [
+    "أهمية اقتصادية"
+   ],
+   "display": "أهمية اقتصادية",
+   "arabizi": "ahmee a2tsadee",
+   "arabiziAlternatives": [
+    "ahmee a2tsadee"
+   ],
+   "english": "Economic importance"
+  },
+  {
+   "id": "adv-7-823387",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "أهمية سياسية",
+   "alternatives": [
+    "أهمية سياسية"
+   ],
+   "display": "أهمية سياسية",
+   "arabizi": "ahmee seeasee",
+   "arabiziAlternatives": [
+    "ahmee seeasee"
+   ],
+   "english": "Political importance"
+  },
+  {
+   "id": "adv-7-36815b",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "أهمية دينية",
+   "alternatives": [
+    "أهمية دينية"
+   ],
+   "display": "أهمية دينية",
+   "arabizi": "ahmee deenee",
+   "arabiziAlternatives": [
+    "ahmee deenee"
+   ],
+   "english": "Religious importance"
+  },
+  {
+   "id": "adv-7-4b68a7",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "أماكن مقدّسة",
+   "alternatives": [
+    "أماكن مقدّسة"
+   ],
+   "display": "أماكن مقدّسة",
+   "arabizi": "amakn m2dse",
+   "arabiziAlternatives": [
+    "amakn m2dse"
+   ],
+   "english": "Holy places"
+  },
+  {
+   "id": "adv-7-ea0754",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "ممرات بحرية",
+   "alternatives": [
+    "ممرات بحرية"
+   ],
+   "display": "ممرات بحرية",
+   "arabizi": "mmrat b7ree",
+   "arabiziAlternatives": [
+    "mmrat b7ree"
+   ],
+   "english": "Sea passages"
+  },
+  {
+   "id": "adv-7-21f031",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "موانئ",
+   "alternatives": [
+    "موانئ"
+   ],
+   "display": "موانئ",
+   "arabizi": "mooan2",
+   "arabiziAlternatives": [
+    "mooan2"
+   ],
+   "english": "Ports"
+  },
+  {
+   "id": "adv-7-c33c32",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "حدود",
+   "alternatives": [
+    "حدود"
+   ],
+   "display": "حدود",
+   "arabizi": "7dood",
+   "arabiziAlternatives": [
+    "7dood"
+   ],
+   "english": "Borders"
+  },
+  {
+   "id": "adv-7-635903",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "يمتد من… لـ…",
+   "alternatives": [
+    "يمتد من… لـ…"
+   ],
+   "display": "يمتد من… لـ…",
+   "arabizi": "ymtd mn l",
+   "arabiziAlternatives": [
+    "ymtd mn l"
+   ],
+   "english": "Extends from… to…"
+  },
+  {
+   "id": "adv-7-af4ea1",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "هوية مشتركة",
+   "alternatives": [
+    "هوية مشتركة"
+   ],
+   "display": "هوية مشتركة",
+   "arabizi": "hooee mshtrke",
+   "arabiziAlternatives": [
+    "hooee mshtrke"
+   ],
+   "english": "Shared identity"
+  },
+  {
+   "id": "adv-7-c6b801",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "اختلافات ثقافية",
+   "alternatives": [
+    "اختلافات ثقافية"
+   ],
+   "display": "اختلافات ثقافية",
+   "arabizi": "a5tlafat th2afee",
+   "arabiziAlternatives": [
+    "a5tlafat th2afee"
+   ],
+   "english": "Cultural differences"
+  },
+  {
+   "id": "adv-7-a7bba6",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "موقع حيوي",
+   "alternatives": [
+    "موقع حيوي"
+   ],
+   "display": "موقع حيوي",
+   "arabizi": "moo23 7eeooee",
+   "arabiziAlternatives": [
+    "moo23 7eeooee"
+   ],
+   "english": "Vital location"
+  },
+  {
+   "id": "adv-7-9d87a8",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مركز تجاري",
+   "alternatives": [
+    "مركز تجاري"
+   ],
+   "display": "مركز تجاري",
+   "arabizi": "mrkz tjaree",
+   "arabiziAlternatives": [
+    "mrkz tjaree"
+   ],
+   "english": "Trade center"
+  },
+  {
+   "id": "adv-7-9762a2",
+   "level": "advanced",
+   "unitId": "advanced/topic-7",
+   "unitTitle": "جغرافيا الوطن العربي",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "تنوّع جغرافي",
+   "alternatives": [
+    "تنوّع جغرافي"
+   ],
+   "display": "تنوّع جغرافي",
+   "arabizi": "tnoo3 jghrafee",
+   "arabiziAlternatives": [
+    "tnoo3 jghrafee"
+   ],
+   "english": "Geographical diversity"
+  },
+  {
+   "id": "adv-8-55bdc6",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "امتداد جغرافي",
+   "alternatives": [
+    "امتداد جغرافي"
+   ],
+   "display": "امتداد جغرافي",
+   "arabizi": "amtdad jghrafee",
+   "arabiziAlternatives": [
+    "amtdad jghrafee"
+   ],
+   "english": "Geographical extent"
+  },
+  {
+   "id": "adv-8-5d05c3",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "تنوّع تضاريسي",
+   "alternatives": [
+    "تنوّع تضاريسي"
+   ],
+   "display": "تنوّع تضاريسي",
+   "arabizi": "tnoo3 tdareesee",
+   "arabiziAlternatives": [
+    "tnoo3 tdareesee"
+   ],
+   "english": "Topographical diversity"
+  },
+  {
+   "id": "adv-8-71910e",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "سهل فيضي",
+   "alternatives": [
+    "سهل فيضي"
+   ],
+   "display": "سهل فيضي",
+   "arabizi": "shl feedee",
+   "arabiziAlternatives": [
+    "shl feedee"
+   ],
+   "english": "Floodplain"
+  },
+  {
+   "id": "adv-8-bdc5d2",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "منبع",
+   "alternatives": [
+    "منبع"
+   ],
+   "display": "منبع",
+   "arabizi": "mnb3",
+   "arabiziAlternatives": [
+    "mnb3"
+   ],
+   "english": "Source"
+  },
+  {
+   "id": "adv-8-4a7f42",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "مصب",
+   "alternatives": [
+    "مصب"
+   ],
+   "display": "مصب",
+   "arabizi": "msb",
+   "arabiziAlternatives": [
+    "msb"
+   ],
+   "english": "Mouth"
+  },
+  {
+   "id": "adv-8-dec681",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "دلتا",
+   "alternatives": [
+    "دلتا"
+   ],
+   "display": "دلتا",
+   "arabizi": "dlta",
+   "arabiziAlternatives": [
+    "dlta"
+   ],
+   "english": "Delta"
+  },
+  {
+   "id": "adv-8-e492af",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "احتياطي نفطي",
+   "alternatives": [
+    "احتياطي نفطي"
+   ],
+   "display": "احتياطي نفطي",
+   "arabizi": "a7teeatee nftee",
+   "arabiziAlternatives": [
+    "a7teeatee nftee"
+   ],
+   "english": "Oil reserves"
+  },
+  {
+   "id": "adv-8-4f2685",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "adjective",
+   "arabic": "موارد طبيعية",
+   "alternatives": [
+    "موارد طبيعية"
+   ],
+   "display": "موارد طبيعية",
+   "arabizi": "mooard tbee3ee",
+   "arabiziAlternatives": [
+    "mooard tbee3ee"
+   ],
+   "english": "Natural resources"
+  },
+  {
+   "id": "adv-8-d85a31",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "موقع استراتيجي",
+   "alternatives": [
+    "موقع استراتيجي"
+   ],
+   "display": "موقع استراتيجي",
+   "arabizi": "moo23 astrateejee",
+   "arabiziAlternatives": [
+    "moo23 astrateejee"
+   ],
+   "english": "Strategic location"
+  },
+  {
+   "id": "adv-8-8b18d6",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "حركة الملاحة",
+   "alternatives": [
+    "حركة الملاحة"
+   ],
+   "display": "حركة الملاحة",
+   "arabizi": "7rke almla7e",
+   "arabiziAlternatives": [
+    "7rke almla7e"
+   ],
+   "english": "Maritime traffic"
+  },
+  {
+   "id": "adv-8-d76971",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "كثافة سكانية",
+   "alternatives": [
+    "كثافة سكانية"
+   ],
+   "display": "كثافة سكانية",
+   "arabizi": "kthafe skanee",
+   "arabiziAlternatives": [
+    "kthafe skanee"
+   ],
+   "english": "Population density"
+  },
+  {
+   "id": "adv-8-a98d24",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "تصحّر",
+   "alternatives": [
+    "تصحّر"
+   ],
+   "display": "تصحّر",
+   "arabizi": "ts7r",
+   "arabiziAlternatives": [
+    "ts7r"
+   ],
+   "english": "Desertification"
+  },
+  {
+   "id": "adv-8-5200cf",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "مناخ قاحل",
+   "alternatives": [
+    "مناخ قاحل"
+   ],
+   "display": "مناخ قاحل",
+   "arabizi": "mna5 2a7l",
+   "arabiziAlternatives": [
+    "mna5 2a7l"
+   ],
+   "english": "Arid climate"
+  },
+  {
+   "id": "adv-8-ab2c2a",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "مياه جوفية",
+   "alternatives": [
+    "مياه جوفية"
+   ],
+   "display": "مياه جوفية",
+   "arabizi": "meeah joofee",
+   "arabiziAlternatives": [
+    "meeah joofee"
+   ],
+   "english": "Groundwater"
+  },
+  {
+   "id": "adv-8-f68653",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "ريّ",
+   "alternatives": [
+    "ريّ"
+   ],
+   "display": "ريّ",
+   "arabizi": "ree",
+   "arabiziAlternatives": [
+    "ree"
+   ],
+   "english": "Irrigation"
+  },
+  {
+   "id": "adv-8-2e0593",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "محصول",
+   "alternatives": [
+    "محصول"
+   ],
+   "display": "محصول",
+   "arabizi": "m7sool",
+   "arabiziAlternatives": [
+    "m7sool"
+   ],
+   "english": "Crop"
+  },
+  {
+   "id": "adv-8-0bb254",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "مرعى",
+   "alternatives": [
+    "مرعى"
+   ],
+   "display": "مرعى",
+   "arabizi": "mr3a",
+   "arabiziAlternatives": [
+    "mr3a"
+   ],
+   "english": "Pasture"
+  },
+  {
+   "id": "adv-8-349ce0",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "بادية",
+   "alternatives": [
+    "بادية"
+   ],
+   "display": "بادية",
+   "arabizi": "badee",
+   "arabiziAlternatives": [
+    "badee"
+   ],
+   "english": "Steppe / desert region"
+  },
+  {
+   "id": "adv-8-1eecb5",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "أمن غذائي",
+   "alternatives": [
+    "أمن غذائي"
+   ],
+   "display": "أمن غذائي",
+   "arabizi": "amn ghza2ee",
+   "arabiziAlternatives": [
+    "amn ghza2ee"
+   ],
+   "english": "Food security"
+  },
+  {
+   "id": "adv-8-f3776d",
+   "level": "advanced",
+   "unitId": "advanced/topic-8",
+   "unitTitle": "جغرافيا الوطن العربي — حقائق جغرافية مميّزة",
+   "unitOrder": 8,
+   "pos": "noun",
+   "arabic": "تنوّع بيئي",
+   "alternatives": [
+    "تنوّع بيئي"
+   ],
+   "display": "تنوّع بيئي",
+   "arabizi": "tnoo3 bee2ee",
+   "arabiziAlternatives": [
+    "tnoo3 bee2ee"
+   ],
+   "english": "Environmental diversity"
+  },
+  {
+   "id": "adv-9-2dd83d",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "المحاصيل",
+   "alternatives": [
+    "المحاصيل"
+   ],
+   "display": "المحاصيل",
+   "arabizi": "alm7aseel",
+   "arabiziAlternatives": [
+    "alm7aseel"
+   ],
+   "english": "Crops"
+  },
+  {
+   "id": "adv-9-5ed801",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "القمح",
+   "alternatives": [
+    "القمح"
+   ],
+   "display": "القمح",
+   "arabizi": "al2m7",
+   "arabiziAlternatives": [
+    "al2m7"
+   ],
+   "english": "Wheat"
+  },
+  {
+   "id": "adv-9-8ac99b",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الشعير",
+   "alternatives": [
+    "الشعير"
+   ],
+   "display": "الشعير",
+   "arabizi": "alsh3eer",
+   "arabiziAlternatives": [
+    "alsh3eer"
+   ],
+   "english": "Barley"
+  },
+  {
+   "id": "adv-9-eaab68",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الأرز",
+   "alternatives": [
+    "الأرز"
+   ],
+   "display": "الأرز",
+   "arabizi": "alarz",
+   "arabiziAlternatives": [
+    "alarz"
+   ],
+   "english": "Rice"
+  },
+  {
+   "id": "adv-9-67e8a0",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "القطن",
+   "alternatives": [
+    "القطن"
+   ],
+   "display": "القطن",
+   "arabizi": "al2tn",
+   "arabiziAlternatives": [
+    "al2tn"
+   ],
+   "english": "Cotton"
+  },
+  {
+   "id": "adv-9-a268e4",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "قصب السكر",
+   "alternatives": [
+    "قصب السكر"
+   ],
+   "display": "قصب السكر",
+   "arabizi": "2sb alskr",
+   "arabiziAlternatives": [
+    "2sb alskr"
+   ],
+   "english": "Sugarcane"
+  },
+  {
+   "id": "adv-9-5ee54b",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "التمور",
+   "alternatives": [
+    "التمور"
+   ],
+   "display": "التمور",
+   "arabizi": "altmoor",
+   "arabiziAlternatives": [
+    "altmoor"
+   ],
+   "english": "Dates"
+  },
+  {
+   "id": "adv-9-d6f65b",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الزيتون",
+   "alternatives": [
+    "الزيتون"
+   ],
+   "display": "الزيتون",
+   "arabizi": "alzeetoon",
+   "arabiziAlternatives": [
+    "alzeetoon"
+   ],
+   "english": "Olives"
+  },
+  {
+   "id": "adv-9-61b708",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "واحة",
+   "alternatives": [
+    "واحة"
+   ],
+   "display": "واحة",
+   "arabizi": "wa7e",
+   "arabiziAlternatives": [
+    "wa7e"
+   ],
+   "english": "Oasis"
+  },
+  {
+   "id": "adv-9-6b5fcb",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الزراعة المحمية",
+   "alternatives": [
+    "الزراعة المحمية"
+   ],
+   "display": "الزراعة المحمية",
+   "arabizi": "alzra3e alm7mee",
+   "arabiziAlternatives": [
+    "alzra3e alm7mee"
+   ],
+   "english": "Protected agriculture"
+  },
+  {
+   "id": "adv-9-b0ce02",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "تقنيات الري",
+   "alternatives": [
+    "تقنيات الري"
+   ],
+   "display": "تقنيات الري",
+   "arabizi": "t2neeat alree",
+   "arabiziAlternatives": [
+    "t2neeat alree"
+   ],
+   "english": "Irrigation techniques"
+  },
+  {
+   "id": "adv-9-4784b6",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الأراضي الخصبة",
+   "alternatives": [
+    "الأراضي الخصبة"
+   ],
+   "display": "الأراضي الخصبة",
+   "arabizi": "alaradee al5sbe",
+   "arabiziAlternatives": [
+    "alaradee al5sbe"
+   ],
+   "english": "Fertile land"
+  },
+  {
+   "id": "adv-9-43c42d",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "نقص المياه",
+   "alternatives": [
+    "نقص المياه"
+   ],
+   "display": "نقص المياه",
+   "arabizi": "n2s almeeah",
+   "arabiziAlternatives": [
+    "n2s almeeah"
+   ],
+   "english": "Water scarcity"
+  },
+  {
+   "id": "adv-9-834fc9",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الأمن الغذائي",
+   "alternatives": [
+    "الأمن الغذائي"
+   ],
+   "display": "الأمن الغذائي",
+   "arabizi": "alamn alghza2ee",
+   "arabiziAlternatives": [
+    "alamn alghza2ee"
+   ],
+   "english": "Food security"
+  },
+  {
+   "id": "adv-9-d38dc4",
+   "level": "advanced",
+   "unitId": "advanced/topic-9",
+   "unitTitle": "المحاصيل الزراعية في العالم العربي",
+   "unitOrder": 9,
+   "pos": "noun",
+   "arabic": "الإنتاج الزراعي",
+   "alternatives": [
+    "الإنتاج الزراعي"
+   ],
+   "display": "الإنتاج الزراعي",
+   "arabizi": "alantaj alzra3ee",
+   "arabiziAlternatives": [
+    "alantaj alzra3ee"
+   ],
+   "english": "Agricultural production"
+  },
+  {
+   "id": "adv-10-01662a",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "مساحة",
+   "alternatives": [
+    "مساحة"
+   ],
+   "display": "مساحة",
+   "arabizi": "msa7e",
+   "arabiziAlternatives": [
+    "msa7e"
+   ],
+   "english": "Area"
+  },
+  {
+   "id": "adv-10-790e4a",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "بيحدّه",
+   "alternatives": [
+    "بيحدّه"
+   ],
+   "display": "بيحدّه",
+   "arabizi": "bee7dh",
+   "arabiziAlternatives": [
+    "bee7dh"
+   ],
+   "english": "It borders"
+  },
+  {
+   "id": "adv-10-616d17",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "ساحل",
+   "alternatives": [
+    "ساحل"
+   ],
+   "display": "ساحل",
+   "arabizi": "sa7l",
+   "arabiziAlternatives": [
+    "sa7l"
+   ],
+   "english": "Coast"
+  },
+  {
+   "id": "adv-10-ab8096",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "تضاريس",
+   "alternatives": [
+    "تضاريس"
+   ],
+   "display": "تضاريس",
+   "arabizi": "tdarees",
+   "arabiziAlternatives": [
+    "tdarees"
+   ],
+   "english": "Terrain / Topography"
+  },
+  {
+   "id": "adv-10-f55550",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "سهول",
+   "alternatives": [
+    "سهول"
+   ],
+   "display": "سهول",
+   "arabizi": "shool",
+   "arabiziAlternatives": [
+    "shool"
+   ],
+   "english": "Plains"
+  },
+  {
+   "id": "adv-10-4656be",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "أراضي خصبة",
+   "alternatives": [
+    "أراضي خصبة"
+   ],
+   "display": "أراضي خصبة",
+   "arabizi": "aradee 5sbe",
+   "arabiziAlternatives": [
+    "aradee 5sbe"
+   ],
+   "english": "Fertile land"
+  },
+  {
+   "id": "adv-10-271464",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "الشريان الأساسي",
+   "alternatives": [
+    "الشريان الأساسي"
+   ],
+   "display": "الشريان الأساسي",
+   "arabizi": "alshreean alasasee",
+   "arabiziAlternatives": [
+    "alshreean alasasee"
+   ],
+   "english": "Main lifeline"
+  },
+  {
+   "id": "adv-10-a3fd20",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "زراعة مروية",
+   "alternatives": [
+    "زراعة مروية"
+   ],
+   "display": "زراعة مروية",
+   "arabizi": "zra3e mrooee",
+   "arabiziAlternatives": [
+    "zra3e mrooee"
+   ],
+   "english": "Irrigated agriculture"
+  },
+  {
+   "id": "adv-10-538b15",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "ثروة حيوانية",
+   "alternatives": [
+    "ثروة حيوانية"
+   ],
+   "display": "ثروة حيوانية",
+   "arabizi": "throoe 7eeooanee",
+   "arabiziAlternatives": [
+    "throoe 7eeooanee"
+   ],
+   "english": "Livestock wealth"
+  },
+  {
+   "id": "adv-10-bfd0da",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "معادن",
+   "alternatives": [
+    "معادن"
+   ],
+   "display": "معادن",
+   "arabizi": "m3adn",
+   "arabiziAlternatives": [
+    "m3adn"
+   ],
+   "english": "Minerals"
+  },
+  {
+   "id": "adv-10-d84202",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "مورد دخل",
+   "alternatives": [
+    "مورد دخل"
+   ],
+   "display": "مورد دخل",
+   "arabizi": "moord d5l",
+   "arabiziAlternatives": [
+    "moord d5l"
+   ],
+   "english": "Source of income"
+  },
+  {
+   "id": "adv-10-860199",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "تنوّع عرقي",
+   "alternatives": [
+    "تنوّع عرقي"
+   ],
+   "display": "تنوّع عرقي",
+   "arabizi": "tnoo3 3r2ee",
+   "arabiziAlternatives": [
+    "tnoo3 3r2ee"
+   ],
+   "english": "Ethnic diversity"
+  },
+  {
+   "id": "adv-10-69c602",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "تركيبة سكانية",
+   "alternatives": [
+    "تركيبة سكانية"
+   ],
+   "display": "تركيبة سكانية",
+   "arabizi": "trkeebe skanee",
+   "arabiziAlternatives": [
+    "trkeebe skanee"
+   ],
+   "english": "Demographic composition"
+  },
+  {
+   "id": "adv-10-1d630b",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "ملاحة",
+   "alternatives": [
+    "ملاحة"
+   ],
+   "display": "ملاحة",
+   "arabizi": "mla7e",
+   "arabiziAlternatives": [
+    "mla7e"
+   ],
+   "english": "Navigation"
+  },
+  {
+   "id": "adv-10-2b20d2",
+   "level": "advanced",
+   "unitId": "advanced/topic-10",
+   "unitTitle": "السودان — الجغرافيا والموارد والاقتصاد",
+   "unitOrder": 10,
+   "pos": "noun",
+   "arabic": "إنتاج زراعي",
+   "alternatives": [
+    "إنتاج زراعي"
+   ],
+   "display": "إنتاج زراعي",
+   "arabizi": "antaj zra3ee",
+   "arabiziAlternatives": [
+    "antaj zra3ee"
+   ],
+   "english": "Agricultural production"
+  },
+  {
+   "id": "adv-11-3a7b8b",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "verb",
+   "arabic": "بيعتمد ع",
+   "alternatives": [
+    "بيعتمد ع"
+   ],
+   "display": "بيعتمد ع",
+   "arabizi": "bee3tmd 3",
+   "arabiziAlternatives": [
+    "bee3tmd 3"
+   ],
+   "english": "To depend on"
+  },
+  {
+   "id": "adv-11-0ce330",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "رعي",
+   "alternatives": [
+    "رعي"
+   ],
+   "display": "رعي",
+   "arabizi": "r3ee",
+   "arabiziAlternatives": [
+    "r3ee"
+   ],
+   "english": "Grazing"
+  },
+  {
+   "id": "adv-11-59ccbe",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "استيراد وتصدير",
+   "alternatives": [
+    "استيراد وتصدير"
+   ],
+   "display": "استيراد وتصدير",
+   "arabizi": "asteerad ootsdeer",
+   "arabiziAlternatives": [
+    "asteerad ootsdeer"
+   ],
+   "english": "Import and export"
+  },
+  {
+   "id": "adv-11-81df2d",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "قطاع",
+   "alternatives": [
+    "قطاع"
+   ],
+   "display": "قطاع",
+   "arabizi": "2ta3",
+   "arabiziAlternatives": [
+    "2ta3"
+   ],
+   "english": "Sector"
+  },
+  {
+   "id": "adv-11-244507",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "توزيع السكان",
+   "alternatives": [
+    "توزيع السكان"
+   ],
+   "display": "توزيع السكان",
+   "arabizi": "toozee3 alskan",
+   "arabiziAlternatives": [
+    "toozee3 alskan"
+   ],
+   "english": "Population distribution"
+  },
+  {
+   "id": "adv-11-7aadd3",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "هجرة داخلية",
+   "alternatives": [
+    "هجرة داخلية"
+   ],
+   "display": "هجرة داخلية",
+   "arabizi": "hjre da5lee",
+   "arabiziAlternatives": [
+    "hjre da5lee"
+   ],
+   "english": "Internal migration"
+  },
+  {
+   "id": "adv-11-677c71",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "تكاليف المعيشة",
+   "alternatives": [
+    "تكاليف المعيشة"
+   ],
+   "display": "تكاليف المعيشة",
+   "arabizi": "tkaleef alm3eeshe",
+   "arabiziAlternatives": [
+    "tkaleef alm3eeshe"
+   ],
+   "english": "Cost of living"
+  },
+  {
+   "id": "adv-11-f1dead",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "تنافس",
+   "alternatives": [
+    "تنافس"
+   ],
+   "display": "تنافس",
+   "arabizi": "tnafs",
+   "arabiziAlternatives": [
+    "tnafs"
+   ],
+   "english": "Competition"
+  },
+  {
+   "id": "adv-11-d915a1",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "جفاف",
+   "alternatives": [
+    "جفاف"
+   ],
+   "display": "جفاف",
+   "arabizi": "jfaf",
+   "arabiziAlternatives": [
+    "jfaf"
+   ],
+   "english": "Drought"
+  },
+  {
+   "id": "adv-11-08328a",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "فيضانات",
+   "alternatives": [
+    "فيضانات"
+   ],
+   "display": "فيضانات",
+   "arabizi": "feedanat",
+   "arabiziAlternatives": [
+    "feedanat"
+   ],
+   "english": "Floods"
+  },
+  {
+   "id": "adv-11-0c7950",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "ضغط عالخدمات",
+   "alternatives": [
+    "ضغط عالخدمات"
+   ],
+   "display": "ضغط عالخدمات",
+   "arabizi": "dght 3al5dmat",
+   "arabiziAlternatives": [
+    "dght 3al5dmat"
+   ],
+   "english": "Pressure on services"
+  },
+  {
+   "id": "adv-11-4318b0",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "مصدر رزق",
+   "alternatives": [
+    "مصدر رزق"
+   ],
+   "display": "مصدر رزق",
+   "arabizi": "msdr rz2",
+   "arabiziAlternatives": [
+    "msdr rz2"
+   ],
+   "english": "Source of livelihood"
+  },
+  {
+   "id": "adv-11-20e4be",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "قرية زراعية",
+   "alternatives": [
+    "قرية زراعية"
+   ],
+   "display": "قرية زراعية",
+   "arabizi": "2ree zra3ee",
+   "arabiziAlternatives": [
+    "2ree zra3ee"
+   ],
+   "english": "Agricultural village"
+  },
+  {
+   "id": "adv-11-b21394",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "موسم الحصاد",
+   "alternatives": [
+    "موسم الحصاد"
+   ],
+   "display": "موسم الحصاد",
+   "arabizi": "moosm al7sad",
+   "arabiziAlternatives": [
+    "moosm al7sad"
+   ],
+   "english": "Harvest season"
+  },
+  {
+   "id": "adv-11-87053b",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "النقل والشحن",
+   "alternatives": [
+    "النقل والشحن"
+   ],
+   "display": "النقل والشحن",
+   "arabizi": "aln2l ooalsh7n",
+   "arabiziAlternatives": [
+    "aln2l ooalsh7n"
+   ],
+   "english": "Transport and shipping"
+  },
+  {
+   "id": "adv-11-bfcf3b",
+   "level": "advanced",
+   "unitId": "advanced/topic-11",
+   "unitTitle": "كيف الجغرافيا بتأثّر على حياة الناس بالسودان؟",
+   "unitOrder": 11,
+   "pos": "noun",
+   "arabic": "تغيّرات مناخية",
+   "alternatives": [
+    "تغيّرات مناخية"
+   ],
+   "display": "تغيّرات مناخية",
+   "arabizi": "tgheerat mna5ee",
+   "arabiziAlternatives": [
+    "tgheerat mna5ee"
+   ],
+   "english": "Climate changes"
+  },
+  {
+   "id": "adv-12-b0f05a",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "تنوّع لغوي",
+   "alternatives": [
+    "تنوّع لغوي"
+   ],
+   "display": "تنوّع لغوي",
+   "arabizi": "tnoo3 lghooee",
+   "arabiziAlternatives": [
+    "tnoo3 lghooee"
+   ],
+   "english": "Linguistic diversity"
+  },
+  {
+   "id": "adv-12-3032a5",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "تحوّل ديموغرافي",
+   "alternatives": [
+    "تحوّل ديموغرافي"
+   ],
+   "display": "تحوّل ديموغرافي",
+   "arabizi": "t7ool deemooghrafee",
+   "arabiziAlternatives": [
+    "t7ool deemooghrafee"
+   ],
+   "english": "Demographic shift"
+  },
+  {
+   "id": "adv-12-cfff68",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "نزوح داخلي",
+   "alternatives": [
+    "نزوح داخلي"
+   ],
+   "display": "نزوح داخلي",
+   "arabizi": "nzoo7 da5lee",
+   "arabiziAlternatives": [
+    "nzoo7 da5lee"
+   ],
+   "english": "Internal displacement"
+  },
+  {
+   "id": "adv-12-50e7a6",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "لجوء",
+   "alternatives": [
+    "لجوء"
+   ],
+   "display": "لجوء",
+   "arabizi": "ljoo2",
+   "arabiziAlternatives": [
+    "ljoo2"
+   ],
+   "english": "Refuge"
+  },
+  {
+   "id": "adv-12-990a6e",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "حلقة وصل",
+   "alternatives": [
+    "حلقة وصل"
+   ],
+   "display": "حلقة وصل",
+   "arabizi": "7l2e oosl",
+   "arabiziAlternatives": [
+    "7l2e oosl"
+   ],
+   "english": "Link / Connection"
+  },
+  {
+   "id": "adv-12-2350d1",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "مرفأ",
+   "alternatives": [
+    "مرفأ"
+   ],
+   "display": "مرفأ",
+   "arabizi": "mrfa",
+   "arabiziAlternatives": [
+    "mrfa"
+   ],
+   "english": "Port"
+  },
+  {
+   "id": "adv-12-7dd643",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "أراضٍ خصبة",
+   "alternatives": [
+    "أراضٍ خصبة"
+   ],
+   "display": "أراضٍ خصبة",
+   "arabizi": "arad 5sbe",
+   "arabiziAlternatives": [
+    "arad 5sbe"
+   ],
+   "english": "Fertile land"
+  },
+  {
+   "id": "adv-12-b67f55",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "adjective",
+   "arabic": "نشاط اقتصادي",
+   "alternatives": [
+    "نشاط اقتصادي"
+   ],
+   "display": "نشاط اقتصادي",
+   "arabizi": "nshat a2tsadee",
+   "arabiziAlternatives": [
+    "nshat a2tsadee"
+   ],
+   "english": "Economic activity"
+  },
+  {
+   "id": "adv-12-1491e2",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "adjective",
+   "arabic": "تراجع اقتصادي",
+   "alternatives": [
+    "تراجع اقتصادي"
+   ],
+   "display": "تراجع اقتصادي",
+   "arabizi": "traj3 a2tsadee",
+   "arabiziAlternatives": [
+    "traj3 a2tsadee"
+   ],
+   "english": "Economic decline"
+  },
+  {
+   "id": "adv-12-141850",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "الإنتاج",
+   "alternatives": [
+    "الإنتاج"
+   ],
+   "display": "الإنتاج",
+   "arabizi": "alantaj",
+   "arabiziAlternatives": [
+    "alantaj"
+   ],
+   "english": "Production"
+  },
+  {
+   "id": "adv-12-7bb300",
+   "level": "advanced",
+   "unitId": "advanced/topic-12",
+   "unitTitle": "سوريا ، السكان والاقتصاد",
+   "unitOrder": 12,
+   "pos": "noun",
+   "arabic": "التجارة البحرية",
+   "alternatives": [
+    "التجارة البحرية"
+   ],
+   "display": "التجارة البحرية",
+   "arabizi": "altjare alb7ree",
+   "arabiziAlternatives": [
+    "altjare alb7ree"
+   ],
+   "english": "Maritime trade"
+  },
+  {
+   "id": "adv-13-633a6e",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الهجرة",
+   "alternatives": [
+    "الهجرة"
+   ],
+   "display": "الهجرة",
+   "arabizi": "alhjre",
+   "arabiziAlternatives": [
+    "alhjre"
+   ],
+   "english": "Migration"
+  },
+  {
+   "id": "adv-13-50e7a5",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "هجرة طوعية",
+   "alternatives": [
+    "هجرة طوعية"
+   ],
+   "display": "هجرة طوعية",
+   "arabizi": "hjre too3ee",
+   "arabiziAlternatives": [
+    "hjre too3ee"
+   ],
+   "english": "Voluntary migration"
+  },
+  {
+   "id": "adv-13-ecb527",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "هجرة قسرية",
+   "alternatives": [
+    "هجرة قسرية"
+   ],
+   "display": "هجرة قسرية",
+   "arabizi": "hjre 2sree",
+   "arabiziAlternatives": [
+    "hjre 2sree"
+   ],
+   "english": "Forced migration"
+  },
+  {
+   "id": "adv-13-ba88b1",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "فرص العمل",
+   "alternatives": [
+    "فرص العمل"
+   ],
+   "display": "فرص العمل",
+   "arabizi": "frs al3ml",
+   "arabiziAlternatives": [
+    "frs al3ml"
+   ],
+   "english": "Job opportunities"
+  },
+  {
+   "id": "adv-13-e8321b",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "adjective",
+   "arabic": "البطالة",
+   "alternatives": [
+    "البطالة"
+   ],
+   "display": "البطالة",
+   "arabizi": "albtale",
+   "arabiziAlternatives": [
+    "albtale"
+   ],
+   "english": "Unemployment"
+  },
+  {
+   "id": "adv-13-8c1317",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "adjective",
+   "arabic": "الظروف الاقتصادية",
+   "alternatives": [
+    "الظروف الاقتصادية"
+   ],
+   "display": "الظروف الاقتصادية",
+   "arabizi": "alzroof ala2tsadee",
+   "arabiziAlternatives": [
+    "alzroof ala2tsadee"
+   ],
+   "english": "Economic conditions"
+  },
+  {
+   "id": "adv-13-ae8253",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "النزاعات",
+   "alternatives": [
+    "النزاعات"
+   ],
+   "display": "النزاعات",
+   "arabizi": "alnza3at",
+   "arabiziAlternatives": [
+    "alnza3at"
+   ],
+   "english": "Conflicts"
+  },
+  {
+   "id": "adv-13-d69818",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "adjective",
+   "arabic": "الاستقرار السياسي",
+   "alternatives": [
+    "الاستقرار السياسي"
+   ],
+   "display": "الاستقرار السياسي",
+   "arabizi": "alast2rar alseeasee",
+   "arabiziAlternatives": [
+    "alast2rar alseeasee"
+   ],
+   "english": "Political stability"
+  },
+  {
+   "id": "adv-13-fc597b",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الهجرة الداخلية",
+   "alternatives": [
+    "الهجرة الداخلية"
+   ],
+   "display": "الهجرة الداخلية",
+   "arabizi": "alhjre alda5lee",
+   "arabiziAlternatives": [
+    "alhjre alda5lee"
+   ],
+   "english": "Internal migration"
+  },
+  {
+   "id": "adv-13-5fc433",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الهجرة الخارجية",
+   "alternatives": [
+    "الهجرة الخارجية"
+   ],
+   "display": "الهجرة الخارجية",
+   "arabizi": "alhjre al5arjee",
+   "arabiziAlternatives": [
+    "alhjre al5arjee"
+   ],
+   "english": "International migration"
+  },
+  {
+   "id": "adv-13-5a6d9f",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الهجرة الدائمة",
+   "alternatives": [
+    "الهجرة الدائمة"
+   ],
+   "display": "الهجرة الدائمة",
+   "arabizi": "alhjre alda2me",
+   "arabiziAlternatives": [
+    "alhjre alda2me"
+   ],
+   "english": "Permanent migration"
+  },
+  {
+   "id": "adv-13-8cb34a",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الهجرة المؤقتة",
+   "alternatives": [
+    "الهجرة المؤقتة"
+   ],
+   "display": "الهجرة المؤقتة",
+   "arabizi": "alhjre alm22te",
+   "arabiziAlternatives": [
+    "alhjre alm22te"
+   ],
+   "english": "Temporary migration"
+  },
+  {
+   "id": "adv-13-1fb832",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "هجرة العقول",
+   "alternatives": [
+    "هجرة العقول"
+   ],
+   "display": "هجرة العقول",
+   "arabizi": "hjre al32ool",
+   "arabiziAlternatives": [
+    "hjre al32ool"
+   ],
+   "english": "Brain drain"
+  },
+  {
+   "id": "adv-13-20755c",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "التحويلات المالية",
+   "alternatives": [
+    "التحويلات المالية"
+   ],
+   "display": "التحويلات المالية",
+   "arabizi": "alt7ooeelat almalee",
+   "arabiziAlternatives": [
+    "alt7ooeelat almalee"
+   ],
+   "english": "Remittances"
+  },
+  {
+   "id": "adv-13-148dc8",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "adjective",
+   "arabic": "الاندماج الاجتماعي",
+   "alternatives": [
+    "الاندماج الاجتماعي"
+   ],
+   "display": "الاندماج الاجتماعي",
+   "arabizi": "alandmaj alajtma3ee",
+   "arabiziAlternatives": [
+    "alandmaj alajtma3ee"
+   ],
+   "english": "Social integration"
+  },
+  {
+   "id": "adv-13-9c4ce4",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "استغلال العمالة",
+   "alternatives": [
+    "استغلال العمالة"
+   ],
+   "display": "استغلال العمالة",
+   "arabizi": "astghlal al3male",
+   "arabiziAlternatives": [
+    "astghlal al3male"
+   ],
+   "english": "Labor exploitation"
+  },
+  {
+   "id": "adv-13-97b0fd",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الكثافة السكانية",
+   "alternatives": [
+    "الكثافة السكانية"
+   ],
+   "display": "الكثافة السكانية",
+   "arabizi": "alkthafe alskanee",
+   "arabiziAlternatives": [
+    "alkthafe alskanee"
+   ],
+   "english": "Population density"
+  },
+  {
+   "id": "adv-13-7aaebe",
+   "level": "advanced",
+   "unitId": "advanced/topic-13",
+   "unitTitle": "الهجرة في الوطن العربي",
+   "unitOrder": 13,
+   "pos": "noun",
+   "arabic": "الحنين للوطن",
+   "alternatives": [
+    "الحنين للوطن"
+   ],
+   "display": "الحنين للوطن",
+   "arabizi": "al7neen llootn",
+   "arabiziAlternatives": [
+    "al7neen llootn"
+   ],
+   "english": "Homesickness"
+  },
+  {
+   "id": "adv-14-78e3bc",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "عصابة",
+   "alternatives": [
+    "عصابة"
+   ],
+   "display": "عصابة",
+   "arabizi": "3sabe",
+   "arabiziAlternatives": [
+    "3sabe"
+   ],
+   "english": "gang"
+  },
+  {
+   "id": "adv-14-2d4954",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "تهريب",
+   "alternatives": [
+    "تهريب"
+   ],
+   "display": "تهريب",
+   "arabizi": "threeb",
+   "arabiziAlternatives": [
+    "threeb"
+   ],
+   "english": "smuggling"
+  },
+  {
+   "id": "adv-14-fb78f3",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "ابتزاز",
+   "alternatives": [
+    "ابتزاز"
+   ],
+   "display": "ابتزاز",
+   "arabizi": "abtzaz",
+   "arabiziAlternatives": [
+    "abtzaz"
+   ],
+   "english": "extortion / blackmail"
+  },
+  {
+   "id": "adv-14-aa32cd",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "احتيال",
+   "alternatives": [
+    "احتيال"
+   ],
+   "display": "احتيال",
+   "arabizi": "a7teeal",
+   "arabiziAlternatives": [
+    "a7teeal"
+   ],
+   "english": "fraud / scam"
+  },
+  {
+   "id": "adv-14-6a2540",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "غسيل الأموال",
+   "alternatives": [
+    "غسيل الأموال"
+   ],
+   "display": "غسيل الأموال",
+   "arabizi": "ghseel alamooal",
+   "arabiziAlternatives": [
+    "ghseel alamooal"
+   ],
+   "english": "money laundering"
+  },
+  {
+   "id": "adv-14-9ac962",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "adjective",
+   "arabic": "جريمة منظمة",
+   "alternatives": [
+    "جريمة منظمة"
+   ],
+   "display": "جريمة منظمة",
+   "arabizi": "jreeme mnzme",
+   "arabiziAlternatives": [
+    "jreeme mnzme"
+   ],
+   "english": "organized crime"
+  },
+  {
+   "id": "adv-14-677f4e",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "adjective",
+   "arabic": "عنف مسلح",
+   "alternatives": [
+    "عنف مسلح"
+   ],
+   "display": "عنف مسلح",
+   "arabizi": "3nf msl7",
+   "arabiziAlternatives": [
+    "3nf msl7"
+   ],
+   "english": "armed violence"
+  },
+  {
+   "id": "adv-14-69b8cd",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "ضحية",
+   "alternatives": [
+    "ضحية"
+   ],
+   "display": "ضحية",
+   "arabizi": "d7ee",
+   "arabiziAlternatives": [
+    "d7ee"
+   ],
+   "english": "victim"
+  },
+  {
+   "id": "adv-14-23a087",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "فساد",
+   "alternatives": [
+    "فساد"
+   ],
+   "display": "فساد",
+   "arabizi": "fsad",
+   "arabiziAlternatives": [
+    "fsad"
+   ],
+   "english": "corruption"
+  },
+  {
+   "id": "adv-14-715b47",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "noun",
+   "arabic": "كارتل",
+   "alternatives": [
+    "كارتل"
+   ],
+   "display": "كارتل",
+   "arabizi": "kartl",
+   "arabiziAlternatives": [
+    "kartl"
+   ],
+   "english": "cartel"
+  },
+  {
+   "id": "adv-14-b929d6",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "adjective",
+   "arabic": "سطو",
+   "alternatives": [
+    "سطو"
+   ],
+   "display": "سطو",
+   "arabizi": "stoo",
+   "arabiziAlternatives": [
+    "stoo"
+   ],
+   "english": "armed robbery"
+  },
+  {
+   "id": "adv-14-6b03c1",
+   "level": "advanced",
+   "unitId": "advanced/topic-14",
+   "unitTitle": "الجرائم",
+   "unitOrder": 14,
+   "pos": "adjective",
+   "arabic": "تحرّش",
+   "alternatives": [
+    "تحرّش"
+   ],
+   "display": "تحرّش",
+   "arabizi": "t7rsh",
+   "arabiziAlternatives": [
+    "t7rsh"
+   ],
+   "english": "harassment"
+  },
+  {
+   "id": "adv-15-1ec249",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "إدمان",
+   "alternatives": [
+    "إدمان"
+   ],
+   "display": "إدمان",
+   "arabizi": "adman",
+   "arabiziAlternatives": [
+    "adman"
+   ],
+   "english": "addiction"
+  },
+  {
+   "id": "adv-15-c1121c",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "مُدمن",
+   "alternatives": [
+    "مُدمن"
+   ],
+   "display": "مُدمن",
+   "arabizi": "mdmn",
+   "arabiziAlternatives": [
+    "mdmn"
+   ],
+   "english": "addict"
+  },
+  {
+   "id": "adv-15-03319c",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "بيتعاطى",
+   "alternatives": [
+    "بيتعاطى"
+   ],
+   "display": "بيتعاطى",
+   "arabizi": "beet3ata",
+   "arabiziAlternatives": [
+    "beet3ata"
+   ],
+   "english": "abuse / consume"
+  },
+  {
+   "id": "adv-15-e94459",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "ضغط نفسي",
+   "alternatives": [
+    "ضغط نفسي"
+   ],
+   "display": "ضغط نفسي",
+   "arabizi": "dght nfsee",
+   "arabiziAlternatives": [
+    "dght nfsee"
+   ],
+   "english": "psychological pressure"
+  },
+  {
+   "id": "adv-15-7a3a1b",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "يهرب من الواقع",
+   "alternatives": [
+    "يهرب من الواقع"
+   ],
+   "display": "يهرب من الواقع",
+   "arabizi": "yhrb mn alooa23",
+   "arabiziAlternatives": [
+    "yhrb mn alooa23"
+   ],
+   "english": "escape reality"
+  },
+  {
+   "id": "adv-15-5f93e5",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "فقدان السيطرة",
+   "alternatives": [
+    "فقدان السيطرة"
+   ],
+   "display": "فقدان السيطرة",
+   "arabizi": "f2dan alseetre",
+   "arabiziAlternatives": [
+    "f2dan alseetre"
+   ],
+   "english": "loss of control"
+  },
+  {
+   "id": "adv-15-bffade",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "علاج نفسي",
+   "alternatives": [
+    "علاج نفسي"
+   ],
+   "display": "علاج نفسي",
+   "arabizi": "3laj nfsee",
+   "arabiziAlternatives": [
+    "3laj nfsee"
+   ],
+   "english": "therapy"
+  },
+  {
+   "id": "adv-15-d81357",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "إعادة تأهيل",
+   "alternatives": [
+    "إعادة تأهيل"
+   ],
+   "display": "إعادة تأهيل",
+   "arabizi": "a3ade taheel",
+   "arabiziAlternatives": [
+    "a3ade taheel"
+   ],
+   "english": "rehabilitation"
+  },
+  {
+   "id": "adv-15-352b58",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "انتكاسة",
+   "alternatives": [
+    "انتكاسة"
+   ],
+   "display": "انتكاسة",
+   "arabizi": "antkase",
+   "arabiziAlternatives": [
+    "antkase"
+   ],
+   "english": "relapse"
+  },
+  {
+   "id": "adv-15-71defd",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "توعية",
+   "alternatives": [
+    "توعية"
+   ],
+   "display": "توعية",
+   "arabizi": "too3ee",
+   "arabiziAlternatives": [
+    "too3ee"
+   ],
+   "english": "awareness"
+  },
+  {
+   "id": "adv-15-3d6ce5",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "verb",
+   "arabic": "يحكم",
+   "alternatives": [
+    "يحكم"
+   ],
+   "display": "يحكم",
+   "arabizi": "y7km",
+   "arabiziAlternatives": [
+    "y7km"
+   ],
+   "english": "to judge"
+  },
+  {
+   "id": "adv-15-5a57f7",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "وصمة عار",
+   "alternatives": [
+    "وصمة عار"
+   ],
+   "display": "وصمة عار",
+   "arabizi": "wsme 3ar",
+   "arabiziAlternatives": [
+    "wsme 3ar"
+   ],
+   "english": "stigma"
+  },
+  {
+   "id": "adv-15-64b04d",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "إرادة",
+   "alternatives": [
+    "إرادة"
+   ],
+   "display": "إرادة",
+   "arabizi": "arade",
+   "arabiziAlternatives": [
+    "arade"
+   ],
+   "english": "willpower"
+  },
+  {
+   "id": "adv-15-6d8ade",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "دعم",
+   "alternatives": [
+    "دعم"
+   ],
+   "display": "دعم",
+   "arabizi": "d3m",
+   "arabiziAlternatives": [
+    "d3m"
+   ],
+   "english": "support"
+  },
+  {
+   "id": "adv-15-6c3b53",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "تعافي",
+   "alternatives": [
+    "تعافي"
+   ],
+   "display": "تعافي",
+   "arabizi": "t3afee",
+   "arabiziAlternatives": [
+    "t3afee"
+   ],
+   "english": "recovery"
+  },
+  {
+   "id": "adv-15-4cf708",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "verb",
+   "arabic": "يحاسب",
+   "alternatives": [
+    "يحاسب"
+   ],
+   "display": "يحاسب",
+   "arabizi": "y7asb",
+   "arabiziAlternatives": [
+    "y7asb"
+   ],
+   "english": "to hold accountable"
+  },
+  {
+   "id": "adv-15-2ea9b8",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "فرصة تانية",
+   "alternatives": [
+    "فرصة تانية"
+   ],
+   "display": "فرصة تانية",
+   "arabizi": "frse tanee",
+   "arabiziAlternatives": [
+    "frse tanee"
+   ],
+   "english": "second chance"
+  },
+  {
+   "id": "adv-15-7b647c",
+   "level": "advanced",
+   "unitId": "advanced/topic-15",
+   "unitTitle": "الإدمان",
+   "unitOrder": 15,
+   "pos": "noun",
+   "arabic": "تعاطف",
+   "alternatives": [
+    "تعاطف"
+   ],
+   "display": "تعاطف",
+   "arabizi": "t3atf",
+   "arabiziAlternatives": [
+    "t3atf"
+   ],
+   "english": "empathy"
+  },
+  {
+   "id": "adv-16-434e32",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "مُتحرِّش",
+   "alternatives": [
+    "مُتحرِّش"
+   ],
+   "display": "مُتحرِّش",
+   "arabizi": "mt7rsh",
+   "arabiziAlternatives": [
+    "mt7rsh"
+   ],
+   "english": "harasser"
+  },
+  {
+   "id": "adv-16-99ddfc",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "تحرّش لفظي",
+   "alternatives": [
+    "تحرّش لفظي"
+   ],
+   "display": "تحرّش لفظي",
+   "arabizi": "t7rsh lfzee",
+   "arabiziAlternatives": [
+    "t7rsh lfzee"
+   ],
+   "english": "verbal harassment"
+  },
+  {
+   "id": "adv-16-40944b",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "تحرّش جسدي",
+   "alternatives": [
+    "تحرّش جسدي"
+   ],
+   "display": "تحرّش جسدي",
+   "arabizi": "t7rsh jsdee",
+   "arabiziAlternatives": [
+    "t7rsh jsdee"
+   ],
+   "english": "physical harassment"
+  },
+  {
+   "id": "adv-16-19c9fa",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "verb",
+   "arabic": "يتحرّش",
+   "alternatives": [
+    "يتحرّش"
+   ],
+   "display": "يتحرّش",
+   "arabizi": "yt7rsh",
+   "arabiziAlternatives": [
+    "yt7rsh"
+   ],
+   "english": "to harass"
+  },
+  {
+   "id": "adv-16-e915fc",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "مجتمع",
+   "alternatives": [
+    "مجتمع"
+   ],
+   "display": "مجتمع",
+   "arabizi": "mjtm3",
+   "arabiziAlternatives": [
+    "mjtm3"
+   ],
+   "english": "society"
+  },
+  {
+   "id": "adv-16-27e141",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "مش آمن",
+   "alternatives": [
+    "مش آمن"
+   ],
+   "display": "مش آمن",
+   "arabizi": "msh amn",
+   "arabiziAlternatives": [
+    "msh amn"
+   ],
+   "english": "unsafe"
+  },
+  {
+   "id": "adv-16-1cf83e",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "خوف",
+   "alternatives": [
+    "خوف"
+   ],
+   "display": "خوف",
+   "arabizi": "5oof",
+   "arabiziAlternatives": [
+    "5oof"
+   ],
+   "english": "fear"
+  },
+  {
+   "id": "adv-16-19d750",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "احترام",
+   "alternatives": [
+    "احترام"
+   ],
+   "display": "احترام",
+   "arabizi": "a7tram",
+   "arabiziAlternatives": [
+    "a7tram"
+   ],
+   "english": "respect"
+  },
+  {
+   "id": "adv-16-d1ec9b",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "قانون",
+   "alternatives": [
+    "قانون"
+   ],
+   "display": "قانون",
+   "arabizi": "2anoon",
+   "arabiziAlternatives": [
+    "2anoon"
+   ],
+   "english": "law"
+  },
+  {
+   "id": "adv-16-f11485",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "adjective",
+   "arabic": "عقاب",
+   "alternatives": [
+    "عقاب"
+   ],
+   "display": "عقاب",
+   "arabizi": "32ab",
+   "arabiziAlternatives": [
+    "32ab"
+   ],
+   "english": "punishment"
+  },
+  {
+   "id": "adv-16-4ca158",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "verb",
+   "arabic": "يبلّغ",
+   "alternatives": [
+    "يبلّغ"
+   ],
+   "display": "يبلّغ",
+   "arabizi": "yblgh",
+   "arabiziAlternatives": [
+    "yblgh"
+   ],
+   "english": "to report"
+  },
+  {
+   "id": "adv-16-0d683f",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "حقوق",
+   "alternatives": [
+    "حقوق"
+   ],
+   "display": "حقوق",
+   "arabizi": "72oo2",
+   "arabiziAlternatives": [
+    "72oo2"
+   ],
+   "english": "rights"
+  },
+  {
+   "id": "adv-16-64c6a2",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "جريمة",
+   "alternatives": [
+    "جريمة"
+   ],
+   "display": "جريمة",
+   "arabizi": "jreeme",
+   "arabiziAlternatives": [
+    "jreeme"
+   ],
+   "english": "crime"
+  },
+  {
+   "id": "adv-16-4727ce",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "لوم الضحية",
+   "alternatives": [
+    "لوم الضحية"
+   ],
+   "display": "لوم الضحية",
+   "arabizi": "loom ald7ee",
+   "arabiziAlternatives": [
+    "loom ald7ee"
+   ],
+   "english": "victim blaming"
+  },
+  {
+   "id": "adv-16-0e291e",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "الاستعلاء",
+   "alternatives": [
+    "الاستعلاء"
+   ],
+   "display": "الاستعلاء",
+   "arabizi": "alast3la2",
+   "arabiziAlternatives": [
+    "alast3la2"
+   ],
+   "english": "superiority / arrogance"
+  },
+  {
+   "id": "adv-16-a68bd0",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "الستر",
+   "alternatives": [
+    "الستر"
+   ],
+   "display": "الستر",
+   "arabizi": "alstr",
+   "arabiziAlternatives": [
+    "alstr"
+   ],
+   "english": "covering up"
+  },
+  {
+   "id": "adv-16-ee66ac",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "adjective",
+   "arabic": "الفضيحة",
+   "alternatives": [
+    "الفضيحة"
+   ],
+   "display": "الفضيحة",
+   "arabizi": "alfdee7e",
+   "arabiziAlternatives": [
+    "alfdee7e"
+   ],
+   "english": "scandal"
+  },
+  {
+   "id": "adv-16-4f413c",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "الانعزال",
+   "alternatives": [
+    "الانعزال"
+   ],
+   "display": "الانعزال",
+   "arabizi": "alan3zal",
+   "arabiziAlternatives": [
+    "alan3zal"
+   ],
+   "english": "isolation"
+  },
+  {
+   "id": "adv-16-d4b67b",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "الضو الأخضر",
+   "alternatives": [
+    "الضو الأخضر"
+   ],
+   "display": "الضو الأخضر",
+   "arabizi": "aldoo ala5dr",
+   "arabiziAlternatives": [
+    "aldoo ala5dr"
+   ],
+   "english": "green light"
+  },
+  {
+   "id": "adv-16-2ae790",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "noun",
+   "arabic": "شماعات",
+   "alternatives": [
+    "شماعات"
+   ],
+   "display": "شماعات",
+   "arabizi": "shma3at",
+   "arabiziAlternatives": [
+    "shma3at"
+   ],
+   "english": "excuses / scapegoats"
+  },
+  {
+   "id": "adv-16-98fdd4",
+   "level": "advanced",
+   "unitId": "advanced/topic-16",
+   "unitTitle": "التحرّش",
+   "unitOrder": 16,
+   "pos": "verb",
+   "arabic": "يساند",
+   "alternatives": [
+    "يساند"
+   ],
+   "display": "يساند",
+   "arabizi": "ysand",
+   "arabiziAlternatives": [
+    "ysand"
+   ],
+   "english": "to support"
+  },
+  {
+   "id": "adv-17-06e51d",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "الزواج المبكر",
+   "alternatives": [
+    "الزواج المبكر"
+   ],
+   "display": "الزواج المبكر",
+   "arabizi": "alzooaj almbkr",
+   "arabiziAlternatives": [
+    "alzooaj almbkr"
+   ],
+   "english": "early marriage"
+  },
+  {
+   "id": "adv-17-891c46",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "adjective",
+   "arabic": "ضغط اجتماعي",
+   "alternatives": [
+    "ضغط اجتماعي"
+   ],
+   "display": "ضغط اجتماعي",
+   "arabizi": "dght ajtma3ee",
+   "arabiziAlternatives": [
+    "dght ajtma3ee"
+   ],
+   "english": "social pressure"
+  },
+  {
+   "id": "adv-17-75dace",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "مسؤولية",
+   "alternatives": [
+    "مسؤولية"
+   ],
+   "display": "مسؤولية",
+   "arabizi": "ms2oolee",
+   "arabiziAlternatives": [
+    "ms2oolee"
+   ],
+   "english": "responsibility"
+  },
+  {
+   "id": "adv-17-019991",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "النضج",
+   "alternatives": [
+    "النضج"
+   ],
+   "display": "النضج",
+   "arabizi": "alndj",
+   "arabiziAlternatives": [
+    "alndj"
+   ],
+   "english": "maturity"
+  },
+  {
+   "id": "adv-17-801030",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "الاستقلال",
+   "alternatives": [
+    "الاستقلال"
+   ],
+   "display": "الاستقلال",
+   "arabizi": "alast2lal",
+   "arabiziAlternatives": [
+    "alast2lal"
+   ],
+   "english": "independence"
+  },
+  {
+   "id": "adv-17-f18ce1",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "التعليم",
+   "alternatives": [
+    "التعليم"
+   ],
+   "display": "التعليم",
+   "arabizi": "alt3leem",
+   "arabiziAlternatives": [
+    "alt3leem"
+   ],
+   "english": "education"
+  },
+  {
+   "id": "adv-17-54f6e6",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "المستقبل",
+   "alternatives": [
+    "المستقبل"
+   ],
+   "display": "المستقبل",
+   "arabizi": "almst2bl",
+   "arabiziAlternatives": [
+    "almst2bl"
+   ],
+   "english": "future"
+  },
+  {
+   "id": "adv-17-fcb053",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "عادات وتقاليد",
+   "alternatives": [
+    "عادات وتقاليد"
+   ],
+   "display": "عادات وتقاليد",
+   "arabizi": "3adat oot2aleed",
+   "arabiziAlternatives": [
+    "3adat oot2aleed"
+   ],
+   "english": "customs and traditions"
+  },
+  {
+   "id": "adv-17-1e562d",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "قرار مصيري",
+   "alternatives": [
+    "قرار مصيري"
+   ],
+   "display": "قرار مصيري",
+   "arabizi": "2rar mseeree",
+   "arabiziAlternatives": [
+    "2rar mseeree"
+   ],
+   "english": "life-changing decision"
+  },
+  {
+   "id": "adv-17-52ccb3",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "مسؤوليات أسرية",
+   "alternatives": [
+    "مسؤوليات أسرية"
+   ],
+   "display": "مسؤوليات أسرية",
+   "arabizi": "ms2ooleeat asree",
+   "arabiziAlternatives": [
+    "ms2ooleeat asree"
+   ],
+   "english": "family responsibilities"
+  },
+  {
+   "id": "adv-17-d353d4",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "الاستعداد",
+   "alternatives": [
+    "الاستعداد"
+   ],
+   "display": "الاستعداد",
+   "arabizi": "alast3dad",
+   "arabiziAlternatives": [
+    "alast3dad"
+   ],
+   "english": "readiness"
+  },
+  {
+   "id": "adv-17-92c11e",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "الاستقرار",
+   "alternatives": [
+    "الاستقرار"
+   ],
+   "display": "الاستقرار",
+   "arabizi": "alast2rar",
+   "arabiziAlternatives": [
+    "alast2rar"
+   ],
+   "english": "stability"
+  },
+  {
+   "id": "adv-17-40bcbb",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "يفرض رأيه",
+   "alternatives": [
+    "يفرض رأيه"
+   ],
+   "display": "يفرض رأيه",
+   "arabizi": "yfrd raeeh",
+   "arabiziAlternatives": [
+    "yfrd raeeh"
+   ],
+   "english": "impose his/her opinion"
+  },
+  {
+   "id": "adv-17-b92c55",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "يضغط على",
+   "alternatives": [
+    "يضغط على"
+   ],
+   "display": "يضغط على",
+   "arabizi": "ydght 3la",
+   "arabiziAlternatives": [
+    "ydght 3la"
+   ],
+   "english": "pressure"
+  },
+  {
+   "id": "adv-17-ae1dcf",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "يتحمّل المسؤولية",
+   "alternatives": [
+    "يتحمّل المسؤولية"
+   ],
+   "display": "يتحمّل المسؤولية",
+   "arabizi": "yt7ml alms2oolee",
+   "arabiziAlternatives": [
+    "yt7ml alms2oolee"
+   ],
+   "english": "take responsibility"
+  },
+  {
+   "id": "adv-17-a69399",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "يكمّل تعليمه",
+   "alternatives": [
+    "يكمّل تعليمه"
+   ],
+   "display": "يكمّل تعليمه",
+   "arabizi": "ykml t3leemh",
+   "arabiziAlternatives": [
+    "ykml t3leemh"
+   ],
+   "english": "continue education"
+  },
+  {
+   "id": "adv-17-145a8a",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "عواقب",
+   "alternatives": [
+    "عواقب"
+   ],
+   "display": "عواقب",
+   "arabizi": "3ooa2b",
+   "arabiziAlternatives": [
+    "3ooa2b"
+   ],
+   "english": "consequences"
+  },
+  {
+   "id": "adv-17-e977b4",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "قرار واعي",
+   "alternatives": [
+    "قرار واعي"
+   ],
+   "display": "قرار واعي",
+   "arabizi": "2rar ooa3ee",
+   "arabiziAlternatives": [
+    "2rar ooa3ee"
+   ],
+   "english": "informed decision"
+  },
+  {
+   "id": "adv-17-5dbfc8",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "إجبار",
+   "alternatives": [
+    "إجبار"
+   ],
+   "display": "إجبار",
+   "arabizi": "ajbar",
+   "arabiziAlternatives": [
+    "ajbar"
+   ],
+   "english": "coercion / forcing"
+  },
+  {
+   "id": "adv-17-903348",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "استقلال مادي",
+   "alternatives": [
+    "استقلال مادي"
+   ],
+   "display": "استقلال مادي",
+   "arabizi": "ast2lal madee",
+   "arabiziAlternatives": [
+    "ast2lal madee"
+   ],
+   "english": "financial independence"
+  },
+  {
+   "id": "adv-17-374a00",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "نظرة المجتمع",
+   "alternatives": [
+    "نظرة المجتمع"
+   ],
+   "display": "نظرة المجتمع",
+   "arabizi": "nzre almjtm3",
+   "arabiziAlternatives": [
+    "nzre almjtm3"
+   ],
+   "english": "society's perception"
+  },
+  {
+   "id": "adv-17-82f120",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "بناء مستقبل",
+   "alternatives": [
+    "بناء مستقبل"
+   ],
+   "display": "بناء مستقبل",
+   "arabizi": "bna2 mst2bl",
+   "arabiziAlternatives": [
+    "bna2 mst2bl"
+   ],
+   "english": "build a future"
+  },
+  {
+   "id": "adv-17-af68d5",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "تحمّل المسؤولية",
+   "alternatives": [
+    "تحمّل المسؤولية"
+   ],
+   "display": "تحمّل المسؤولية",
+   "arabizi": "t7ml alms2oolee",
+   "arabiziAlternatives": [
+    "t7ml alms2oolee"
+   ],
+   "english": "take responsibility"
+  },
+  {
+   "id": "adv-17-d83feb",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "ناضج",
+   "alternatives": [
+    "ناضج"
+   ],
+   "display": "ناضج",
+   "arabizi": "nadj",
+   "arabiziAlternatives": [
+    "nadj"
+   ],
+   "english": "mature"
+  },
+  {
+   "id": "adv-17-2ad2ee",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "يفرض",
+   "alternatives": [
+    "يفرض"
+   ],
+   "display": "يفرض",
+   "arabizi": "yfrd",
+   "arabiziAlternatives": [
+    "yfrd"
+   ],
+   "english": "impose"
+  },
+  {
+   "id": "adv-17-58f1d7",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "خيار شخصي",
+   "alternatives": [
+    "خيار شخصي"
+   ],
+   "display": "خيار شخصي",
+   "arabizi": "5eear sh5see",
+   "arabiziAlternatives": [
+    "5eear sh5see"
+   ],
+   "english": "personal choice"
+  },
+  {
+   "id": "adv-17-8c0c69",
+   "level": "advanced",
+   "unitId": "advanced/topic-17",
+   "unitTitle": "الزواج المبكر",
+   "unitOrder": 17,
+   "pos": "noun",
+   "arabic": "تبعات",
+   "alternatives": [
+    "تبعات"
+   ],
+   "display": "تبعات",
+   "arabizi": "tb3at",
+   "arabiziAlternatives": [
+    "tb3at"
+   ],
+   "english": "repercussions"
+  },
+  {
+   "id": "adv-18-c81b99",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "adjective",
+   "arabic": "طبقة اجتماعية",
+   "alternatives": [
+    "طبقة اجتماعية"
+   ],
+   "display": "طبقة اجتماعية",
+   "arabizi": "tb2e ajtma3ee",
+   "arabiziAlternatives": [
+    "tb2e ajtma3ee"
+   ],
+   "english": "social class"
+  },
+  {
+   "id": "adv-18-a7969c",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "فجوة بالدخل",
+   "alternatives": [
+    "فجوة بالدخل"
+   ],
+   "display": "فجوة بالدخل",
+   "arabizi": "fjooe bald5l",
+   "arabiziAlternatives": [
+    "fjooe bald5l"
+   ],
+   "english": "income gap"
+  },
+  {
+   "id": "adv-18-be220d",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "طبقة غنية",
+   "alternatives": [
+    "طبقة غنية"
+   ],
+   "display": "طبقة غنية",
+   "arabizi": "tb2e ghnee",
+   "arabiziAlternatives": [
+    "tb2e ghnee"
+   ],
+   "english": "upper class"
+  },
+  {
+   "id": "adv-18-b839fa",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "طبقة متوسطة",
+   "alternatives": [
+    "طبقة متوسطة"
+   ],
+   "display": "طبقة متوسطة",
+   "arabizi": "tb2e mtooste",
+   "arabiziAlternatives": [
+    "tb2e mtooste"
+   ],
+   "english": "middle class"
+  },
+  {
+   "id": "adv-18-83b729",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "فقر",
+   "alternatives": [
+    "فقر"
+   ],
+   "display": "فقر",
+   "arabizi": "f2r",
+   "arabiziAlternatives": [
+    "f2r"
+   ],
+   "english": "poverty"
+  },
+  {
+   "id": "adv-18-6ab38c",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "adjective",
+   "arabic": "عدالة اجتماعية",
+   "alternatives": [
+    "عدالة اجتماعية"
+   ],
+   "display": "عدالة اجتماعية",
+   "arabizi": "3dale ajtma3ee",
+   "arabiziAlternatives": [
+    "3dale ajtma3ee"
+   ],
+   "english": "social justice"
+  },
+  {
+   "id": "adv-18-b24cf9",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "adjective",
+   "arabic": "حراك اجتماعي",
+   "alternatives": [
+    "حراك اجتماعي"
+   ],
+   "display": "حراك اجتماعي",
+   "arabizi": "7rak ajtma3ee",
+   "arabiziAlternatives": [
+    "7rak ajtma3ee"
+   ],
+   "english": "social mobility"
+  },
+  {
+   "id": "adv-18-2cfab7",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "verb",
+   "arabic": "يحترم",
+   "alternatives": [
+    "يحترم"
+   ],
+   "display": "يحترم",
+   "arabizi": "y7trm",
+   "arabiziAlternatives": [
+    "y7trm"
+   ],
+   "english": "to respect"
+  },
+  {
+   "id": "adv-18-8e8d08",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "تحديات",
+   "alternatives": [
+    "تحديات"
+   ],
+   "display": "تحديات",
+   "arabizi": "t7deeat",
+   "arabiziAlternatives": [
+    "t7deeat"
+   ],
+   "english": "challenges"
+  },
+  {
+   "id": "adv-18-583174",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "فرصة متساوية",
+   "alternatives": [
+    "فرصة متساوية"
+   ],
+   "display": "فرصة متساوية",
+   "arabizi": "frse mtsaooee",
+   "arabiziAlternatives": [
+    "frse mtsaooee"
+   ],
+   "english": "equal opportunity"
+  },
+  {
+   "id": "adv-18-9c6a95",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "جهد",
+   "alternatives": [
+    "جهد",
+    "اجتهاد"
+   ],
+   "display": "جهد / اجتهاد",
+   "arabizi": "jhd",
+   "arabiziAlternatives": [
+    "jhd"
+   ],
+   "english": "hard work"
+  },
+  {
+   "id": "adv-18-fdd116",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "تمييز",
+   "alternatives": [
+    "تمييز"
+   ],
+   "display": "تمييز",
+   "arabizi": "tmeez",
+   "arabiziAlternatives": [
+    "tmeez"
+   ],
+   "english": "discrimination"
+  },
+  {
+   "id": "adv-18-fcc8f2",
+   "level": "advanced",
+   "unitId": "advanced/topic-18",
+   "unitTitle": "الطبقات الاجتماعية",
+   "unitOrder": 18,
+   "pos": "noun",
+   "arabic": "دعم مجتمعي",
+   "alternatives": [
+    "دعم مجتمعي"
+   ],
+   "display": "دعم مجتمعي",
+   "arabizi": "d3m mjtm3ee",
+   "arabiziAlternatives": [
+    "d3m mjtm3ee"
+   ],
+   "english": "community support"
+  },
+  {
+   "id": "adv-19-e1776c",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "لاجئ",
+   "alternatives": [
+    "لاجئ"
+   ],
+   "display": "لاجئ",
+   "arabizi": "laj2",
+   "arabiziAlternatives": [
+    "laj2"
+   ],
+   "english": "refugee / displaced"
+  },
+  {
+   "id": "adv-19-518f6e",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "هجرة",
+   "alternatives": [
+    "هجرة"
+   ],
+   "display": "هجرة",
+   "arabizi": "hjre",
+   "arabiziAlternatives": [
+    "hjre"
+   ],
+   "english": "migration"
+  },
+  {
+   "id": "adv-19-93548f",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "مخيم لجوء",
+   "alternatives": [
+    "مخيم لجوء"
+   ],
+   "display": "مخيم لجوء",
+   "arabizi": "m5eem ljoo2",
+   "arabiziAlternatives": [
+    "m5eem ljoo2"
+   ],
+   "english": "refugee camp"
+  },
+  {
+   "id": "adv-19-8b44c2",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "اندماج",
+   "alternatives": [
+    "اندماج"
+   ],
+   "display": "اندماج",
+   "arabizi": "andmaj",
+   "arabiziAlternatives": [
+    "andmaj"
+   ],
+   "english": "integration"
+  },
+  {
+   "id": "adv-19-a7cb91",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "adjective",
+   "arabic": "نزوح",
+   "alternatives": [
+    "نزوح"
+   ],
+   "display": "نزوح",
+   "arabizi": "nzoo7",
+   "arabiziAlternatives": [
+    "nzoo7"
+   ],
+   "english": "displacement"
+  },
+  {
+   "id": "adv-19-e0ac71",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "مساعدات إنسانية",
+   "alternatives": [
+    "مساعدات إنسانية"
+   ],
+   "display": "مساعدات إنسانية",
+   "arabizi": "msa3dat ansanee",
+   "arabiziAlternatives": [
+    "msa3dat ansanee"
+   ],
+   "english": "humanitarian aid"
+  },
+  {
+   "id": "adv-19-1d5128",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "حنين",
+   "alternatives": [
+    "حنين"
+   ],
+   "display": "حنين",
+   "arabizi": "7neen",
+   "arabiziAlternatives": [
+    "7neen"
+   ],
+   "english": "nostalgia / longing"
+  },
+  {
+   "id": "adv-19-b34560",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "وطن",
+   "alternatives": [
+    "وطن"
+   ],
+   "display": "وطن",
+   "arabizi": "wtn",
+   "arabiziAlternatives": [
+    "wtn"
+   ],
+   "english": "homeland"
+  },
+  {
+   "id": "adv-19-eac972",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "غربة",
+   "alternatives": [
+    "غربة"
+   ],
+   "display": "غربة",
+   "arabizi": "ghrbe",
+   "arabiziAlternatives": [
+    "ghrbe"
+   ],
+   "english": "being away from home"
+  },
+  {
+   "id": "adv-19-976fa5",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "أمان",
+   "alternatives": [
+    "أمان"
+   ],
+   "display": "أمان",
+   "arabizi": "aman",
+   "arabiziAlternatives": [
+    "aman"
+   ],
+   "english": "safety"
+  },
+  {
+   "id": "adv-19-03f92f",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "مأوى",
+   "alternatives": [
+    "مأوى"
+   ],
+   "display": "مأوى",
+   "arabizi": "maooa",
+   "arabiziAlternatives": [
+    "maooa"
+   ],
+   "english": "shelter"
+  },
+  {
+   "id": "adv-19-59eeaf",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "تضامن",
+   "alternatives": [
+    "تضامن"
+   ],
+   "display": "تضامن",
+   "arabizi": "tdamn",
+   "arabiziAlternatives": [
+    "tdamn"
+   ],
+   "english": "solidarity"
+  },
+  {
+   "id": "adv-19-d1300a",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "هوية",
+   "alternatives": [
+    "هوية"
+   ],
+   "display": "هوية",
+   "arabizi": "hooee",
+   "arabiziAlternatives": [
+    "hooee"
+   ],
+   "english": "identity"
+  },
+  {
+   "id": "adv-19-2a1ef4",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "جذور",
+   "alternatives": [
+    "جذور"
+   ],
+   "display": "جذور",
+   "arabizi": "jzoor",
+   "arabiziAlternatives": [
+    "jzoor"
+   ],
+   "english": "roots"
+  },
+  {
+   "id": "adv-19-a75c9b",
+   "level": "advanced",
+   "unitId": "advanced/topic-19",
+   "unitTitle": "اللاجئون والهجرة",
+   "unitOrder": 19,
+   "pos": "noun",
+   "arabic": "أمل",
+   "alternatives": [
+    "أمل"
+   ],
+   "display": "أمل",
+   "arabizi": "aml",
+   "arabiziAlternatives": [
+    "aml"
+   ],
+   "english": "hope"
+  },
+  {
+   "id": "adv-20-ac1a32",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "جيل",
+   "alternatives": [
+    "جيل"
+   ],
+   "display": "جيل",
+   "arabizi": "jeel",
+   "arabiziAlternatives": [
+    "jeel"
+   ],
+   "english": "generation"
+  },
+  {
+   "id": "adv-20-e07e26",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "فجوة",
+   "alternatives": [
+    "فجوة"
+   ],
+   "display": "فجوة",
+   "arabizi": "fjooe",
+   "arabiziAlternatives": [
+    "fjooe"
+   ],
+   "english": "gap"
+  },
+  {
+   "id": "adv-20-993090",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "تقاليد",
+   "alternatives": [
+    "تقاليد"
+   ],
+   "display": "تقاليد",
+   "arabizi": "t2aleed",
+   "arabiziAlternatives": [
+    "t2aleed"
+   ],
+   "english": "traditions"
+  },
+  {
+   "id": "adv-20-15dce6",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "تربية",
+   "alternatives": [
+    "تربية"
+   ],
+   "display": "تربية",
+   "arabizi": "trbee",
+   "arabiziAlternatives": [
+    "trbee"
+   ],
+   "english": "upbringing"
+  },
+  {
+   "id": "adv-20-6e003c",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "قيم",
+   "alternatives": [
+    "قيم"
+   ],
+   "display": "قيم",
+   "arabizi": "2eem",
+   "arabiziAlternatives": [
+    "2eem"
+   ],
+   "english": "values"
+  },
+  {
+   "id": "adv-20-e204e8",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "تكنولوجيا",
+   "alternatives": [
+    "تكنولوجيا"
+   ],
+   "display": "تكنولوجيا",
+   "arabizi": "tknooloojeea",
+   "arabiziAlternatives": [
+    "tknooloojeea"
+   ],
+   "english": "technology"
+  },
+  {
+   "id": "adv-20-7dfd93",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "تفاهم",
+   "alternatives": [
+    "تفاهم"
+   ],
+   "display": "تفاهم",
+   "arabizi": "tfahm",
+   "arabiziAlternatives": [
+    "tfahm"
+   ],
+   "english": "mutual understanding"
+  },
+  {
+   "id": "adv-20-595972",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "منفتح",
+   "alternatives": [
+    "منفتح"
+   ],
+   "display": "منفتح",
+   "arabizi": "mnft7",
+   "arabiziAlternatives": [
+    "mnft7"
+   ],
+   "english": "open-minded"
+  },
+  {
+   "id": "adv-20-2a08e0",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "adjective",
+   "arabic": "محافظ",
+   "alternatives": [
+    "محافظ"
+   ],
+   "display": "محافظ",
+   "arabizi": "m7afz",
+   "arabiziAlternatives": [
+    "m7afz"
+   ],
+   "english": "conservative"
+  },
+  {
+   "id": "adv-20-dcd338",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "verb",
+   "arabic": "يتقبّل",
+   "alternatives": [
+    "يتقبّل"
+   ],
+   "display": "يتقبّل",
+   "arabizi": "yt2bl",
+   "arabiziAlternatives": [
+    "yt2bl"
+   ],
+   "english": "to accept"
+  },
+  {
+   "id": "adv-20-23e2ca",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "verb",
+   "arabic": "ينفتح",
+   "alternatives": [
+    "ينفتح"
+   ],
+   "display": "ينفتح",
+   "arabizi": "ynft7",
+   "arabiziAlternatives": [
+    "ynft7"
+   ],
+   "english": "to open up"
+  },
+  {
+   "id": "adv-20-831c3d",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "verb",
+   "arabic": "يرث",
+   "alternatives": [
+    "يرث"
+   ],
+   "display": "يرث",
+   "arabizi": "yrth",
+   "arabiziAlternatives": [
+    "yrth"
+   ],
+   "english": "to inherit"
+  },
+  {
+   "id": "adv-20-51965a",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "عادات",
+   "alternatives": [
+    "عادات"
+   ],
+   "display": "عادات",
+   "arabizi": "3adat",
+   "arabiziAlternatives": [
+    "3adat"
+   ],
+   "english": "habits / customs"
+  },
+  {
+   "id": "adv-20-36b8d3",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "حوار",
+   "alternatives": [
+    "حوار"
+   ],
+   "display": "حوار",
+   "arabizi": "7ooar",
+   "arabiziAlternatives": [
+    "7ooar"
+   ],
+   "english": "dialogue"
+  },
+  {
+   "id": "adv-20-272969",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "اختلاف",
+   "alternatives": [
+    "اختلاف"
+   ],
+   "display": "اختلاف",
+   "arabizi": "a5tlaf",
+   "arabiziAlternatives": [
+    "a5tlaf"
+   ],
+   "english": "difference"
+  },
+  {
+   "id": "adv-20-5eacda",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "verb",
+   "arabic": "يتأقلم",
+   "alternatives": [
+    "يتأقلم"
+   ],
+   "display": "يتأقلم",
+   "arabizi": "yta2lm",
+   "arabiziAlternatives": [
+    "yta2lm"
+   ],
+   "english": "to adapt"
+  },
+  {
+   "id": "adv-20-c4c542",
+   "level": "advanced",
+   "unitId": "advanced/topic-20",
+   "unitTitle": "الفجوة بين الأجيال",
+   "unitOrder": 20,
+   "pos": "noun",
+   "arabic": "جسر",
+   "alternatives": [
+    "جسر"
+   ],
+   "display": "جسر",
+   "arabizi": "jsr",
+   "arabiziAlternatives": [
+    "jsr"
+   ],
+   "english": "bridge (of understanding)"
+  },
+  {
+   "id": "adv-21-918859",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "تخصص",
+   "alternatives": [
+    "تخصص"
+   ],
+   "display": "تخصص",
+   "arabizi": "t5ss",
+   "arabiziAlternatives": [
+    "t5ss"
+   ],
+   "english": "major / field of study"
+  },
+  {
+   "id": "adv-21-80ff64",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "سوق الشغل",
+   "alternatives": [
+    "سوق الشغل"
+   ],
+   "display": "سوق الشغل",
+   "arabizi": "soo2 alshghl",
+   "arabiziAlternatives": [
+    "soo2 alshghl"
+   ],
+   "english": "job market"
+  },
+  {
+   "id": "adv-21-a8c6e8",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "دراسات عليا",
+   "alternatives": [
+    "دراسات عليا"
+   ],
+   "display": "دراسات عليا",
+   "arabizi": "drasat 3leea",
+   "arabiziAlternatives": [
+    "drasat 3leea"
+   ],
+   "english": "higher education"
+  },
+  {
+   "id": "adv-21-39f078",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "تطوير المهارات",
+   "alternatives": [
+    "تطوير المهارات"
+   ],
+   "display": "تطوير المهارات",
+   "arabizi": "ttooeer almharat",
+   "arabiziAlternatives": [
+    "ttooeer almharat"
+   ],
+   "english": "skill development"
+  },
+  {
+   "id": "adv-21-d163c7",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "هدف مهني",
+   "alternatives": [
+    "هدف مهني"
+   ],
+   "display": "هدف مهني",
+   "arabizi": "hdf mhnee",
+   "arabiziAlternatives": [
+    "hdf mhnee"
+   ],
+   "english": "career goal"
+  },
+  {
+   "id": "adv-21-b39c42",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "noun",
+   "arabic": "خبرة عملية",
+   "alternatives": [
+    "خبرة عملية"
+   ],
+   "display": "خبرة عملية",
+   "arabizi": "5bre 3mlee",
+   "arabiziAlternatives": [
+    "5bre 3mlee"
+   ],
+   "english": "practical experience"
+  },
+  {
+   "id": "adv-21-90e679",
+   "level": "advanced",
+   "unitId": "advanced/topic-21",
+   "unitTitle": "الدراسة والعمل",
+   "unitOrder": 21,
+   "pos": "verb",
+   "arabic": "يغيّر مساره",
+   "alternatives": [
+    "يغيّر مساره"
+   ],
+   "display": "يغيّر مساره",
+   "arabizi": "ygheer msarh",
+   "arabiziAlternatives": [
+    "ygheer msarh"
+   ],
+   "english": "to change direction"
+  },
+  {
+   "id": "adv-22-5340fa",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "التعلّم الآلي",
+   "alternatives": [
+    "التعلّم الآلي"
+   ],
+   "display": "التعلّم الآلي",
+   "arabizi": "alt3lm alalee",
+   "arabiziAlternatives": [
+    "alt3lm alalee"
+   ],
+   "english": "machine learning"
+  },
+  {
+   "id": "adv-22-d433bd",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "روبوت",
+   "alternatives": [
+    "روبوت",
+    "أتمتة"
+   ],
+   "display": "روبوت / أتمتة",
+   "arabizi": "rooboot",
+   "arabiziAlternatives": [
+    "rooboot"
+   ],
+   "english": "robot / automation"
+  },
+  {
+   "id": "adv-22-4e6db8",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "خصوصية",
+   "alternatives": [
+    "خصوصية"
+   ],
+   "display": "خصوصية",
+   "arabizi": "5soosee",
+   "arabiziAlternatives": [
+    "5soosee"
+   ],
+   "english": "privacy"
+  },
+  {
+   "id": "adv-22-e53855",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "فقدان الوظائف",
+   "alternatives": [
+    "فقدان الوظائف"
+   ],
+   "display": "فقدان الوظائف",
+   "arabizi": "f2dan alooza2f",
+   "arabiziAlternatives": [
+    "f2dan alooza2f"
+   ],
+   "english": "job displacement"
+  },
+  {
+   "id": "adv-22-f6f989",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "خوارزمية",
+   "alternatives": [
+    "خوارزمية"
+   ],
+   "display": "خوارزمية",
+   "arabizi": "5ooarzmee",
+   "arabiziAlternatives": [
+    "5ooarzmee"
+   ],
+   "english": "algorithm"
+  },
+  {
+   "id": "adv-22-c083ec",
+   "level": "advanced",
+   "unitId": "advanced/topic-22",
+   "unitTitle": "الذكاء الاصطناعي",
+   "unitOrder": 22,
+   "pos": "noun",
+   "arabic": "أخلاقيات",
+   "alternatives": [
+    "أخلاقيات"
+   ],
+   "display": "أخلاقيات",
+   "arabizi": "a5la2eeat",
+   "arabiziAlternatives": [
+    "a5la2eeat"
+   ],
+   "english": "ethics"
+  },
+  {
+   "id": "adv-23-f8ad8d",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "noun",
+   "arabic": "اعتماد",
+   "alternatives": [
+    "اعتماد"
+   ],
+   "display": "اعتماد",
+   "arabizi": "a3tmad",
+   "arabiziAlternatives": [
+    "a3tmad"
+   ],
+   "english": "dependency"
+  },
+  {
+   "id": "adv-23-cc1792",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "adjective",
+   "arabic": "وسائل التواصل الاجتماعي",
+   "alternatives": [
+    "وسائل التواصل الاجتماعي"
+   ],
+   "display": "وسائل التواصل الاجتماعي",
+   "arabizi": "wsa2l altooasl alajtma3ee",
+   "arabiziAlternatives": [
+    "wsa2l altooasl alajtma3ee"
+   ],
+   "english": "social media"
+  },
+  {
+   "id": "adv-23-459f8f",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "noun",
+   "arabic": "الوصول للمعلومة",
+   "alternatives": [
+    "الوصول للمعلومة"
+   ],
+   "display": "الوصول للمعلومة",
+   "arabizi": "aloosool llm3loome",
+   "arabiziAlternatives": [
+    "aloosool llm3loome"
+   ],
+   "english": "access to information"
+  },
+  {
+   "id": "adv-23-d2207b",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "noun",
+   "arabic": "وقت الشاشة",
+   "alternatives": [
+    "وقت الشاشة"
+   ],
+   "display": "وقت الشاشة",
+   "arabizi": "w2t alshashe",
+   "arabiziAlternatives": [
+    "w2t alshashe"
+   ],
+   "english": "screen time"
+  },
+  {
+   "id": "adv-23-5b8349",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "noun",
+   "arabic": "تطبيقات",
+   "alternatives": [
+    "تطبيقات"
+   ],
+   "display": "تطبيقات",
+   "arabizi": "ttbee2at",
+   "arabiziAlternatives": [
+    "ttbee2at"
+   ],
+   "english": "applications / apps"
+  },
+  {
+   "id": "adv-23-fb7a08",
+   "level": "advanced",
+   "unitId": "advanced/topic-23",
+   "unitTitle": "التكنولوجيا",
+   "unitOrder": 23,
+   "pos": "noun",
+   "arabic": "التواصل",
+   "alternatives": [
+    "التواصل",
+    "الاتصال"
+   ],
+   "display": "التواصل / الاتصال",
+   "arabizi": "altooasl",
+   "arabiziAlternatives": [
+    "altooasl"
+   ],
+   "english": "connectivity"
+  },
+  {
+   "id": "adv-24-4d15d0",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "أتمتة",
+   "alternatives": [
+    "أتمتة"
+   ],
+   "display": "أتمتة",
+   "arabizi": "atmte",
+   "arabiziAlternatives": [
+    "atmte"
+   ],
+   "english": "automation"
+  },
+  {
+   "id": "adv-24-3cb7ed",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "مهارات المستقبل",
+   "alternatives": [
+    "مهارات المستقبل"
+   ],
+   "display": "مهارات المستقبل",
+   "arabizi": "mharat almst2bl",
+   "arabiziAlternatives": [
+    "mharat almst2bl"
+   ],
+   "english": "future skills"
+  },
+  {
+   "id": "adv-24-20e754",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "وظائف ناشئة",
+   "alternatives": [
+    "وظائف ناشئة"
+   ],
+   "display": "وظائف ناشئة",
+   "arabizi": "wza2f nash2e",
+   "arabiziAlternatives": [
+    "wza2f nash2e"
+   ],
+   "english": "emerging jobs"
+  },
+  {
+   "id": "adv-24-4917d7",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "تهديد الوظائف",
+   "alternatives": [
+    "تهديد الوظائف"
+   ],
+   "display": "تهديد الوظائف",
+   "arabizi": "thdeed alooza2f",
+   "arabiziAlternatives": [
+    "thdeed alooza2f"
+   ],
+   "english": "job disruption"
+  },
+  {
+   "id": "adv-24-3e7559",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "العمل الحر",
+   "alternatives": [
+    "العمل الحر"
+   ],
+   "display": "العمل الحر",
+   "arabizi": "al3ml al7r",
+   "arabiziAlternatives": [
+    "al3ml al7r"
+   ],
+   "english": "freelancing"
+  },
+  {
+   "id": "adv-24-f741df",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "adjective",
+   "arabic": "مهارات رقمية",
+   "alternatives": [
+    "مهارات رقمية"
+   ],
+   "display": "مهارات رقمية",
+   "arabizi": "mharat r2mee",
+   "arabiziAlternatives": [
+    "mharat r2mee"
+   ],
+   "english": "digital skills"
+  },
+  {
+   "id": "adv-24-44ba54",
+   "level": "advanced",
+   "unitId": "advanced/topic-24",
+   "unitTitle": "مستقبل الوظائف",
+   "unitOrder": 24,
+   "pos": "noun",
+   "arabic": "إبداع",
+   "alternatives": [
+    "إبداع"
+   ],
+   "display": "إبداع",
+   "arabizi": "abda3",
+   "arabiziAlternatives": [
+    "abda3"
+   ],
+   "english": "creativity"
+  },
+  {
+   "id": "adv-25-a24a54",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "قلق",
+   "alternatives": [
+    "قلق"
+   ],
+   "display": "قلق",
+   "arabizi": "2l2",
+   "arabiziAlternatives": [
+    "2l2"
+   ],
+   "english": "anxiety"
+  },
+  {
+   "id": "adv-25-d8484c",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "الخوف من الفشل",
+   "alternatives": [
+    "الخوف من الفشل"
+   ],
+   "display": "الخوف من الفشل",
+   "arabizi": "al5oof mn alfshl",
+   "arabiziAlternatives": [
+    "al5oof mn alfshl"
+   ],
+   "english": "fear of failure"
+  },
+  {
+   "id": "adv-25-80120f",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "عدم اليقين",
+   "alternatives": [
+    "عدم اليقين"
+   ],
+   "display": "عدم اليقين",
+   "arabizi": "3dm alee2een",
+   "arabiziAlternatives": [
+    "3dm alee2een"
+   ],
+   "english": "uncertainty"
+  },
+  {
+   "id": "adv-25-cf1618",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "مرونة نفسية",
+   "alternatives": [
+    "مرونة نفسية"
+   ],
+   "display": "مرونة نفسية",
+   "arabizi": "mroone nfsee",
+   "arabiziAlternatives": [
+    "mroone nfsee"
+   ],
+   "english": "resilience"
+  },
+  {
+   "id": "adv-25-e01009",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "تفاؤل",
+   "alternatives": [
+    "تفاؤل"
+   ],
+   "display": "تفاؤل",
+   "arabizi": "tfa2l",
+   "arabiziAlternatives": [
+    "tfa2l"
+   ],
+   "english": "optimism"
+  },
+  {
+   "id": "adv-25-33cc35",
+   "level": "advanced",
+   "unitId": "advanced/topic-25",
+   "unitTitle": "الخوف من المستقبل",
+   "unitOrder": 25,
+   "pos": "noun",
+   "arabic": "دعم نفسي",
+   "alternatives": [
+    "دعم نفسي"
+   ],
+   "display": "دعم نفسي",
+   "arabizi": "d3m nfsee",
+   "arabiziAlternatives": [
+    "d3m nfsee"
+   ],
+   "english": "psychological support"
+  },
+  {
+   "id": "adv-26-626e5b",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "noun",
+   "arabic": "سيناريو مستقبلي",
+   "alternatives": [
+    "سيناريو مستقبلي"
+   ],
+   "display": "سيناريو مستقبلي",
+   "arabizi": "seenareeoo mst2blee",
+   "arabiziAlternatives": [
+    "seenareeoo mst2blee"
+   ],
+   "english": "future scenario"
+  },
+  {
+   "id": "adv-26-d6139d",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "noun",
+   "arabic": "سيارة ذاتية القيادة",
+   "alternatives": [
+    "سيارة ذاتية القيادة"
+   ],
+   "display": "سيارة ذاتية القيادة",
+   "arabizi": "seeare zatee al2eeade",
+   "arabiziAlternatives": [
+    "seeare zatee al2eeade"
+   ],
+   "english": "self-driving car"
+  },
+  {
+   "id": "adv-26-4251f8",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "noun",
+   "arabic": "توقع",
+   "alternatives": [
+    "توقع"
+   ],
+   "display": "توقع",
+   "arabizi": "too23",
+   "arabiziAlternatives": [
+    "too23"
+   ],
+   "english": "prediction"
+  },
+  {
+   "id": "adv-26-60a5eb",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "noun",
+   "arabic": "ابتكار طبي",
+   "alternatives": [
+    "ابتكار طبي"
+   ],
+   "display": "ابتكار طبي",
+   "arabizi": "abtkar tbee",
+   "arabiziAlternatives": [
+    "abtkar tbee"
+   ],
+   "english": "medical innovation"
+  },
+  {
+   "id": "adv-26-a5fe18",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "verb",
+   "arabic": "يستعد لـ",
+   "alternatives": [
+    "يستعد لـ"
+   ],
+   "display": "يستعد لـ",
+   "arabizi": "yst3d l",
+   "arabiziAlternatives": [
+    "yst3d l"
+   ],
+   "english": "to prepare for"
+  },
+  {
+   "id": "adv-26-80842f",
+   "level": "advanced",
+   "unitId": "advanced/topic-26",
+   "unitTitle": "كيف رح تكون الحياة بعد ١٠ أو ٢٠ سنة",
+   "unitOrder": 26,
+   "pos": "noun",
+   "arabic": "الجيل القادم",
+   "alternatives": [
+    "الجيل القادم"
+   ],
+   "display": "الجيل القادم",
+   "arabizi": "aljeel al2adm",
+   "arabiziAlternatives": [
+    "aljeel al2adm"
+   ],
+   "english": "next generation"
+  },
+  {
+   "id": "adv-27-d03678",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "adjective",
+   "arabic": "شخصية قوية",
+   "alternatives": [
+    "شخصية قوية"
+   ],
+   "display": "شخصية قوية",
+   "arabizi": "sh5see 2ooee",
+   "arabiziAlternatives": [
+    "sh5see 2ooee"
+   ],
+   "english": "strong personality"
+  },
+  {
+   "id": "adv-27-dd1c05",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "adjective",
+   "arabic": "متردد",
+   "alternatives": [
+    "متردد"
+   ],
+   "display": "متردد",
+   "arabizi": "mtrdd",
+   "arabiziAlternatives": [
+    "mtrdd"
+   ],
+   "english": "indecisive"
+  },
+  {
+   "id": "adv-27-409b56",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "adjective",
+   "arabic": "حازم",
+   "alternatives": [
+    "حازم"
+   ],
+   "display": "حازم",
+   "arabizi": "7azm",
+   "arabiziAlternatives": [
+    "7azm"
+   ],
+   "english": "assertive"
+  },
+  {
+   "id": "adv-27-b67f39",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "adjective",
+   "arabic": "خاضع",
+   "alternatives": [
+    "خاضع"
+   ],
+   "display": "خاضع",
+   "arabizi": "5ad3",
+   "arabiziAlternatives": [
+    "5ad3"
+   ],
+   "english": "submissive"
+  },
+  {
+   "id": "adv-27-fbd6d1",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "noun",
+   "arabic": "صمود",
+   "alternatives": [
+    "صمود",
+    "مرونة"
+   ],
+   "display": "صمود / مرونة",
+   "arabizi": "smood",
+   "arabiziAlternatives": [
+    "smood"
+   ],
+   "english": "resilience"
+  },
+  {
+   "id": "adv-27-fd549f",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "adjective",
+   "arabic": "تطوير الذات",
+   "alternatives": [
+    "تطوير الذات"
+   ],
+   "display": "تطوير الذات",
+   "arabizi": "ttooeer alzat",
+   "arabiziAlternatives": [
+    "ttooeer alzat"
+   ],
+   "english": "self-development"
+  },
+  {
+   "id": "adv-27-49ab7c",
+   "level": "advanced",
+   "unitId": "advanced/topic-27",
+   "unitTitle": "الشخصية القوية والضعيفة",
+   "unitOrder": 27,
+   "pos": "noun",
+   "arabic": "وعي بالذات",
+   "alternatives": [
+    "وعي بالذات"
+   ],
+   "display": "وعي بالذات",
+   "arabizi": "w3ee balzat",
+   "arabiziAlternatives": [
+    "w3ee balzat"
+   ],
+   "english": "self-awareness"
+  },
+  {
+   "id": "adv-28-8f61d2",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "noun",
+   "arabic": "خجل",
+   "alternatives": [
+    "خجل"
+   ],
+   "display": "خجل",
+   "arabizi": "5jl",
+   "arabiziAlternatives": [
+    "5jl"
+   ],
+   "english": "shyness"
+  },
+  {
+   "id": "adv-28-70005b",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "adjective",
+   "arabic": "قلق اجتماعي",
+   "alternatives": [
+    "قلق اجتماعي"
+   ],
+   "display": "قلق اجتماعي",
+   "arabizi": "2l2 ajtma3ee",
+   "arabiziAlternatives": [
+    "2l2 ajtma3ee"
+   ],
+   "english": "social anxiety"
+  },
+  {
+   "id": "adv-28-8b04d8",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "noun",
+   "arabic": "تجنّب",
+   "alternatives": [
+    "تجنّب"
+   ],
+   "display": "تجنّب",
+   "arabizi": "tjnb",
+   "arabiziAlternatives": [
+    "tjnb"
+   ],
+   "english": "avoidance"
+  },
+  {
+   "id": "adv-28-a605bf",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "noun",
+   "arabic": "منطقة الراحة",
+   "alternatives": [
+    "منطقة الراحة"
+   ],
+   "display": "منطقة الراحة",
+   "arabizi": "mnt2e alra7e",
+   "arabiziAlternatives": [
+    "mnt2e alra7e"
+   ],
+   "english": "comfort zone"
+  },
+  {
+   "id": "adv-28-4dccb6",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "verb",
+   "arabic": "يتغلّب على",
+   "alternatives": [
+    "يتغلّب على"
+   ],
+   "display": "يتغلّب على",
+   "arabizi": "ytghlb 3la",
+   "arabiziAlternatives": [
+    "ytghlb 3la"
+   ],
+   "english": "to overcome"
+  },
+  {
+   "id": "adv-28-fbbe8f",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "noun",
+   "arabic": "انفتاح",
+   "alternatives": [
+    "انفتاح"
+   ],
+   "display": "انفتاح",
+   "arabizi": "anfta7",
+   "arabiziAlternatives": [
+    "anfta7"
+   ],
+   "english": "openness"
+  },
+  {
+   "id": "adv-28-1f89e3",
+   "level": "advanced",
+   "unitId": "advanced/topic-28",
+   "unitTitle": "الخجل",
+   "unitOrder": 28,
+   "pos": "noun",
+   "arabic": "ثقة بالنفس",
+   "alternatives": [
+    "ثقة بالنفس"
+   ],
+   "display": "ثقة بالنفس",
+   "arabizi": "th2e balnfs",
+   "arabiziAlternatives": [
+    "th2e balnfs"
+   ],
+   "english": "confidence"
+  },
+  {
+   "id": "adv-29-4d1c80",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "الثقة بالنفس",
+   "alternatives": [
+    "الثقة بالنفس"
+   ],
+   "display": "الثقة بالنفس",
+   "arabizi": "alth2e balnfs",
+   "arabiziAlternatives": [
+    "alth2e balnfs"
+   ],
+   "english": "self-confidence"
+  },
+  {
+   "id": "adv-29-ef55f2",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "نقد",
+   "alternatives": [
+    "نقد"
+   ],
+   "display": "نقد",
+   "arabizi": "n2d",
+   "arabiziAlternatives": [
+    "n2d"
+   ],
+   "english": "criticism"
+  },
+  {
+   "id": "adv-29-d2250a",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "قيمة الذات",
+   "alternatives": [
+    "قيمة الذات"
+   ],
+   "display": "قيمة الذات",
+   "arabizi": "2eeme alzat",
+   "arabiziAlternatives": [
+    "2eeme alzat"
+   ],
+   "english": "self-worth"
+  },
+  {
+   "id": "adv-29-b6aff6",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "مقارنة",
+   "alternatives": [
+    "مقارنة"
+   ],
+   "display": "مقارنة",
+   "arabizi": "m2arne",
+   "arabiziAlternatives": [
+    "m2arne"
+   ],
+   "english": "comparison"
+  },
+  {
+   "id": "adv-29-7b4e8e",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "adjective",
+   "arabic": "إنجاز",
+   "alternatives": [
+    "إنجاز"
+   ],
+   "display": "إنجاز",
+   "arabizi": "anjaz",
+   "arabiziAlternatives": [
+    "anjaz"
+   ],
+   "english": "achievement"
+  },
+  {
+   "id": "adv-29-47b3e7",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "قبول الذات",
+   "alternatives": [
+    "قبول الذات"
+   ],
+   "display": "قبول الذات",
+   "arabizi": "2bool alzat",
+   "arabiziAlternatives": [
+    "2bool alzat"
+   ],
+   "english": "self-acceptance"
+  },
+  {
+   "id": "adv-29-9fa00b",
+   "level": "advanced",
+   "unitId": "advanced/topic-29",
+   "unitTitle": "الثقة بالنفس",
+   "unitOrder": 29,
+   "pos": "noun",
+   "arabic": "فشل",
+   "alternatives": [
+    "فشل"
+   ],
+   "display": "فشل",
+   "arabizi": "fshl",
+   "arabiziAlternatives": [
+    "fshl"
+   ],
+   "english": "failure"
+  },
+  {
+   "id": "adv-30-789a10",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "غرور",
+   "alternatives": [
+    "غرور"
+   ],
+   "display": "غرور",
+   "arabizi": "ghroor",
+   "arabiziAlternatives": [
+    "ghroor"
+   ],
+   "english": "arrogance"
+  },
+  {
+   "id": "adv-30-414cb7",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "استصغار",
+   "alternatives": [
+    "استصغار"
+   ],
+   "display": "استصغار",
+   "arabizi": "astsghar",
+   "arabiziAlternatives": [
+    "astsghar"
+   ],
+   "english": "condescension"
+  },
+  {
+   "id": "adv-30-d718fc",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "أنا",
+   "alternatives": [
+    "أنا",
+    "غرور الذات"
+   ],
+   "display": "أنا / غرور الذات",
+   "arabizi": "ana",
+   "arabiziAlternatives": [
+    "ana"
+   ],
+   "english": "ego"
+  },
+  {
+   "id": "adv-30-00ab51",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "تفاخر",
+   "alternatives": [
+    "تفاخر"
+   ],
+   "display": "تفاخر",
+   "arabizi": "tfa5r",
+   "arabiziAlternatives": [
+    "tfa5r"
+   ],
+   "english": "boasting"
+  },
+  {
+   "id": "adv-30-5fb460",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "تواضع",
+   "alternatives": [
+    "تواضع"
+   ],
+   "display": "تواضع",
+   "arabizi": "tooad3",
+   "arabiziAlternatives": [
+    "tooad3"
+   ],
+   "english": "humility"
+  },
+  {
+   "id": "adv-30-fa6323",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "أثر الغرور",
+   "alternatives": [
+    "أثر الغرور"
+   ],
+   "display": "أثر الغرور",
+   "arabizi": "athr alghroor",
+   "arabiziAlternatives": [
+    "athr alghroor"
+   ],
+   "english": "arrogance's effect"
+  },
+  {
+   "id": "adv-30-165761",
+   "level": "advanced",
+   "unitId": "advanced/topic-30",
+   "unitTitle": "الغرور",
+   "unitOrder": 30,
+   "pos": "noun",
+   "arabic": "انفتاح على الآخر",
+   "alternatives": [
+    "انفتاح على الآخر"
+   ],
+   "display": "انفتاح على الآخر",
+   "arabizi": "anfta7 3la ala5r",
+   "arabiziAlternatives": [
+    "anfta7 3la ala5r"
+   ],
+   "english": "open-mindedness"
+  },
+  {
+   "id": "adv-31-3f2913",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "كرم",
+   "alternatives": [
+    "كرم"
+   ],
+   "display": "كرم",
+   "arabizi": "krm",
+   "arabiziAlternatives": [
+    "krm"
+   ],
+   "english": "generosity"
+  },
+  {
+   "id": "adv-31-17bc52",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "بخل",
+   "alternatives": [
+    "بخل"
+   ],
+   "display": "بخل",
+   "arabizi": "b5l",
+   "arabiziAlternatives": [
+    "b5l"
+   ],
+   "english": "stinginess"
+  },
+  {
+   "id": "adv-31-282b7f",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "إدارة مالية",
+   "alternatives": [
+    "إدارة مالية"
+   ],
+   "display": "إدارة مالية",
+   "arabizi": "adare malee",
+   "arabiziAlternatives": [
+    "adare malee"
+   ],
+   "english": "financial management"
+  },
+  {
+   "id": "adv-31-e2e0f5",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "مشاركة",
+   "alternatives": [
+    "مشاركة"
+   ],
+   "display": "مشاركة",
+   "arabizi": "msharke",
+   "arabiziAlternatives": [
+    "msharke"
+   ],
+   "english": "sharing"
+  },
+  {
+   "id": "adv-31-a9863d",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "كرم زائد",
+   "alternatives": [
+    "كرم زائد"
+   ],
+   "display": "كرم زائد",
+   "arabizi": "krm za2d",
+   "arabiziAlternatives": [
+    "krm za2d"
+   ],
+   "english": "excessive generosity"
+  },
+  {
+   "id": "adv-31-77aecf",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "توازن",
+   "alternatives": [
+    "توازن"
+   ],
+   "display": "توازن",
+   "arabizi": "tooazn",
+   "arabiziAlternatives": [
+    "tooazn"
+   ],
+   "english": "balance"
+  },
+  {
+   "id": "adv-31-74521f",
+   "level": "advanced",
+   "unitId": "advanced/topic-31",
+   "unitTitle": "الكرم والبخل",
+   "unitOrder": 31,
+   "pos": "noun",
+   "arabic": "إيثار",
+   "alternatives": [
+    "إيثار"
+   ],
+   "display": "إيثار",
+   "arabizi": "aeethar",
+   "arabiziAlternatives": [
+    "aeethar"
+   ],
+   "english": "selflessness"
+  },
+  {
+   "id": "adv-32-ae4936",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "عصبية",
+   "alternatives": [
+    "عصبية"
+   ],
+   "display": "عصبية",
+   "arabizi": "3sbee",
+   "arabiziAlternatives": [
+    "3sbee"
+   ],
+   "english": "irritability"
+  },
+  {
+   "id": "adv-32-607264",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "ضبط النفس",
+   "alternatives": [
+    "ضبط النفس"
+   ],
+   "display": "ضبط النفس",
+   "arabizi": "dbt alnfs",
+   "arabiziAlternatives": [
+    "dbt alnfs"
+   ],
+   "english": "self-control"
+  },
+  {
+   "id": "adv-32-8e7bd7",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "غضب",
+   "alternatives": [
+    "غضب"
+   ],
+   "display": "غضب",
+   "arabizi": "ghdb",
+   "arabiziAlternatives": [
+    "ghdb"
+   ],
+   "english": "anger"
+  },
+  {
+   "id": "adv-32-af24e2",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "نفس عميق",
+   "alternatives": [
+    "نفس عميق"
+   ],
+   "display": "نفس عميق",
+   "arabizi": "nfs 3mee2",
+   "arabiziAlternatives": [
+    "nfs 3mee2"
+   ],
+   "english": "deep breathing"
+  },
+  {
+   "id": "adv-32-78a423",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "عصبية مفرطة",
+   "alternatives": [
+    "عصبية مفرطة"
+   ],
+   "display": "عصبية مفرطة",
+   "arabizi": "3sbee mfrte",
+   "arabiziAlternatives": [
+    "3sbee mfrte"
+   ],
+   "english": "excessive anger"
+  },
+  {
+   "id": "adv-32-d668e5",
+   "level": "advanced",
+   "unitId": "advanced/topic-32",
+   "unitTitle": "العصبية",
+   "unitOrder": 32,
+   "pos": "noun",
+   "arabic": "تعبير صحي",
+   "alternatives": [
+    "تعبير صحي"
+   ],
+   "display": "تعبير صحي",
+   "arabizi": "t3beer s7ee",
+   "arabiziAlternatives": [
+    "t3beer s7ee"
+   ],
+   "english": "healthy expression"
+  },
+  {
+   "id": "adv-33-e28e9c",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "صبر",
+   "alternatives": [
+    "صبر"
+   ],
+   "display": "صبر",
+   "arabizi": "sbr",
+   "arabiziAlternatives": [
+    "sbr"
+   ],
+   "english": "patience"
+  },
+  {
+   "id": "adv-33-bcb783",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "استعجال",
+   "alternatives": [
+    "استعجال",
+    "عدم صبر"
+   ],
+   "display": "استعجال / عدم صبر",
+   "arabizi": "ast3jal",
+   "arabiziAlternatives": [
+    "ast3jal"
+   ],
+   "english": "impatience"
+  },
+  {
+   "id": "adv-33-8e073b",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "مثابرة",
+   "alternatives": [
+    "مثابرة"
+   ],
+   "display": "مثابرة",
+   "arabizi": "mthabre",
+   "arabiziAlternatives": [
+    "mthabre"
+   ],
+   "english": "perseverance"
+  },
+  {
+   "id": "adv-33-6471d5",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "نتائج على المدى الطويل",
+   "alternatives": [
+    "نتائج على المدى الطويل"
+   ],
+   "display": "نتائج على المدى الطويل",
+   "arabizi": "nta2j 3la almda altooeel",
+   "arabiziAlternatives": [
+    "nta2j 3la almda altooeel"
+   ],
+   "english": "long-term results"
+  },
+  {
+   "id": "adv-33-af0c03",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "تحمّل",
+   "alternatives": [
+    "تحمّل"
+   ],
+   "display": "تحمّل",
+   "arabizi": "t7ml",
+   "arabiziAlternatives": [
+    "t7ml"
+   ],
+   "english": "endurance"
+  },
+  {
+   "id": "adv-33-6f5095",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "استسلام",
+   "alternatives": [
+    "استسلام"
+   ],
+   "display": "استسلام",
+   "arabizi": "astslam",
+   "arabiziAlternatives": [
+    "astslam"
+   ],
+   "english": "giving up"
+  },
+  {
+   "id": "adv-33-3dd798",
+   "level": "advanced",
+   "unitId": "advanced/topic-33",
+   "unitTitle": "الصبر",
+   "unitOrder": 33,
+   "pos": "noun",
+   "arabic": "إصرار",
+   "alternatives": [
+    "إصرار"
+   ],
+   "display": "إصرار",
+   "arabizi": "asrar",
+   "arabiziAlternatives": [
+    "asrar"
+   ],
+   "english": "determination"
+  },
+  {
+   "id": "adv-34-4befab",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "ذكاء عاطفي",
+   "alternatives": [
+    "ذكاء عاطفي"
+   ],
+   "display": "ذكاء عاطفي",
+   "arabizi": "zka2 3atfee",
+   "arabiziAlternatives": [
+    "zka2 3atfee"
+   ],
+   "english": "emotional intelligence"
+  },
+  {
+   "id": "adv-34-90cdc9",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "ذكاء أكاديمي",
+   "alternatives": [
+    "ذكاء أكاديمي"
+   ],
+   "display": "ذكاء أكاديمي",
+   "arabizi": "zka2 akadeemee",
+   "arabiziAlternatives": [
+    "zka2 akadeemee"
+   ],
+   "english": "academic intelligence"
+  },
+  {
+   "id": "adv-34-71f173",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "ذكاء عملي",
+   "alternatives": [
+    "ذكاء عملي"
+   ],
+   "display": "ذكاء عملي",
+   "arabizi": "zka2 3mlee",
+   "arabiziAlternatives": [
+    "zka2 3mlee"
+   ],
+   "english": "practical intelligence"
+  },
+  {
+   "id": "adv-34-708cd0",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "adjective",
+   "arabic": "ذكاء اجتماعي",
+   "alternatives": [
+    "ذكاء اجتماعي"
+   ],
+   "display": "ذكاء اجتماعي",
+   "arabizi": "zka2 ajtma3ee",
+   "arabiziAlternatives": [
+    "zka2 ajtma3ee"
+   ],
+   "english": "social intelligence"
+  },
+  {
+   "id": "adv-34-4fb65d",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "ذكاءات متعددة",
+   "alternatives": [
+    "ذكاءات متعددة"
+   ],
+   "display": "ذكاءات متعددة",
+   "arabizi": "zka2at mt3dde",
+   "arabiziAlternatives": [
+    "zka2at mt3dde"
+   ],
+   "english": "multiple intelligences"
+  },
+  {
+   "id": "adv-34-346830",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "ذكاء إبداعي",
+   "alternatives": [
+    "ذكاء إبداعي"
+   ],
+   "display": "ذكاء إبداعي",
+   "arabizi": "zka2 abda3ee",
+   "arabiziAlternatives": [
+    "zka2 abda3ee"
+   ],
+   "english": "creative intelligence"
+  },
+  {
+   "id": "adv-34-893962",
+   "level": "advanced",
+   "unitId": "advanced/topic-34",
+   "unitTitle": "الذكاء",
+   "unitOrder": 34,
+   "pos": "noun",
+   "arabic": "النجاح بالحياة",
+   "alternatives": [
+    "النجاح بالحياة"
+   ],
+   "display": "النجاح بالحياة",
+   "arabizi": "alnja7 bal7eeae",
+   "arabiziAlternatives": [
+    "alnja7 bal7eeae"
+   ],
+   "english": "life success"
+  },
+  {
+   "id": "adv-35-215e51",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "قيادة",
+   "alternatives": [
+    "قيادة"
+   ],
+   "display": "قيادة",
+   "arabizi": "2eeade",
+   "arabiziAlternatives": [
+    "2eeade"
+   ],
+   "english": "leadership"
+  },
+  {
+   "id": "adv-35-32ebf9",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "توجيه الفريق",
+   "alternatives": [
+    "توجيه الفريق"
+   ],
+   "display": "توجيه الفريق",
+   "arabizi": "toojeeh alfree2",
+   "arabiziAlternatives": [
+    "toojeeh alfree2"
+   ],
+   "english": "team guidance"
+  },
+  {
+   "id": "adv-35-c4154d",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "إلهام",
+   "alternatives": [
+    "إلهام"
+   ],
+   "display": "إلهام",
+   "arabizi": "alham",
+   "arabiziAlternatives": [
+    "alham"
+   ],
+   "english": "inspiration"
+  },
+  {
+   "id": "adv-35-51a4f8",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "تسلط",
+   "alternatives": [
+    "تسلط"
+   ],
+   "display": "تسلط",
+   "arabizi": "tslt",
+   "arabiziAlternatives": [
+    "tslt"
+   ],
+   "english": "authoritarianism"
+  },
+  {
+   "id": "adv-35-c60f07",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "مهارة الاستماع",
+   "alternatives": [
+    "مهارة الاستماع"
+   ],
+   "display": "مهارة الاستماع",
+   "arabizi": "mhare alastma3",
+   "arabiziAlternatives": [
+    "mhare alastma3"
+   ],
+   "english": "listening skills"
+  },
+  {
+   "id": "adv-35-5781ce",
+   "level": "advanced",
+   "unitId": "advanced/topic-35",
+   "unitTitle": "القيادة",
+   "unitOrder": 35,
+   "pos": "noun",
+   "arabic": "تفويض",
+   "alternatives": [
+    "تفويض"
+   ],
+   "display": "تفويض",
+   "arabizi": "tfooeed",
+   "arabiziAlternatives": [
+    "tfooeed"
+   ],
+   "english": "delegation"
+  },
+  {
+   "id": "adv-36-773381",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "adjective",
+   "arabic": "شخصية صعبة",
+   "alternatives": [
+    "شخصية صعبة"
+   ],
+   "display": "شخصية صعبة",
+   "arabizi": "sh5see s3be",
+   "arabiziAlternatives": [
+    "sh5see s3be"
+   ],
+   "english": "difficult personality"
+  },
+  {
+   "id": "adv-36-daadfd",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "noun",
+   "arabic": "حدود شخصية",
+   "alternatives": [
+    "حدود شخصية"
+   ],
+   "display": "حدود شخصية",
+   "arabizi": "7dood sh5see",
+   "arabiziAlternatives": [
+    "7dood sh5see"
+   ],
+   "english": "personal boundaries"
+  },
+  {
+   "id": "adv-36-ef0a11",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "verb",
+   "arabic": "يستفز",
+   "alternatives": [
+    "يستفز"
+   ],
+   "display": "يستفز",
+   "arabizi": "ystfz",
+   "arabiziAlternatives": [
+    "ystfz"
+   ],
+   "english": "to provoke"
+  },
+  {
+   "id": "adv-36-38a9fc",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "noun",
+   "arabic": "رباطة جأش",
+   "alternatives": [
+    "رباطة جأش"
+   ],
+   "display": "رباطة جأش",
+   "arabizi": "rbate jash",
+   "arabiziAlternatives": [
+    "rbate jash"
+   ],
+   "english": "composure"
+  },
+  {
+   "id": "adv-36-cd0fe5",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "noun",
+   "arabic": "تواصل واضح",
+   "alternatives": [
+    "تواصل واضح"
+   ],
+   "display": "تواصل واضح",
+   "arabizi": "tooasl ooad7",
+   "arabiziAlternatives": [
+    "tooasl ooad7"
+   ],
+   "english": "clear communication"
+  },
+  {
+   "id": "adv-36-f05f49",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "noun",
+   "arabic": "علاقة سامة",
+   "alternatives": [
+    "علاقة سامة"
+   ],
+   "display": "علاقة سامة",
+   "arabizi": "3la2e same",
+   "arabiziAlternatives": [
+    "3la2e same"
+   ],
+   "english": "toxic relationship"
+  },
+  {
+   "id": "adv-36-4cdca3",
+   "level": "advanced",
+   "unitId": "advanced/topic-36",
+   "unitTitle": "التعامل مع الشخصيات الصعبة",
+   "unitOrder": 36,
+   "pos": "noun",
+   "arabic": "احترام متبادل",
+   "alternatives": [
+    "احترام متبادل"
+   ],
+   "display": "احترام متبادل",
+   "arabizi": "a7tram mtbadl",
+   "arabiziAlternatives": [
+    "a7tram mtbadl"
+   ],
+   "english": "mutual respect"
+  }
+ ]
+}

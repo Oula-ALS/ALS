@@ -1,0 +1,212 @@
+﻿Section,POS,العربي,Pronunciation (chat),English
+02_Unit2_DailyRoutine,verb,بفيق \ بوعى \ بصحى,bfee2,I wake up
+02_Unit2_DailyRoutine,verb,بتروّق,btroo2,I eat breakfast
+02_Unit2_DailyRoutine,verb,بروح ع الشغل \ الجامعة,broo7 3 alshghl,I go to work/university
+02_Unit2_DailyRoutine,verb,بدرس,bdrs,I study
+02_Unit2_DailyRoutine,verb,برجع ع البيت,brj3 3 albeet,I come back home
+02_Unit2_DailyRoutine,verb,بتعشّى,bt3sha,I eat dinner
+02_Unit2_DailyRoutine,verb,بنام,bnam,I sleep
+02_Unit2_DailyRoutine,adverb,دائماً,da2ma,Always
+02_Unit2_DailyRoutine,adverb,عادةً \ بالعادة,3ade,Usually
+02_Unit2_DailyRoutine,adverb,أحياناً,a7eeana,Sometimes
+02_Unit2_DailyRoutine,adverb,نادراً – قليل ما,nadra 2leel ma,Rarely
+02_Unit2_DailyRoutine,adverb,كل يوم,kl eeoom,Every day
+02_Unit2_DailyRoutine,adverb,أبداً,abda,Never
+02_Unit2_DailyRoutine,noun,المطبخ,el-maṭbakh,kitchen
+02_Unit2_DailyRoutine,noun,الغرفة,el-ghurfe,room
+02_Unit2_DailyRoutine,verb,برتّب الغرفة,brattib el-ghurfe,I tidy the room
+02_Unit2_DailyRoutine,verb,بلبس تيابي,bilbes tyabee,I put my clothes
+02_Unit2_DailyRoutine,verb,بجلي,bjle,I wash the dishes
+02_Unit2_DailyRoutine,verb,بطبخ,baṭbokh,I cook
+02_Unit2_DailyRoutine,verb,بنضّف,bnaddif,I clean
+02_Unit2_DailyRoutine,verb,بقعد بالجنينة,b2a3od bel-jeneyneh,I sit in the garden
+02_Unit2_DailyRoutine,verb,بشرب قهوة عالبلكون,bshrab ahwe 3al-balcone,I drink coffee on the balcony
+02_Unit2_DailyRoutine,verb,بغسّل إيدي,bghassel eedé,I wash my hands
+02_Unit2_DailyRoutine,verb,بغسّل وجهي,bghassel wejje,I wash my face
+02_Unit2_DailyRoutine,particle,بس,bass,but
+02_Unit2_DailyRoutine,particle,أما,amma,as for / while
+02_Unit2_DailyRoutine,particle,بالعادة,bel-3adeh,usually
+02_Unit2_DailyRoutine,particle,بالعطلة,bel-3oṭleh,on the weekend
+02_Unit2_DailyRoutine,particle,خلال الأسبوع,khilal el-usboo3,during the week
+03_Unit3_FreeTime,noun,العطلة,al3tle,weekend / holiday
+03_Unit3_FreeTime,noun,الشغل,alshghl,work
+03_Unit3_FreeTime,adjective,تعبان,t3ban,tired
+03_Unit3_FreeTime,adjective,مرتاح,mrta7,relaxed
+03_Unit3_FreeTime,adjective,طويل,taweel,long
+03_Unit3_FreeTime,adjective,سريع,sree3,fast
+03_Unit3_FreeTime,adjective,وقت,wa2et,time
+03_Unit3_FreeTime,adjective,وقت فراغ,wa2et fareigh,free time
+03_Unit3_FreeTime,verb,برتاح,brta7,I relax
+03_Unit3_FreeTime,verb,بفيق,bfee2,I wake up
+03_Unit3_FreeTime,verb,بقضي وقتي,b2dee oo2tee,I spend my time
+03_Unit3_FreeTime,verb,بطلع,btl3,I go out
+03_Unit3_FreeTime,verb,بقعد,b23d,I stay/sit at home
+03_Unit3_FreeTime,adjective,كبير,kbeer,big
+03_Unit3_FreeTime,adjective,صغير,zgheer,small
+03_Unit3_FreeTime,adjective,قصير,2seer,short
+03_Unit3_FreeTime,adjective,سهل,sahel,easy
+03_Unit3_FreeTime,adjective,صعب,sa3eb,difficult / hard
+03_Unit3_FreeTime,adjective,بطيء,batee2,slow
+03_Unit3_FreeTime,adjective,قريب,2areeb,near
+03_Unit3_FreeTime,adjective,بعيد,b3eed,far
+03_Unit3_FreeTime,adjective,حلو,helou,nice / beautiful
+03_Unit3_FreeTime,adjective,غالي,ghale,expensive
+03_Unit3_FreeTime,adjective,رخيص,rkhees,cheap
+03_Unit3_FreeTime,adjective,قوي,2awe,strong
+03_Unit3_FreeTime,adjective,ضعيف,da3eef,weak
+03_Unit3_FreeTime,adjective,عالي,3ale,high
+03_Unit3_FreeTime,adjective,واطي,wate,low
+03_Unit3_FreeTime,adjective,جديد,jdeed,new
+03_Unit3_FreeTime,adjective,قديم,2adeem,old
+03_Unit3_FreeTime,adjective,سيّئ,see2,bad
+03_Unit3_FreeTime,adjective,مريح,mreeh,comfortable
+03_Unit3_FreeTime,adjective,مهم,muhemm,important
+03_Unit3_FreeTime,adjective,ذكي,zaki,smart
+03_Unit3_FreeTime,adjective,غني,ghani,rich
+03_Unit3_FreeTime,adjective,فقير,fa2eer,poor
+04_Unit4_Travel,noun,سفر,sfr,travel
+04_Unit4_Travel,noun,بلد,balad,country
+04_Unit4_Travel,noun,مدينة,madineh,city
+04_Unit4_Travel,noun,سياحة,seyeha,tourism
+04_Unit4_Travel,noun,مطار,matar,airport
+04_Unit4_Travel,noun,طيارة,tayyara,plane
+04_Unit4_Travel,noun,بحر,ba7er,sea
+04_Unit4_Travel,noun,نهر,naher,river
+04_Unit4_Travel,noun,صحرا,sahra,desert
+04_Unit4_Travel,noun,جبل,jabal,mountain
+04_Unit4_Travel,noun,أماكن,amakn,places
+04_Unit4_Travel,noun,تاريخي,taree5ee,historical
+04_Unit4_Travel,noun,تقليدي,t2leedee,traditional
+04_Unit4_Travel,noun,مطعم,mt3m,restaurant
+04_Unit4_Travel,noun,تسوّق,tsoo2,shopping
+04_Unit4_Travel,noun,أكل,akl,food
+04_Unit4_Travel,noun,جو,joo,weather / atmosphere
+04_Unit4_Travel,noun,طقس,ta2es,weather
+04_Unit4_Travel,noun,عالم,3alam,people
+04_Unit4_Travel,noun,فندق,fondo2,hotel
+04_Unit4_Travel,noun,صور,soor,pictures
+04_Unit4_Travel,phrase,أول شي,aool shee,first
+04_Unit4_Travel,phrase,بعدين,b3deen,then
+04_Unit4_Travel,phrase,بعد ما,b3d ma,after
+04_Unit4_Travel,phrase,لأنو,lanoo,because
+04_Unit4_Travel,phrase,لهيك,lheek,so
+04_Unit4_Travel,phrase,كمان,kman,also
+04_Unit4_Travel,phrase,إذا,aza,if
+04_Unit4_Travel,phrase,عادةً,3ade,usually
+04_Unit4_Travel,verb,حَجَز,7jz,Booked
+04_Unit4_Travel,verb,طار,tar,Flew
+04_Unit4_Travel,verb,رِحْلة,r7le,Trip \ flight \ journey
+04_Unit4_Travel,verb,سافر,safr,Travelled
+04_Unit4_Travel,verb,قرّر,2rr,Decided
+04_Unit4_Travel,verb,حَبّ,7b,Liked / Loved
+04_Unit4_Travel,verb,وصلت / نزلت,wslt,Arrived / Landed (the plane)
+04_Unit4_Travel,verb,طلع,tl3,Take off / Leave / Go up
+04_Unit4_Travel,verb,غُرْفة,ghrfe,Room
+04_Unit4_Travel,verb,تِكِت - تذكرة,tkt - tzkre,Ticket
+04_Unit4_Travel,verb,شَنْاتي>شَنْتة,shnateeshnte,Bag / Suitcase
+04_Unit4_Travel,verb,ضبّيت,dbeet,Packed
+05_Unit5_Airport_Hotel,verb,فتّش,ftsh,Looked for/Searched / Inspected
+05_Unit5_Airport_Hotel,verb,لقى,l2a,Found
+05_Unit5_Airport_Hotel,noun,تسجيل الدخول,tsjeel ald5ool,Check-in
+05_Unit5_Airport_Hotel,noun,غرفة لشخصين,ghrfe lsh5seen,Double room
+05_Unit5_Airport_Hotel,noun,غرفة لشخص واحد,ghrfe lsh5s ooa7d,Single room
+05_Unit5_Airport_Hotel,noun,طابق,tab2,Floor
+05_Unit5_Airport_Hotel,noun,مصعد,ms3d,Elevator
+05_Unit5_Airport_Hotel,noun,حمّام,7mam,Bathroom
+05_Unit5_Airport_Hotel,noun,بلكون,blkoon,Balcony
+05_Unit5_Airport_Hotel,noun,واي فاي,waee faee,Wi-Fi
+05_Unit5_Airport_Hotel,noun,الفطور مشمول,alftoor mshmool,Breakfast included
+05_Unit5_Airport_Hotel,noun,مفتاح,mfta7,Key
+05_Unit5_Airport_Hotel,noun,مشكلة,mshkle,Problem
+05_Unit5_Airport_Hotel,noun,مكيّف,mkeef,Air conditioner
+05_Unit5_Airport_Hotel,noun,منشفة,mnshfe,Towel
+05_Unit5_Airport_Hotel,noun,مي سخنة,mee s5ne,Hot water
+05_Unit5_Airport_Hotel,noun,تسجيل الخروج,tsjeel al5rooj,Check-out
+05_Unit5_Airport_Hotel,verb,وصلwos`el,wsl,To arrive
+05_Unit5_Airport_Hotel,verb,وَصّل  was`sal,wsl,To drive or give someone a ride \To drop someone off
+05_Unit5_Airport_Hotel,verb,ضيّع,dee3,Lost
+05_Unit5_Airport_Hotel,verb,طلب,tlb,Asked for / Requested
+05_Unit5_Airport_Hotel,verb,سأل,sal,Asked
+05_Unit5_Airport_Hotel,verb,أخد,a5d,Took
+05_Unit5_Airport_Hotel,verb,نزل,nzl,Went down
+06_Unit6_Restaurant,noun,ترويقة,trooee2e,Breakfast
+06_Unit6_Restaurant,noun,غدا,ghda,Lunch
+06_Unit6_Restaurant,noun,عشا,3sha,Dinner
+06_Unit6_Restaurant,verb,تروّقت / تروّق,troo2t,I had breakfast
+06_Unit6_Restaurant,verb,تغدّيت / تغدّا,tghdeet,I had lunch
+06_Unit6_Restaurant,verb,تعشّيت / تعشّا,t3sheet,I had dinner
+06_Unit6_Restaurant,noun,منيو,mneeoo,Menu
+06_Unit6_Restaurant,verb,حساب / فاتورة,7sab,Bill
+06_Unit6_Restaurant,adjective,جوعان,joo3an,Hungry
+06_Unit6_Restaurant,adjective,شبعان,shb3an,Full
+06_Unit6_Restaurant,adjective,طيّب,teeb,Delicious
+06_Unit6_Restaurant,adjective,جرّب,jrb,Try
+06_Unit6_Restaurant,adjective,طاولة,taoole,Table
+06_Unit6_Restaurant,adjective,كرسون / جرسون,krsoon,Waiter
+06_Unit6_Restaurant,adjective,زبون,zboon,Customer
+06_Unit6_Restaurant,adjective,مشاوي,mshaooee,Grilled meat
+06_Unit6_Restaurant,adjective,فتّوش,ftoosh,Fattoush
+06_Unit6_Restaurant,adjective,عصير,3seer,Juice
+06_Unit6_Restaurant,adjective,كاش,kash,Cash
+06_Unit6_Restaurant,adjective,حساب,7sab,Bill
+06_Unit6_Restaurant,noun,بندورة,banadoora,Tomato
+06_Unit6_Restaurant,noun,خيار,5eyar,Cucumber
+06_Unit6_Restaurant,noun,خس,5as,Lettuce
+06_Unit6_Restaurant,noun,بصل,bas’al,Onion
+06_Unit6_Restaurant,noun,بطاطا,ba6a6a,Potato
+06_Unit6_Restaurant,noun,تفاح,teffe7,Apple
+06_Unit6_Restaurant,noun,موز,mawz,Banana
+06_Unit6_Restaurant,noun,عنب,3enab,Grapes
+06_Unit6_Restaurant,noun,برتقال / بردقان,bird2an,Orange
+06_Unit6_Restaurant,noun,فراولة,fareiz,Strawberry
+06_Unit6_Restaurant,noun,خبز,5ebez,Bread
+06_Unit6_Restaurant,noun,جبنة,jebneh,Cheese
+06_Unit6_Restaurant,noun,منقوشة زعتر,man2oosheh za3tar,Zaatar manousheh
+06_Unit6_Restaurant,noun,منقوشة جبنة,man2oosheh jebne,Cheese manousheh
+06_Unit6_Restaurant,noun,لبنة,labneh,Labneh
+06_Unit6_Restaurant,noun,حمص,hommos,Hummus
+06_Unit6_Restaurant,noun,فول,fool,Fava beans
+06_Unit6_Restaurant,noun,بيض,bayd,Eggs
+06_Unit6_Restaurant,noun,لحمة,la7me,Meat
+06_Unit6_Restaurant,noun,دجاج,djej,Chicken
+06_Unit6_Restaurant,noun,سمك,samak,Fish
+06_Unit6_Restaurant,noun,رز,rezz,Rice
+06_Unit6_Restaurant,noun,لبن,laban,Yogurt
+06_Unit6_Restaurant,noun,زيتون,zeytoon,Olives
+06_Unit6_Restaurant,noun,صحن,sa7en,Plate / Dish
+06_Unit6_Restaurant,noun,معلقة,ma3la2a,Spoon
+06_Unit6_Restaurant,noun,شوكة,shoukeh,Fork
+06_Unit6_Restaurant,noun,مشوي,meshwe,Grilled
+06_Unit6_Restaurant,noun,مقلي,ma2le,Fried
+06_Unit6_Restaurant,noun,ميّ,mee,Water
+06_Unit6_Restaurant,noun,شاي,shaee,Tea
+06_Unit6_Restaurant,noun,قهوة,2hooe,Coffee
+06_Unit6_Restaurant,noun,حليب,7leeb,Milk
+06_Unit6_Restaurant,noun,شاي مثلّج,shaee mthlj,Iced tea
+06_Unit6_Restaurant,noun,قهوة مثلّجة,2hooe mthlje,Iced coffee
+06_Unit6_Restaurant,noun,عصير ليمون,3seer leemoon,Lemon juice
+06_Unit6_Restaurant,noun,عصير بردقان,3seer brd2an,Orange juice
+06_Unit6_Restaurant,noun,زهورات,zhoorat,Herbal tea
+06_Unit6_Restaurant,noun,كبّاية,kbaee,Glass / Cup
+06_Unit6_Restaurant,noun,فنجان,fnjan,Small cup
+06_Unit6_Restaurant,noun,بارد,bard,Cold
+06_Unit6_Restaurant,noun,سخن,s5n,Hot
+06_Unit6_Restaurant,noun,تلج,tlj,Ice
+06_Unit6_Restaurant,preposition,مع,m3,With
+06_Unit6_Restaurant,preposition,بدون,bdoon,Without
+06_Unit6_Restaurant,preposition,و,w,And
+06_Unit6_Restaurant,verb,عبالي,3balee,I feel like / I want
+06_Unit6_Restaurant,verb,ما عبالي,ma 3balee,I don't feel like
+06_Unit6_Restaurant,verb,شرب,shrb,Drink
+06_Unit6_Restaurant,verb,شاف,shaf,Saw
+06_Unit6_Restaurant,verb,جاب,jab,Brought
+06_Unit6_Restaurant,verb,قال,2al,Said / Told
+06_Unit6_Restaurant,verb,عطى,3ta,Gave
+06_Unit6_Restaurant,verb,دفع,df3,Paid
+06_Unit6_Restaurant,verb,شكر,shkr,Thanked
+06_Unit6_Restaurant,verb,قعد,23d,Sat
+06_Unit6_Restaurant,verb,رجع,rj3,Returned
+06_Unit6_Restaurant,verb,فاتورة / حساب,fatoore,Bill
+06_Unit6_Restaurant,adjective,أشخاص,ash5as,People
+07_Unit7_Attendance,verb,حَضَر,7dr,Attended
+07_Unit7_Attendance,verb,جَهَّز,jhz,I prepared the suitcase for travelling
