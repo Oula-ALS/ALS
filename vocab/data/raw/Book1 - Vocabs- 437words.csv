@@ -1,0 +1,438 @@
+﻿Section,POS,العربي,Pronunciation (chat),English
+01_Unit1,phrase,مرحبا,Marhaba,Hello
+01_Unit1,phrase,أهلين,Ahlien,Hello (response)/Welcome
+01_Unit1,phrase,صباح الخير,Sabah el-kheir,Good morning
+01_Unit1,phrase,صباح النور,Sabah en-noor,Good morning (reply)
+01_Unit1,phrase,صباحو,Sabho,Morning! (casual)
+01_Unit1,phrase,مسا الخير,Masa l-kheir,Good evening
+01_Unit1,phrase,مسا النور,Masa en-noor,Good evening (reply)
+01_Unit1,phrase,السلام عليكم,As-salamu 3alaykum,Peace be upon you
+01_Unit1,phrase,وعليكم السلام,Wa 3alaykum as-salam,(reply to salam)
+01_Unit1,phrase,كيفَك,Keefak,How are you? (m)
+01_Unit1,phrase,كيفِك,Keefek,How are you? (f)
+01_Unit1,phrase,كيفكون,Keefkoun,How are you? (pl)
+01_Unit1,phrase,منيح,Mneeh,Good/Fine (m)
+01_Unit1,phrase,منيحة,Mneeha,Good/Fine (f)
+01_Unit1,phrase,تمام,Tamam,Okay/Fine
+01_Unit1,phrase,الحمد لله,El-hamdellah,Thank God/I'm fine
+01_Unit1,phrase,تشرّفنا,Tsharrafna,Pleased to meet you
+01_Unit1,phrase,بشوفَك,Bshoofak,See you (m)
+01_Unit1,phrase,بشوفِك,Bshoofek,See you (f)
+01_Unit1,phrase,بشوفكون,Bshoofkoun,See you (pl)
+01_Unit1,phrase,مع السلامة,Ma3 el-salameh,Goodbye
+01_Unit1,phrase,سلام,Salaam,Bye/Peace
+01_Unit1,phrase,بخاطْرَك,B5at'rak,Goodbye (m)
+01_Unit1,phrase,بخاطرِك,B5at'rek,Goodbye (f)
+01_Unit1,phrase,بخاطركون,B5at'erkon,Goodbye (pl)
+01_Unit1,phrase,شو اسمَك؟,Shoo ismak,What's your name? (m)
+01_Unit1,phrase,شو اسمِك؟,Shoo ismek,What's your name? (f)
+01_Unit1,phrase,أنا اسمي…,Ana ismi…,My name is…
+01_Unit1,phrase,أدّيش عمرَك؟,Addesh 3omrak,How old are you? (m)
+01_Unit1,phrase,أدّيش عمرِك؟,Addesh 3omrek,How old are you? (f)
+01_Unit1,phrase,أنا عمري…,Ana 3omri…,I am … years old
+01_Unit1,phrase,من وين إنتا؟,Min wayn inta,Where are you from? (m)
+01_Unit1,phrase,من وين إنتي؟,Min wayn intee,Where are you from? (f)
+01_Unit1,phrase,أنا من…,Ana min…,I'm from…
+01_Unit1,phrase,شو بتشتغل؟,Shoo btishtighel,What do you do? (m)
+01_Unit1,phrase,شو بتشتغلي؟,Shoo btishtighlee,What do you do? (f)
+01_Unit1,phrase,أنا بشتغل…,Ana bishtighel…,I work as…
+01_Unit1,phrase,وين ساكن؟,Wayn saken,Where do you live? (m)
+01_Unit1,phrase,وين ساكنة؟,Wayn sakneh,Where do you live? (f)
+01_Unit1,phrase,أنا ساكن بـ…,Ana saken bi…,I live in… (m)
+01_Unit1,phrase,أنا ساكنة بـ…,Ana sakneh bi…,I live in… (f)
+01_Unit1,pronoun,أنا,ana,I
+01_Unit1,pronoun,نحنا,nihna,We
+01_Unit1,pronoun,إنتَ,inta,You (m)
+01_Unit1,pronoun,إنتِ,intee,You (f)
+01_Unit1,pronoun,إنتو,intoo,You (pl)
+01_Unit1,pronoun,هو,huwwe,He
+01_Unit1,pronoun,هي,hiyye,She
+01_Unit1,pronoun,هِنِّ,hinneh,They
+01_Unit1,adjective,تعبان,ta3ban,tired
+01_Unit1,adjective,جوعان,jou3an,hungry
+01_Unit1,adjective,زعلان,za3lan,upset/sad
+01_Unit1,adjective,مشغول,mash8ool,busy
+01_Unit1,adjective,بردان,bardan,cold (person)
+01_Unit1,adjective,مبسوط,mabsout,happy
+01_Unit1,adjective,خايف,5ayef,scared
+01_Unit1,adjective,زهقان,zah2an,bored
+01_Unit1,adjective,مريض,mareedh,sick
+01_Unit1,particle,مش,mish,not (negation)
+01_Unit1,noun,بنت,Bint,girl
+01_Unit1,noun,ولد,Walad,boy/son/kid
+01_Unit1,noun,مرا,Mara,woman
+01_Unit1,noun,رجّال,Rijjal,man
+01_Unit1,noun,رفيق,Rfee2,friend (m)
+01_Unit1,noun,رفيقة,Rfee2a,friend (f)
+01_Unit1,noun,رفقات,Rif2at,friends
+01_Unit1,noun,معلّم,M3allem,teacher (m)
+01_Unit1,noun,معلمة,M3almeh,teacher (f)
+01_Unit1,noun,طالِب,T'aleb,student (m)
+01_Unit1,noun,طالبة,T'albeh,student (f)
+01_Unit1,noun,طلّاب,T'ollab,students
+02_Unit2,verb,عندي,3indi,I have (to have)
+02_Unit2,verb,بدّي,biddi,I want (to want)
+02_Unit2,verb,فيّي,feeye,I can (to be able)
+02_Unit2,particle,كان,kan,was/were (past marker)
+02_Unit2,particle,ما,ma,not (negation)
+02_Unit2,pronoun,هيدا,hayda,this (m)
+02_Unit2,pronoun,هيدي,haydi,this (f)
+02_Unit2,pronoun,هدول,hadool,these
+02_Unit2,pronoun,هيداك,haydak,that (m)
+02_Unit2,pronoun,هيديك,haydeek,that (f)
+02_Unit2,pronoun,هدوك,hadook,those
+02_Unit2,linking,و,w,and
+02_Unit2,linking,أو,aw,or
+02_Unit2,linking,كمان,kaman,also/too
+02_Unit2,phrase,إيه,eh,yes
+02_Unit2,phrase,لا,la,no
+02_Unit2,phrase,شكراً,shukran,thank you
+02_Unit2,noun,إم / ماما,em/mama,mother
+02_Unit2,noun,أب / بابا / بَي,ab/baba/bay,father
+02_Unit2,noun,أخ / خَي,a5/5ai,brother
+02_Unit2,noun,إخت,e5et,sister
+02_Unit2,noun,سِت,sit,grandmother
+02_Unit2,noun,جِد,jid,grandfather
+02_Unit2,noun,إخوة,i5weh,siblings
+02_Unit2,noun,إبن,ibn,son
+02_Unit2,noun,أهل,ahel,parents/family
+02_Unit2,noun,عيلة,3eileh,family
+02_Unit2,adjective,كبير,kbeer,big/old
+02_Unit2,adjective,صغير,z8eer,small/young
+02_Unit2,adjective,حلو,7elo,nice/beautiful/sweet
+02_Unit2,adjective,بشيع,bashi3,ugly
+02_Unit2,adjective,طيّب,tayeb,kind/tasty
+02_Unit2,noun,بيت,beit,house/home
+02_Unit2,noun,غرفة,ghurfa,room
+02_Unit2,noun,مدينة,mdeeneh,city
+02_Unit2,noun,مدرسة,madraseh,school
+02_Unit2,noun,وقت,wa2et,time
+02_Unit2,noun,ساعة,sa3a,hour
+02_Unit2,noun,قلم,2alam,pen
+02_Unit2,noun,ماي,mayy,water
+02_Unit2,noun,قهوة,2ahwe,coffee
+02_Unit2,noun,شاي,shay,tea
+02_Unit2,noun,درس,dars,lesson
+02_Unit2,noun,مطعم,mat3am,restaurant
+02_Unit2,noun,سيّارة,sayyara,car
+02_Unit2,noun,شغل,shighel,work
+02_Unit2,noun,أكل,akel,food
+02_Unit2,adverb,اليوم,elyom,today
+02_Unit2,adverb,مبارح,mbare7,yesterday
+02_Unit2,adverb,شوي,shway,a little
+03_Unit3,number,واحد,wa7ad,one (m)
+03_Unit3,number,وحدة,wa7deh,one (f)
+03_Unit3,number,تنين,tnein,two (m)
+03_Unit3,number,تنتين,tintein,two (f)
+03_Unit3,number,تلاتة,tlateh,three
+03_Unit3,number,أربعة,arb3a,four
+03_Unit3,number,خمسة,5amseh,five
+03_Unit3,number,ستّة,sitteh,six
+03_Unit3,number,سبعة,sab3a,seven
+03_Unit3,number,تمانة,tmaneh,eight
+03_Unit3,number,تسعة,tis3a,nine
+03_Unit3,number,عشرة,3ashra,ten
+03_Unit3,particle,في,fee,there is/are
+03_Unit3,particle,مافي,ma fee,there is no
+03_Unit3,particle,كم,kam,how many
+03_Unit3,linking,لأنّو,la2anno,because
+03_Unit3,linking,بس,bas,but
+03_Unit3,linking,لهيك,lahek,so/that's why
+03_Unit3,linking,مع,ma3,with
+03_Unit3,linking,من,min,from
+03_Unit3,linking,بـ,bi,in/at
+03_Unit3,linking,ع,3a,on/to
+03_Unit3,linking,ل,la,for
+03_Unit3,noun,يوم,yom,day
+03_Unit3,noun,كرسي,kersi,chair
+03_Unit3,noun,دفتر,daftar,notebook
+03_Unit3,noun,مهندس,mhandes,engineer
+03_Unit3,noun,موظف,mwazzaf,employee
+03_Unit3,noun,وظيفة,wazeefeh,homework
+03_Unit3,noun,صف,saff,class
+03_Unit3,noun,شنتة,shanta,bag
+03_Unit3,noun,طاولة,tawle,table
+03_Unit3,noun,كتاب,ktab,book
+04_Unit4,verb,بيكتب,byiktob,to write
+04_Unit4,verb,بيشرب,byishrab,to drink
+04_Unit4,verb,بيدرس,byidros,to study
+04_Unit4,verb,بيفتح,byifta7,to open
+04_Unit4,verb,بيلعب,byil3ab,to play
+04_Unit4,verb,بيسمع,byisma3,to hear/listen
+04_Unit4,verb,بيعمل,byi3mel,to do
+04_Unit4,verb,بيسأل,byis2al,to ask
+04_Unit4,verb,بيروح,byrou7,to go
+04_Unit4,verb,بيكون,bykoun,to be
+04_Unit4,verb,بيشوف,byshouf,to see
+04_Unit4,verb,بيحكي,byi7ki,to talk/speak
+04_Unit4,verb,بيمشي,byimshi,to walk
+04_Unit4,verb,بيقرا,byi2ra,to read
+04_Unit4,verb,بينام,bynam,to sleep
+04_Unit4,verb,بيجي,byiji,to come
+04_Unit4,verb,بيعطي,byi3ti,to give
+04_Unit4,adverb,كل يوم,kell yom,every day
+04_Unit4,adverb,الصبح,es-sob7,in the morning
+04_Unit4,adverb,الظهر,ed-doher,at noon
+04_Unit4,adverb,المسا,el-masa,in the evening
+04_Unit4,adverb,اسبوع,esbou3,a week
+04_Unit4,adverb,عطلة,3ot'le,day off/holiday
+04_Unit4,adverb,بكرا,bokra,tomorrow
+04_Unit4,adverb,هلّق,halla2,now
+04_Unit4,noun,عربي,3arabe,Arabic (language)
+04_Unit4,noun,السبت,es-sabet,Saturday
+04_Unit4,noun,الأحد,el-a7ad,Sunday
+04_Unit4,noun,التنين,et-tnein,Monday
+04_Unit4,noun,التلاتا,et-talata,Tuesday
+04_Unit4,noun,الأربعا,el-arb3a,Wednesday
+04_Unit4,noun,الخميس,el-5amees,Thursday
+04_Unit4,noun,الجمعة,ej-jum3a,Friday
+04_Unit4,question,شو,shu,what
+04_Unit4,question,مين,meen,who
+04_Unit4,question,وين,wein,where
+04_Unit4,question,ليش,lesh,why
+04_Unit4,question,كيف,keef,how
+04_Unit4,question,أديش,addesh,how much
+04_Unit4,question,إيمتا,eimta,when
+05_Unit5,particle,رَح,ra7,will (future)
+05_Unit5,particle,لازم,laazim,must/have to
+05_Unit5,particle,ممكن,mumken,can/may
+05_Unit5,particle,عم,3am,"(-ing, present continuous)"
+05_Unit5,adverb,بعدين,ba3dein,later
+05_Unit5,adverb,قبل,2abel,before
+05_Unit5,adverb,سوا,sawa,together
+05_Unit5,adverb,أكيد,akeed,sure/of course
+05_Unit5,adverb,أول شي,awwal shi,first of all
+05_Unit5,adjective,الجاي,el-jaay,next (m)
+05_Unit5,adjective,الجايِة,el-jaaye,next (f)
+05_Unit5,phrase,تعا,ta3a,come! (command)
+05_Unit5,phrase,يلا,yalla,let's/c'mon
+05_Unit5,verb,بينسى,byinsa,to forget
+05_Unit5,verb,بيتعلّم,byit3allam,to learn
+05_Unit5,verb,بيقول,byi2oul,to say
+05_Unit5,verb,بيساعد,byisa3ed,to help
+05_Unit5,verb,بيرتاح,byirta7,to rest
+05_Unit5,verb,بيطبخ,byitbo5,to cook
+06_Unit6,phrase,الساعة,es-sa3a,the time/clock
+06_Unit6,phrase,الساعة كم؟,es-sa3a kam,what time is it?
+06_Unit6,phrase,وْنُص,w-nuss,half past (:30)
+06_Unit6,phrase,وْرُبْع,w-rube3,quarter past (:15)
+06_Unit6,phrase,وْتِلْت,w-tilt,twenty past (:20)
+06_Unit6,phrase,إلا رُبْع,illa rube3,quarter to (:45)
+06_Unit6,phrase,إلا تِلْت,illa tilt,twenty to (:40)
+06_Unit6,phrase,بعد الضهر,ba3d ed-duhr,in the afternoon
+06_Unit6,noun,موعد,maw3ad,appointment
+06_Unit6,noun,نهار,nhar,day/on (a day)
+06_Unit6,noun,حدا,7ada,someone
+06_Unit6,noun,شخص,sha5es,person
+06_Unit6,noun,الباب,el-bab,the door
+06_Unit6,number,عشرين,3eshreen,twenty
+06_Unit6,number,تلاتين,tlateen,thirty
+06_Unit6,number,أربعين,arba3een,forty
+06_Unit6,number,خمسين,5amseen,fifty
+06_Unit6,number,ستّين,sitteen,sixty
+06_Unit6,number,سبعين,sab3een,seventy
+06_Unit6,number,تمانين,tmaneen,eighty
+06_Unit6,number,تسعين,tis3een,ninety
+06_Unit6,number,ميّة,miyyeh,hundred (100)
+06_Unit6,number,ميتين,meetien,two hundred (200)
+06_Unit6,number,مليون,milyon,million
+06_Unit6,number,مليونين,milyonayn,two million
+07_Unit7,color,أحمر,a7mar,red
+07_Unit7,color,أخضر,a5dar,green
+07_Unit7,color,أزرق,azra2,blue
+07_Unit7,color,أصفر,asfar,yellow
+07_Unit7,color,أبيض,abyad,white
+07_Unit7,color,أسود,aswad,black
+07_Unit7,color,بنّي,bunni,brown
+07_Unit7,color,بنفسجي,banafsaji,purple
+07_Unit7,color,برتقالي,burtu2ani,orange
+07_Unit7,color,زهري,zahri,pink
+07_Unit7,color,وردي,wardi,rosy/pink
+07_Unit7,color,رمادي,rmadi,grey
+07_Unit7,country,لبنان,Lebnen,Lebanon
+07_Unit7,country,سوريا,Souria,Syria
+07_Unit7,country,فلسطين,Falastin,Palestine
+07_Unit7,country,الأردن,el-Ordon,Jordan
+07_Unit7,country,مصر,Masr,Egypt
+07_Unit7,country,السعودية,es-Se3oudiyye,Saudi Arabia
+07_Unit7,country,المغرب,el-Maghreb,Morocco
+07_Unit7,country,تونس,Tounes,Tunisia
+07_Unit7,country,السودان,es-Soudan,Sudan
+07_Unit7,country,العراق,el-3ira2,Iraq
+07_Unit7,country,الإمارات,el-Imarat,UAE
+07_Unit7,country,الكويت,el-Kwet,Kuwait
+07_Unit7,country,قطر,Qatar,Qatar
+07_Unit7,country,عُمان,3oman,Oman
+07_Unit7,country,اليمن,el-Yaman,Yemen
+07_Unit7,country,البحرين,el-Ba7rein,Bahrain
+07_Unit7,country,الجزائر,el-Jazayer,Algeria
+07_Unit7,country,ليبيا,Libia,Libya
+07_Unit7,nationality,لبناني,Lebnaani,Lebanese
+07_Unit7,nationality,سوري,Souri,Syrian
+07_Unit7,nationality,فلسطيني,Falastini,Palestinian
+07_Unit7,nationality,أردني,Ordoni,Jordanian
+07_Unit7,nationality,مصري,Masri,Egyptian
+07_Unit7,nationality,سعودي,Sa3oudi,Saudi
+07_Unit7,nationality,مغربي,Maghribi,Moroccan
+07_Unit7,nationality,سوداني,Soudani,Sudanese
+07_Unit7,nationality,تونسي,Tounsi,Tunisian
+07_Unit7,nationality,عراقي,3iraqi,Iraqi
+07_Unit7,adjective,غالي,ghali,expensive
+07_Unit7,adjective,رخيص,rkhees,cheap
+07_Unit7,adjective,طويل,tawil,long/tall
+07_Unit7,adjective,بعيد,b3eed,far
+07_Unit7,adjective,قريب,2arib,near
+07_Unit7,adjective,سهل,sahel,easy
+07_Unit7,adjective,صعب,sa3eb,hard/difficult
+07_Unit7,adjective,واضح,wade7,clear
+07_Unit7,adjective,أحسن,a7san,better
+07_Unit7,noun,سعر,se3er,price
+07_Unit7,noun,ناس,nas,people
+07_Unit7,noun,مستشفى,mustashfa,hospital
+07_Unit7,noun,بلد,balad,country
+07_Unit7,noun,جامعة,jam3a,university
+07_Unit7,noun,طقس,ta2es,weather
+07_Unit7,noun,طبيعة,tabee3a,nature
+07_Unit7,noun,مساحة,misa7a,area/size
+07_Unit7,noun,مقارنة,mu2arane,comparison
+07_Unit7,verb,شتغل,shta8al,to work
+07_Unit7,verb,سكّر,sakkar,to close
+07_Unit7,verb,لبس,lebes,to wear
+07_Unit7,verb,وصل,wesel,to arrive
+07_Unit7,verb,طبخ,tabakh,to cook
+07_Unit7,verb,سكن,saken,to live/reside
+07_Unit7,verb,طلع,tele3,to go up/out
+07_Unit7,verb,قعد,2a3ad,to sit
+07_Unit7,verb,سافر,safar,to travel
+07_Unit7,verb,خلّص,5allas,to finish
+07_Unit7,verb,صرف,saraf,to spend money
+07_Unit7,verb,علّم,3allam,to teach
+07_Unit7,verb,عرف,3eref,to know
+07_Unit7,verb,رجع,rje3,to come back/return
+07_Unit7,verb,دفع,dafa3,to pay
+07_Unit7,verb,حضر,7adar,to watch/attend
+07_Unit7,verb,رسم,rasam,to draw
+07_Unit7,verb,عزف,3azaf,to play music
+07_Unit7,verb,تطلّع,ttalla3,to look
+07_Unit7,verb,سبح,saba7,to swim
+07_Unit7,verb,نزل,nezel,to go down
+07_Unit7,verb,تعب,te3eb,to get tired
+07_Unit7,verb,فهم,fehem,to understand
+07_Unit7,verb,أخد,akhad,to take
+07_Unit7,verb,لف,laff,to turn
+07_Unit7,verb,وقّف,wa22af,to stop
+07_Unit7,verb,زار,zar,to visit
+07_Unit7,verb,جاب,jab,to bring
+07_Unit7,verb,باع,ba3,to sell
+07_Unit7,verb,عاش,3ash,to live
+07_Unit7,verb,فاق,fa2,to wake up
+07_Unit7,verb,ضاع,da3,to get lost
+07_Unit7,verb,صار,sar,to become/happen
+07_Unit7,verb,شترى,shtara,to buy
+07_Unit7,verb,قضّى,2adda,to spend (time)
+07_Unit7,verb,بقي,be2i,to stay
+07_Unit7,verb,بكي,beki,to cry
+07_Unit7,verb,استحى,st7a,to feel shy
+07_Unit7,verb,ردّ,radd,to reply/return
+07_Unit7,verb,حبّ,7abb,to love/like
+07_Unit7,verb,فلّ,fall,to leave
+07_Unit7,noun,فطور,ftour,breakfast
+07_Unit7,noun,غدا,ghada,lunch
+07_Unit7,noun,عشا,3asha,dinner
+07_Unit7,noun,منقوشة,man2oushe,manoushe
+07_Unit7,noun,زعتر,za3tar,thyme/zaatar
+07_Unit7,noun,لبنة,labne,labneh
+07_Unit7,noun,خبز,khebez,bread
+07_Unit7,noun,جبنة,jebne,cheese
+07_Unit7,noun,زيتون,zaytoon,olives
+07_Unit7,noun,بيض,bayd,eggs
+07_Unit7,noun,رز,rizz,rice
+07_Unit7,noun,دجاج,djej,chicken
+07_Unit7,noun,سلطة,salata,salad
+07_Unit7,noun,لحمة,la7meh,meat
+07_Unit7,noun,سمك,samak,fish
+07_Unit7,noun,تبولة,tabbouleh,tabbouleh
+07_Unit7,noun,حمّص,hummus,hummus
+07_Unit7,noun,برغر,burger,burger
+07_Unit7,noun,فلافل,falafel,falafel
+07_Unit7,noun,عصير,3aseer,juice
+07_Unit7,noun,عصير برتقال,3aseer burtu2al,orange juice
+07_Unit7,adjective,محمّص,m7ammas,toasted/roasted
+07_Unit7,adjective,مقلي,ma2li,fried
+07_Unit7,adjective,مشوي,mashwi,grilled
+07_Unit7,adjective,مسلوق,maslou2,boiled
+07_Unit7,adjective,نباتي,nabati,vegetarian
+07_Unit7,adjective,المفضّل,el-mufaddal,favourite
+07_Unit7,verb,طلب,talab,to order
+07_Unit7,adverb,بالعادة,bil3ade,usually
+07_Unit7,adverb,مرّات,marrat,sometimes
+07_Unit7,adverb,أحياناً,a7yanan,sometimes
+07_Unit7,adverb,تقريباً,ta2reeban,almost
+07_Unit7,adverb,برّا,barra,outside
+07_Unit7,noun,خيار,khyar,cucumber
+07_Unit7,noun,بندورة,banadora,tomato
+07_Unit7,noun,خس,khas,lettuce
+07_Unit7,noun,بطاطا,batata,potato
+07_Unit7,noun,جزر,jazar,carrot
+07_Unit7,noun,تفاح,tiffa7,apple
+07_Unit7,noun,موز,mawz,banana
+07_Unit7,noun,برتقال,burtu2al,orange (fruit)
+07_Unit7,noun,عنب,3enab,grapes
+07_Unit7,noun,بطيخ,batti5,watermelon
+07_Unit7,noun,مكتب,maktab,office/desk
+07_Unit7,noun,السوق,es-sou2,market
+07_Unit7,noun,ملعب,mal3ab,stadium/ground
+07_Unit7,noun,فندق,funduq,hotel
+07_Unit7,noun,معهد,ma3had,institute
+07_Unit7,noun,صيدلية,saydaliyye,pharmacy
+07_Unit7,noun,حديقة,7adi2a,garden/park
+07_Unit7,noun,بنك,bank,bank
+07_Unit7,noun,مخيّم,mu5ayyam,camp
+07_Unit7,noun,سوبرماركت,supermarket,supermarket
+07_Unit7,noun,شارع,share3,street
+07_Unit7,noun,الإشارة,el-ishara,traffic light
+07_Unit7,noun,تلفزيون,telfezyon,TV
+07_Unit7,noun,رسالة,risaleh,letter/message
+07_Unit7,linking,تحت,ta7et,under
+07_Unit7,linking,فوق,fo2,on/above
+07_Unit7,linking,حدّ,7add,next to
+07_Unit7,linking,بين,bein,between
+07_Unit7,linking,عند,3and,at/by
+07_Unit7,linking,يمين,yamin,right
+07_Unit7,linking,يسار,yasar,left
+07_Unit7,linking,شمال,shmal,left
+07_Unit7,phrase,روح,rou7,go! (command)
+07_Unit7,phrase,كفّي,kaffi,continue! (command)
+07_Unit7,phrase,نزّلني,nazzelni,drop me off
+07_Unit7,phrase,تعطيني,ta3teeni,give me
+07_Unit7,adverb,دغري,daghri,straight
+07_Unit7,adjective,أول,awwal,first
+07_Unit7,adjective,تاني,tani,second
+07_Unit7,noun,شوفير,shofer,driver
+07_Unit7,noun,تاكسي,taxi,taxi
+07_Unit7,noun,أوبر,uber,Uber
+07_Unit7,noun,ليرة,lira,lira
+07_Unit7,adjective,شوب,shob,hot (weather)
+07_Unit7,adjective,بارد,bared,cold (weather)
+07_Unit7,adjective,صافي,safi,clear
+07_Unit7,noun,مباراة,mubarat,match
+07_Unit7,noun,رحلة,re7le,trip
+07_Unit7,noun,شجرة,shajra,tree
+07_Unit7,noun,السما,es-sama,the sky
+07_Unit7,noun,الشمس,esh-shams,the sun
+07_Unit7,noun,جبل,jabal,mountain
+07_Unit7,noun,بحر,ba7er,sea
+07_Unit7,noun,مصاري,masari,money
+07_Unit7,noun,فيلم,film,movie
+07_Unit7,noun,جواب,jawab,answer
+07_Unit7,linking,عشان,3ashan,in order to/because
+07_Unit7,phrase,لو سمحت,law sama7t,please
+07_Unit7,phrase,يعطيك العافية,ya3teek el-3afye,more power to you (thanks)
+07_Unit7,phrase,تفضّل,tfaddal,here you go/please
+07_Unit7,phrase,برأيي,bra2yi,in my opinion
+07_Unit7,phrase,احكي شوي شوي,7ki shway shway,speak slowly
+07_Unit7,phrase,ما فهمت,ma fhimt,I didn't understand
+07_Unit7,phrase,ما بعرف,ma ba3ref,I don't know
+07_Unit7,phrase,أهلا وسهلا,ahla w sahla,welcome
+07_Unit7,phrase,صارلي,sarli,I have been (for…)
+07_Unit7,phrase,يعني,ya3ni,meaning/so

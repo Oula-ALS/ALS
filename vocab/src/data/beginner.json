@@ -1,0 +1,7988 @@
+{
+ "level": "beginner",
+ "title": "Beginner (Book 1)",
+ "source": "Book1 - Vocabs- 437words.csv",
+ "units": [
+  {
+   "id": "beginner/unit-1",
+   "level": "beginner",
+   "slug": "unit-1",
+   "order": 1,
+   "title": "Unit 1",
+   "titleIsArabic": false,
+   "wordCount": 71
+  },
+  {
+   "id": "beginner/unit-2",
+   "level": "beginner",
+   "slug": "unit-2",
+   "order": 2,
+   "title": "Unit 2",
+   "titleIsArabic": false,
+   "wordCount": 50
+  },
+  {
+   "id": "beginner/unit-3",
+   "level": "beginner",
+   "slug": "unit-3",
+   "order": 3,
+   "title": "Unit 3",
+   "titleIsArabic": false,
+   "wordCount": 33
+  },
+  {
+   "id": "beginner/unit-4",
+   "level": "beginner",
+   "slug": "unit-4",
+   "order": 4,
+   "title": "Unit 4",
+   "titleIsArabic": false,
+   "wordCount": 40
+  },
+  {
+   "id": "beginner/unit-5",
+   "level": "beginner",
+   "slug": "unit-5",
+   "order": 5,
+   "title": "Unit 5",
+   "titleIsArabic": false,
+   "wordCount": 19
+  },
+  {
+   "id": "beginner/unit-6",
+   "level": "beginner",
+   "slug": "unit-6",
+   "order": 6,
+   "title": "Unit 6",
+   "titleIsArabic": false,
+   "wordCount": 25
+  },
+  {
+   "id": "beginner/unit-7",
+   "level": "beginner",
+   "slug": "unit-7",
+   "order": 7,
+   "title": "Unit 7",
+   "titleIsArabic": false,
+   "wordCount": 199
+  }
+ ],
+ "words": [
+  {
+   "id": "beg-1-98d448",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "مرحبا",
+   "alternatives": [
+    "مرحبا"
+   ],
+   "display": "مرحبا",
+   "arabizi": "Marhaba",
+   "arabiziAlternatives": [
+    "Marhaba"
+   ],
+   "english": "Hello"
+  },
+  {
+   "id": "beg-1-fca6be",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أهلين",
+   "alternatives": [
+    "أهلين"
+   ],
+   "display": "أهلين",
+   "arabizi": "Ahlien",
+   "arabiziAlternatives": [
+    "Ahlien"
+   ],
+   "english": "Hello (response)/Welcome"
+  },
+  {
+   "id": "beg-1-5561c3",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "صباح الخير",
+   "alternatives": [
+    "صباح الخير"
+   ],
+   "display": "صباح الخير",
+   "arabizi": "Sabah el-kheir",
+   "arabiziAlternatives": [
+    "Sabah el-kheir"
+   ],
+   "english": "Good morning"
+  },
+  {
+   "id": "beg-1-b96d31",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "صباح النور",
+   "alternatives": [
+    "صباح النور"
+   ],
+   "display": "صباح النور",
+   "arabizi": "Sabah en-noor",
+   "arabiziAlternatives": [
+    "Sabah en-noor"
+   ],
+   "english": "Good morning (reply)"
+  },
+  {
+   "id": "beg-1-076880",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "صباحو",
+   "alternatives": [
+    "صباحو"
+   ],
+   "display": "صباحو",
+   "arabizi": "Sabho",
+   "arabiziAlternatives": [
+    "Sabho"
+   ],
+   "english": "Morning! (casual)"
+  },
+  {
+   "id": "beg-1-d2b3b2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "مسا الخير",
+   "alternatives": [
+    "مسا الخير"
+   ],
+   "display": "مسا الخير",
+   "arabizi": "Masa l-kheir",
+   "arabiziAlternatives": [
+    "Masa l-kheir"
+   ],
+   "english": "Good evening"
+  },
+  {
+   "id": "beg-1-ea9210",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "مسا النور",
+   "alternatives": [
+    "مسا النور"
+   ],
+   "display": "مسا النور",
+   "arabizi": "Masa en-noor",
+   "arabiziAlternatives": [
+    "Masa en-noor"
+   ],
+   "english": "Good evening (reply)"
+  },
+  {
+   "id": "beg-1-43f86f",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "السلام عليكم",
+   "alternatives": [
+    "السلام عليكم"
+   ],
+   "display": "السلام عليكم",
+   "arabizi": "As-salamu 3alaykum",
+   "arabiziAlternatives": [
+    "As-salamu 3alaykum"
+   ],
+   "english": "Peace be upon you"
+  },
+  {
+   "id": "beg-1-ae09ec",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "وعليكم السلام",
+   "alternatives": [
+    "وعليكم السلام"
+   ],
+   "display": "وعليكم السلام",
+   "arabizi": "Wa 3alaykum as-salam",
+   "arabiziAlternatives": [
+    "Wa 3alaykum as-salam"
+   ],
+   "english": "(reply to salam)"
+  },
+  {
+   "id": "beg-1-1bf063",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "كيفَك",
+   "alternatives": [
+    "كيفَك"
+   ],
+   "display": "كيفَك",
+   "arabizi": "Keefak",
+   "arabiziAlternatives": [
+    "Keefak"
+   ],
+   "english": "How are you?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-1bf063-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "كيفِك",
+   "alternatives": [
+    "كيفِك"
+   ],
+   "display": "كيفِك",
+   "arabizi": "Keefek",
+   "arabiziAlternatives": [
+    "Keefek"
+   ],
+   "english": "How are you?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-aec3fc",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "كيفكون",
+   "alternatives": [
+    "كيفكون"
+   ],
+   "display": "كيفكون",
+   "arabizi": "Keefkoun",
+   "arabiziAlternatives": [
+    "Keefkoun"
+   ],
+   "english": "How are you?",
+   "gender": "pl"
+  },
+  {
+   "id": "beg-1-ac2127",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "منيح",
+   "alternatives": [
+    "منيح"
+   ],
+   "display": "منيح",
+   "arabizi": "Mneeh",
+   "arabiziAlternatives": [
+    "Mneeh"
+   ],
+   "english": "Good/Fine",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-c5d154",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "منيحة",
+   "alternatives": [
+    "منيحة"
+   ],
+   "display": "منيحة",
+   "arabizi": "Mneeha",
+   "arabiziAlternatives": [
+    "Mneeha"
+   ],
+   "english": "Good/Fine",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-11a382",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "تمام",
+   "alternatives": [
+    "تمام"
+   ],
+   "display": "تمام",
+   "arabizi": "Tamam",
+   "arabiziAlternatives": [
+    "Tamam"
+   ],
+   "english": "Okay/Fine"
+  },
+  {
+   "id": "beg-1-c6e09f",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "الحمد لله",
+   "alternatives": [
+    "الحمد لله"
+   ],
+   "display": "الحمد لله",
+   "arabizi": "El-hamdellah",
+   "arabiziAlternatives": [
+    "El-hamdellah"
+   ],
+   "english": "Thank God/I'm fine"
+  },
+  {
+   "id": "beg-1-e5d87d",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "تشرّفنا",
+   "alternatives": [
+    "تشرّفنا"
+   ],
+   "display": "تشرّفنا",
+   "arabizi": "Tsharrafna",
+   "arabiziAlternatives": [
+    "Tsharrafna"
+   ],
+   "english": "Pleased to meet you"
+  },
+  {
+   "id": "beg-1-e34981",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بشوفَك",
+   "alternatives": [
+    "بشوفَك"
+   ],
+   "display": "بشوفَك",
+   "arabizi": "Bshoofak",
+   "arabiziAlternatives": [
+    "Bshoofak"
+   ],
+   "english": "See you",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-e34981-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بشوفِك",
+   "alternatives": [
+    "بشوفِك"
+   ],
+   "display": "بشوفِك",
+   "arabizi": "Bshoofek",
+   "arabiziAlternatives": [
+    "Bshoofek"
+   ],
+   "english": "See you",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-07c761",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بشوفكون",
+   "alternatives": [
+    "بشوفكون"
+   ],
+   "display": "بشوفكون",
+   "arabizi": "Bshoofkoun",
+   "arabiziAlternatives": [
+    "Bshoofkoun"
+   ],
+   "english": "See you",
+   "gender": "pl"
+  },
+  {
+   "id": "beg-1-c171b7",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "مع السلامة",
+   "alternatives": [
+    "مع السلامة"
+   ],
+   "display": "مع السلامة",
+   "arabizi": "Ma3 el-salameh",
+   "arabiziAlternatives": [
+    "Ma3 el-salameh"
+   ],
+   "english": "Goodbye"
+  },
+  {
+   "id": "beg-1-fa65ac",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "سلام",
+   "alternatives": [
+    "سلام"
+   ],
+   "display": "سلام",
+   "arabizi": "Salaam",
+   "arabiziAlternatives": [
+    "Salaam"
+   ],
+   "english": "Bye/Peace"
+  },
+  {
+   "id": "beg-1-dcbdb1",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بخاطْرَك",
+   "alternatives": [
+    "بخاطْرَك"
+   ],
+   "display": "بخاطْرَك",
+   "arabizi": "B5at'rak",
+   "arabiziAlternatives": [
+    "B5at'rak"
+   ],
+   "english": "Goodbye",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-dcbdb1-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بخاطرِك",
+   "alternatives": [
+    "بخاطرِك"
+   ],
+   "display": "بخاطرِك",
+   "arabizi": "B5at'rek",
+   "arabiziAlternatives": [
+    "B5at'rek"
+   ],
+   "english": "Goodbye",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-d67c43",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "بخاطركون",
+   "alternatives": [
+    "بخاطركون"
+   ],
+   "display": "بخاطركون",
+   "arabizi": "B5at'erkon",
+   "arabiziAlternatives": [
+    "B5at'erkon"
+   ],
+   "english": "Goodbye",
+   "gender": "pl"
+  },
+  {
+   "id": "beg-1-9dd02b",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "شو اسمَك؟",
+   "alternatives": [
+    "شو اسمَك؟"
+   ],
+   "display": "شو اسمَك؟",
+   "arabizi": "Shoo ismak",
+   "arabiziAlternatives": [
+    "Shoo ismak"
+   ],
+   "english": "What's your name?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-9dd02b-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "شو اسمِك؟",
+   "alternatives": [
+    "شو اسمِك؟"
+   ],
+   "display": "شو اسمِك؟",
+   "arabizi": "Shoo ismek",
+   "arabiziAlternatives": [
+    "Shoo ismek"
+   ],
+   "english": "What's your name?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-c52a78",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا اسمي…",
+   "alternatives": [
+    "أنا اسمي…"
+   ],
+   "display": "أنا اسمي…",
+   "arabizi": "Ana ismi…",
+   "arabiziAlternatives": [
+    "Ana ismi…"
+   ],
+   "english": "My name is…"
+  },
+  {
+   "id": "beg-1-86c280",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أدّيش عمرَك؟",
+   "alternatives": [
+    "أدّيش عمرَك؟"
+   ],
+   "display": "أدّيش عمرَك؟",
+   "arabizi": "Addesh 3omrak",
+   "arabiziAlternatives": [
+    "Addesh 3omrak"
+   ],
+   "english": "How old are you?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-86c280-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أدّيش عمرِك؟",
+   "alternatives": [
+    "أدّيش عمرِك؟"
+   ],
+   "display": "أدّيش عمرِك؟",
+   "arabizi": "Addesh 3omrek",
+   "arabiziAlternatives": [
+    "Addesh 3omrek"
+   ],
+   "english": "How old are you?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-6532e8",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا عمري…",
+   "alternatives": [
+    "أنا عمري…"
+   ],
+   "display": "أنا عمري…",
+   "arabizi": "Ana 3omri…",
+   "arabiziAlternatives": [
+    "Ana 3omri…"
+   ],
+   "english": "I am … years old"
+  },
+  {
+   "id": "beg-1-d686b2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "من وين إنتا؟",
+   "alternatives": [
+    "من وين إنتا؟"
+   ],
+   "display": "من وين إنتا؟",
+   "arabizi": "Min wayn inta",
+   "arabiziAlternatives": [
+    "Min wayn inta"
+   ],
+   "english": "Where are you from?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-3db8a4",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "من وين إنتي؟",
+   "alternatives": [
+    "من وين إنتي؟"
+   ],
+   "display": "من وين إنتي؟",
+   "arabizi": "Min wayn intee",
+   "arabiziAlternatives": [
+    "Min wayn intee"
+   ],
+   "english": "Where are you from?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-2bdc3a",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا من…",
+   "alternatives": [
+    "أنا من…"
+   ],
+   "display": "أنا من…",
+   "arabizi": "Ana min…",
+   "arabiziAlternatives": [
+    "Ana min…"
+   ],
+   "english": "I'm from…"
+  },
+  {
+   "id": "beg-1-26cc44",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "شو بتشتغل؟",
+   "alternatives": [
+    "شو بتشتغل؟"
+   ],
+   "display": "شو بتشتغل؟",
+   "arabizi": "Shoo btishtighel",
+   "arabiziAlternatives": [
+    "Shoo btishtighel"
+   ],
+   "english": "What do you do?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-d473be",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "شو بتشتغلي؟",
+   "alternatives": [
+    "شو بتشتغلي؟"
+   ],
+   "display": "شو بتشتغلي؟",
+   "arabizi": "Shoo btishtighlee",
+   "arabiziAlternatives": [
+    "Shoo btishtighlee"
+   ],
+   "english": "What do you do?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-b64db1",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا بشتغل…",
+   "alternatives": [
+    "أنا بشتغل…"
+   ],
+   "display": "أنا بشتغل…",
+   "arabizi": "Ana bishtighel…",
+   "arabiziAlternatives": [
+    "Ana bishtighel…"
+   ],
+   "english": "I work as…"
+  },
+  {
+   "id": "beg-1-6ef3e4",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "وين ساكن؟",
+   "alternatives": [
+    "وين ساكن؟"
+   ],
+   "display": "وين ساكن؟",
+   "arabizi": "Wayn saken",
+   "arabiziAlternatives": [
+    "Wayn saken"
+   ],
+   "english": "Where do you live?",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-5cef9a",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "وين ساكنة؟",
+   "alternatives": [
+    "وين ساكنة؟"
+   ],
+   "display": "وين ساكنة؟",
+   "arabizi": "Wayn sakneh",
+   "arabiziAlternatives": [
+    "Wayn sakneh"
+   ],
+   "english": "Where do you live?",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-052edd",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا ساكن بـ…",
+   "alternatives": [
+    "أنا ساكن بـ…"
+   ],
+   "display": "أنا ساكن بـ…",
+   "arabizi": "Ana saken bi…",
+   "arabiziAlternatives": [
+    "Ana saken bi…"
+   ],
+   "english": "I live in…",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-4fb219",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "phrase",
+   "arabic": "أنا ساكنة بـ…",
+   "alternatives": [
+    "أنا ساكنة بـ…"
+   ],
+   "display": "أنا ساكنة بـ…",
+   "arabizi": "Ana sakneh bi…",
+   "arabiziAlternatives": [
+    "Ana sakneh bi…"
+   ],
+   "english": "I live in…",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-d13692",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "أنا",
+   "alternatives": [
+    "أنا"
+   ],
+   "display": "أنا",
+   "arabizi": "ana",
+   "arabiziAlternatives": [
+    "ana"
+   ],
+   "english": "I"
+  },
+  {
+   "id": "beg-1-e67117",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "نحنا",
+   "alternatives": [
+    "نحنا"
+   ],
+   "display": "نحنا",
+   "arabizi": "nihna",
+   "arabiziAlternatives": [
+    "nihna"
+   ],
+   "english": "We"
+  },
+  {
+   "id": "beg-1-558834",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "إنتَ",
+   "alternatives": [
+    "إنتَ"
+   ],
+   "display": "إنتَ",
+   "arabizi": "inta",
+   "arabiziAlternatives": [
+    "inta"
+   ],
+   "english": "You",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-558834-2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "إنتِ",
+   "alternatives": [
+    "إنتِ"
+   ],
+   "display": "إنتِ",
+   "arabizi": "intee",
+   "arabiziAlternatives": [
+    "intee"
+   ],
+   "english": "You",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-8969b2",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "إنتو",
+   "alternatives": [
+    "إنتو"
+   ],
+   "display": "إنتو",
+   "arabizi": "intoo",
+   "arabiziAlternatives": [
+    "intoo"
+   ],
+   "english": "You",
+   "gender": "pl"
+  },
+  {
+   "id": "beg-1-1b7879",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "هو",
+   "alternatives": [
+    "هو"
+   ],
+   "display": "هو",
+   "arabizi": "huwwe",
+   "arabiziAlternatives": [
+    "huwwe"
+   ],
+   "english": "He"
+  },
+  {
+   "id": "beg-1-7a8987",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "هي",
+   "alternatives": [
+    "هي"
+   ],
+   "display": "هي",
+   "arabizi": "hiyye",
+   "arabiziAlternatives": [
+    "hiyye"
+   ],
+   "english": "She"
+  },
+  {
+   "id": "beg-1-84b05c",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "pronoun",
+   "arabic": "هِنِّ",
+   "alternatives": [
+    "هِنِّ"
+   ],
+   "display": "هِنِّ",
+   "arabizi": "hinneh",
+   "arabiziAlternatives": [
+    "hinneh"
+   ],
+   "english": "They"
+  },
+  {
+   "id": "beg-1-716d2a",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "تعبان",
+   "alternatives": [
+    "تعبان"
+   ],
+   "display": "تعبان",
+   "arabizi": "ta3ban",
+   "arabiziAlternatives": [
+    "ta3ban"
+   ],
+   "english": "tired"
+  },
+  {
+   "id": "beg-1-f5b2da",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "جوعان",
+   "alternatives": [
+    "جوعان"
+   ],
+   "display": "جوعان",
+   "arabizi": "jou3an",
+   "arabiziAlternatives": [
+    "jou3an"
+   ],
+   "english": "hungry"
+  },
+  {
+   "id": "beg-1-77517b",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "زعلان",
+   "alternatives": [
+    "زعلان"
+   ],
+   "display": "زعلان",
+   "arabizi": "za3lan",
+   "arabiziAlternatives": [
+    "za3lan"
+   ],
+   "english": "upset/sad"
+  },
+  {
+   "id": "beg-1-d55112",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "مشغول",
+   "alternatives": [
+    "مشغول"
+   ],
+   "display": "مشغول",
+   "arabizi": "mash8ool",
+   "arabiziAlternatives": [
+    "mash8ool"
+   ],
+   "english": "busy"
+  },
+  {
+   "id": "beg-1-5673a5",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "بردان",
+   "alternatives": [
+    "بردان"
+   ],
+   "display": "بردان",
+   "arabizi": "bardan",
+   "arabiziAlternatives": [
+    "bardan"
+   ],
+   "english": "cold (person)"
+  },
+  {
+   "id": "beg-1-438015",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "مبسوط",
+   "alternatives": [
+    "مبسوط"
+   ],
+   "display": "مبسوط",
+   "arabizi": "mabsout",
+   "arabiziAlternatives": [
+    "mabsout"
+   ],
+   "english": "happy"
+  },
+  {
+   "id": "beg-1-30f5b4",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "خايف",
+   "alternatives": [
+    "خايف"
+   ],
+   "display": "خايف",
+   "arabizi": "5ayef",
+   "arabiziAlternatives": [
+    "5ayef"
+   ],
+   "english": "scared"
+  },
+  {
+   "id": "beg-1-dca8d5",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "زهقان",
+   "alternatives": [
+    "زهقان"
+   ],
+   "display": "زهقان",
+   "arabizi": "zah2an",
+   "arabiziAlternatives": [
+    "zah2an"
+   ],
+   "english": "bored"
+  },
+  {
+   "id": "beg-1-992759",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "adjective",
+   "arabic": "مريض",
+   "alternatives": [
+    "مريض"
+   ],
+   "display": "مريض",
+   "arabizi": "mareedh",
+   "arabiziAlternatives": [
+    "mareedh"
+   ],
+   "english": "sick"
+  },
+  {
+   "id": "beg-1-53a4ec",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "particle",
+   "arabic": "مش",
+   "alternatives": [
+    "مش"
+   ],
+   "display": "مش",
+   "arabizi": "mish",
+   "arabiziAlternatives": [
+    "mish"
+   ],
+   "english": "not (negation)"
+  },
+  {
+   "id": "beg-1-2bff8f",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "بنت",
+   "alternatives": [
+    "بنت"
+   ],
+   "display": "بنت",
+   "arabizi": "Bint",
+   "arabiziAlternatives": [
+    "Bint"
+   ],
+   "english": "girl"
+  },
+  {
+   "id": "beg-1-44415f",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "ولد",
+   "alternatives": [
+    "ولد"
+   ],
+   "display": "ولد",
+   "arabizi": "Walad",
+   "arabiziAlternatives": [
+    "Walad"
+   ],
+   "english": "boy/son/kid"
+  },
+  {
+   "id": "beg-1-9044cd",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "مرا",
+   "alternatives": [
+    "مرا"
+   ],
+   "display": "مرا",
+   "arabizi": "Mara",
+   "arabiziAlternatives": [
+    "Mara"
+   ],
+   "english": "woman"
+  },
+  {
+   "id": "beg-1-44e2b7",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "رجّال",
+   "alternatives": [
+    "رجّال"
+   ],
+   "display": "رجّال",
+   "arabizi": "Rijjal",
+   "arabiziAlternatives": [
+    "Rijjal"
+   ],
+   "english": "man"
+  },
+  {
+   "id": "beg-1-6803de",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "رفيق",
+   "alternatives": [
+    "رفيق"
+   ],
+   "display": "رفيق",
+   "arabizi": "Rfee2",
+   "arabiziAlternatives": [
+    "Rfee2"
+   ],
+   "english": "friend",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-1dd326",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "رفيقة",
+   "alternatives": [
+    "رفيقة"
+   ],
+   "display": "رفيقة",
+   "arabizi": "Rfee2a",
+   "arabiziAlternatives": [
+    "Rfee2a"
+   ],
+   "english": "friend",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-89bfbb",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "رفقات",
+   "alternatives": [
+    "رفقات"
+   ],
+   "display": "رفقات",
+   "arabizi": "Rif2at",
+   "arabiziAlternatives": [
+    "Rif2at"
+   ],
+   "english": "friends"
+  },
+  {
+   "id": "beg-1-9552dc",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "معلّم",
+   "alternatives": [
+    "معلّم"
+   ],
+   "display": "معلّم",
+   "arabizi": "M3allem",
+   "arabiziAlternatives": [
+    "M3allem"
+   ],
+   "english": "teacher",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-a57f0d",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "معلمة",
+   "alternatives": [
+    "معلمة"
+   ],
+   "display": "معلمة",
+   "arabizi": "M3almeh",
+   "arabiziAlternatives": [
+    "M3almeh"
+   ],
+   "english": "teacher",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-9ac0bb",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "طالِب",
+   "alternatives": [
+    "طالِب"
+   ],
+   "display": "طالِب",
+   "arabizi": "T'aleb",
+   "arabiziAlternatives": [
+    "T'aleb"
+   ],
+   "english": "student",
+   "gender": "m"
+  },
+  {
+   "id": "beg-1-44719e",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "طالبة",
+   "alternatives": [
+    "طالبة"
+   ],
+   "display": "طالبة",
+   "arabizi": "T'albeh",
+   "arabiziAlternatives": [
+    "T'albeh"
+   ],
+   "english": "student",
+   "gender": "f"
+  },
+  {
+   "id": "beg-1-4e95c8",
+   "level": "beginner",
+   "unitId": "beginner/unit-1",
+   "unitTitle": "Unit 1",
+   "unitOrder": 1,
+   "pos": "noun",
+   "arabic": "طلّاب",
+   "alternatives": [
+    "طلّاب"
+   ],
+   "display": "طلّاب",
+   "arabizi": "T'ollab",
+   "arabiziAlternatives": [
+    "T'ollab"
+   ],
+   "english": "students"
+  },
+  {
+   "id": "beg-2-7d7ae6",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "عندي",
+   "alternatives": [
+    "عندي"
+   ],
+   "display": "عندي",
+   "arabizi": "3indi",
+   "arabiziAlternatives": [
+    "3indi"
+   ],
+   "english": "I have (to have)"
+  },
+  {
+   "id": "beg-2-4de55d",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "بدّي",
+   "alternatives": [
+    "بدّي"
+   ],
+   "display": "بدّي",
+   "arabizi": "biddi",
+   "arabiziAlternatives": [
+    "biddi"
+   ],
+   "english": "I want (to want)"
+  },
+  {
+   "id": "beg-2-100781",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "verb",
+   "arabic": "فيّي",
+   "alternatives": [
+    "فيّي"
+   ],
+   "display": "فيّي",
+   "arabizi": "feeye",
+   "arabiziAlternatives": [
+    "feeye"
+   ],
+   "english": "I can (to be able)"
+  },
+  {
+   "id": "beg-2-1e55b0",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "كان",
+   "alternatives": [
+    "كان"
+   ],
+   "display": "كان",
+   "arabizi": "kan",
+   "arabiziAlternatives": [
+    "kan"
+   ],
+   "english": "was/were (past marker)"
+  },
+  {
+   "id": "beg-2-a62caa",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "particle",
+   "arabic": "ما",
+   "alternatives": [
+    "ما"
+   ],
+   "display": "ما",
+   "arabizi": "ma",
+   "arabiziAlternatives": [
+    "ma"
+   ],
+   "english": "not (negation)"
+  },
+  {
+   "id": "beg-2-859ff7",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هيدا",
+   "alternatives": [
+    "هيدا"
+   ],
+   "display": "هيدا",
+   "arabizi": "hayda",
+   "arabiziAlternatives": [
+    "hayda"
+   ],
+   "english": "this",
+   "gender": "m"
+  },
+  {
+   "id": "beg-2-922abd",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هيدي",
+   "alternatives": [
+    "هيدي"
+   ],
+   "display": "هيدي",
+   "arabizi": "haydi",
+   "arabiziAlternatives": [
+    "haydi"
+   ],
+   "english": "this",
+   "gender": "f"
+  },
+  {
+   "id": "beg-2-5230b5",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هدول",
+   "alternatives": [
+    "هدول"
+   ],
+   "display": "هدول",
+   "arabizi": "hadool",
+   "arabiziAlternatives": [
+    "hadool"
+   ],
+   "english": "these"
+  },
+  {
+   "id": "beg-2-6988f1",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هيداك",
+   "alternatives": [
+    "هيداك"
+   ],
+   "display": "هيداك",
+   "arabizi": "haydak",
+   "arabiziAlternatives": [
+    "haydak"
+   ],
+   "english": "that",
+   "gender": "m"
+  },
+  {
+   "id": "beg-2-3fd17f",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هيديك",
+   "alternatives": [
+    "هيديك"
+   ],
+   "display": "هيديك",
+   "arabizi": "haydeek",
+   "arabiziAlternatives": [
+    "haydeek"
+   ],
+   "english": "that",
+   "gender": "f"
+  },
+  {
+   "id": "beg-2-261210",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "pronoun",
+   "arabic": "هدوك",
+   "alternatives": [
+    "هدوك"
+   ],
+   "display": "هدوك",
+   "arabizi": "hadook",
+   "arabiziAlternatives": [
+    "hadook"
+   ],
+   "english": "those"
+  },
+  {
+   "id": "beg-2-304117",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "linking",
+   "arabic": "و",
+   "alternatives": [
+    "و"
+   ],
+   "display": "و",
+   "arabizi": "w",
+   "arabiziAlternatives": [
+    "w"
+   ],
+   "english": "and"
+  },
+  {
+   "id": "beg-2-c8ac12",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "linking",
+   "arabic": "أو",
+   "alternatives": [
+    "أو"
+   ],
+   "display": "أو",
+   "arabizi": "aw",
+   "arabiziAlternatives": [
+    "aw"
+   ],
+   "english": "or"
+  },
+  {
+   "id": "beg-2-788da0",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "linking",
+   "arabic": "كمان",
+   "alternatives": [
+    "كمان"
+   ],
+   "display": "كمان",
+   "arabizi": "kaman",
+   "arabiziAlternatives": [
+    "kaman"
+   ],
+   "english": "also/too"
+  },
+  {
+   "id": "beg-2-cabadd",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "phrase",
+   "arabic": "إيه",
+   "alternatives": [
+    "إيه"
+   ],
+   "display": "إيه",
+   "arabizi": "eh",
+   "arabiziAlternatives": [
+    "eh"
+   ],
+   "english": "yes"
+  },
+  {
+   "id": "beg-2-5c528d",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "phrase",
+   "arabic": "لا",
+   "alternatives": [
+    "لا"
+   ],
+   "display": "لا",
+   "arabizi": "la",
+   "arabiziAlternatives": [
+    "la"
+   ],
+   "english": "no"
+  },
+  {
+   "id": "beg-2-f0ad7a",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "phrase",
+   "arabic": "شكراً",
+   "alternatives": [
+    "شكراً"
+   ],
+   "display": "شكراً",
+   "arabizi": "shukran",
+   "arabiziAlternatives": [
+    "shukran"
+   ],
+   "english": "thank you"
+  },
+  {
+   "id": "beg-2-c48aca",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "إم",
+   "alternatives": [
+    "إم",
+    "ماما"
+   ],
+   "display": "إم / ماما",
+   "arabizi": "em",
+   "arabiziAlternatives": [
+    "em",
+    "mama"
+   ],
+   "english": "mother"
+  },
+  {
+   "id": "beg-2-b56d6c",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أب",
+   "alternatives": [
+    "أب",
+    "بابا",
+    "بَي"
+   ],
+   "display": "أب / بابا / بَي",
+   "arabizi": "ab",
+   "arabiziAlternatives": [
+    "ab",
+    "baba",
+    "bay"
+   ],
+   "english": "father"
+  },
+  {
+   "id": "beg-2-3cb749",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أخ",
+   "alternatives": [
+    "أخ",
+    "خَي"
+   ],
+   "display": "أخ / خَي",
+   "arabizi": "a5",
+   "arabiziAlternatives": [
+    "a5",
+    "5ai"
+   ],
+   "english": "brother"
+  },
+  {
+   "id": "beg-2-f44d55",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "إخت",
+   "alternatives": [
+    "إخت"
+   ],
+   "display": "إخت",
+   "arabizi": "e5et",
+   "arabiziAlternatives": [
+    "e5et"
+   ],
+   "english": "sister"
+  },
+  {
+   "id": "beg-2-5598ba",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "سِت",
+   "alternatives": [
+    "سِت"
+   ],
+   "display": "سِت",
+   "arabizi": "sit",
+   "arabiziAlternatives": [
+    "sit"
+   ],
+   "english": "grandmother"
+  },
+  {
+   "id": "beg-2-9fb88a",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "جِد",
+   "alternatives": [
+    "جِد"
+   ],
+   "display": "جِد",
+   "arabizi": "jid",
+   "arabiziAlternatives": [
+    "jid"
+   ],
+   "english": "grandfather"
+  },
+  {
+   "id": "beg-2-eb3b77",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "إخوة",
+   "alternatives": [
+    "إخوة"
+   ],
+   "display": "إخوة",
+   "arabizi": "i5weh",
+   "arabiziAlternatives": [
+    "i5weh"
+   ],
+   "english": "siblings"
+  },
+  {
+   "id": "beg-2-6481b9",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "إبن",
+   "alternatives": [
+    "إبن"
+   ],
+   "display": "إبن",
+   "arabizi": "ibn",
+   "arabiziAlternatives": [
+    "ibn"
+   ],
+   "english": "son"
+  },
+  {
+   "id": "beg-2-cb0fb7",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أهل",
+   "alternatives": [
+    "أهل"
+   ],
+   "display": "أهل",
+   "arabizi": "ahel",
+   "arabiziAlternatives": [
+    "ahel"
+   ],
+   "english": "parents/family"
+  },
+  {
+   "id": "beg-2-366a29",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "عيلة",
+   "alternatives": [
+    "عيلة"
+   ],
+   "display": "عيلة",
+   "arabizi": "3eileh",
+   "arabiziAlternatives": [
+    "3eileh"
+   ],
+   "english": "family"
+  },
+  {
+   "id": "beg-2-11da4f",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "كبير",
+   "alternatives": [
+    "كبير"
+   ],
+   "display": "كبير",
+   "arabizi": "kbeer",
+   "arabiziAlternatives": [
+    "kbeer"
+   ],
+   "english": "big/old"
+  },
+  {
+   "id": "beg-2-e47674",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "صغير",
+   "alternatives": [
+    "صغير"
+   ],
+   "display": "صغير",
+   "arabizi": "z8eer",
+   "arabiziAlternatives": [
+    "z8eer"
+   ],
+   "english": "small/young"
+  },
+  {
+   "id": "beg-2-1f4de3",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "حلو",
+   "alternatives": [
+    "حلو"
+   ],
+   "display": "حلو",
+   "arabizi": "7elo",
+   "arabiziAlternatives": [
+    "7elo"
+   ],
+   "english": "nice/beautiful/sweet"
+  },
+  {
+   "id": "beg-2-64e1c7",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "بشيع",
+   "alternatives": [
+    "بشيع"
+   ],
+   "display": "بشيع",
+   "arabizi": "bashi3",
+   "arabiziAlternatives": [
+    "bashi3"
+   ],
+   "english": "ugly"
+  },
+  {
+   "id": "beg-2-42c260",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adjective",
+   "arabic": "طيّب",
+   "alternatives": [
+    "طيّب"
+   ],
+   "display": "طيّب",
+   "arabizi": "tayeb",
+   "arabiziAlternatives": [
+    "tayeb"
+   ],
+   "english": "kind/tasty"
+  },
+  {
+   "id": "beg-2-261906",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "بيت",
+   "alternatives": [
+    "بيت"
+   ],
+   "display": "بيت",
+   "arabizi": "beit",
+   "arabiziAlternatives": [
+    "beit"
+   ],
+   "english": "house/home"
+  },
+  {
+   "id": "beg-2-27c119",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "غرفة",
+   "alternatives": [
+    "غرفة"
+   ],
+   "display": "غرفة",
+   "arabizi": "ghurfa",
+   "arabiziAlternatives": [
+    "ghurfa"
+   ],
+   "english": "room"
+  },
+  {
+   "id": "beg-2-9b194b",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "مدينة",
+   "alternatives": [
+    "مدينة"
+   ],
+   "display": "مدينة",
+   "arabizi": "mdeeneh",
+   "arabiziAlternatives": [
+    "mdeeneh"
+   ],
+   "english": "city"
+  },
+  {
+   "id": "beg-2-9b4e68",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "مدرسة",
+   "alternatives": [
+    "مدرسة"
+   ],
+   "display": "مدرسة",
+   "arabizi": "madraseh",
+   "arabiziAlternatives": [
+    "madraseh"
+   ],
+   "english": "school"
+  },
+  {
+   "id": "beg-2-5d5eed",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "وقت",
+   "alternatives": [
+    "وقت"
+   ],
+   "display": "وقت",
+   "arabizi": "wa2et",
+   "arabiziAlternatives": [
+    "wa2et"
+   ],
+   "english": "time"
+  },
+  {
+   "id": "beg-2-098572",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "ساعة",
+   "alternatives": [
+    "ساعة"
+   ],
+   "display": "ساعة",
+   "arabizi": "sa3a",
+   "arabiziAlternatives": [
+    "sa3a"
+   ],
+   "english": "hour"
+  },
+  {
+   "id": "beg-2-78db2a",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "قلم",
+   "alternatives": [
+    "قلم"
+   ],
+   "display": "قلم",
+   "arabizi": "2alam",
+   "arabiziAlternatives": [
+    "2alam"
+   ],
+   "english": "pen"
+  },
+  {
+   "id": "beg-2-c9f7cb",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "ماي",
+   "alternatives": [
+    "ماي"
+   ],
+   "display": "ماي",
+   "arabizi": "mayy",
+   "arabiziAlternatives": [
+    "mayy"
+   ],
+   "english": "water"
+  },
+  {
+   "id": "beg-2-65bc7a",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "قهوة",
+   "alternatives": [
+    "قهوة"
+   ],
+   "display": "قهوة",
+   "arabizi": "2ahwe",
+   "arabiziAlternatives": [
+    "2ahwe"
+   ],
+   "english": "coffee"
+  },
+  {
+   "id": "beg-2-18a4d1",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "شاي",
+   "alternatives": [
+    "شاي"
+   ],
+   "display": "شاي",
+   "arabizi": "shay",
+   "arabiziAlternatives": [
+    "shay"
+   ],
+   "english": "tea"
+  },
+  {
+   "id": "beg-2-edc05b",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "درس",
+   "alternatives": [
+    "درس"
+   ],
+   "display": "درس",
+   "arabizi": "dars",
+   "arabiziAlternatives": [
+    "dars"
+   ],
+   "english": "lesson"
+  },
+  {
+   "id": "beg-2-87cc3d",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "مطعم",
+   "alternatives": [
+    "مطعم"
+   ],
+   "display": "مطعم",
+   "arabizi": "mat3am",
+   "arabiziAlternatives": [
+    "mat3am"
+   ],
+   "english": "restaurant"
+  },
+  {
+   "id": "beg-2-d1a1bf",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "سيّارة",
+   "alternatives": [
+    "سيّارة"
+   ],
+   "display": "سيّارة",
+   "arabizi": "sayyara",
+   "arabiziAlternatives": [
+    "sayyara"
+   ],
+   "english": "car"
+  },
+  {
+   "id": "beg-2-d45fb4",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "شغل",
+   "alternatives": [
+    "شغل"
+   ],
+   "display": "شغل",
+   "arabizi": "shighel",
+   "arabiziAlternatives": [
+    "shighel"
+   ],
+   "english": "work"
+  },
+  {
+   "id": "beg-2-639460",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "noun",
+   "arabic": "أكل",
+   "alternatives": [
+    "أكل"
+   ],
+   "display": "أكل",
+   "arabizi": "akel",
+   "arabiziAlternatives": [
+    "akel"
+   ],
+   "english": "food"
+  },
+  {
+   "id": "beg-2-b76444",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "اليوم",
+   "alternatives": [
+    "اليوم"
+   ],
+   "display": "اليوم",
+   "arabizi": "elyom",
+   "arabiziAlternatives": [
+    "elyom"
+   ],
+   "english": "today"
+  },
+  {
+   "id": "beg-2-0bd587",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "مبارح",
+   "alternatives": [
+    "مبارح"
+   ],
+   "display": "مبارح",
+   "arabizi": "mbare7",
+   "arabiziAlternatives": [
+    "mbare7"
+   ],
+   "english": "yesterday"
+  },
+  {
+   "id": "beg-2-09ccba",
+   "level": "beginner",
+   "unitId": "beginner/unit-2",
+   "unitTitle": "Unit 2",
+   "unitOrder": 2,
+   "pos": "adverb",
+   "arabic": "شوي",
+   "alternatives": [
+    "شوي"
+   ],
+   "display": "شوي",
+   "arabizi": "shway",
+   "arabiziAlternatives": [
+    "shway"
+   ],
+   "english": "a little"
+  },
+  {
+   "id": "beg-3-91bd56",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "واحد",
+   "alternatives": [
+    "واحد"
+   ],
+   "display": "واحد",
+   "arabizi": "wa7ad",
+   "arabiziAlternatives": [
+    "wa7ad"
+   ],
+   "english": "one",
+   "gender": "m"
+  },
+  {
+   "id": "beg-3-51856b",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "وحدة",
+   "alternatives": [
+    "وحدة"
+   ],
+   "display": "وحدة",
+   "arabizi": "wa7deh",
+   "arabiziAlternatives": [
+    "wa7deh"
+   ],
+   "english": "one",
+   "gender": "f"
+  },
+  {
+   "id": "beg-3-9312f6",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "تنين",
+   "alternatives": [
+    "تنين"
+   ],
+   "display": "تنين",
+   "arabizi": "tnein",
+   "arabiziAlternatives": [
+    "tnein"
+   ],
+   "english": "two",
+   "gender": "m"
+  },
+  {
+   "id": "beg-3-11ee8a",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "تنتين",
+   "alternatives": [
+    "تنتين"
+   ],
+   "display": "تنتين",
+   "arabizi": "tintein",
+   "arabiziAlternatives": [
+    "tintein"
+   ],
+   "english": "two",
+   "gender": "f"
+  },
+  {
+   "id": "beg-3-1aea46",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "تلاتة",
+   "alternatives": [
+    "تلاتة"
+   ],
+   "display": "تلاتة",
+   "arabizi": "tlateh",
+   "arabiziAlternatives": [
+    "tlateh"
+   ],
+   "english": "three"
+  },
+  {
+   "id": "beg-3-1159ed",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "أربعة",
+   "alternatives": [
+    "أربعة"
+   ],
+   "display": "أربعة",
+   "arabizi": "arb3a",
+   "arabiziAlternatives": [
+    "arb3a"
+   ],
+   "english": "four"
+  },
+  {
+   "id": "beg-3-6ad2f9",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "خمسة",
+   "alternatives": [
+    "خمسة"
+   ],
+   "display": "خمسة",
+   "arabizi": "5amseh",
+   "arabiziAlternatives": [
+    "5amseh"
+   ],
+   "english": "five"
+  },
+  {
+   "id": "beg-3-e6726c",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "ستّة",
+   "alternatives": [
+    "ستّة"
+   ],
+   "display": "ستّة",
+   "arabizi": "sitteh",
+   "arabiziAlternatives": [
+    "sitteh"
+   ],
+   "english": "six"
+  },
+  {
+   "id": "beg-3-ba6427",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "سبعة",
+   "alternatives": [
+    "سبعة"
+   ],
+   "display": "سبعة",
+   "arabizi": "sab3a",
+   "arabiziAlternatives": [
+    "sab3a"
+   ],
+   "english": "seven"
+  },
+  {
+   "id": "beg-3-5b9386",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "تمانة",
+   "alternatives": [
+    "تمانة"
+   ],
+   "display": "تمانة",
+   "arabizi": "tmaneh",
+   "arabiziAlternatives": [
+    "tmaneh"
+   ],
+   "english": "eight"
+  },
+  {
+   "id": "beg-3-c17e08",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "تسعة",
+   "alternatives": [
+    "تسعة"
+   ],
+   "display": "تسعة",
+   "arabizi": "tis3a",
+   "arabiziAlternatives": [
+    "tis3a"
+   ],
+   "english": "nine"
+  },
+  {
+   "id": "beg-3-9ed591",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "number",
+   "arabic": "عشرة",
+   "alternatives": [
+    "عشرة"
+   ],
+   "display": "عشرة",
+   "arabizi": "3ashra",
+   "arabiziAlternatives": [
+    "3ashra"
+   ],
+   "english": "ten"
+  },
+  {
+   "id": "beg-3-aef209",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "particle",
+   "arabic": "في",
+   "alternatives": [
+    "في"
+   ],
+   "display": "في",
+   "arabizi": "fee",
+   "arabiziAlternatives": [
+    "fee"
+   ],
+   "english": "there is/are"
+  },
+  {
+   "id": "beg-3-b56379",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "particle",
+   "arabic": "مافي",
+   "alternatives": [
+    "مافي"
+   ],
+   "display": "مافي",
+   "arabizi": "ma fee",
+   "arabiziAlternatives": [
+    "ma fee"
+   ],
+   "english": "there is no"
+  },
+  {
+   "id": "beg-3-0ae4e0",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "particle",
+   "arabic": "كم",
+   "alternatives": [
+    "كم"
+   ],
+   "display": "كم",
+   "arabizi": "kam",
+   "arabiziAlternatives": [
+    "kam"
+   ],
+   "english": "how many"
+  },
+  {
+   "id": "beg-3-9de4ca",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "لأنّو",
+   "alternatives": [
+    "لأنّو"
+   ],
+   "display": "لأنّو",
+   "arabizi": "la2anno",
+   "arabiziAlternatives": [
+    "la2anno"
+   ],
+   "english": "because"
+  },
+  {
+   "id": "beg-3-007303",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "بس",
+   "alternatives": [
+    "بس"
+   ],
+   "display": "بس",
+   "arabizi": "bas",
+   "arabiziAlternatives": [
+    "bas"
+   ],
+   "english": "but"
+  },
+  {
+   "id": "beg-3-7896f9",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "لهيك",
+   "alternatives": [
+    "لهيك"
+   ],
+   "display": "لهيك",
+   "arabizi": "lahek",
+   "arabiziAlternatives": [
+    "lahek"
+   ],
+   "english": "so/that's why"
+  },
+  {
+   "id": "beg-3-f3c3b7",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "مع",
+   "alternatives": [
+    "مع"
+   ],
+   "display": "مع",
+   "arabizi": "ma3",
+   "arabiziAlternatives": [
+    "ma3"
+   ],
+   "english": "with"
+  },
+  {
+   "id": "beg-3-aa7099",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "من",
+   "alternatives": [
+    "من"
+   ],
+   "display": "من",
+   "arabizi": "min",
+   "arabiziAlternatives": [
+    "min"
+   ],
+   "english": "from"
+  },
+  {
+   "id": "beg-3-8b5123",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "بـ",
+   "alternatives": [
+    "بـ"
+   ],
+   "display": "بـ",
+   "arabizi": "bi",
+   "arabiziAlternatives": [
+    "bi"
+   ],
+   "english": "in/at"
+  },
+  {
+   "id": "beg-3-80add0",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "ع",
+   "alternatives": [
+    "ع"
+   ],
+   "display": "ع",
+   "arabizi": "3a",
+   "arabiziAlternatives": [
+    "3a"
+   ],
+   "english": "on/to"
+  },
+  {
+   "id": "beg-3-4b4f75",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "linking",
+   "arabic": "ل",
+   "alternatives": [
+    "ل"
+   ],
+   "display": "ل",
+   "arabizi": "la",
+   "arabiziAlternatives": [
+    "la"
+   ],
+   "english": "for"
+  },
+  {
+   "id": "beg-3-efc446",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "يوم",
+   "alternatives": [
+    "يوم"
+   ],
+   "display": "يوم",
+   "arabizi": "yom",
+   "arabiziAlternatives": [
+    "yom"
+   ],
+   "english": "day"
+  },
+  {
+   "id": "beg-3-fc3146",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "كرسي",
+   "alternatives": [
+    "كرسي"
+   ],
+   "display": "كرسي",
+   "arabizi": "kersi",
+   "arabiziAlternatives": [
+    "kersi"
+   ],
+   "english": "chair"
+  },
+  {
+   "id": "beg-3-ecd4af",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "دفتر",
+   "alternatives": [
+    "دفتر"
+   ],
+   "display": "دفتر",
+   "arabizi": "daftar",
+   "arabiziAlternatives": [
+    "daftar"
+   ],
+   "english": "notebook"
+  },
+  {
+   "id": "beg-3-7aa976",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "مهندس",
+   "alternatives": [
+    "مهندس"
+   ],
+   "display": "مهندس",
+   "arabizi": "mhandes",
+   "arabiziAlternatives": [
+    "mhandes"
+   ],
+   "english": "engineer"
+  },
+  {
+   "id": "beg-3-510d61",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "موظف",
+   "alternatives": [
+    "موظف"
+   ],
+   "display": "موظف",
+   "arabizi": "mwazzaf",
+   "arabiziAlternatives": [
+    "mwazzaf"
+   ],
+   "english": "employee"
+  },
+  {
+   "id": "beg-3-4c4365",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "وظيفة",
+   "alternatives": [
+    "وظيفة"
+   ],
+   "display": "وظيفة",
+   "arabizi": "wazeefeh",
+   "arabiziAlternatives": [
+    "wazeefeh"
+   ],
+   "english": "homework"
+  },
+  {
+   "id": "beg-3-19ae30",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "صف",
+   "alternatives": [
+    "صف"
+   ],
+   "display": "صف",
+   "arabizi": "saff",
+   "arabiziAlternatives": [
+    "saff"
+   ],
+   "english": "class"
+  },
+  {
+   "id": "beg-3-2506e7",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "شنتة",
+   "alternatives": [
+    "شنتة"
+   ],
+   "display": "شنتة",
+   "arabizi": "shanta",
+   "arabiziAlternatives": [
+    "shanta"
+   ],
+   "english": "bag"
+  },
+  {
+   "id": "beg-3-892dee",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "طاولة",
+   "alternatives": [
+    "طاولة"
+   ],
+   "display": "طاولة",
+   "arabizi": "tawle",
+   "arabiziAlternatives": [
+    "tawle"
+   ],
+   "english": "table"
+  },
+  {
+   "id": "beg-3-0d27d5",
+   "level": "beginner",
+   "unitId": "beginner/unit-3",
+   "unitTitle": "Unit 3",
+   "unitOrder": 3,
+   "pos": "noun",
+   "arabic": "كتاب",
+   "alternatives": [
+    "كتاب"
+   ],
+   "display": "كتاب",
+   "arabizi": "ktab",
+   "arabiziAlternatives": [
+    "ktab"
+   ],
+   "english": "book"
+  },
+  {
+   "id": "beg-4-97425f",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيكتب",
+   "alternatives": [
+    "بيكتب"
+   ],
+   "display": "بيكتب",
+   "arabizi": "byiktob",
+   "arabiziAlternatives": [
+    "byiktob"
+   ],
+   "english": "to write"
+  },
+  {
+   "id": "beg-4-a6304b",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيشرب",
+   "alternatives": [
+    "بيشرب"
+   ],
+   "display": "بيشرب",
+   "arabizi": "byishrab",
+   "arabiziAlternatives": [
+    "byishrab"
+   ],
+   "english": "to drink"
+  },
+  {
+   "id": "beg-4-c8f8f3",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيدرس",
+   "alternatives": [
+    "بيدرس"
+   ],
+   "display": "بيدرس",
+   "arabizi": "byidros",
+   "arabiziAlternatives": [
+    "byidros"
+   ],
+   "english": "to study"
+  },
+  {
+   "id": "beg-4-572584",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيفتح",
+   "alternatives": [
+    "بيفتح"
+   ],
+   "display": "بيفتح",
+   "arabizi": "byifta7",
+   "arabiziAlternatives": [
+    "byifta7"
+   ],
+   "english": "to open"
+  },
+  {
+   "id": "beg-4-692688",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيلعب",
+   "alternatives": [
+    "بيلعب"
+   ],
+   "display": "بيلعب",
+   "arabizi": "byil3ab",
+   "arabiziAlternatives": [
+    "byil3ab"
+   ],
+   "english": "to play"
+  },
+  {
+   "id": "beg-4-79298b",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيسمع",
+   "alternatives": [
+    "بيسمع"
+   ],
+   "display": "بيسمع",
+   "arabizi": "byisma3",
+   "arabiziAlternatives": [
+    "byisma3"
+   ],
+   "english": "to hear/listen"
+  },
+  {
+   "id": "beg-4-9b381e",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيعمل",
+   "alternatives": [
+    "بيعمل"
+   ],
+   "display": "بيعمل",
+   "arabizi": "byi3mel",
+   "arabiziAlternatives": [
+    "byi3mel"
+   ],
+   "english": "to do"
+  },
+  {
+   "id": "beg-4-b7f06a",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيسأل",
+   "alternatives": [
+    "بيسأل"
+   ],
+   "display": "بيسأل",
+   "arabizi": "byis2al",
+   "arabiziAlternatives": [
+    "byis2al"
+   ],
+   "english": "to ask"
+  },
+  {
+   "id": "beg-4-695a54",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيروح",
+   "alternatives": [
+    "بيروح"
+   ],
+   "display": "بيروح",
+   "arabizi": "byrou7",
+   "arabiziAlternatives": [
+    "byrou7"
+   ],
+   "english": "to go"
+  },
+  {
+   "id": "beg-4-89ac99",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيكون",
+   "alternatives": [
+    "بيكون"
+   ],
+   "display": "بيكون",
+   "arabizi": "bykoun",
+   "arabiziAlternatives": [
+    "bykoun"
+   ],
+   "english": "to be"
+  },
+  {
+   "id": "beg-4-092dd6",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيشوف",
+   "alternatives": [
+    "بيشوف"
+   ],
+   "display": "بيشوف",
+   "arabizi": "byshouf",
+   "arabiziAlternatives": [
+    "byshouf"
+   ],
+   "english": "to see"
+  },
+  {
+   "id": "beg-4-8cd369",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيحكي",
+   "alternatives": [
+    "بيحكي"
+   ],
+   "display": "بيحكي",
+   "arabizi": "byi7ki",
+   "arabiziAlternatives": [
+    "byi7ki"
+   ],
+   "english": "to talk/speak"
+  },
+  {
+   "id": "beg-4-fa8240",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيمشي",
+   "alternatives": [
+    "بيمشي"
+   ],
+   "display": "بيمشي",
+   "arabizi": "byimshi",
+   "arabiziAlternatives": [
+    "byimshi"
+   ],
+   "english": "to walk"
+  },
+  {
+   "id": "beg-4-d09d6e",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيقرا",
+   "alternatives": [
+    "بيقرا"
+   ],
+   "display": "بيقرا",
+   "arabizi": "byi2ra",
+   "arabiziAlternatives": [
+    "byi2ra"
+   ],
+   "english": "to read"
+  },
+  {
+   "id": "beg-4-62b0f7",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بينام",
+   "alternatives": [
+    "بينام"
+   ],
+   "display": "بينام",
+   "arabizi": "bynam",
+   "arabiziAlternatives": [
+    "bynam"
+   ],
+   "english": "to sleep"
+  },
+  {
+   "id": "beg-4-be705a",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيجي",
+   "alternatives": [
+    "بيجي"
+   ],
+   "display": "بيجي",
+   "arabizi": "byiji",
+   "arabiziAlternatives": [
+    "byiji"
+   ],
+   "english": "to come"
+  },
+  {
+   "id": "beg-4-3790c5",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "verb",
+   "arabic": "بيعطي",
+   "alternatives": [
+    "بيعطي"
+   ],
+   "display": "بيعطي",
+   "arabizi": "byi3ti",
+   "arabiziAlternatives": [
+    "byi3ti"
+   ],
+   "english": "to give"
+  },
+  {
+   "id": "beg-4-f80253",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "كل يوم",
+   "alternatives": [
+    "كل يوم"
+   ],
+   "display": "كل يوم",
+   "arabizi": "kell yom",
+   "arabiziAlternatives": [
+    "kell yom"
+   ],
+   "english": "every day"
+  },
+  {
+   "id": "beg-4-1c6eb1",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "الصبح",
+   "alternatives": [
+    "الصبح"
+   ],
+   "display": "الصبح",
+   "arabizi": "es-sob7",
+   "arabiziAlternatives": [
+    "es-sob7"
+   ],
+   "english": "in the morning"
+  },
+  {
+   "id": "beg-4-6b7596",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "الظهر",
+   "alternatives": [
+    "الظهر"
+   ],
+   "display": "الظهر",
+   "arabizi": "ed-doher",
+   "arabiziAlternatives": [
+    "ed-doher"
+   ],
+   "english": "at noon"
+  },
+  {
+   "id": "beg-4-371ff1",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "المسا",
+   "alternatives": [
+    "المسا"
+   ],
+   "display": "المسا",
+   "arabizi": "el-masa",
+   "arabiziAlternatives": [
+    "el-masa"
+   ],
+   "english": "in the evening"
+  },
+  {
+   "id": "beg-4-9854a5",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "اسبوع",
+   "alternatives": [
+    "اسبوع"
+   ],
+   "display": "اسبوع",
+   "arabizi": "esbou3",
+   "arabiziAlternatives": [
+    "esbou3"
+   ],
+   "english": "a week"
+  },
+  {
+   "id": "beg-4-8f792a",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "عطلة",
+   "alternatives": [
+    "عطلة"
+   ],
+   "display": "عطلة",
+   "arabizi": "3ot'le",
+   "arabiziAlternatives": [
+    "3ot'le"
+   ],
+   "english": "day off/holiday"
+  },
+  {
+   "id": "beg-4-d88f56",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "بكرا",
+   "alternatives": [
+    "بكرا"
+   ],
+   "display": "بكرا",
+   "arabizi": "bokra",
+   "arabiziAlternatives": [
+    "bokra"
+   ],
+   "english": "tomorrow"
+  },
+  {
+   "id": "beg-4-260319",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "adverb",
+   "arabic": "هلّق",
+   "alternatives": [
+    "هلّق"
+   ],
+   "display": "هلّق",
+   "arabizi": "halla2",
+   "arabiziAlternatives": [
+    "halla2"
+   ],
+   "english": "now"
+  },
+  {
+   "id": "beg-4-404841",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "عربي",
+   "alternatives": [
+    "عربي"
+   ],
+   "display": "عربي",
+   "arabizi": "3arabe",
+   "arabiziAlternatives": [
+    "3arabe"
+   ],
+   "english": "Arabic (language)"
+  },
+  {
+   "id": "beg-4-c7e6b0",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "السبت",
+   "alternatives": [
+    "السبت"
+   ],
+   "display": "السبت",
+   "arabizi": "es-sabet",
+   "arabiziAlternatives": [
+    "es-sabet"
+   ],
+   "english": "Saturday"
+  },
+  {
+   "id": "beg-4-730b7e",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الأحد",
+   "alternatives": [
+    "الأحد"
+   ],
+   "display": "الأحد",
+   "arabizi": "el-a7ad",
+   "arabiziAlternatives": [
+    "el-a7ad"
+   ],
+   "english": "Sunday"
+  },
+  {
+   "id": "beg-4-7d0111",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "التنين",
+   "alternatives": [
+    "التنين"
+   ],
+   "display": "التنين",
+   "arabizi": "et-tnein",
+   "arabiziAlternatives": [
+    "et-tnein"
+   ],
+   "english": "Monday"
+  },
+  {
+   "id": "beg-4-2d3eb8",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "التلاتا",
+   "alternatives": [
+    "التلاتا"
+   ],
+   "display": "التلاتا",
+   "arabizi": "et-talata",
+   "arabiziAlternatives": [
+    "et-talata"
+   ],
+   "english": "Tuesday"
+  },
+  {
+   "id": "beg-4-0667ee",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الأربعا",
+   "alternatives": [
+    "الأربعا"
+   ],
+   "display": "الأربعا",
+   "arabizi": "el-arb3a",
+   "arabiziAlternatives": [
+    "el-arb3a"
+   ],
+   "english": "Wednesday"
+  },
+  {
+   "id": "beg-4-ea7bf4",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الخميس",
+   "alternatives": [
+    "الخميس"
+   ],
+   "display": "الخميس",
+   "arabizi": "el-5amees",
+   "arabiziAlternatives": [
+    "el-5amees"
+   ],
+   "english": "Thursday"
+  },
+  {
+   "id": "beg-4-70593b",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "noun",
+   "arabic": "الجمعة",
+   "alternatives": [
+    "الجمعة"
+   ],
+   "display": "الجمعة",
+   "arabizi": "ej-jum3a",
+   "arabiziAlternatives": [
+    "ej-jum3a"
+   ],
+   "english": "Friday"
+  },
+  {
+   "id": "beg-4-7f146a",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "شو",
+   "alternatives": [
+    "شو"
+   ],
+   "display": "شو",
+   "arabizi": "shu",
+   "arabiziAlternatives": [
+    "shu"
+   ],
+   "english": "what"
+  },
+  {
+   "id": "beg-4-9ad4c7",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "مين",
+   "alternatives": [
+    "مين"
+   ],
+   "display": "مين",
+   "arabizi": "meen",
+   "arabiziAlternatives": [
+    "meen"
+   ],
+   "english": "who"
+  },
+  {
+   "id": "beg-4-0aaf4e",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "وين",
+   "alternatives": [
+    "وين"
+   ],
+   "display": "وين",
+   "arabizi": "wein",
+   "arabiziAlternatives": [
+    "wein"
+   ],
+   "english": "where"
+  },
+  {
+   "id": "beg-4-91992f",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "ليش",
+   "alternatives": [
+    "ليش"
+   ],
+   "display": "ليش",
+   "arabizi": "lesh",
+   "arabiziAlternatives": [
+    "lesh"
+   ],
+   "english": "why"
+  },
+  {
+   "id": "beg-4-daa59a",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "كيف",
+   "alternatives": [
+    "كيف"
+   ],
+   "display": "كيف",
+   "arabizi": "keef",
+   "arabiziAlternatives": [
+    "keef"
+   ],
+   "english": "how"
+  },
+  {
+   "id": "beg-4-39b2f8",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "أديش",
+   "alternatives": [
+    "أديش"
+   ],
+   "display": "أديش",
+   "arabizi": "addesh",
+   "arabiziAlternatives": [
+    "addesh"
+   ],
+   "english": "how much"
+  },
+  {
+   "id": "beg-4-12af58",
+   "level": "beginner",
+   "unitId": "beginner/unit-4",
+   "unitTitle": "Unit 4",
+   "unitOrder": 4,
+   "pos": "question",
+   "arabic": "إيمتا",
+   "alternatives": [
+    "إيمتا"
+   ],
+   "display": "إيمتا",
+   "arabizi": "eimta",
+   "arabiziAlternatives": [
+    "eimta"
+   ],
+   "english": "when"
+  },
+  {
+   "id": "beg-5-397c3c",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "particle",
+   "arabic": "رَح",
+   "alternatives": [
+    "رَح"
+   ],
+   "display": "رَح",
+   "arabizi": "ra7",
+   "arabiziAlternatives": [
+    "ra7"
+   ],
+   "english": "will (future)"
+  },
+  {
+   "id": "beg-5-a1e285",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "particle",
+   "arabic": "لازم",
+   "alternatives": [
+    "لازم"
+   ],
+   "display": "لازم",
+   "arabizi": "laazim",
+   "arabiziAlternatives": [
+    "laazim"
+   ],
+   "english": "must/have to"
+  },
+  {
+   "id": "beg-5-4ecae6",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "particle",
+   "arabic": "ممكن",
+   "alternatives": [
+    "ممكن"
+   ],
+   "display": "ممكن",
+   "arabizi": "mumken",
+   "arabiziAlternatives": [
+    "mumken"
+   ],
+   "english": "can/may"
+  },
+  {
+   "id": "beg-5-60af83",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "particle",
+   "arabic": "عم",
+   "alternatives": [
+    "عم"
+   ],
+   "display": "عم",
+   "arabizi": "3am",
+   "arabiziAlternatives": [
+    "3am"
+   ],
+   "english": "(-ing, present continuous)"
+  },
+  {
+   "id": "beg-5-bf82a8",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adverb",
+   "arabic": "بعدين",
+   "alternatives": [
+    "بعدين"
+   ],
+   "display": "بعدين",
+   "arabizi": "ba3dein",
+   "arabiziAlternatives": [
+    "ba3dein"
+   ],
+   "english": "later"
+  },
+  {
+   "id": "beg-5-78b26a",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adverb",
+   "arabic": "قبل",
+   "alternatives": [
+    "قبل"
+   ],
+   "display": "قبل",
+   "arabizi": "2abel",
+   "arabiziAlternatives": [
+    "2abel"
+   ],
+   "english": "before"
+  },
+  {
+   "id": "beg-5-e20f4c",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adverb",
+   "arabic": "سوا",
+   "alternatives": [
+    "سوا"
+   ],
+   "display": "سوا",
+   "arabizi": "sawa",
+   "arabiziAlternatives": [
+    "sawa"
+   ],
+   "english": "together"
+  },
+  {
+   "id": "beg-5-cee1f8",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adverb",
+   "arabic": "أكيد",
+   "alternatives": [
+    "أكيد"
+   ],
+   "display": "أكيد",
+   "arabizi": "akeed",
+   "arabiziAlternatives": [
+    "akeed"
+   ],
+   "english": "sure/of course"
+  },
+  {
+   "id": "beg-5-295012",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adverb",
+   "arabic": "أول شي",
+   "alternatives": [
+    "أول شي"
+   ],
+   "display": "أول شي",
+   "arabizi": "awwal shi",
+   "arabiziAlternatives": [
+    "awwal shi"
+   ],
+   "english": "first of all"
+  },
+  {
+   "id": "beg-5-9518d6",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adjective",
+   "arabic": "الجاي",
+   "alternatives": [
+    "الجاي"
+   ],
+   "display": "الجاي",
+   "arabizi": "el-jaay",
+   "arabiziAlternatives": [
+    "el-jaay"
+   ],
+   "english": "next",
+   "gender": "m"
+  },
+  {
+   "id": "beg-5-099858",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "adjective",
+   "arabic": "الجايِة",
+   "alternatives": [
+    "الجايِة"
+   ],
+   "display": "الجايِة",
+   "arabizi": "el-jaaye",
+   "arabiziAlternatives": [
+    "el-jaaye"
+   ],
+   "english": "next",
+   "gender": "f"
+  },
+  {
+   "id": "beg-5-de0101",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "phrase",
+   "arabic": "تعا",
+   "alternatives": [
+    "تعا"
+   ],
+   "display": "تعا",
+   "arabizi": "ta3a",
+   "arabiziAlternatives": [
+    "ta3a"
+   ],
+   "english": "come! (command)"
+  },
+  {
+   "id": "beg-5-33dbf7",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "phrase",
+   "arabic": "يلا",
+   "alternatives": [
+    "يلا"
+   ],
+   "display": "يلا",
+   "arabizi": "yalla",
+   "arabiziAlternatives": [
+    "yalla"
+   ],
+   "english": "let's/c'mon"
+  },
+  {
+   "id": "beg-5-c0e25f",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بينسى",
+   "alternatives": [
+    "بينسى"
+   ],
+   "display": "بينسى",
+   "arabizi": "byinsa",
+   "arabiziAlternatives": [
+    "byinsa"
+   ],
+   "english": "to forget"
+  },
+  {
+   "id": "beg-5-b1cca8",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بيتعلّم",
+   "alternatives": [
+    "بيتعلّم"
+   ],
+   "display": "بيتعلّم",
+   "arabizi": "byit3allam",
+   "arabiziAlternatives": [
+    "byit3allam"
+   ],
+   "english": "to learn"
+  },
+  {
+   "id": "beg-5-19ff8b",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بيقول",
+   "alternatives": [
+    "بيقول"
+   ],
+   "display": "بيقول",
+   "arabizi": "byi2oul",
+   "arabiziAlternatives": [
+    "byi2oul"
+   ],
+   "english": "to say"
+  },
+  {
+   "id": "beg-5-e56090",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بيساعد",
+   "alternatives": [
+    "بيساعد"
+   ],
+   "display": "بيساعد",
+   "arabizi": "byisa3ed",
+   "arabiziAlternatives": [
+    "byisa3ed"
+   ],
+   "english": "to help"
+  },
+  {
+   "id": "beg-5-db9a19",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بيرتاح",
+   "alternatives": [
+    "بيرتاح"
+   ],
+   "display": "بيرتاح",
+   "arabizi": "byirta7",
+   "arabiziAlternatives": [
+    "byirta7"
+   ],
+   "english": "to rest"
+  },
+  {
+   "id": "beg-5-8b3e05",
+   "level": "beginner",
+   "unitId": "beginner/unit-5",
+   "unitTitle": "Unit 5",
+   "unitOrder": 5,
+   "pos": "verb",
+   "arabic": "بيطبخ",
+   "alternatives": [
+    "بيطبخ"
+   ],
+   "display": "بيطبخ",
+   "arabizi": "byitbo5",
+   "arabiziAlternatives": [
+    "byitbo5"
+   ],
+   "english": "to cook"
+  },
+  {
+   "id": "beg-6-03fbf3",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "الساعة",
+   "alternatives": [
+    "الساعة"
+   ],
+   "display": "الساعة",
+   "arabizi": "es-sa3a",
+   "arabiziAlternatives": [
+    "es-sa3a"
+   ],
+   "english": "the time/clock"
+  },
+  {
+   "id": "beg-6-5572e4",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "الساعة كم؟",
+   "alternatives": [
+    "الساعة كم؟"
+   ],
+   "display": "الساعة كم؟",
+   "arabizi": "es-sa3a kam",
+   "arabiziAlternatives": [
+    "es-sa3a kam"
+   ],
+   "english": "what time is it?"
+  },
+  {
+   "id": "beg-6-31c401",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "وْنُص",
+   "alternatives": [
+    "وْنُص"
+   ],
+   "display": "وْنُص",
+   "arabizi": "w-nuss",
+   "arabiziAlternatives": [
+    "w-nuss"
+   ],
+   "english": "half past (:30)"
+  },
+  {
+   "id": "beg-6-4f12ea",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "وْرُبْع",
+   "alternatives": [
+    "وْرُبْع"
+   ],
+   "display": "وْرُبْع",
+   "arabizi": "w-rube3",
+   "arabiziAlternatives": [
+    "w-rube3"
+   ],
+   "english": "quarter past (:15)"
+  },
+  {
+   "id": "beg-6-72b7e7",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "وْتِلْت",
+   "alternatives": [
+    "وْتِلْت"
+   ],
+   "display": "وْتِلْت",
+   "arabizi": "w-tilt",
+   "arabiziAlternatives": [
+    "w-tilt"
+   ],
+   "english": "twenty past (:20)"
+  },
+  {
+   "id": "beg-6-54c4f0",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "إلا رُبْع",
+   "alternatives": [
+    "إلا رُبْع"
+   ],
+   "display": "إلا رُبْع",
+   "arabizi": "illa rube3",
+   "arabiziAlternatives": [
+    "illa rube3"
+   ],
+   "english": "quarter to (:45)"
+  },
+  {
+   "id": "beg-6-ea0146",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "إلا تِلْت",
+   "alternatives": [
+    "إلا تِلْت"
+   ],
+   "display": "إلا تِلْت",
+   "arabizi": "illa tilt",
+   "arabiziAlternatives": [
+    "illa tilt"
+   ],
+   "english": "twenty to (:40)"
+  },
+  {
+   "id": "beg-6-05894f",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "phrase",
+   "arabic": "بعد الضهر",
+   "alternatives": [
+    "بعد الضهر"
+   ],
+   "display": "بعد الضهر",
+   "arabizi": "ba3d ed-duhr",
+   "arabiziAlternatives": [
+    "ba3d ed-duhr"
+   ],
+   "english": "in the afternoon"
+  },
+  {
+   "id": "beg-6-281acc",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "موعد",
+   "alternatives": [
+    "موعد"
+   ],
+   "display": "موعد",
+   "arabizi": "maw3ad",
+   "arabiziAlternatives": [
+    "maw3ad"
+   ],
+   "english": "appointment"
+  },
+  {
+   "id": "beg-6-546255",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "نهار",
+   "alternatives": [
+    "نهار"
+   ],
+   "display": "نهار",
+   "arabizi": "nhar",
+   "arabiziAlternatives": [
+    "nhar"
+   ],
+   "english": "day/on (a day)"
+  },
+  {
+   "id": "beg-6-bf91a5",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "حدا",
+   "alternatives": [
+    "حدا"
+   ],
+   "display": "حدا",
+   "arabizi": "7ada",
+   "arabiziAlternatives": [
+    "7ada"
+   ],
+   "english": "someone"
+  },
+  {
+   "id": "beg-6-664f8f",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "شخص",
+   "alternatives": [
+    "شخص"
+   ],
+   "display": "شخص",
+   "arabizi": "sha5es",
+   "arabiziAlternatives": [
+    "sha5es"
+   ],
+   "english": "person"
+  },
+  {
+   "id": "beg-6-c5a70e",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "noun",
+   "arabic": "الباب",
+   "alternatives": [
+    "الباب"
+   ],
+   "display": "الباب",
+   "arabizi": "el-bab",
+   "arabiziAlternatives": [
+    "el-bab"
+   ],
+   "english": "the door"
+  },
+  {
+   "id": "beg-6-a1da84",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "عشرين",
+   "alternatives": [
+    "عشرين"
+   ],
+   "display": "عشرين",
+   "arabizi": "3eshreen",
+   "arabiziAlternatives": [
+    "3eshreen"
+   ],
+   "english": "twenty"
+  },
+  {
+   "id": "beg-6-4f6194",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "تلاتين",
+   "alternatives": [
+    "تلاتين"
+   ],
+   "display": "تلاتين",
+   "arabizi": "tlateen",
+   "arabiziAlternatives": [
+    "tlateen"
+   ],
+   "english": "thirty"
+  },
+  {
+   "id": "beg-6-7a0da7",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "أربعين",
+   "alternatives": [
+    "أربعين"
+   ],
+   "display": "أربعين",
+   "arabizi": "arba3een",
+   "arabiziAlternatives": [
+    "arba3een"
+   ],
+   "english": "forty"
+  },
+  {
+   "id": "beg-6-0cea7e",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "خمسين",
+   "alternatives": [
+    "خمسين"
+   ],
+   "display": "خمسين",
+   "arabizi": "5amseen",
+   "arabiziAlternatives": [
+    "5amseen"
+   ],
+   "english": "fifty"
+  },
+  {
+   "id": "beg-6-0215dc",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "ستّين",
+   "alternatives": [
+    "ستّين"
+   ],
+   "display": "ستّين",
+   "arabizi": "sitteen",
+   "arabiziAlternatives": [
+    "sitteen"
+   ],
+   "english": "sixty"
+  },
+  {
+   "id": "beg-6-436f58",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "سبعين",
+   "alternatives": [
+    "سبعين"
+   ],
+   "display": "سبعين",
+   "arabizi": "sab3een",
+   "arabiziAlternatives": [
+    "sab3een"
+   ],
+   "english": "seventy"
+  },
+  {
+   "id": "beg-6-026629",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "تمانين",
+   "alternatives": [
+    "تمانين"
+   ],
+   "display": "تمانين",
+   "arabizi": "tmaneen",
+   "arabiziAlternatives": [
+    "tmaneen"
+   ],
+   "english": "eighty"
+  },
+  {
+   "id": "beg-6-79fd92",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "تسعين",
+   "alternatives": [
+    "تسعين"
+   ],
+   "display": "تسعين",
+   "arabizi": "tis3een",
+   "arabiziAlternatives": [
+    "tis3een"
+   ],
+   "english": "ninety"
+  },
+  {
+   "id": "beg-6-ea1183",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "ميّة",
+   "alternatives": [
+    "ميّة"
+   ],
+   "display": "ميّة",
+   "arabizi": "miyyeh",
+   "arabiziAlternatives": [
+    "miyyeh"
+   ],
+   "english": "hundred (100)"
+  },
+  {
+   "id": "beg-6-b7a3e5",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "ميتين",
+   "alternatives": [
+    "ميتين"
+   ],
+   "display": "ميتين",
+   "arabizi": "meetien",
+   "arabiziAlternatives": [
+    "meetien"
+   ],
+   "english": "two hundred (200)"
+  },
+  {
+   "id": "beg-6-713a6b",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "مليون",
+   "alternatives": [
+    "مليون"
+   ],
+   "display": "مليون",
+   "arabizi": "milyon",
+   "arabiziAlternatives": [
+    "milyon"
+   ],
+   "english": "million"
+  },
+  {
+   "id": "beg-6-911665",
+   "level": "beginner",
+   "unitId": "beginner/unit-6",
+   "unitTitle": "Unit 6",
+   "unitOrder": 6,
+   "pos": "number",
+   "arabic": "مليونين",
+   "alternatives": [
+    "مليونين"
+   ],
+   "display": "مليونين",
+   "arabizi": "milyonayn",
+   "arabiziAlternatives": [
+    "milyonayn"
+   ],
+   "english": "two million"
+  },
+  {
+   "id": "beg-7-590571",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أحمر",
+   "alternatives": [
+    "أحمر"
+   ],
+   "display": "أحمر",
+   "arabizi": "a7mar",
+   "arabiziAlternatives": [
+    "a7mar"
+   ],
+   "english": "red"
+  },
+  {
+   "id": "beg-7-48b4b5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أخضر",
+   "alternatives": [
+    "أخضر"
+   ],
+   "display": "أخضر",
+   "arabizi": "a5dar",
+   "arabiziAlternatives": [
+    "a5dar"
+   ],
+   "english": "green"
+  },
+  {
+   "id": "beg-7-072bf8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أزرق",
+   "alternatives": [
+    "أزرق"
+   ],
+   "display": "أزرق",
+   "arabizi": "azra2",
+   "arabiziAlternatives": [
+    "azra2"
+   ],
+   "english": "blue"
+  },
+  {
+   "id": "beg-7-25fbdd",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أصفر",
+   "alternatives": [
+    "أصفر"
+   ],
+   "display": "أصفر",
+   "arabizi": "asfar",
+   "arabiziAlternatives": [
+    "asfar"
+   ],
+   "english": "yellow"
+  },
+  {
+   "id": "beg-7-6fca68",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أبيض",
+   "alternatives": [
+    "أبيض"
+   ],
+   "display": "أبيض",
+   "arabizi": "abyad",
+   "arabiziAlternatives": [
+    "abyad"
+   ],
+   "english": "white"
+  },
+  {
+   "id": "beg-7-bc1fde",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "أسود",
+   "alternatives": [
+    "أسود"
+   ],
+   "display": "أسود",
+   "arabizi": "aswad",
+   "arabiziAlternatives": [
+    "aswad"
+   ],
+   "english": "black"
+  },
+  {
+   "id": "beg-7-cd8d5b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "بنّي",
+   "alternatives": [
+    "بنّي"
+   ],
+   "display": "بنّي",
+   "arabizi": "bunni",
+   "arabiziAlternatives": [
+    "bunni"
+   ],
+   "english": "brown"
+  },
+  {
+   "id": "beg-7-013ff8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "بنفسجي",
+   "alternatives": [
+    "بنفسجي"
+   ],
+   "display": "بنفسجي",
+   "arabizi": "banafsaji",
+   "arabiziAlternatives": [
+    "banafsaji"
+   ],
+   "english": "purple"
+  },
+  {
+   "id": "beg-7-cb5231",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "برتقالي",
+   "alternatives": [
+    "برتقالي"
+   ],
+   "display": "برتقالي",
+   "arabizi": "burtu2ani",
+   "arabiziAlternatives": [
+    "burtu2ani"
+   ],
+   "english": "orange"
+  },
+  {
+   "id": "beg-7-8ead1e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "زهري",
+   "alternatives": [
+    "زهري"
+   ],
+   "display": "زهري",
+   "arabizi": "zahri",
+   "arabiziAlternatives": [
+    "zahri"
+   ],
+   "english": "pink"
+  },
+  {
+   "id": "beg-7-836d81",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "وردي",
+   "alternatives": [
+    "وردي"
+   ],
+   "display": "وردي",
+   "arabizi": "wardi",
+   "arabiziAlternatives": [
+    "wardi"
+   ],
+   "english": "rosy/pink"
+  },
+  {
+   "id": "beg-7-1a1680",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "color",
+   "arabic": "رمادي",
+   "alternatives": [
+    "رمادي"
+   ],
+   "display": "رمادي",
+   "arabizi": "rmadi",
+   "arabiziAlternatives": [
+    "rmadi"
+   ],
+   "english": "grey"
+  },
+  {
+   "id": "beg-7-aec612",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "لبنان",
+   "alternatives": [
+    "لبنان"
+   ],
+   "display": "لبنان",
+   "arabizi": "Lebnen",
+   "arabiziAlternatives": [
+    "Lebnen"
+   ],
+   "english": "Lebanon"
+  },
+  {
+   "id": "beg-7-1166d2",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "سوريا",
+   "alternatives": [
+    "سوريا"
+   ],
+   "display": "سوريا",
+   "arabizi": "Souria",
+   "arabiziAlternatives": [
+    "Souria"
+   ],
+   "english": "Syria"
+  },
+  {
+   "id": "beg-7-1b5fba",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "فلسطين",
+   "alternatives": [
+    "فلسطين"
+   ],
+   "display": "فلسطين",
+   "arabizi": "Falastin",
+   "arabiziAlternatives": [
+    "Falastin"
+   ],
+   "english": "Palestine"
+  },
+  {
+   "id": "beg-7-1b8900",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "الأردن",
+   "alternatives": [
+    "الأردن"
+   ],
+   "display": "الأردن",
+   "arabizi": "el-Ordon",
+   "arabiziAlternatives": [
+    "el-Ordon"
+   ],
+   "english": "Jordan"
+  },
+  {
+   "id": "beg-7-9f5f18",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "مصر",
+   "alternatives": [
+    "مصر"
+   ],
+   "display": "مصر",
+   "arabizi": "Masr",
+   "arabiziAlternatives": [
+    "Masr"
+   ],
+   "english": "Egypt"
+  },
+  {
+   "id": "beg-7-3f8cbd",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "السعودية",
+   "alternatives": [
+    "السعودية"
+   ],
+   "display": "السعودية",
+   "arabizi": "es-Se3oudiyye",
+   "arabiziAlternatives": [
+    "es-Se3oudiyye"
+   ],
+   "english": "Saudi Arabia"
+  },
+  {
+   "id": "beg-7-94b11d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "المغرب",
+   "alternatives": [
+    "المغرب"
+   ],
+   "display": "المغرب",
+   "arabizi": "el-Maghreb",
+   "arabiziAlternatives": [
+    "el-Maghreb"
+   ],
+   "english": "Morocco"
+  },
+  {
+   "id": "beg-7-ba84e9",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "تونس",
+   "alternatives": [
+    "تونس"
+   ],
+   "display": "تونس",
+   "arabizi": "Tounes",
+   "arabiziAlternatives": [
+    "Tounes"
+   ],
+   "english": "Tunisia"
+  },
+  {
+   "id": "beg-7-5becaf",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "السودان",
+   "alternatives": [
+    "السودان"
+   ],
+   "display": "السودان",
+   "arabizi": "es-Soudan",
+   "arabiziAlternatives": [
+    "es-Soudan"
+   ],
+   "english": "Sudan"
+  },
+  {
+   "id": "beg-7-4b7497",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "العراق",
+   "alternatives": [
+    "العراق"
+   ],
+   "display": "العراق",
+   "arabizi": "el-3ira2",
+   "arabiziAlternatives": [
+    "el-3ira2"
+   ],
+   "english": "Iraq"
+  },
+  {
+   "id": "beg-7-1ccd12",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "الإمارات",
+   "alternatives": [
+    "الإمارات"
+   ],
+   "display": "الإمارات",
+   "arabizi": "el-Imarat",
+   "arabiziAlternatives": [
+    "el-Imarat"
+   ],
+   "english": "UAE"
+  },
+  {
+   "id": "beg-7-827e15",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "الكويت",
+   "alternatives": [
+    "الكويت"
+   ],
+   "display": "الكويت",
+   "arabizi": "el-Kwet",
+   "arabiziAlternatives": [
+    "el-Kwet"
+   ],
+   "english": "Kuwait"
+  },
+  {
+   "id": "beg-7-763944",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "قطر",
+   "alternatives": [
+    "قطر"
+   ],
+   "display": "قطر",
+   "arabizi": "Qatar",
+   "arabiziAlternatives": [
+    "Qatar"
+   ],
+   "english": "Qatar"
+  },
+  {
+   "id": "beg-7-b9493d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "عُمان",
+   "alternatives": [
+    "عُمان"
+   ],
+   "display": "عُمان",
+   "arabizi": "3oman",
+   "arabiziAlternatives": [
+    "3oman"
+   ],
+   "english": "Oman"
+  },
+  {
+   "id": "beg-7-0cdfe5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "اليمن",
+   "alternatives": [
+    "اليمن"
+   ],
+   "display": "اليمن",
+   "arabizi": "el-Yaman",
+   "arabiziAlternatives": [
+    "el-Yaman"
+   ],
+   "english": "Yemen"
+  },
+  {
+   "id": "beg-7-2a0041",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "البحرين",
+   "alternatives": [
+    "البحرين"
+   ],
+   "display": "البحرين",
+   "arabizi": "el-Ba7rein",
+   "arabiziAlternatives": [
+    "el-Ba7rein"
+   ],
+   "english": "Bahrain"
+  },
+  {
+   "id": "beg-7-cd7797",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "الجزائر",
+   "alternatives": [
+    "الجزائر"
+   ],
+   "display": "الجزائر",
+   "arabizi": "el-Jazayer",
+   "arabiziAlternatives": [
+    "el-Jazayer"
+   ],
+   "english": "Algeria"
+  },
+  {
+   "id": "beg-7-251aff",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "country",
+   "arabic": "ليبيا",
+   "alternatives": [
+    "ليبيا"
+   ],
+   "display": "ليبيا",
+   "arabizi": "Libia",
+   "arabiziAlternatives": [
+    "Libia"
+   ],
+   "english": "Libya"
+  },
+  {
+   "id": "beg-7-03ecad",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "لبناني",
+   "alternatives": [
+    "لبناني"
+   ],
+   "display": "لبناني",
+   "arabizi": "Lebnaani",
+   "arabiziAlternatives": [
+    "Lebnaani"
+   ],
+   "english": "Lebanese"
+  },
+  {
+   "id": "beg-7-25f462",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "سوري",
+   "alternatives": [
+    "سوري"
+   ],
+   "display": "سوري",
+   "arabizi": "Souri",
+   "arabiziAlternatives": [
+    "Souri"
+   ],
+   "english": "Syrian"
+  },
+  {
+   "id": "beg-7-31488d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "فلسطيني",
+   "alternatives": [
+    "فلسطيني"
+   ],
+   "display": "فلسطيني",
+   "arabizi": "Falastini",
+   "arabiziAlternatives": [
+    "Falastini"
+   ],
+   "english": "Palestinian"
+  },
+  {
+   "id": "beg-7-0637bf",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "أردني",
+   "alternatives": [
+    "أردني"
+   ],
+   "display": "أردني",
+   "arabizi": "Ordoni",
+   "arabiziAlternatives": [
+    "Ordoni"
+   ],
+   "english": "Jordanian"
+  },
+  {
+   "id": "beg-7-d896f0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "مصري",
+   "alternatives": [
+    "مصري"
+   ],
+   "display": "مصري",
+   "arabizi": "Masri",
+   "arabiziAlternatives": [
+    "Masri"
+   ],
+   "english": "Egyptian"
+  },
+  {
+   "id": "beg-7-1d66dc",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "سعودي",
+   "alternatives": [
+    "سعودي"
+   ],
+   "display": "سعودي",
+   "arabizi": "Sa3oudi",
+   "arabiziAlternatives": [
+    "Sa3oudi"
+   ],
+   "english": "Saudi"
+  },
+  {
+   "id": "beg-7-f8a2a0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "مغربي",
+   "alternatives": [
+    "مغربي"
+   ],
+   "display": "مغربي",
+   "arabizi": "Maghribi",
+   "arabiziAlternatives": [
+    "Maghribi"
+   ],
+   "english": "Moroccan"
+  },
+  {
+   "id": "beg-7-11d9a8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "سوداني",
+   "alternatives": [
+    "سوداني"
+   ],
+   "display": "سوداني",
+   "arabizi": "Soudani",
+   "arabiziAlternatives": [
+    "Soudani"
+   ],
+   "english": "Sudanese"
+  },
+  {
+   "id": "beg-7-89b9e7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "تونسي",
+   "alternatives": [
+    "تونسي"
+   ],
+   "display": "تونسي",
+   "arabizi": "Tounsi",
+   "arabiziAlternatives": [
+    "Tounsi"
+   ],
+   "english": "Tunisian"
+  },
+  {
+   "id": "beg-7-5499a4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "nationality",
+   "arabic": "عراقي",
+   "alternatives": [
+    "عراقي"
+   ],
+   "display": "عراقي",
+   "arabizi": "3iraqi",
+   "arabiziAlternatives": [
+    "3iraqi"
+   ],
+   "english": "Iraqi"
+  },
+  {
+   "id": "beg-7-35142f",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "غالي",
+   "alternatives": [
+    "غالي"
+   ],
+   "display": "غالي",
+   "arabizi": "ghali",
+   "arabiziAlternatives": [
+    "ghali"
+   ],
+   "english": "expensive"
+  },
+  {
+   "id": "beg-7-bb4c2d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "رخيص",
+   "alternatives": [
+    "رخيص"
+   ],
+   "display": "رخيص",
+   "arabizi": "rkhees",
+   "arabiziAlternatives": [
+    "rkhees"
+   ],
+   "english": "cheap"
+  },
+  {
+   "id": "beg-7-ecbbe8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "طويل",
+   "alternatives": [
+    "طويل"
+   ],
+   "display": "طويل",
+   "arabizi": "tawil",
+   "arabiziAlternatives": [
+    "tawil"
+   ],
+   "english": "long/tall"
+  },
+  {
+   "id": "beg-7-9dcbfd",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "بعيد",
+   "alternatives": [
+    "بعيد"
+   ],
+   "display": "بعيد",
+   "arabizi": "b3eed",
+   "arabiziAlternatives": [
+    "b3eed"
+   ],
+   "english": "far"
+  },
+  {
+   "id": "beg-7-5d0c68",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "قريب",
+   "alternatives": [
+    "قريب"
+   ],
+   "display": "قريب",
+   "arabizi": "2arib",
+   "arabiziAlternatives": [
+    "2arib"
+   ],
+   "english": "near"
+  },
+  {
+   "id": "beg-7-67bd2e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "سهل",
+   "alternatives": [
+    "سهل"
+   ],
+   "display": "سهل",
+   "arabizi": "sahel",
+   "arabiziAlternatives": [
+    "sahel"
+   ],
+   "english": "easy"
+  },
+  {
+   "id": "beg-7-3c3ca9",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "صعب",
+   "alternatives": [
+    "صعب"
+   ],
+   "display": "صعب",
+   "arabizi": "sa3eb",
+   "arabiziAlternatives": [
+    "sa3eb"
+   ],
+   "english": "hard/difficult"
+  },
+  {
+   "id": "beg-7-9fbb7c",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "واضح",
+   "alternatives": [
+    "واضح"
+   ],
+   "display": "واضح",
+   "arabizi": "wade7",
+   "arabiziAlternatives": [
+    "wade7"
+   ],
+   "english": "clear"
+  },
+  {
+   "id": "beg-7-4aedd6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "أحسن",
+   "alternatives": [
+    "أحسن"
+   ],
+   "display": "أحسن",
+   "arabizi": "a7san",
+   "arabiziAlternatives": [
+    "a7san"
+   ],
+   "english": "better"
+  },
+  {
+   "id": "beg-7-0d11b6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "سعر",
+   "alternatives": [
+    "سعر"
+   ],
+   "display": "سعر",
+   "arabizi": "se3er",
+   "arabiziAlternatives": [
+    "se3er"
+   ],
+   "english": "price"
+  },
+  {
+   "id": "beg-7-e2a292",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "ناس",
+   "alternatives": [
+    "ناس"
+   ],
+   "display": "ناس",
+   "arabizi": "nas",
+   "arabiziAlternatives": [
+    "nas"
+   ],
+   "english": "people"
+  },
+  {
+   "id": "beg-7-4a27de",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مستشفى",
+   "alternatives": [
+    "مستشفى"
+   ],
+   "display": "مستشفى",
+   "arabizi": "mustashfa",
+   "arabiziAlternatives": [
+    "mustashfa"
+   ],
+   "english": "hospital"
+  },
+  {
+   "id": "beg-7-66a9f6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بلد",
+   "alternatives": [
+    "بلد"
+   ],
+   "display": "بلد",
+   "arabizi": "balad",
+   "arabiziAlternatives": [
+    "balad"
+   ],
+   "english": "country"
+  },
+  {
+   "id": "beg-7-37a999",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "جامعة",
+   "alternatives": [
+    "جامعة"
+   ],
+   "display": "جامعة",
+   "arabizi": "jam3a",
+   "arabiziAlternatives": [
+    "jam3a"
+   ],
+   "english": "university"
+  },
+  {
+   "id": "beg-7-b659f3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "طقس",
+   "alternatives": [
+    "طقس"
+   ],
+   "display": "طقس",
+   "arabizi": "ta2es",
+   "arabiziAlternatives": [
+    "ta2es"
+   ],
+   "english": "weather"
+  },
+  {
+   "id": "beg-7-fedfd6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "طبيعة",
+   "alternatives": [
+    "طبيعة"
+   ],
+   "display": "طبيعة",
+   "arabizi": "tabee3a",
+   "arabiziAlternatives": [
+    "tabee3a"
+   ],
+   "english": "nature"
+  },
+  {
+   "id": "beg-7-01662a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مساحة",
+   "alternatives": [
+    "مساحة"
+   ],
+   "display": "مساحة",
+   "arabizi": "misa7a",
+   "arabiziAlternatives": [
+    "misa7a"
+   ],
+   "english": "area/size"
+  },
+  {
+   "id": "beg-7-b6aff6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مقارنة",
+   "alternatives": [
+    "مقارنة"
+   ],
+   "display": "مقارنة",
+   "arabizi": "mu2arane",
+   "arabiziAlternatives": [
+    "mu2arane"
+   ],
+   "english": "comparison"
+  },
+  {
+   "id": "beg-7-1569f3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "شتغل",
+   "alternatives": [
+    "شتغل"
+   ],
+   "display": "شتغل",
+   "arabizi": "shta8al",
+   "arabiziAlternatives": [
+    "shta8al"
+   ],
+   "english": "to work"
+  },
+  {
+   "id": "beg-7-6190d5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "سكّر",
+   "alternatives": [
+    "سكّر"
+   ],
+   "display": "سكّر",
+   "arabizi": "sakkar",
+   "arabiziAlternatives": [
+    "sakkar"
+   ],
+   "english": "to close"
+  },
+  {
+   "id": "beg-7-8f759a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "لبس",
+   "alternatives": [
+    "لبس"
+   ],
+   "display": "لبس",
+   "arabizi": "lebes",
+   "arabiziAlternatives": [
+    "lebes"
+   ],
+   "english": "to wear"
+  },
+  {
+   "id": "beg-7-7b01f5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "وصل",
+   "alternatives": [
+    "وصل"
+   ],
+   "display": "وصل",
+   "arabizi": "wesel",
+   "arabiziAlternatives": [
+    "wesel"
+   ],
+   "english": "to arrive"
+  },
+  {
+   "id": "beg-7-f12964",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "طبخ",
+   "alternatives": [
+    "طبخ"
+   ],
+   "display": "طبخ",
+   "arabizi": "tabakh",
+   "arabiziAlternatives": [
+    "tabakh"
+   ],
+   "english": "to cook"
+  },
+  {
+   "id": "beg-7-7acf19",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "سكن",
+   "alternatives": [
+    "سكن"
+   ],
+   "display": "سكن",
+   "arabizi": "saken",
+   "arabiziAlternatives": [
+    "saken"
+   ],
+   "english": "to live/reside"
+  },
+  {
+   "id": "beg-7-0d72a7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "طلع",
+   "alternatives": [
+    "طلع"
+   ],
+   "display": "طلع",
+   "arabizi": "tele3",
+   "arabiziAlternatives": [
+    "tele3"
+   ],
+   "english": "to go up/out"
+  },
+  {
+   "id": "beg-7-3c6263",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "قعد",
+   "alternatives": [
+    "قعد"
+   ],
+   "display": "قعد",
+   "arabizi": "2a3ad",
+   "arabiziAlternatives": [
+    "2a3ad"
+   ],
+   "english": "to sit"
+  },
+  {
+   "id": "beg-7-3dfde8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "سافر",
+   "alternatives": [
+    "سافر"
+   ],
+   "display": "سافر",
+   "arabizi": "safar",
+   "arabiziAlternatives": [
+    "safar"
+   ],
+   "english": "to travel"
+  },
+  {
+   "id": "beg-7-d48f4e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "خلّص",
+   "alternatives": [
+    "خلّص"
+   ],
+   "display": "خلّص",
+   "arabizi": "5allas",
+   "arabiziAlternatives": [
+    "5allas"
+   ],
+   "english": "to finish"
+  },
+  {
+   "id": "beg-7-efb054",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "صرف",
+   "alternatives": [
+    "صرف"
+   ],
+   "display": "صرف",
+   "arabizi": "saraf",
+   "arabiziAlternatives": [
+    "saraf"
+   ],
+   "english": "to spend money"
+  },
+  {
+   "id": "beg-7-aa0db0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "علّم",
+   "alternatives": [
+    "علّم"
+   ],
+   "display": "علّم",
+   "arabizi": "3allam",
+   "arabiziAlternatives": [
+    "3allam"
+   ],
+   "english": "to teach"
+  },
+  {
+   "id": "beg-7-b8a1f4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "عرف",
+   "alternatives": [
+    "عرف"
+   ],
+   "display": "عرف",
+   "arabizi": "3eref",
+   "arabiziAlternatives": [
+    "3eref"
+   ],
+   "english": "to know"
+  },
+  {
+   "id": "beg-7-d86fd3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "رجع",
+   "alternatives": [
+    "رجع"
+   ],
+   "display": "رجع",
+   "arabizi": "rje3",
+   "arabiziAlternatives": [
+    "rje3"
+   ],
+   "english": "to come back/return"
+  },
+  {
+   "id": "beg-7-a7fc71",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "دفع",
+   "alternatives": [
+    "دفع"
+   ],
+   "display": "دفع",
+   "arabizi": "dafa3",
+   "arabiziAlternatives": [
+    "dafa3"
+   ],
+   "english": "to pay"
+  },
+  {
+   "id": "beg-7-dca579",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "حضر",
+   "alternatives": [
+    "حضر"
+   ],
+   "display": "حضر",
+   "arabizi": "7adar",
+   "arabiziAlternatives": [
+    "7adar"
+   ],
+   "english": "to watch/attend"
+  },
+  {
+   "id": "beg-7-a080bf",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "رسم",
+   "alternatives": [
+    "رسم"
+   ],
+   "display": "رسم",
+   "arabizi": "rasam",
+   "arabiziAlternatives": [
+    "rasam"
+   ],
+   "english": "to draw"
+  },
+  {
+   "id": "beg-7-062b67",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "عزف",
+   "alternatives": [
+    "عزف"
+   ],
+   "display": "عزف",
+   "arabizi": "3azaf",
+   "arabiziAlternatives": [
+    "3azaf"
+   ],
+   "english": "to play music"
+  },
+  {
+   "id": "beg-7-bb3c4b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "تطلّع",
+   "alternatives": [
+    "تطلّع"
+   ],
+   "display": "تطلّع",
+   "arabizi": "ttalla3",
+   "arabiziAlternatives": [
+    "ttalla3"
+   ],
+   "english": "to look"
+  },
+  {
+   "id": "beg-7-10cfa0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "سبح",
+   "alternatives": [
+    "سبح"
+   ],
+   "display": "سبح",
+   "arabizi": "saba7",
+   "arabiziAlternatives": [
+    "saba7"
+   ],
+   "english": "to swim"
+  },
+  {
+   "id": "beg-7-1f338a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "نزل",
+   "alternatives": [
+    "نزل"
+   ],
+   "display": "نزل",
+   "arabizi": "nezel",
+   "arabiziAlternatives": [
+    "nezel"
+   ],
+   "english": "to go down"
+  },
+  {
+   "id": "beg-7-efab1f",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "تعب",
+   "alternatives": [
+    "تعب"
+   ],
+   "display": "تعب",
+   "arabizi": "te3eb",
+   "arabiziAlternatives": [
+    "te3eb"
+   ],
+   "english": "to get tired"
+  },
+  {
+   "id": "beg-7-3e7ad5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "فهم",
+   "alternatives": [
+    "فهم"
+   ],
+   "display": "فهم",
+   "arabizi": "fehem",
+   "arabiziAlternatives": [
+    "fehem"
+   ],
+   "english": "to understand"
+  },
+  {
+   "id": "beg-7-f2cc82",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "أخد",
+   "alternatives": [
+    "أخد"
+   ],
+   "display": "أخد",
+   "arabizi": "akhad",
+   "arabiziAlternatives": [
+    "akhad"
+   ],
+   "english": "to take"
+  },
+  {
+   "id": "beg-7-d034b0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "لف",
+   "alternatives": [
+    "لف"
+   ],
+   "display": "لف",
+   "arabizi": "laff",
+   "arabiziAlternatives": [
+    "laff"
+   ],
+   "english": "to turn"
+  },
+  {
+   "id": "beg-7-0e4a78",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "وقّف",
+   "alternatives": [
+    "وقّف"
+   ],
+   "display": "وقّف",
+   "arabizi": "wa22af",
+   "arabiziAlternatives": [
+    "wa22af"
+   ],
+   "english": "to stop"
+  },
+  {
+   "id": "beg-7-b77b9d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "زار",
+   "alternatives": [
+    "زار"
+   ],
+   "display": "زار",
+   "arabizi": "zar",
+   "arabiziAlternatives": [
+    "zar"
+   ],
+   "english": "to visit"
+  },
+  {
+   "id": "beg-7-7403f9",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "جاب",
+   "alternatives": [
+    "جاب"
+   ],
+   "display": "جاب",
+   "arabizi": "jab",
+   "arabiziAlternatives": [
+    "jab"
+   ],
+   "english": "to bring"
+  },
+  {
+   "id": "beg-7-b74dad",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "باع",
+   "alternatives": [
+    "باع"
+   ],
+   "display": "باع",
+   "arabizi": "ba3",
+   "arabiziAlternatives": [
+    "ba3"
+   ],
+   "english": "to sell"
+  },
+  {
+   "id": "beg-7-ca39af",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "عاش",
+   "alternatives": [
+    "عاش"
+   ],
+   "display": "عاش",
+   "arabizi": "3ash",
+   "arabiziAlternatives": [
+    "3ash"
+   ],
+   "english": "to live"
+  },
+  {
+   "id": "beg-7-c40aa6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "فاق",
+   "alternatives": [
+    "فاق"
+   ],
+   "display": "فاق",
+   "arabizi": "fa2",
+   "arabiziAlternatives": [
+    "fa2"
+   ],
+   "english": "to wake up"
+  },
+  {
+   "id": "beg-7-75e0fa",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "ضاع",
+   "alternatives": [
+    "ضاع"
+   ],
+   "display": "ضاع",
+   "arabizi": "da3",
+   "arabiziAlternatives": [
+    "da3"
+   ],
+   "english": "to get lost"
+  },
+  {
+   "id": "beg-7-5ff1dd",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "صار",
+   "alternatives": [
+    "صار"
+   ],
+   "display": "صار",
+   "arabizi": "sar",
+   "arabiziAlternatives": [
+    "sar"
+   ],
+   "english": "to become/happen"
+  },
+  {
+   "id": "beg-7-e251f9",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "شترى",
+   "alternatives": [
+    "شترى"
+   ],
+   "display": "شترى",
+   "arabizi": "shtara",
+   "arabiziAlternatives": [
+    "shtara"
+   ],
+   "english": "to buy"
+  },
+  {
+   "id": "beg-7-a2c6c7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "قضّى",
+   "alternatives": [
+    "قضّى"
+   ],
+   "display": "قضّى",
+   "arabizi": "2adda",
+   "arabiziAlternatives": [
+    "2adda"
+   ],
+   "english": "to spend (time)"
+  },
+  {
+   "id": "beg-7-4675f4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "بقي",
+   "alternatives": [
+    "بقي"
+   ],
+   "display": "بقي",
+   "arabizi": "be2i",
+   "arabiziAlternatives": [
+    "be2i"
+   ],
+   "english": "to stay"
+  },
+  {
+   "id": "beg-7-277b85",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "بكي",
+   "alternatives": [
+    "بكي"
+   ],
+   "display": "بكي",
+   "arabizi": "beki",
+   "arabiziAlternatives": [
+    "beki"
+   ],
+   "english": "to cry"
+  },
+  {
+   "id": "beg-7-e797aa",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "استحى",
+   "alternatives": [
+    "استحى"
+   ],
+   "display": "استحى",
+   "arabizi": "st7a",
+   "arabiziAlternatives": [
+    "st7a"
+   ],
+   "english": "to feel shy"
+  },
+  {
+   "id": "beg-7-a86cfe",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "ردّ",
+   "alternatives": [
+    "ردّ"
+   ],
+   "display": "ردّ",
+   "arabizi": "radd",
+   "arabiziAlternatives": [
+    "radd"
+   ],
+   "english": "to reply/return"
+  },
+  {
+   "id": "beg-7-55bb02",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "حبّ",
+   "alternatives": [
+    "حبّ"
+   ],
+   "display": "حبّ",
+   "arabizi": "7abb",
+   "arabiziAlternatives": [
+    "7abb"
+   ],
+   "english": "to love/like"
+  },
+  {
+   "id": "beg-7-4b80a2",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "فلّ",
+   "alternatives": [
+    "فلّ"
+   ],
+   "display": "فلّ",
+   "arabizi": "fall",
+   "arabiziAlternatives": [
+    "fall"
+   ],
+   "english": "to leave"
+  },
+  {
+   "id": "beg-7-3215fc",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "فطور",
+   "alternatives": [
+    "فطور"
+   ],
+   "display": "فطور",
+   "arabizi": "ftour",
+   "arabiziAlternatives": [
+    "ftour"
+   ],
+   "english": "breakfast"
+  },
+  {
+   "id": "beg-7-2bfe19",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "غدا",
+   "alternatives": [
+    "غدا"
+   ],
+   "display": "غدا",
+   "arabizi": "ghada",
+   "arabiziAlternatives": [
+    "ghada"
+   ],
+   "english": "lunch"
+  },
+  {
+   "id": "beg-7-51460a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "عشا",
+   "alternatives": [
+    "عشا"
+   ],
+   "display": "عشا",
+   "arabizi": "3asha",
+   "arabiziAlternatives": [
+    "3asha"
+   ],
+   "english": "dinner"
+  },
+  {
+   "id": "beg-7-389d44",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "منقوشة",
+   "alternatives": [
+    "منقوشة"
+   ],
+   "display": "منقوشة",
+   "arabizi": "man2oushe",
+   "arabiziAlternatives": [
+    "man2oushe"
+   ],
+   "english": "manoushe"
+  },
+  {
+   "id": "beg-7-8da3de",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "زعتر",
+   "alternatives": [
+    "زعتر"
+   ],
+   "display": "زعتر",
+   "arabizi": "za3tar",
+   "arabiziAlternatives": [
+    "za3tar"
+   ],
+   "english": "thyme/zaatar"
+  },
+  {
+   "id": "beg-7-706993",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "لبنة",
+   "alternatives": [
+    "لبنة"
+   ],
+   "display": "لبنة",
+   "arabizi": "labne",
+   "arabiziAlternatives": [
+    "labne"
+   ],
+   "english": "labneh"
+  },
+  {
+   "id": "beg-7-0ff3c3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "خبز",
+   "alternatives": [
+    "خبز"
+   ],
+   "display": "خبز",
+   "arabizi": "khebez",
+   "arabiziAlternatives": [
+    "khebez"
+   ],
+   "english": "bread"
+  },
+  {
+   "id": "beg-7-b88177",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "جبنة",
+   "alternatives": [
+    "جبنة"
+   ],
+   "display": "جبنة",
+   "arabizi": "jebne",
+   "arabiziAlternatives": [
+    "jebne"
+   ],
+   "english": "cheese"
+  },
+  {
+   "id": "beg-7-fa4785",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "زيتون",
+   "alternatives": [
+    "زيتون"
+   ],
+   "display": "زيتون",
+   "arabizi": "zaytoon",
+   "arabiziAlternatives": [
+    "zaytoon"
+   ],
+   "english": "olives"
+  },
+  {
+   "id": "beg-7-ed2011",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بيض",
+   "alternatives": [
+    "بيض"
+   ],
+   "display": "بيض",
+   "arabizi": "bayd",
+   "arabiziAlternatives": [
+    "bayd"
+   ],
+   "english": "eggs"
+  },
+  {
+   "id": "beg-7-34045f",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "رز",
+   "alternatives": [
+    "رز"
+   ],
+   "display": "رز",
+   "arabizi": "rizz",
+   "arabiziAlternatives": [
+    "rizz"
+   ],
+   "english": "rice"
+  },
+  {
+   "id": "beg-7-e2303d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "دجاج",
+   "alternatives": [
+    "دجاج"
+   ],
+   "display": "دجاج",
+   "arabizi": "djej",
+   "arabiziAlternatives": [
+    "djej"
+   ],
+   "english": "chicken"
+  },
+  {
+   "id": "beg-7-d66495",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "سلطة",
+   "alternatives": [
+    "سلطة"
+   ],
+   "display": "سلطة",
+   "arabizi": "salata",
+   "arabiziAlternatives": [
+    "salata"
+   ],
+   "english": "salad"
+  },
+  {
+   "id": "beg-7-ffca21",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "لحمة",
+   "alternatives": [
+    "لحمة"
+   ],
+   "display": "لحمة",
+   "arabizi": "la7meh",
+   "arabiziAlternatives": [
+    "la7meh"
+   ],
+   "english": "meat"
+  },
+  {
+   "id": "beg-7-903567",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "سمك",
+   "alternatives": [
+    "سمك"
+   ],
+   "display": "سمك",
+   "arabizi": "samak",
+   "arabiziAlternatives": [
+    "samak"
+   ],
+   "english": "fish"
+  },
+  {
+   "id": "beg-7-067661",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "تبولة",
+   "alternatives": [
+    "تبولة"
+   ],
+   "display": "تبولة",
+   "arabizi": "tabbouleh",
+   "arabiziAlternatives": [
+    "tabbouleh"
+   ],
+   "english": "tabbouleh"
+  },
+  {
+   "id": "beg-7-1c0d71",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "حمّص",
+   "alternatives": [
+    "حمّص"
+   ],
+   "display": "حمّص",
+   "arabizi": "hummus",
+   "arabiziAlternatives": [
+    "hummus"
+   ],
+   "english": "hummus"
+  },
+  {
+   "id": "beg-7-dd659e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "برغر",
+   "alternatives": [
+    "برغر"
+   ],
+   "display": "برغر",
+   "arabizi": "burger",
+   "arabiziAlternatives": [
+    "burger"
+   ],
+   "english": "burger"
+  },
+  {
+   "id": "beg-7-2f6d7b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "فلافل",
+   "alternatives": [
+    "فلافل"
+   ],
+   "display": "فلافل",
+   "arabizi": "falafel",
+   "arabiziAlternatives": [
+    "falafel"
+   ],
+   "english": "falafel"
+  },
+  {
+   "id": "beg-7-508095",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "عصير",
+   "alternatives": [
+    "عصير"
+   ],
+   "display": "عصير",
+   "arabizi": "3aseer",
+   "arabiziAlternatives": [
+    "3aseer"
+   ],
+   "english": "juice"
+  },
+  {
+   "id": "beg-7-60fb27",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "عصير برتقال",
+   "alternatives": [
+    "عصير برتقال"
+   ],
+   "display": "عصير برتقال",
+   "arabizi": "3aseer burtu2al",
+   "arabiziAlternatives": [
+    "3aseer burtu2al"
+   ],
+   "english": "orange juice"
+  },
+  {
+   "id": "beg-7-420c01",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "محمّص",
+   "alternatives": [
+    "محمّص"
+   ],
+   "display": "محمّص",
+   "arabizi": "m7ammas",
+   "arabiziAlternatives": [
+    "m7ammas"
+   ],
+   "english": "toasted/roasted"
+  },
+  {
+   "id": "beg-7-20c9df",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "مقلي",
+   "alternatives": [
+    "مقلي"
+   ],
+   "display": "مقلي",
+   "arabizi": "ma2li",
+   "arabiziAlternatives": [
+    "ma2li"
+   ],
+   "english": "fried"
+  },
+  {
+   "id": "beg-7-bb87d2",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "مشوي",
+   "alternatives": [
+    "مشوي"
+   ],
+   "display": "مشوي",
+   "arabizi": "mashwi",
+   "arabiziAlternatives": [
+    "mashwi"
+   ],
+   "english": "grilled"
+  },
+  {
+   "id": "beg-7-26be64",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "مسلوق",
+   "alternatives": [
+    "مسلوق"
+   ],
+   "display": "مسلوق",
+   "arabizi": "maslou2",
+   "arabiziAlternatives": [
+    "maslou2"
+   ],
+   "english": "boiled"
+  },
+  {
+   "id": "beg-7-597507",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "نباتي",
+   "alternatives": [
+    "نباتي"
+   ],
+   "display": "نباتي",
+   "arabizi": "nabati",
+   "arabiziAlternatives": [
+    "nabati"
+   ],
+   "english": "vegetarian"
+  },
+  {
+   "id": "beg-7-a13c35",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "المفضّل",
+   "alternatives": [
+    "المفضّل"
+   ],
+   "display": "المفضّل",
+   "arabizi": "el-mufaddal",
+   "arabiziAlternatives": [
+    "el-mufaddal"
+   ],
+   "english": "favourite"
+  },
+  {
+   "id": "beg-7-11df81",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "verb",
+   "arabic": "طلب",
+   "alternatives": [
+    "طلب"
+   ],
+   "display": "طلب",
+   "arabizi": "talab",
+   "arabiziAlternatives": [
+    "talab"
+   ],
+   "english": "to order"
+  },
+  {
+   "id": "beg-7-0e0f2e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "بالعادة",
+   "alternatives": [
+    "بالعادة"
+   ],
+   "display": "بالعادة",
+   "arabizi": "bil3ade",
+   "arabiziAlternatives": [
+    "bil3ade"
+   ],
+   "english": "usually"
+  },
+  {
+   "id": "beg-7-7ca48b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "مرّات",
+   "alternatives": [
+    "مرّات"
+   ],
+   "display": "مرّات",
+   "arabizi": "marrat",
+   "arabiziAlternatives": [
+    "marrat"
+   ],
+   "english": "sometimes"
+  },
+  {
+   "id": "beg-7-f00eeb",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "أحياناً",
+   "alternatives": [
+    "أحياناً"
+   ],
+   "display": "أحياناً",
+   "arabizi": "a7yanan",
+   "arabiziAlternatives": [
+    "a7yanan"
+   ],
+   "english": "sometimes"
+  },
+  {
+   "id": "beg-7-026651",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "تقريباً",
+   "alternatives": [
+    "تقريباً"
+   ],
+   "display": "تقريباً",
+   "arabizi": "ta2reeban",
+   "arabiziAlternatives": [
+    "ta2reeban"
+   ],
+   "english": "almost"
+  },
+  {
+   "id": "beg-7-05bc3e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "برّا",
+   "alternatives": [
+    "برّا"
+   ],
+   "display": "برّا",
+   "arabizi": "barra",
+   "arabiziAlternatives": [
+    "barra"
+   ],
+   "english": "outside"
+  },
+  {
+   "id": "beg-7-9e1bfa",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "خيار",
+   "alternatives": [
+    "خيار"
+   ],
+   "display": "خيار",
+   "arabizi": "khyar",
+   "arabiziAlternatives": [
+    "khyar"
+   ],
+   "english": "cucumber"
+  },
+  {
+   "id": "beg-7-6dfce5",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بندورة",
+   "alternatives": [
+    "بندورة"
+   ],
+   "display": "بندورة",
+   "arabizi": "banadora",
+   "arabiziAlternatives": [
+    "banadora"
+   ],
+   "english": "tomato"
+  },
+  {
+   "id": "beg-7-901740",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "خس",
+   "alternatives": [
+    "خس"
+   ],
+   "display": "خس",
+   "arabizi": "khas",
+   "arabiziAlternatives": [
+    "khas"
+   ],
+   "english": "lettuce"
+  },
+  {
+   "id": "beg-7-fa9340",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بطاطا",
+   "alternatives": [
+    "بطاطا"
+   ],
+   "display": "بطاطا",
+   "arabizi": "batata",
+   "arabiziAlternatives": [
+    "batata"
+   ],
+   "english": "potato"
+  },
+  {
+   "id": "beg-7-e7761d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "جزر",
+   "alternatives": [
+    "جزر"
+   ],
+   "display": "جزر",
+   "arabizi": "jazar",
+   "arabiziAlternatives": [
+    "jazar"
+   ],
+   "english": "carrot"
+  },
+  {
+   "id": "beg-7-37f920",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "تفاح",
+   "alternatives": [
+    "تفاح"
+   ],
+   "display": "تفاح",
+   "arabizi": "tiffa7",
+   "arabiziAlternatives": [
+    "tiffa7"
+   ],
+   "english": "apple"
+  },
+  {
+   "id": "beg-7-66dbc2",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "موز",
+   "alternatives": [
+    "موز"
+   ],
+   "display": "موز",
+   "arabizi": "mawz",
+   "arabiziAlternatives": [
+    "mawz"
+   ],
+   "english": "banana"
+  },
+  {
+   "id": "beg-7-6ee62d",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "برتقال",
+   "alternatives": [
+    "برتقال"
+   ],
+   "display": "برتقال",
+   "arabizi": "burtu2al",
+   "arabiziAlternatives": [
+    "burtu2al"
+   ],
+   "english": "orange (fruit)"
+  },
+  {
+   "id": "beg-7-0d5ed7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "عنب",
+   "alternatives": [
+    "عنب"
+   ],
+   "display": "عنب",
+   "arabizi": "3enab",
+   "arabiziAlternatives": [
+    "3enab"
+   ],
+   "english": "grapes"
+  },
+  {
+   "id": "beg-7-81dead",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بطيخ",
+   "alternatives": [
+    "بطيخ"
+   ],
+   "display": "بطيخ",
+   "arabizi": "batti5",
+   "arabiziAlternatives": [
+    "batti5"
+   ],
+   "english": "watermelon"
+  },
+  {
+   "id": "beg-7-5599e8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مكتب",
+   "alternatives": [
+    "مكتب"
+   ],
+   "display": "مكتب",
+   "arabizi": "maktab",
+   "arabiziAlternatives": [
+    "maktab"
+   ],
+   "english": "office/desk"
+  },
+  {
+   "id": "beg-7-d8b2c7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "السوق",
+   "alternatives": [
+    "السوق"
+   ],
+   "display": "السوق",
+   "arabizi": "es-sou2",
+   "arabiziAlternatives": [
+    "es-sou2"
+   ],
+   "english": "market"
+  },
+  {
+   "id": "beg-7-2df8d6",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "ملعب",
+   "alternatives": [
+    "ملعب"
+   ],
+   "display": "ملعب",
+   "arabizi": "mal3ab",
+   "arabiziAlternatives": [
+    "mal3ab"
+   ],
+   "english": "stadium/ground"
+  },
+  {
+   "id": "beg-7-178a65",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "فندق",
+   "alternatives": [
+    "فندق"
+   ],
+   "display": "فندق",
+   "arabizi": "funduq",
+   "arabiziAlternatives": [
+    "funduq"
+   ],
+   "english": "hotel"
+  },
+  {
+   "id": "beg-7-7fedb7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "معهد",
+   "alternatives": [
+    "معهد"
+   ],
+   "display": "معهد",
+   "arabizi": "ma3had",
+   "arabiziAlternatives": [
+    "ma3had"
+   ],
+   "english": "institute"
+  },
+  {
+   "id": "beg-7-d7a894",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "صيدلية",
+   "alternatives": [
+    "صيدلية"
+   ],
+   "display": "صيدلية",
+   "arabizi": "saydaliyye",
+   "arabiziAlternatives": [
+    "saydaliyye"
+   ],
+   "english": "pharmacy"
+  },
+  {
+   "id": "beg-7-21a777",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "حديقة",
+   "alternatives": [
+    "حديقة"
+   ],
+   "display": "حديقة",
+   "arabizi": "7adi2a",
+   "arabiziAlternatives": [
+    "7adi2a"
+   ],
+   "english": "garden/park"
+  },
+  {
+   "id": "beg-7-f879f7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بنك",
+   "alternatives": [
+    "بنك"
+   ],
+   "display": "بنك",
+   "arabizi": "bank",
+   "arabiziAlternatives": [
+    "bank"
+   ],
+   "english": "bank"
+  },
+  {
+   "id": "beg-7-0a3428",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مخيّم",
+   "alternatives": [
+    "مخيّم"
+   ],
+   "display": "مخيّم",
+   "arabizi": "mu5ayyam",
+   "arabiziAlternatives": [
+    "mu5ayyam"
+   ],
+   "english": "camp"
+  },
+  {
+   "id": "beg-7-950f16",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "سوبرماركت",
+   "alternatives": [
+    "سوبرماركت"
+   ],
+   "display": "سوبرماركت",
+   "arabizi": "supermarket",
+   "arabiziAlternatives": [
+    "supermarket"
+   ],
+   "english": "supermarket"
+  },
+  {
+   "id": "beg-7-09a56a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "شارع",
+   "alternatives": [
+    "شارع"
+   ],
+   "display": "شارع",
+   "arabizi": "share3",
+   "arabiziAlternatives": [
+    "share3"
+   ],
+   "english": "street"
+  },
+  {
+   "id": "beg-7-5bbe23",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "الإشارة",
+   "alternatives": [
+    "الإشارة"
+   ],
+   "display": "الإشارة",
+   "arabizi": "el-ishara",
+   "arabiziAlternatives": [
+    "el-ishara"
+   ],
+   "english": "traffic light"
+  },
+  {
+   "id": "beg-7-affdbe",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "تلفزيون",
+   "alternatives": [
+    "تلفزيون"
+   ],
+   "display": "تلفزيون",
+   "arabizi": "telfezyon",
+   "arabiziAlternatives": [
+    "telfezyon"
+   ],
+   "english": "TV"
+  },
+  {
+   "id": "beg-7-bd5af3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "رسالة",
+   "alternatives": [
+    "رسالة"
+   ],
+   "display": "رسالة",
+   "arabizi": "risaleh",
+   "arabiziAlternatives": [
+    "risaleh"
+   ],
+   "english": "letter/message"
+  },
+  {
+   "id": "beg-7-0e3f64",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "تحت",
+   "alternatives": [
+    "تحت"
+   ],
+   "display": "تحت",
+   "arabizi": "ta7et",
+   "arabiziAlternatives": [
+    "ta7et"
+   ],
+   "english": "under"
+  },
+  {
+   "id": "beg-7-c5a2b4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "فوق",
+   "alternatives": [
+    "فوق"
+   ],
+   "display": "فوق",
+   "arabizi": "fo2",
+   "arabiziAlternatives": [
+    "fo2"
+   ],
+   "english": "on/above"
+  },
+  {
+   "id": "beg-7-c7abaf",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "حدّ",
+   "alternatives": [
+    "حدّ"
+   ],
+   "display": "حدّ",
+   "arabizi": "7add",
+   "arabiziAlternatives": [
+    "7add"
+   ],
+   "english": "next to"
+  },
+  {
+   "id": "beg-7-9a3aec",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "بين",
+   "alternatives": [
+    "بين"
+   ],
+   "display": "بين",
+   "arabizi": "bein",
+   "arabiziAlternatives": [
+    "bein"
+   ],
+   "english": "between"
+  },
+  {
+   "id": "beg-7-046c7b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "عند",
+   "alternatives": [
+    "عند"
+   ],
+   "display": "عند",
+   "arabizi": "3and",
+   "arabiziAlternatives": [
+    "3and"
+   ],
+   "english": "at/by"
+  },
+  {
+   "id": "beg-7-7dd314",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "يمين",
+   "alternatives": [
+    "يمين"
+   ],
+   "display": "يمين",
+   "arabizi": "yamin",
+   "arabiziAlternatives": [
+    "yamin"
+   ],
+   "english": "right"
+  },
+  {
+   "id": "beg-7-b81145",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "يسار",
+   "alternatives": [
+    "يسار"
+   ],
+   "display": "يسار",
+   "arabizi": "yasar",
+   "arabiziAlternatives": [
+    "yasar"
+   ],
+   "english": "left"
+  },
+  {
+   "id": "beg-7-1715c7",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "شمال",
+   "alternatives": [
+    "شمال"
+   ],
+   "display": "شمال",
+   "arabizi": "shmal",
+   "arabiziAlternatives": [
+    "shmal"
+   ],
+   "english": "left"
+  },
+  {
+   "id": "beg-7-43547a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "روح",
+   "alternatives": [
+    "روح"
+   ],
+   "display": "روح",
+   "arabizi": "rou7",
+   "arabiziAlternatives": [
+    "rou7"
+   ],
+   "english": "go! (command)"
+  },
+  {
+   "id": "beg-7-bb2dfb",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "كفّي",
+   "alternatives": [
+    "كفّي"
+   ],
+   "display": "كفّي",
+   "arabizi": "kaffi",
+   "arabiziAlternatives": [
+    "kaffi"
+   ],
+   "english": "continue! (command)"
+  },
+  {
+   "id": "beg-7-30c148",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "نزّلني",
+   "alternatives": [
+    "نزّلني"
+   ],
+   "display": "نزّلني",
+   "arabizi": "nazzelni",
+   "arabiziAlternatives": [
+    "nazzelni"
+   ],
+   "english": "drop me off"
+  },
+  {
+   "id": "beg-7-64e8ff",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "تعطيني",
+   "alternatives": [
+    "تعطيني"
+   ],
+   "display": "تعطيني",
+   "arabizi": "ta3teeni",
+   "arabiziAlternatives": [
+    "ta3teeni"
+   ],
+   "english": "give me"
+  },
+  {
+   "id": "beg-7-78e3a3",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adverb",
+   "arabic": "دغري",
+   "alternatives": [
+    "دغري"
+   ],
+   "display": "دغري",
+   "arabizi": "daghri",
+   "arabiziAlternatives": [
+    "daghri"
+   ],
+   "english": "straight"
+  },
+  {
+   "id": "beg-7-01e77e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "أول",
+   "alternatives": [
+    "أول"
+   ],
+   "display": "أول",
+   "arabizi": "awwal",
+   "arabiziAlternatives": [
+    "awwal"
+   ],
+   "english": "first"
+  },
+  {
+   "id": "beg-7-61195b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "تاني",
+   "alternatives": [
+    "تاني"
+   ],
+   "display": "تاني",
+   "arabizi": "tani",
+   "arabiziAlternatives": [
+    "tani"
+   ],
+   "english": "second"
+  },
+  {
+   "id": "beg-7-9268a2",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "شوفير",
+   "alternatives": [
+    "شوفير"
+   ],
+   "display": "شوفير",
+   "arabizi": "shofer",
+   "arabiziAlternatives": [
+    "shofer"
+   ],
+   "english": "driver"
+  },
+  {
+   "id": "beg-7-bdf3aa",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "تاكسي",
+   "alternatives": [
+    "تاكسي"
+   ],
+   "display": "تاكسي",
+   "arabizi": "taxi",
+   "arabiziAlternatives": [
+    "taxi"
+   ],
+   "english": "taxi"
+  },
+  {
+   "id": "beg-7-3607c4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "أوبر",
+   "alternatives": [
+    "أوبر"
+   ],
+   "display": "أوبر",
+   "arabizi": "uber",
+   "arabiziAlternatives": [
+    "uber"
+   ],
+   "english": "Uber"
+  },
+  {
+   "id": "beg-7-450ffa",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "ليرة",
+   "alternatives": [
+    "ليرة"
+   ],
+   "display": "ليرة",
+   "arabizi": "lira",
+   "arabiziAlternatives": [
+    "lira"
+   ],
+   "english": "lira"
+  },
+  {
+   "id": "beg-7-7e0568",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "شوب",
+   "alternatives": [
+    "شوب"
+   ],
+   "display": "شوب",
+   "arabizi": "shob",
+   "arabiziAlternatives": [
+    "shob"
+   ],
+   "english": "hot (weather)"
+  },
+  {
+   "id": "beg-7-12c05a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "بارد",
+   "alternatives": [
+    "بارد"
+   ],
+   "display": "بارد",
+   "arabizi": "bared",
+   "arabiziAlternatives": [
+    "bared"
+   ],
+   "english": "cold (weather)"
+  },
+  {
+   "id": "beg-7-dae1bc",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "adjective",
+   "arabic": "صافي",
+   "alternatives": [
+    "صافي"
+   ],
+   "display": "صافي",
+   "arabizi": "safi",
+   "arabiziAlternatives": [
+    "safi"
+   ],
+   "english": "clear"
+  },
+  {
+   "id": "beg-7-a005d4",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مباراة",
+   "alternatives": [
+    "مباراة"
+   ],
+   "display": "مباراة",
+   "arabizi": "mubarat",
+   "arabiziAlternatives": [
+    "mubarat"
+   ],
+   "english": "match"
+  },
+  {
+   "id": "beg-7-f95feb",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "رحلة",
+   "alternatives": [
+    "رحلة"
+   ],
+   "display": "رحلة",
+   "arabizi": "re7le",
+   "arabiziAlternatives": [
+    "re7le"
+   ],
+   "english": "trip"
+  },
+  {
+   "id": "beg-7-38d186",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "شجرة",
+   "alternatives": [
+    "شجرة"
+   ],
+   "display": "شجرة",
+   "arabizi": "shajra",
+   "arabiziAlternatives": [
+    "shajra"
+   ],
+   "english": "tree"
+  },
+  {
+   "id": "beg-7-dc0009",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "السما",
+   "alternatives": [
+    "السما"
+   ],
+   "display": "السما",
+   "arabizi": "es-sama",
+   "arabiziAlternatives": [
+    "es-sama"
+   ],
+   "english": "the sky"
+  },
+  {
+   "id": "beg-7-63902b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "الشمس",
+   "alternatives": [
+    "الشمس"
+   ],
+   "display": "الشمس",
+   "arabizi": "esh-shams",
+   "arabiziAlternatives": [
+    "esh-shams"
+   ],
+   "english": "the sun"
+  },
+  {
+   "id": "beg-7-021926",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "جبل",
+   "alternatives": [
+    "جبل"
+   ],
+   "display": "جبل",
+   "arabizi": "jabal",
+   "arabiziAlternatives": [
+    "jabal"
+   ],
+   "english": "mountain"
+  },
+  {
+   "id": "beg-7-3c7b56",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "بحر",
+   "alternatives": [
+    "بحر"
+   ],
+   "display": "بحر",
+   "arabizi": "ba7er",
+   "arabiziAlternatives": [
+    "ba7er"
+   ],
+   "english": "sea"
+  },
+  {
+   "id": "beg-7-73aa38",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "مصاري",
+   "alternatives": [
+    "مصاري"
+   ],
+   "display": "مصاري",
+   "arabizi": "masari",
+   "arabiziAlternatives": [
+    "masari"
+   ],
+   "english": "money"
+  },
+  {
+   "id": "beg-7-739d16",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "فيلم",
+   "alternatives": [
+    "فيلم"
+   ],
+   "display": "فيلم",
+   "arabizi": "film",
+   "arabiziAlternatives": [
+    "film"
+   ],
+   "english": "movie"
+  },
+  {
+   "id": "beg-7-7c5c6e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "noun",
+   "arabic": "جواب",
+   "alternatives": [
+    "جواب"
+   ],
+   "display": "جواب",
+   "arabizi": "jawab",
+   "arabiziAlternatives": [
+    "jawab"
+   ],
+   "english": "answer"
+  },
+  {
+   "id": "beg-7-95de37",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "linking",
+   "arabic": "عشان",
+   "alternatives": [
+    "عشان"
+   ],
+   "display": "عشان",
+   "arabizi": "3ashan",
+   "arabiziAlternatives": [
+    "3ashan"
+   ],
+   "english": "in order to/because"
+  },
+  {
+   "id": "beg-7-08d4e8",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "لو سمحت",
+   "alternatives": [
+    "لو سمحت"
+   ],
+   "display": "لو سمحت",
+   "arabizi": "law sama7t",
+   "arabiziAlternatives": [
+    "law sama7t"
+   ],
+   "english": "please"
+  },
+  {
+   "id": "beg-7-6b58dc",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "يعطيك العافية",
+   "alternatives": [
+    "يعطيك العافية"
+   ],
+   "display": "يعطيك العافية",
+   "arabizi": "ya3teek el-3afye",
+   "arabiziAlternatives": [
+    "ya3teek el-3afye"
+   ],
+   "english": "more power to you (thanks)"
+  },
+  {
+   "id": "beg-7-b3e377",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "تفضّل",
+   "alternatives": [
+    "تفضّل"
+   ],
+   "display": "تفضّل",
+   "arabizi": "tfaddal",
+   "arabiziAlternatives": [
+    "tfaddal"
+   ],
+   "english": "here you go/please"
+  },
+  {
+   "id": "beg-7-d71e0a",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "برأيي",
+   "alternatives": [
+    "برأيي"
+   ],
+   "display": "برأيي",
+   "arabizi": "bra2yi",
+   "arabiziAlternatives": [
+    "bra2yi"
+   ],
+   "english": "in my opinion"
+  },
+  {
+   "id": "beg-7-5d205b",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "احكي شوي شوي",
+   "alternatives": [
+    "احكي شوي شوي"
+   ],
+   "display": "احكي شوي شوي",
+   "arabizi": "7ki shway shway",
+   "arabiziAlternatives": [
+    "7ki shway shway"
+   ],
+   "english": "speak slowly"
+  },
+  {
+   "id": "beg-7-65787e",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "ما فهمت",
+   "alternatives": [
+    "ما فهمت"
+   ],
+   "display": "ما فهمت",
+   "arabizi": "ma fhimt",
+   "arabiziAlternatives": [
+    "ma fhimt"
+   ],
+   "english": "I didn't understand"
+  },
+  {
+   "id": "beg-7-94a9b0",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "ما بعرف",
+   "alternatives": [
+    "ما بعرف"
+   ],
+   "display": "ما بعرف",
+   "arabizi": "ma ba3ref",
+   "arabiziAlternatives": [
+    "ma ba3ref"
+   ],
+   "english": "I don't know"
+  },
+  {
+   "id": "beg-7-232ed1",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "أهلا وسهلا",
+   "alternatives": [
+    "أهلا وسهلا"
+   ],
+   "display": "أهلا وسهلا",
+   "arabizi": "ahla w sahla",
+   "arabiziAlternatives": [
+    "ahla w sahla"
+   ],
+   "english": "welcome"
+  },
+  {
+   "id": "beg-7-29ee53",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "صارلي",
+   "alternatives": [
+    "صارلي"
+   ],
+   "display": "صارلي",
+   "arabizi": "sarli",
+   "arabiziAlternatives": [
+    "sarli"
+   ],
+   "english": "I have been (for…)"
+  },
+  {
+   "id": "beg-7-befa09",
+   "level": "beginner",
+   "unitId": "beginner/unit-7",
+   "unitTitle": "Unit 7",
+   "unitOrder": 7,
+   "pos": "phrase",
+   "arabic": "يعني",
+   "alternatives": [
+    "يعني"
+   ],
+   "display": "يعني",
+   "arabizi": "ya3ni",
+   "arabiziAlternatives": [
+    "ya3ni"
+   ],
+   "english": "meaning/so"
+  }
+ ]
+}
