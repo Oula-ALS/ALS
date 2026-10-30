@@ -9,6 +9,9 @@ import UnitPage from "./pages/UnitPage";
 import Flashcards from "./pages/Flashcards";
 import WriteMode from "./pages/WriteMode";
 import Quiz from "./pages/Quiz";
+import SentenceMode from "./pages/SentenceMode";
+import CompleteMode from "./pages/CompleteMode";
+import Teacher from "./pages/Teacher";
 import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
@@ -29,11 +32,14 @@ export default function App() {
         <Route path="/" element={student ? <Home /> : <Navigate to="/welcome" replace />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/student" element={<StudentInfo />} />
+        <Route path="/teacher" element={<Teacher />} />
         <Route path="/:level" element={<LevelPage />} />
         <Route path="/:level/:unit" element={<UnitPage />} />
         <Route path="/:level/:unit/flashcards" element={<Flashcards />} />
         <Route path="/:level/:unit/write" element={<WriteMode />} />
         <Route path="/:level/:unit/quiz" element={<Quiz />} />
+        <Route path="/:level/:unit/sentence" element={<SentenceMode />} />
+        <Route path="/:level/:unit/complete" element={<CompleteMode />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

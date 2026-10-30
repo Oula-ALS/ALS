@@ -4,6 +4,7 @@ import Ar from "../components/Ar";
 import Layout from "../components/Layout";
 import { GenderBadge, ProgressBar, SpeakButton, StarButton } from "../components/WordBits";
 import { getLevel, getUnit, wordsOf } from "../lib/data";
+import { approvedExample } from "../lib/examples";
 import { masteredShare, useProgress } from "../lib/progress";
 import { setSettings, useSettings } from "../lib/settings";
 import NotFound from "./NotFound";
@@ -12,6 +13,8 @@ const MODES = [
   { path: "flashcards", icon: "🗂️", title: "Flashcards", text: "Flip, listen, and sort the words you know." },
   { path: "write", icon: "✍️", title: "Listen & write", text: "Hear the word (or read the English) and type it." },
   { path: "quiz", icon: "✅", title: "Quiz", text: "10, 20 or all words — a mix of question types." },
+  { path: "sentence", icon: "💬", title: "Use it in a sentence", text: "See the word in a real sentence, then write your own.", needsSentences: true },
+  { path: "complete", icon: "🧩", title: "Complete the sentence", text: "Pick the missing word.", needsSentences: true },
 ];
 
 function CopyLink() {
@@ -46,6 +49,7 @@ export default function UnitPage() {
   const words = wordsOf(data, unit);
   const starredCount = words.filter((w) => progress.starred.includes(w.id)).length;
   const base = `/${data.level}/${unit.slug}`;
+  const sentenceCount = words.filter((w) => approvedExample(w)).length;
 
   return (
     <Layout back={{ to: `/${data.level}`, label: data.title }}>
@@ -65,7 +69,18 @@ export default function UnitPage() {
       </div>
 
       <ul className="mt-6 grid gap-3">
-        {MODES.map((m, i) => (
+        {MODES.map((m, i) =>
+          m.needsSentences && sentenceCount === 0 ? (
+            <li key={m.path} className="card flex items-center gap-4 p-4 opacity-60" aria-disabled>
+              <span className="text-3xl grayscale" aria-hidden>
+                {m.icon}
+              </span>
+              <span className="flex-1">
+                <span className="block text-lg font-extrabold">{m.title}</span>
+                <span className="text-sm text-muted">Coming soon — teachers are checking the example sentences for this unit.</span>
+              </span>
+            </li>
+          ) : (
           <li key={m.path}>
             <Link
               to={`${base}/${m.path}`}
@@ -76,14 +91,18 @@ export default function UnitPage() {
               </span>
               <span className="flex-1">
                 <span className="block text-lg font-extrabold">{m.title}</span>
-                <span className="text-sm text-muted">{m.text}</span>
+                <span className="text-sm text-muted">
+                  {m.text}
+                  {m.needsSentences && ` (${sentenceCount} sentence${sentenceCount === 1 ? "" : "s"})`}
+                </span>
               </span>
               <span className="text-2xl text-brand" aria-hidden>
                 →
               </span>
             </Link>
           </li>
-        ))}
+          ),
+        )}
       </ul>
 
       <div className="mt-4 flex flex-wrap gap-2">

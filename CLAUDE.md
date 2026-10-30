@@ -80,4 +80,9 @@ rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw
 Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
 Audio: `public/audio/{id}.mp3` first; otherwise a clearly labelled computer voice (can be turned off).
 Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz ✅ (`npm test`) · 5 Example
-sentences + teacher page · 6 PWA, QR, review, dark mode, deploy.
+sentences + teacher page ✅ · 6 PWA, QR, review, dark mode, deploy.
+Sentences: `vocab/src/data/examples.json` (keyed by word id; `reviewed`, `rejected`, `answer`, `cloze`).
+Students see only `approvedExample()` (reviewed and not rejected). AI writes them with
+`npm run generate-examples` (key in `vocab/.env`, never committed); teachers review on `/teacher`
+(passcode via `api/teacher-login.js` + `TEACHER_PASSCODE` in Vercel; open without passcode in `npm run dev`)
+and export the file. 31 sample sentences for Beginner Unit 3 were written by Claude, `source: "claude-sample"`.

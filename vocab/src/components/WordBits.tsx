@@ -1,5 +1,5 @@
 import type { Gender, Word } from "../types";
-import { audioSource, playWord } from "../lib/audio";
+import { audioSource, canSpeakText, playText, playWord } from "../lib/audio";
 import { toggleStar, useProgress } from "../lib/progress";
 import { useSettings } from "../lib/settings";
 import { useState } from "react";
@@ -74,5 +74,37 @@ export function ProgressBar({ value, label }: { value: number; label: string }) 
       </div>
       <span className="w-10 text-right text-xs font-bold text-muted">{pct}%</span>
     </div>
+  );
+}
+
+/** 🔊 for a whole sentence. Only the computer voice exists for sentences, so it says so. */
+export function SpeakSentence({ text }: { text: string }) {
+  useSettings();
+  const [failed, setFailed] = useState(false);
+  if (!canSpeakText()) return null;
+  return (
+    <span className="inline-flex flex-col items-center">
+      <button
+        type="button"
+        onClick={() => setFailed(!playText(text))}
+        aria-label="Play the sentence (computer voice)"
+        title="Computer voice — may not sound Lebanese"
+        className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand-soft text-xl text-brand hover:bg-brand hover:text-white"
+      >
+        🔊
+      </button>
+      {failed && <span className="mt-1 max-w-40 text-center text-xs text-muted">No Arabic voice on this device</span>}
+    </span>
+  );
+}
+
+/** A sentence with the target word highlighted. */
+export function HighlightedSentence({ before, target, after, className = "" }: { before: string; target: string; after: string; className?: string }) {
+  return (
+    <span lang="ar" dir="rtl" className={className}>
+      {before}
+      <mark className="rounded-md bg-brand-soft px-1 font-bold text-brand">{target}</mark>
+      {after}
+    </span>
   );
 }

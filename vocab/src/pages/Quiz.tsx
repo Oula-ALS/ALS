@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Ar from "../components/Ar";
 import Layout from "../components/Layout";
-import { ChoiceQuestion, WriteQuestion } from "../components/Questions";
+import { ChoiceQuestion, ClozeQuestion, WriteQuestion } from "../components/Questions";
 import RoundSummary from "../components/RoundSummary";
 import { buildOptions } from "../lib/distractors";
+import { approvedExample, type ExampleEntry } from "../lib/examples";
 import { recordAnswer } from "../lib/progress";
 import { shuffled } from "../lib/random";
 import { setSettings, useSettings } from "../lib/settings";
@@ -14,17 +15,23 @@ import NotFound from "./NotFound";
 type Question =
   | { kind: "choose-english"; word: Word; options: Word[] }
   | { kind: "choose-arabic"; word: Word; options: Word[] }
-  | { kind: "write"; word: Word };
+  | { kind: "write"; word: Word }
+  | { kind: "cloze"; word: Word; options: Word[]; example: ExampleEntry };
 
-const KINDS = ["choose-english", "choose-arabic", "write"] as const;
-
-/** A mix of question types. Multiple choice falls back to writing if there aren't 3 good wrong options. */
+/**
+ * A mix of question types. Words with a teacher-approved sentence can also get
+ * "complete the sentence". Multiple choice falls back to writing if there aren't
+ * 3 good wrong options.
+ */
 function makeQuiz(words: Word[], levelWords: Word[]): Question[] {
   return words.map((word, i) => {
-    const kind = KINDS[(i + Math.floor(Math.random() * 3)) % 3];
+    const example = approvedExample(word);
+    const kinds = example ? (["choose-english", "choose-arabic", "write", "cloze"] as const) : (["choose-english", "choose-arabic", "write"] as const);
+    const kind = kinds[(i + Math.floor(Math.random() * kinds.length)) % kinds.length];
     if (kind === "write") return { kind, word };
     const options = buildOptions(word, levelWords);
-    return options.length === 4 ? { kind, word, options } : { kind: "write", word };
+    if (options.length < 4) return { kind: "write", word };
+    return kind === "cloze" ? { kind, word, options, example: example! } : { kind, word, options };
   });
 }
 
@@ -79,7 +86,7 @@ export default function Quiz() {
       {!questions && (
         <div className="card mt-5 p-6">
           <h2 className="text-xl font-extrabold">How many questions?</h2>
-          <p className="mt-1 text-muted">A mix of choosing the meaning, choosing the Arabic, and writing the word.</p>
+          <p className="mt-1 text-muted">A mix of choosing the meaning, choosing the Arabic, writing the word and completing sentences.</p>
           <div className="mt-4 grid gap-3">
             {sizes.map((n) => (
               <button key={n} type="button" className="btn-ghost" onClick={() => newQuiz(n)}>
@@ -110,6 +117,8 @@ export default function Quiz() {
           <div className="mt-5">
             {q.kind === "write" ? (
               <WriteQuestion key={index} word={q.word} prompt="english" typeIn={settings.typeIn} onDone={onDone} />
+            ) : q.kind === "cloze" ? (
+              <ClozeQuestion key={index} word={q.word} example={q.example} options={q.options} onDone={onDone} />
             ) : (
               <ChoiceQuestion
                 key={index}

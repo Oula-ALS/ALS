@@ -20,6 +20,9 @@ Then open the address it prints (usually http://localhost:5173).
 | `/beginner/unit-3/flashcards` | Flashcards for unit 3 |
 | `/beginner/unit-3/write` | Listen & write for unit 3 |
 | `/beginner/unit-3/quiz` | Quiz for unit 3 |
+| `/beginner/unit-3/sentence` | Use the word in a sentence (approved sentences only) |
+| `/beginner/unit-3/complete` | Complete the sentence (approved sentences only) |
+| `/teacher` | Teachers: review example sentences (passcode) |
 | `/beginner/all/flashcards` | Flashcards for the whole level |
 | `/advanced/topic-13` | Advanced topic 13 |
 
@@ -35,6 +38,32 @@ the review boxes, using the real word lists.
 2. Run `npm run build-data`.
 3. Open `data/report.md` to see possible mistakes (duplicates, wrong part of speech,
    empty cells). Nothing in the report is changed automatically — fix it in the sheet.
+
+## Example sentences
+
+Students only see sentences a teacher has **approved**.
+
+**1. Write sentences with AI (on your computer, once per batch of words)**
+
+1. Copy `.env.example` to `.env` and put your Anthropic API key after `ANTHROPIC_API_KEY=`.
+   `.env` is never uploaded (it is in `.gitignore`).
+2. Try one unit first: `npm run generate-examples -- --level beginner --unit 1`
+3. Then the rest: `npm run generate-examples` (about 90 requests for all 1,079 words, a few dollars).
+   It saves after every batch, never changes approved or rejected sentences, and lists
+   words it couldn't do in `data/examples-report.md`.
+4. Commit and deploy. New sentences are "to review" — students don't see them yet.
+
+**2. Teachers review (on the website)**
+
+1. Set `TEACHER_PASSCODE` in Vercel → Project → Settings → Environment Variables, then redeploy.
+2. Teachers open `/teacher`, type the passcode, and approve ✓, edit ✎ or reject ✗ each sentence.
+   They can also write a sentence for a word that has none.
+3. When done, they press **Export examples.json** and send you the file.
+
+**3. Publish**
+
+Replace `src/data/examples.json` with the exported file (if several teachers sent files, open
+`/teacher`, use **Import** for each, then **Export** once), then commit and deploy.
 
 ## Recordings
 

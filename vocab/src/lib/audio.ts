@@ -74,3 +74,22 @@ export function playWord(word: Word): boolean {
   }
   return false;
 }
+
+/** Reads a sentence with the computer voice (there are no sentence recordings yet). */
+export function canSpeakText(): boolean {
+  return getSettings().computerVoice && arabicVoiceAvailable();
+}
+
+export function playText(text: string): boolean {
+  if (!canSpeakText()) return false;
+  const voice = pickVoice();
+  if (!voice) return false;
+  speechSynthesis.cancel();
+  player?.pause();
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = voice;
+  u.lang = voice.lang;
+  u.rate = getSettings().rate;
+  speechSynthesis.speak(u);
+  return true;
+}
