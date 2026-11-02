@@ -11,6 +11,9 @@ export default function Welcome() {
     <div className="min-h-dvh bg-page">
       <div className="mx-auto max-w-2xl px-4 pb-12 pt-6">
         <img src="/images/logo.png" alt="Alsama Language School" className="logo-badge mx-auto h-16 w-auto" />
+        <p className="mt-3 text-center text-xl font-extrabold text-brand">
+          Alsama Words · <Ar>كلمات السما</Ar>
+        </p>
 
         <div className="relative mt-6 overflow-hidden rounded-3xl">
           <img

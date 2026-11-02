@@ -13,8 +13,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["images/*", "icons/*"],
       manifest: {
-        name: "Alsama Vocab",
-        short_name: "Alsama Vocab",
+        name: "Alsama Words",
+        short_name: "Alsama Words",
         description: "Learn Lebanese Arabic words with Alsama Language School.",
         lang: "en",
         start_url: "/",

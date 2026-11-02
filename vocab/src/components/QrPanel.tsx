@@ -15,7 +15,7 @@ const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 function printHandout(svg: string, url: string, level: string, title: string, titleIsArabic: boolean) {
   const w = window.open("", "_blank", "width=720,height=960");
   if (!w) return window.print(); // pop-ups blocked: print this page instead
-  w.document.write(`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${esc(title)} · Alsama Vocab</title>
+  w.document.write(`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${esc(title)} · Alsama Words</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@700&family=Nunito:wght@400;800&display=swap" rel="stylesheet">
 <style>
   @page { size: A4; margin: 18mm; }

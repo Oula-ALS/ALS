@@ -44,7 +44,7 @@ export default function Layout({ children, back, wide }: Props) {
               ←
             </Link>
           )}
-          <Link to="/" className="flex items-center" aria-label="Alsama Vocab home">
+          <Link to="/" className="flex items-center" aria-label="Alsama Words home">
             <img src="/images/logo.png" alt="Alsama Language School" className="logo-badge h-10 w-auto" />
           </Link>
           <div className="flex-1" />

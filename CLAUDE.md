@@ -72,9 +72,10 @@ Recording via MediaRecorder (`js/recorder.js`), never uploaded, never scored.
 - Music and sound effects are generated in `js/music.js` (Web Audio, no files). Recordings duck the
   music via the `alsama:voice` event from `js/audio.js`.
 
-## Vocab app (`vocab/`, separate app, started 30 Oct 2026)
+## Alsama Words app (folder `vocab/`, separate app, started 30 Oct 2026)
 
-Quizlet-style vocabulary app, approved to use **Vite + React + TypeScript + Tailwind** (exception to
+Quizlet-style vocabulary app named **Alsama Words · كلمات السما** (renamed from "Alsama Vocab" 2 Nov 2026;
+the folder and the `alsama-vocab:` storage key keep the old name on purpose). Approved to use **Vite + React + TypeScript + Tailwind** (exception to
 rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw/*.csv` →
 `npm run build-data` → `vocab/src/data/*.json` + `vocab/data/report.md` (never auto-fix the CSVs).
 Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
