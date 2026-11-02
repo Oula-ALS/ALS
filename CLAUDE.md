@@ -79,7 +79,9 @@ the folder and the `alsama-vocab:` storage key keep the old name on purpose). Ap
 rule 3, for this folder only). Colours: white + `#B7155A`. Data: `vocab/data/raw/*.csv` →
 `npm run build-data` → `vocab/src/data/*.json` + `vocab/data/report.md` (never auto-fix the CSVs).
 Word ids are hashes of the Arabic, so moving rows keeps progress. Student info stays on the device.
-Audio: `public/audio/{id}.mp3` = Alsama recordings (first); `public/audio/tts/{id}.mp3` = Lebanese Azure voice
+Audio: `public/audio/{id}.mp3` = Alsama recordings (first); `public/audio/clone/{id}.mp3` = Oula's AI voice
+(ElevenLabs copy of her voice, her own request 2 Nov 2026; `npm run generate-voice`, never touches recordings,
+labelled "Oula's AI voice"); `public/audio/tts/{id}.mp3` = Lebanese Azure voice
 (`npm run generate-audio`, never touches recordings); else the phone voice. Always labelled honestly.
 Recording checklist with file names: `vocab/data/recording-list.csv`. App icon in `public/icons/` is a placeholder.
 Phases: 1 Plan ✅ · 2 Data ✅ · 3 Core app + welcome/student info ✅ · 4 Write + Quiz ✅ (`npm test`) · 5 Example
