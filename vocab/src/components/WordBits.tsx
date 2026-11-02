@@ -46,7 +46,13 @@ export function SpeakButton({ word, big }: { word: Word; big?: boolean }) {
     return <span className="text-xs text-muted">Recording coming soon</span>;
   }
   const label =
-    source === "recording" ? "Play Alsama recording" : source === "tts" ? "Play Lebanese computer voice" : "Play computer voice (may not sound Lebanese)";
+    source === "recording"
+      ? "Play Alsama recording"
+      : source === "clone"
+        ? "Play Oula's AI voice"
+        : source === "tts"
+          ? "Play Lebanese computer voice"
+          : "Play computer voice (may not sound Lebanese)";
   return (
     <span className="inline-flex flex-col items-center">
       <button

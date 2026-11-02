@@ -103,12 +103,24 @@ The app always says what a 🔊 sound is:
 | Where the sound comes from | Folder | Label |
 |---|---|---|
 | **Alsama recording** (always used first) | `public/audio/{file name}.mp3` | "Alsama recording" |
+| Oula's AI voice (ElevenLabs copy of her voice) | `public/audio/clone/{file name}.mp3` | "Oula's AI voice" |
 | Lebanese computer voice (optional, Azure) | `public/audio/tts/{file name}.mp3` | "Lebanese computer voice" |
 | The phone's own voice (often formal Arabic) | — | "computer voice (may not sound Lebanese)" — students can turn it off |
 
 **Recording words:** `data/recording-list.csv` lists every word with the exact file name to use
 (e.g. `beg-1-98d448.mp3` for مرحبا) and whether it is recorded yet. Save MP3s with those names
 in `vocab/public/audio/`, run `npm run build-data`, commit.
+
+**Oula's AI voice (optional):** an AI copy of Oula's own voice, made with her consent, for words
+she hasn't recorded yet. Her real recordings always play first, so they replace it word by word.
+1. Sign up at **elevenlabs.io** (the Starter plan is enough: ~7,000 characters for all words).
+2. **Voices → Add a new voice → Instant Voice Clone.** Upload `oula-voice-sample.mp3` (all her
+   recordings joined, 2 min 45 s), or better, also 1–2 minutes of her reading a Lebanese text.
+   Tick the box confirming it is her own voice.
+3. Copy the voice **ID** (Voices → her voice) and an **API key** (Profile → API keys) into `.env`
+   as `ELEVENLABS_VOICE_ID` and `ELEVENLABS_API_KEY`.
+4. Try 5 words: `npm run generate-voice -- --limit 5`, then `npm run build-data`, and listen.
+   If it sounds right: `npm run generate-voice`, `npm run build-data`, commit.
 
 **Lebanese computer voice (optional):** add `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` to `.env`,
 then `npm run generate-audio -- --level beginner --unit 1` (voice `ar-LB-LaylaNeural` by default;
