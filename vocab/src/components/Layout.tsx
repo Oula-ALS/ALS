@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { setSettings, useSettings, type Settings } from "../lib/settings";
 import { useStudent } from "../lib/student";
 
@@ -31,6 +31,7 @@ interface Props {
 
 export default function Layout({ children, back, wide }: Props) {
   const student = useStudent();
+  const atHome = useLocation().pathname === "/";
   return (
     <div className="min-h-dvh bg-page">
       <header className="sticky top-0 z-20 border-b border-line bg-surface/95 backdrop-blur">
@@ -48,6 +49,16 @@ export default function Layout({ children, back, wide }: Props) {
             <img src="/images/logo.png" alt="Alsama Language School" className="logo-badge h-10 w-auto" />
           </Link>
           <div className="flex-1" />
+          {/* Home: on every page, so students can always get back to the start. */}
+          <Link
+            to="/"
+            className={`flex size-12 items-center justify-center rounded-full text-xl hover:bg-brand-soft ${atHome ? "bg-brand-soft" : ""}`}
+            aria-label="Home"
+            aria-current={atHome ? "page" : undefined}
+            title="Home"
+          >
+            🏠
+          </Link>
           <Link to="/search" className="flex size-12 items-center justify-center rounded-full text-xl hover:bg-brand-soft" aria-label="Search words">
             🔍
           </Link>
