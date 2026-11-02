@@ -2,6 +2,7 @@
 // wrapped in try/catch because private windows and some phones block storage.
 // Later, accounts (e.g. Supabase) can replace these two functions.
 
+// Kept from the app's first name (Alsama Vocab) so saved progress is never lost.
 const PREFIX = "alsama-vocab:";
 
 export function load<T>(key: string, fallback: T): T {

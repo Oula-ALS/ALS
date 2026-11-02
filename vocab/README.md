@@ -1,4 +1,4 @@
-# Alsama Vocab
+# Alsama Words · كلمات السما
 
 A vocabulary app for Alsama Language School students learning **Lebanese Arabic**.
 It works like Quizlet: every level and unit has its own link that teachers can send to a class.
@@ -17,17 +17,19 @@ The app is free to host on **Vercel**.
 
 1. Go to <https://vercel.com>, sign in with GitHub.
 2. Click **Add New… → Project**, choose the repository **Oula-ALS/ALS**, click **Import**.
-3. Under **Root Directory** click **Edit** and choose **`vocab`**. Vercel then fills in the rest
+3. In **Project Name** type `alsama-words`.
+4. Under **Root Directory** click **Edit** and choose **`vocab`**. Vercel then fills in the rest
    by itself (Framework: Vite, Build command: `npm run build`, Output: `dist`).
-4. Open **Environment Variables** and add:
+5. Open **Environment Variables** and add:
    | Name | Value |
    |---|---|
    | `TEACHER_PASSCODE` | a passcode for teachers, e.g. `zaatar-2026` (pick your own) |
-5. Click **Deploy**. After a minute you get a link like `alsama-vocab.vercel.app`.
+6. Click **Deploy**. After a minute you get a link like `alsama-words.vercel.app`.
    You can connect your own address later in **Settings → Domains**.
 
 From then on, every time a change is saved to the repository, Vercel updates the site by itself.
 
+> The app's folder in the repository is still called `vocab` (that is what Root Directory means).
 > This is a separate Vercel project from the alphabet app. The alphabet app stays as it is.
 
 ## 2. Links to send to a class

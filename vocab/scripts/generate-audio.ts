@@ -55,7 +55,7 @@ async function synthesize(word: Word, key: string, region: string): Promise<Buff
         "Ocp-Apim-Subscription-Key": key,
         "Content-Type": "application/ssml+xml",
         "X-Microsoft-OutputFormat": "audio-24khz-48kbitrate-mono-mp3",
-        "User-Agent": "alsama-vocab",
+        "User-Agent": "alsama-words",
       },
       body: ssml(word),
     });
