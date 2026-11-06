@@ -111,7 +111,14 @@ The app always says what a 🔊 sound is:
 (e.g. `beg-1-98d448.mp3` for مرحبا) and whether it is recorded yet. Save MP3s with those names
 in `vocab/public/audio/`, run `npm run build-data`, commit.
 
-**Oula's AI voice (optional):** an AI copy of Oula's own voice, made with her consent, for words
+**Oula's AI voice — free way (recommended):** open
+<https://colab.research.google.com/github/Oula-ALS/ALS/blob/main/vocab/tools/oula-ai-voice.ipynb>,
+choose **Runtime → Change runtime type → T4 GPU**, then **Runtime → Run all**. It copies Oula's voice
+from `tools/oula-voice-prompt.wav` (12 s of her own phrases) with the free Chatterbox model, makes every
+word that has no real recording, and downloads `oula-ai-voice.zip` (about 1 hour). Put its `clone/`
+files in `public/audio/clone/`, run `npm run build-data`, commit.
+
+**Oula's AI voice — paid way (optional):** an AI copy of Oula's own voice, made with her consent, for words
 she hasn't recorded yet. Her real recordings always play first, so they replace it word by word.
 1. Sign up at **elevenlabs.io** (the Starter plan is enough: ~7,000 characters for all words).
 2. **Voices → Add a new voice → Instant Voice Clone.** Upload `oula-voice-sample.mp3` (all her
