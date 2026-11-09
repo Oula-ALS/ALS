@@ -11,7 +11,8 @@
     "build-data": "tsx scripts/build-data.ts",
     "generate-examples": "tsx scripts/generate-examples.ts",
     "generate-audio": "tsx scripts/generate-audio.ts",
-    "generate-voice": "tsx scripts/generate-voice.ts"
+    "generate-voice": "tsx scripts/generate-voice.ts",
+    "import-voice": "tsx scripts/import-voice.ts"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^1.3.0",
